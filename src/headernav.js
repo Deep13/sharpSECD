@@ -132,6 +132,13 @@ class Headernav extends Component {
                 >
                   Custom Camera Modules
                 </NavDropdown.Item>
+                <NavDropdown.Item
+                  onClick={() =>
+                    this.selectNavigate("/LowPowerDisplays")
+                  }
+                >
+                  Low Power LCD's
+                </NavDropdown.Item>
               </NavDropdown>
               <NavDropdown
                 show={this.state.showTech}

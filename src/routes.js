@@ -23,6 +23,7 @@ import ReflectiveLCDLanding from "./components/ReflectiveLCDLanding";
 import { Cookies } from "react-cookie-consent";
 import ReactGA from "react-ga";
 import LinkedInTag from "react-linkedin-insight";
+import Low_power_displays from './components/Products/Low_power_displays'
 
 function Routes() {
   const history = useHistory();
@@ -69,6 +70,7 @@ function Routes() {
         <Route path="/ReflectiveLCDLanding" component={ReflectiveLCDLanding} />
         <Route path="/R-IGZO-Google" component={RIGZOGoogle} />
         <Route path="/MemoryInPixel" component={MemoryInPixel} />
+        <Route path="/LowPowerDisplays" component={Low_power_displays} />
         <Route path="/ReflectiveIGZO" component={ReflectiveIGZO} />
         <Route path="/MemoryInPixelLanding" component={MemoryInPixelLanding} />
         <Route path="/*" component={NotFound} />
