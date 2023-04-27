@@ -1,0 +1,27 @@
+[
+    {
+        "diagonalsize": {
+            "size": [12,222,33,44,55]
+        }
+    },
+    {
+        "activityarea": {
+            "size": []
+        }
+    },
+    {
+        "interface": {
+            "size": []
+        }
+    },
+    {
+        "backlight": {
+            "size": []
+        }
+    },
+    {
+        "brightness": {
+            "size": []
+        }
+    }
+]

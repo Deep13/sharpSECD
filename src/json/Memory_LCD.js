@@ -1,0 +1,313 @@
+export const products = [
+  {
+    Applications:
+      "Advertising, ATMs, Automotive , Climate Control, Factory Automation, Gaming/Lottery, Handheld Devices, Health/Fitness/Sports, Home Automation, In-flight Entertainment, Industrial Controls, Kiosks, MedicalDevices, Multimedia, Navigation/Transportation, POS Terminals, Test and Measurement, Wearable Technology, White Goods",
+    "DIAGONAL SIZE": "1.08 inch",
+    desc:
+      "Sharp’s 1.08-inch (diagonal) Memory-in-Pixel LCD delivers 16.5% reflectivity, making it a perfect display for use in wrist-top applications that require excellent viewability in bright ambient light environments. The monochrome module’s ultra-low-power operation makes it ideal for products that require a battery.",
+    PN: "LS011B7DH03",
+    "LIFE CYCLE": "Production",
+    "CONTRAST RATIO": "20:1",
+    "DISPLAY MODE": "Normally White",
+    "NUMBER OF COLORS": "Monochrome",
+    "OPERATING TEMP": "-20°C to +70°C",
+    "STORAGE TEMP": "-30°C to +80°C",
+    "OUTLINE DIMENSIONS": "32.00 x 14.00 x 0.745 mm",
+    "PIXEL FORMAT": "160 x 68",
+    "RESPONSE TIME": "20 ms",
+    "VIEWING ANGLE 12 O'CLOCK": "60°",
+    "VIEWING ANGLE 6 O'CLOCK": "60°",
+    "VIEWING ANGLE SIDE TO SIDE": "120°",
+    DOCUMENTS: [
+      {
+        name: "Sharp-LCD-Specification-LS011B7DH03-11-24-17",
+        link: require("../assets/Documents/Sharp-LCD-Specification-LS011B7DH03-11-24-17.pdf"),
+      },
+    ],
+    img: require("../assets/Memory in Pixel Drawings/Sharp-LS011B7DH03-Mechanical-Drawing.png"),
+  },
+  {
+    Applications:
+      "Advertising, ATMs, Automotive , Climate Control, Factory Automation, Gaming/Lottery, Handheld Devices, Health/Fitness/Sports, Home Automation, In-flight Entertainment, Industrial Controls, Kiosks, MedicalDevices, Multimedia, Navigation/Transportation, POS Terminals, Test and Measurement, Wearable Technology, White Goods",
+    "DIAGONAL SIZE": "1.19 inch Round",
+    desc:
+      "This 64-color Memory-in-Pixel LCD module is ideal for wrist-top or handheld applications or virtually any design that requires extremely low power consumption. It delivers smooth graphics in a popular shape, along with the flexibility to support rich custom content.",
+    PN: "LS012B7DD06A",
+    "LIFE CYCLE": "Production",
+    "CONTRAST RATIO": "25:1",
+    "DISPLAY MODE": "Normally Black",
+    "NUMBER OF COLORS": "64",
+    "OPERATING TEMP": "-20°C to +70°C",
+    "STORAGE TEMP": "-30°C to +80°C",
+    "OUTLINE DIMENSIONS": "33.04 × 33.94 × 0.89 mm",
+    "PIXEL FORMAT": "240 x 240",
+    "RESPONSE TIME": "20 ms",
+    "VIEWING ANGLE 12 O'CLOCK": "60°",
+    "VIEWING ANGLE 6 O'CLOCK": "60°",
+    "VIEWING ANGLE SIDE TO SIDE": "120°",
+    img: require("../assets/Memory in Pixel Drawings/Sharp-LS012B7DD06A-Mechanical-Drawing.png"),
+    DOCUMENTS: [
+      {
+        name: "Sharp-LCD-Specification-LS012B7DD06A-12-2-19",
+        link: require("../assets/Documents/Sharp-LCD-Specification-LS012B7DD06A-12-2-19.pdf"),
+      },
+    ],
+  },
+  {
+    Applications:
+      "Advertising, ATMs, Automotive , Climate Control, Factory Automation, Gaming/Lottery, Handheld Devices, Health/Fitness/Sports, Home Automation, In-flight Entertainment, Industrial Controls, Kiosks, MedicalDevices, Multimedia, Navigation/Transportation, POS Terminals, Test and Measurement, Wearable Technology, White Goods",
+    "DIAGONAL SIZE": "1.29 inch Round",
+    desc:
+      "This round 1.29-inch (diagonal) Memory-in-Pixel LCD renders 64 colors with an 18% NTSC ratio. This combines with a 25:1 contrast ratio to deliver high-quality images–static or moving–in a variety of lighting environments. The module’s reflective mode and ultra-low-power requirements make it perfect for wrist-top applications that require a battery.",
+    PN: "LS013B7DD02",
+    "LIFE CYCLE": "Pre-production",
+    "CONTRAST RATIO": "25:1",
+    "DISPLAY MODE": "Normally Black",
+    "NUMBER OF COLORS": "64",
+    "OPERATING TEMP": "-20°C to +70°C",
+    "STORAGE TEMP": "-30°C to +80°C",
+    "OUTLINE DIMENSIONS": "35.56 x 36.26 x 0.91 mm",
+    "PIXEL FORMAT": "260 x 260",
+    "RESPONSE TIME": "20 ms",
+    "VIEWING ANGLE 12 O'CLOCK": "60°",
+    "VIEWING ANGLE 6 O'CLOCK": "60°",
+    "VIEWING ANGLE SIDE TO SIDE": "120°",
+    img: require("../assets/Memory in Pixel Drawings/Sharp-LS013B7DD02-Technical-Drawing.jpg"),
+    DOCUMENTS: [
+      {
+        name: "Sharp-Tech-Literature-LS013B7DD02-12-2-19",
+        link: require("../assets/Documents/Sharp-Tech-Literature-LS013B7DD02-12-2-19.pdf"),
+      },
+    ],
+  },
+  {
+    Applications:
+      "Advertising, ATMs, Automotive , Climate Control, Factory Automation, Gaming/Lottery, Handheld Devices, Health/Fitness/Sports, Home Automation, In-flight Entertainment, Industrial Controls, Kiosks, MedicalDevices, Multimedia, Navigation/Transportation, POS Terminals, Test and Measurement, Wearable Technology, White Goods",
+    "DIAGONAL SIZE": "1.28 inch",
+    desc:
+      "This highly-relfiective plus Transmissive Memory LCD has 18% Reflectivity, 0.2% Transmissivity, and super-low-power-consumption.",
+    PN: "LS013B7DH03",
+    "LIFE CYCLE": "Production",
+    "CONTRAST RATIO": "18:1",
+    "DISPLAY MODE": "Normally White",
+    "NUMBER OF COLORS": "Monochrome",
+    "OPERATING TEMP": "-20°C to +70°C",
+    "STORAGE TEMP": "-30°C to +80°C",
+    "OUTLINE DIMENSIONS": "26.6 × 30.3 × 0.741 mm",
+    "PIXEL FORMAT": "128 × 128",
+    "RESPONSE TIME": "20 ms",
+    "VIEWING ANGLE 12 O'CLOCK": "60°",
+    "VIEWING ANGLE 6 O'CLOCK": "60°",
+    "VIEWING ANGLE SIDE TO SIDE": "120°",
+    img: require("../assets/Memory in Pixel Drawings/Sharp-LS013B7DH03-Mechanical-Drawing.png"),
+    DOCUMENTS: [
+      {
+        name: "Sharp-LCD-Specification-LS013B7DH03-10-7-17",
+        link: require("../assets/Documents/Sharp-LCD-Specification-LS013B7DH03-10-7-17.pdf"),
+      },
+    ],
+  },
+  {
+    Applications:
+      "Advertising, ATMs, Automotive , Climate Control, Factory Automation, Gaming/Lottery, Handheld Devices, Health/Fitness/Sports, Home Automation, In-flight Entertainment, Industrial Controls, Kiosks, MedicalDevices, Multimedia, Navigation/Transportation, POS Terminals, Test and Measurement, Wearable Technology, White Goods",
+    "DIAGONAL SIZE": "1.26 inch",
+    desc:
+      "This 1.26-inch (diagonal), slightly transmissive display delivers smooth graphics with the flexibility to support rich content. 1 bit of internal memory for data storage inside the panel results in extremely low power consumption (35 µW typical in a static state). This makes the display perfect for small-screen applications where power-saving is a must.",
+    PN: "LS013B7DH05",
+    "LIFE CYCLE": "Production",
+    "CONTRAST RATIO": "20:1",
+    "DISPLAY MODE": "Normally White",
+    "NUMBER OF COLORS": "Monochrome",
+    "OPERATING TEMP": "-20°C to +70°C",
+    "STORAGE TEMP": "-30°C to +80°C",
+    "OUTLINE DIMENSIONS": "24.68 x 30.00  x 0.745 mm",
+    "PIXEL FORMAT": "144 x 168",
+    "RESPONSE TIME": "20 ms",
+    "VIEWING ANGLE 12 O'CLOCK": "60°",
+    "VIEWING ANGLE 6 O'CLOCK": "60°",
+    "VIEWING ANGLE SIDE TO SIDE": "120°",
+    img: require("../assets/Memory in Pixel Drawings/Sharp-LS013B7DH05-Mechanical-Drawing.png"),
+    DOCUMENTS: [
+      {
+        name: "Sharp-LCD-Specification-LS013B7DH05-12-17-19",
+        link: require("../assets/Documents/Sharp-LCD-Specification-LS013B7DH05-12-17-19.pdf"),
+      },
+      // {
+      //   name: "Sharp-LCD-Specification-LS013B7DH05-6-5-15",
+      //   link: require("../assets/Documents/Sharp-LCD-Specification-LS013B7DH05-6-5-15.pdf"),
+      // },
+    ],
+  },
+  {
+    Applications:
+      "Advertising, ATMs, Automotive , Climate Control, Factory Automation, Gaming/Lottery, Handheld Devices, Health/Fitness/Sports, Home Automation, In-flight Entertainment, Industrial Controls, Kiosks, MedicalDevices, Multimedia, Navigation/Transportation, POS Terminals, Test and Measurement, Wearable Technology, White Goods",
+    "DIAGONAL SIZE": "1.39 inch Round",
+    desc:
+      "This round 1.39-inch (diagonal) Memory-in-Pixel LCD renders 64 colors with an 18% NTSC ratio. This combines with a 25:1 contrast ratio to deliver high-quality images–static or moving–in a variety of lighting environments. The module’s reflective mode and ultra-low-power requirements make it perfect for wrist-top applications that require a battery.",
+    PN: "LS014B7DD01",
+    "LIFE CYCLE": "Pre-production",
+    "CONTRAST RATIO": "25:1",
+    "DISPLAY MODE": "Normally Black",
+    "NUMBER OF COLORS": "64",
+    "OPERATING TEMP": "-20°C to +70°C",
+    "STORAGE TEMP": "-30°C to +80°C",
+    "OUTLINE DIMENSIONS": "38.08 x 38.78 x 0.91 mm",
+    "PIXEL FORMAT": "280 x 280",
+    "RESPONSE TIME": "20 ms",
+    "VIEWING ANGLE 12 O'CLOCK": "60°",
+    "VIEWING ANGLE 6 O'CLOCK": "60°",
+    "VIEWING ANGLE SIDE TO SIDE": "120°",
+    img: require("../assets/Memory in Pixel Drawings/Sharp-LS014B7DD01-Mechanical-Drawing.jpg"),
+    DOCUMENTS: [
+      {
+        name: "Sharp-Tech-Literature-LS014B7DD01-12-2-19",
+        link: require("../assets/Documents/Sharp-Tech-Literature-LS014B7DD01-12-2-19.pdf"),
+      },
+    ],
+  },
+  {
+    Applications:
+      "Advertising, ATMs, Automotive , Climate Control, Factory Automation, Gaming/Lottery, Handheld Devices, Health/Fitness/Sports, Home Automation, In-flight Entertainment, Industrial Controls, Kiosks, MedicalDevices, Multimedia, Navigation/Transportation, POS Terminals, Test and Measurement, Wearable Technology, White Goods",
+    "DIAGONAL SIZE": "1.80 inch",
+    desc:
+      "Sharp’s Memory-in-Pixel LCDs deliver high performance with ultra-low power operation. This monochrome 1.80-inch module features a reflectivity of 15.5% and a contrast ratio of 25:1, making it ideal for viewing in bright sunlight.",
+    PN: "LS018B7DH02",
+    "LIFE CYCLE": "Production",
+    "CONTRAST RATIO": "25:1",
+    "DISPLAY MODE": "Normally White",
+    "NUMBER OF COLORS": "Monochrome",
+    "OPERATING TEMP": "-20°C to +70°C",
+    "STORAGE TEMP": "-30°C to +80°C",
+    "OUTLINE DIMENSIONS": "31.00 x 41.46 x 0.745 mm",
+    "PIXEL FORMAT": "230 x 303",
+    "RESPONSE TIME": "20 ms",
+    "VIEWING ANGLE 12 O'CLOCK": "60°",
+    "VIEWING ANGLE 6 O'CLOCK": "60°",
+    "VIEWING ANGLE SIDE TO SIDE": "120°",
+    img: require("../assets/Memory in Pixel Drawings/Sharp-LS018B7DH02-Mechanical-Drawing.jpg"),
+    DOCUMENTS: [
+      // {
+      //   name: "Sharp-LCD-Specification-LS018B7DH02-10-2-17",
+      //   link: require("../assets/Documents/Sharp-LCD-Specification-LS018B7DH02-10-2-17.pdf"),
+      // },
+      {
+        name: "Sharp-LCD-Specification-LS018B7DH02-2-25-19",
+        link: require("../assets/Documents/Sharp-LCD-Specification-LS018B7DH02-2-25-19.pdf"),
+      },
+    ],
+  },
+  {
+    Applications:
+      "Advertising, ATMs, Automotive , Climate Control, Factory Automation, Gaming/Lottery, Handheld Devices, Health/Fitness/Sports, Home Automation, In-flight Entertainment, Industrial Controls, Kiosks, MedicalDevices, Multimedia, Navigation/Transportation, POS Terminals, Test and Measurement, Wearable Technology, White Goods",
+    "DIAGONAL SIZE": "2.13 inch",
+    desc:
+      "This Sharp Memory-in-Pixel LCD delivers static or moving images in 64 colors, making it perfect for a variety of wrist-top and handheld products. The TFT-module’s reflective mode and ultra-low-power requirements make it perfect for wrist-top applications that require a battery.",
+    PN: "LS021B7DD02",
+    "LIFE CYCLE": "Pre-production",
+    "CONTRAST RATIO": "25:1",
+    "DISPLAY MODE": "Normally Black",
+    "NUMBER OF COLORS": "64",
+    "OPERATING TEMP": "-20°C to +70°C",
+    "STORAGE TEMP": "-30°C to +80°C",
+    "OUTLINE DIMENSIONS": "35.4 x 48.6 x 0.91 mm",
+    "PIXEL FORMAT": "240 x 320",
+    "RESPONSE TIME": "20 ms",
+    "VIEWING ANGLE 12 O'CLOCK": "60°",
+    "VIEWING ANGLE 6 O'CLOCK": "60°",
+    "VIEWING ANGLE SIDE TO SIDE": "120°",
+    img: require("../assets/Memory in Pixel Drawings/Sharp-LS021B7DD02-Mechanical-Drawing.jpg"),
+    DOCUMENTS: [
+      {
+        name: "LS021B7DD02_Spec_LCP-0620032_201201",
+        link: require("../assets/Documents/LS021B7DD02_Spec_LCP-0620032_201201.pdf"),
+      },
+    ],
+  },
+  {
+    Applications:
+      "Advertising, ATMs, Automotive , Climate Control, Factory Automation, Gaming/Lottery, Handheld Devices, Health/Fitness/Sports, Home Automation, In-flight Entertainment, Industrial Controls, Kiosks, MedicalDevices, Multimedia, Navigation/Transportation, POS Terminals, Test and Measurement, Wearable Technology, White Goods",
+    "DIAGONAL SIZE": "2.70 inch",
+    note:
+      "Note: The LS027B7DH01A is identical to the LS027B7DH01.  The only difference is the A version has a different inspection criterion for dot defects.  The LS027B7DH01 allows for zero dot defects and the A versions allows for 2.  For additional details please refer to the attached incoming inspection standard.",
+    desc:
+      "This HR-TFT Transflective model is Sharp's first Transflective Memory LCD. Add a backlight with this display for excellent viewing in dark ambient conditions. ",
+    PN: "LS027B7DH01A",
+    "LIFE CYCLE": "Production",
+    "CONTRAST RATIO": "14:1",
+    "DISPLAY MODE": "Normally White",
+    "NUMBER OF COLORS": "Monochrome",
+    "OPERATING TEMP": "-20°C to +70°C",
+    "STORAGE TEMP": "-30°C to +80°C",
+    "OUTLINE DIMENSIONS": "62.8 × 42.82 × 1.64 mm",
+    "PIXEL FORMAT": "400 × 240",
+    "RESPONSE TIME": "20 ms",
+    "VIEWING ANGLE 12 O'CLOCK": "60°",
+    "VIEWING ANGLE 6 O'CLOCK": "60°",
+    "VIEWING ANGLE SIDE TO SIDE": "110°",
+    img: require("../assets/Memory in Pixel Drawings/Sharp-LS027B7DH01A-Mechanical-Drawing.png"),
+    DOCUMENTS: [
+      {
+        name: "LS027B7DH01 Spec (LD-28305A)",
+        link: require("../assets/Documents/LS027B7DH01 Spec (LD-28305A).pdf"),
+      },
+      {
+        name: "Sharp-IIS-LS027B7DH01A-11-27-13",
+        link: require("../assets/Documents/Sharp-IIS-LS027B7DH01A-11-27-13.pdf"),
+      },
+    ],
+  },
+  {
+    Applications:
+      "Advertising, ATMs, Automotive , Climate Control, Factory Automation, Gaming/Lottery, Handheld Devices, Health/Fitness/Sports, Home Automation, In-flight Entertainment, Industrial Controls, Kiosks, MedicalDevices, Multimedia, Navigation/Transportation, POS Terminals, Test and Measurement, Wearable Technology, White Goods",
+    "DIAGONAL SIZE": "3.16 inch",
+    desc:
+      "This Transflective panel features an FPC connector. Add a backlight with this display for excellent viewing in all ambients.",
+    PN: "LS032B7DD02",
+    "LIFE CYCLE": "Production",
+    "CONTRAST RATIO": "35:1",
+    "DISPLAY MODE": "Normally White",
+    "NUMBER OF COLORS": "Monochrome",
+    "OPERATING TEMP": "-20°C to +70°C",
+    "STORAGE TEMP": "-30°C to +80°C",
+    "OUTLINE DIMENSIONS": "47.02 × 76.0 × 0.705 mm",
+    "PIXEL FORMAT": "336 × 536",
+    "RESPONSE TIME": "20 ms",
+    "VIEWING ANGLE 12 O'CLOCK": "60°",
+    "VIEWING ANGLE 6 O'CLOCK": "60°",
+    "VIEWING ANGLE SIDE TO SIDE": "120°",
+    img: require("../assets/Memory in Pixel Drawings/Sharp-LS032B7DD02-Mechanical-Drawing.png"),
+    DOCUMENTS: [
+      {
+        name: "Sharp-LCD-Specification-LS032B7DD02-6-19-17",
+        link: require("../assets/Documents/Sharp-LCD-Specification-LS032B7DD02-6-19-17.pdf"),
+      },
+    ],
+  },
+  {
+    Applications:
+      "Advertising, ATMs, Automotive , Climate Control, Factory Automation, Gaming/Lottery, Handheld Devices, Health/Fitness/Sports, Home Automation, In-flight Entertainment, Industrial Controls, Kiosks, MedicalDevices, Multimedia, Navigation/Transportation, POS Terminals, Test and Measurement, Wearable Technology, White Goods",
+    "DIAGONAL SIZE": "4.40 inch",
+    desc:
+      "This Transflective monochrome panel features QVGA resolution and is ideal for applications such as Industrial Controls, as well as most other battery-operated devices that require an LCD with Landscape orientation. Its dot matrix display delivers smooth graphics and the flexibility to showcase rich custom content.",
+    PN: "LS044Q7DH01",
+    "LIFE CYCLE": "Production",
+    "CONTRAST RATIO": "18:1",
+    "DISPLAY MODE": "Normally White",
+    "NUMBER OF COLORS": "Monochrome",
+    "OPERATING TEMP": "-20°C to +70°C",
+    "STORAGE TEMP": "-30°C to +80°C",
+    "OUTLINE DIMENSIONS": "94.8 × 75.2 × 1.64 mm",
+    "PIXEL FORMAT": "320 × 240",
+    "RESPONSE TIME": "20 ms",
+    "VIEWING ANGLE 12 O'CLOCK": "60°",
+    "VIEWING ANGLE 6 O'CLOCK": "60°",
+    "VIEWING ANGLE SIDE TO SIDE": "120°",
+    img: require("../assets/Memory in Pixel Drawings/Sharp-LS044Q7DH01-Mechanical-Drawing.png"),
+    DOCUMENTS: [
+      {
+        name: "Sharp-LCD-Specification-LS044Q7DH01-10-17-19",
+        link: require("../assets/Documents/Sharp-LCD-Specification-LS044Q7DH01-10-17-19.pdf"),
+      },
+    ],
+  },
+];
