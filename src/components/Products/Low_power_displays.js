@@ -1108,7 +1108,7 @@ export default class LowPowerDisplay extends Component {
                   full-color, high-resolution R-IGZO displays
                 </a>
               </span>
-              These options address every type of content that might be needed
+              . These options address every type of content that might be needed
               in outdoor and mobile applications
             </p>
           </div>
