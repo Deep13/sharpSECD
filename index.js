@@ -12,10 +12,9 @@ const emailIds = {
   "Memory-in-pixel Landing":
     "carrollb@sharpsec.com,karamy@xposureunlimited.com",
   "5-inch R-IGZO Landing": "carrollb@sharpsec.com,karamy@xposureunlimited.com",
+  "Low Power Display": "carrollb@sharpsec.com,karamy@xposureunlimited.com",
   "Reflective LCD Landing Page":
     "carrollb@sharpsec.com,karamy@xposureunlimited.com",
-  // "Memory-in-pixel Landing": "deep.deepak30@gmail.com,reddys@sharpsec.com",
-  // "5-inch R-IGZO Landing": "deep.deepak30@gmail.com,reddys@sharpsec.com",
 };
 app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({ extended: true }));
