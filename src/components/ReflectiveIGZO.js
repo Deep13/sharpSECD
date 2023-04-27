@@ -142,7 +142,7 @@ export default class ReflectiveIGZO extends Component {
                       alignItems: "flex-start",
                     }}
                   >
-                    <h1 style={{ fontSize: "3rem" }}>
+                    <h1 className="mb-2-5" style={{ fontSize: "3rem" }}>
                       <strong>A New Standard for Low-Power Displays</strong>
                     </h1>
                     <p
@@ -400,7 +400,7 @@ export default class ReflectiveIGZO extends Component {
               }}
             >
               <div style={{ width: "100%" }}>
-                <h1 style={{ fontSize: "3rem" }}>
+                <h1 className="mb-2-5" style={{ fontSize: "3rem" }}>
                   <strong>EXCEPTIONALLY HIGH RESOLUTION</strong>
                 </h1>
                 <div className="row" style={{ margin: 0, width: "100%" }}>
@@ -478,7 +478,7 @@ export default class ReflectiveIGZO extends Component {
               <div style={{ width: "100%" }}>
                 {/* <div className="padding-top-50 d-none d-md-block"></div> */}
                 <div className="padding-top-50"></div>
-                <h1 style={{ fontSize: "3rem" }}>
+                <h1 className="mb-2-5" style={{ fontSize: "3rem" }}>
                   <strong>ULTRA-LOW POWER CONSUMPTION</strong>
                 </h1>
                 <div className="row" style={{ margin: 0, width: "100%" }}>
@@ -547,7 +547,7 @@ export default class ReflectiveIGZO extends Component {
               <div style={{ width: "100%" }}>
                 {/* <div className="padding-top-50 d-none d-md-block"></div> */}
                 <div className="padding-top-50"></div>
-                <h1 style={{ fontSize: "3rem" }}>
+                <h1 className="mb-2-5" style={{ fontSize: "3rem" }}>
                   <strong>THIN AND LIGHTWEIGHT</strong>
                 </h1>
                 <div className="row" style={{ margin: 0, width: "100%" }}>
@@ -611,7 +611,10 @@ export default class ReflectiveIGZO extends Component {
             <div>
               <div className="padding-top-50 d-none d-md-block"></div>
               <div className="padding-top-50"></div>
-              <h1 style={{ fontSize: "3rem", textAlign: "center" }}>
+              <h1
+                className="mb-2-5"
+                style={{ fontSize: "3rem", textAlign: "center" }}
+              >
                 <strong>BEST-IN-CLASS R-IGZO FROM SHARP</strong>
               </h1>
             </div>
@@ -781,6 +784,7 @@ export default class ReflectiveIGZO extends Component {
                 <div className="padding-top-50 d-none d-md-block"></div>
                 <div className="padding-top-50"></div>
                 <h1
+                  className="mb-2-5"
                   style={{
                     fontSize: "3rem",
                     textAlign: "center",

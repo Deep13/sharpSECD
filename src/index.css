@@ -677,4 +677,7 @@ circle:hover {
   .pagination {
     justify-content: flex-start !important;
   }
+  .mb-2-5 {
+    font-size: 2.5rem !important;
+  }
 }
