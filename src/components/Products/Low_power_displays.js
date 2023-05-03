@@ -18,8 +18,8 @@ import Form1 from "react-bootstrap/Form";
 import Col from "react-bootstrap/Col";
 import image2 from "../../assets/Memory in Pixel LCD.png";
 import image4 from "../../assets/R-IGZO LCD.png";
-import image5 from "../../assets/Sharp’s 5” R-IGZO Low-Power Performance .png";
-import image6 from "../../assets/Sharp’s 31.5” R-IGZO Low-Power Performance .png";
+import image5 from "../../assets/Sharp 5 R-IGZO Low-Power Performance.png";
+import image6 from "../../assets/Sharp 31.5 R-IGZO Low-Power Performance.png";
 import image7 from "../../assets/Low-Power Performance.png";
 
 export default class LowPowerDisplay extends Component {
