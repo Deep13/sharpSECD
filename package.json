@@ -38,6 +38,7 @@
     "react-responsive": "^8.1.0",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
+    "react-router-sitemap": "^1.2.0",
     "react-scripts": "3.4.1",
     "react-scroll-parallax": "^2.3.3",
     "react-skrollr": "^1.0.4",
@@ -68,5 +69,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.26.0"
   }
 }

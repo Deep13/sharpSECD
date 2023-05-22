@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Helmet } from "react-helmet";
 import { Image } from "react-bootstrap";
 import Screen3 from "../../assets/Low-Power-Displays-Main-Image--F.jpg";
-import Screen4 from "../../assets/Low-Power-Displays-Image-2.jpg";
+import Screen4 from "../../assets/Low-Power-Displays-Image-2.jpeg";
 import logo from "../../assets/sharp_logo.png";
 import temperature from "../../assets/Wide Temperatures Icon.png";
 import thinLightweight from "../../assets/Thin and Lightweight Icon.png";
@@ -214,6 +214,7 @@ export default class LowPowerDisplay extends Component {
                   >
                     {" "}
                     Memory-In-Pixel (MIP) LCDs
+                    {" "}
                   </a>
                 </span>
                 or full-color, high-resolution{" "}
@@ -488,7 +489,7 @@ export default class LowPowerDisplay extends Component {
                       provides high-performance solutions for wearable and
                       portable applications - or any product with a battery.
                       Sizes range from 1.08-inch to 4.4-inch (diagonal) with
-                      static-image operation at power levels as low as 1 O's of
+                      static-image operation at power levels as low as 10's of
                       microamps
                     </p>
                     <div
@@ -1284,7 +1285,7 @@ export default class LowPowerDisplay extends Component {
                   onClose={() => this.setState({ show: false, submit: false })}
                   show={this.state.show}
                   className="toastSuccess"
-                  // transition="Fade"
+                // transition="Fade"
                 >
                   <Toast.Header>
                     <strong className="me-auto">Success</strong>
@@ -1300,7 +1301,7 @@ export default class LowPowerDisplay extends Component {
                   }
                   show={this.state.showError}
                   className="toastError"
-                  // transition="Fade"
+                // transition="Fade"
                 >
                   <Toast.Header>
                     <strong className="me-auto">Error</strong>

@@ -132,13 +132,7 @@ class Headernav extends Component {
                 >
                   Custom Camera Modules
                 </NavDropdown.Item>
-                <NavDropdown.Item
-                  onClick={() =>
-                    this.selectNavigate("/LowPowerDisplays")
-                  }
-                >
-                  Low Power LCD's
-                </NavDropdown.Item>
+
               </NavDropdown>
               <NavDropdown
                 show={this.state.showTech}
@@ -166,6 +160,13 @@ class Headernav extends Component {
                   onClick={() => this.selectNavigate("/igzo-technology")}
                 >
                   IGZO
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  onClick={() =>
+                    this.selectNavigate("/LowPowerDisplays")
+                  }
+                >
+                  Low Power LCD's
                 </NavDropdown.Item>
               </NavDropdown>
               <Nav.Link
