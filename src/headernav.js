@@ -166,7 +166,7 @@ class Headernav extends Component {
                     this.selectNavigate("/LowPowerDisplays")
                   }
                 >
-                  Low Power LCD's
+                  Low Power LCDs
                 </NavDropdown.Item>
               </NavDropdown>
               <Nav.Link
