@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import convdisp1 from "../../assets/Sharp-Technology-R-IGZO-1.jpg";
-import convdisp2 from "../../assets/Sharp-Technology-R-IGZO-2.JPG";
+import convdisp2 from "../../assets/Sharp-Technology-R-IGZO-2.jpeg";
 import convdisp3 from "../../assets/Sharp-Technology-R-IGZO-3.png";
 import Image from "react-bootstrap/Image";
 import AOS from "aos";

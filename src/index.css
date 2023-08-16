@@ -628,6 +628,19 @@ circle:hover {
     width: auto;
   }
 }
+
+@media only screen and (max-width: 400px) {
+  .mb-font-2 {
+    font-size: 2rem !important;
+  }
+  .mb-font-3 {
+    font-size: 3rem !important;
+  }
+  .mb-ptop-60 {
+    padding-top: 60px !important;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .mobile-padding-40 {
     padding: 40px !important;

@@ -17,8 +17,64 @@ import icon5 from "../assets/Icon 5.jpeg";
 import icon6 from "../assets/Icon 6.jpeg";
 import Button from "react-bootstrap/Button";
 import Footer from "../Footer";
-
+import Form1 from "react-bootstrap/Form";
+import Col from "react-bootstrap/Col";
+import axios from "axios";
+import Toast from "react-bootstrap/Toast";
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+import Loader from "react-loader-spinner";
 export default class MemoryInPixel extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: null,
+      mobileCode: "",
+      mobile: null,
+      email: null,
+      message: null,
+      show: false,
+      showLoader: false,
+      submit: false,
+      showError: false,
+    };
+    this.myRef = React.createRef();
+  };
+  onSubmit = (event) => {
+    // this.setState({ selectedAreaCode: val });
+    event.preventDefault();
+    this.setState({
+      name: "",
+      mobileCode: "",
+      mobile: "",
+      email: "",
+      message: "",
+      showLoader: true,
+      show: false,
+      submit: true,
+    });
+    let data = {
+      name: this.state.name,
+      mobile: this.state.mobileCode + "-" + this.state.mobile,
+      email: this.state.email,
+      message: this.state.message,
+      subject: ["Memory-in-pixel Landing"],
+    };
+    // console.log(data);
+    axios
+      .post("/api/form", data)
+      .then((res) => {
+        this.setState({ showLoader: false, show: true });
+      })
+      .catch((error) => {
+        console.log(error);
+        this.setState({
+          showLoader: false,
+          show: false,
+          showError: true,
+          submit: false,
+        });
+      });
+  };
   callFunct = (event, link) => {
     event.preventDefault();
     window.location.href = "#" + link;
@@ -257,6 +313,10 @@ export default class MemoryInPixel extends Component {
                     <p>
                       Sharp's Memory-in-Pixel LCDs were designed for compact
                       handheld, wearable, and other small-screen applications.
+                      Embedded, 1-bit memory in every pixel allows for an
+                      always-on display capable of delivering high-contrast,
+                      high-resolution content. Ultra-low power consumption
+                      means better heat management, too.
                       <a
                         href="/"
                         onClick={(event) =>
@@ -268,12 +328,26 @@ export default class MemoryInPixel extends Component {
                         style={{ color: "#e61d24" }}
                       >
                         {" "}
-                        Embedded, 1-bit memory in every pixel{" "}
+                        See more about Memory LCD technology here.{" "}
                       </a>
-                      allows for an always-on display capable of delivering
-                      high-contrast, high-resolution content, and ultra-low
-                      power consumption.
                     </p>
+                  </div>
+                  <div
+                    style={{
+                      justifyContent: "center",
+                      display: "flex",
+                      width: "100%",
+                    }}
+                  >
+                    <Button
+                      className="redButton"
+                      onClick={() => this.myRef.current.scrollIntoView()}
+                      size="lg"
+                      variant="outline-danger"
+                      style={{ marginRight: 20, width: "100%" }}
+                    >
+                      Contact Sharp
+                    </Button>
                   </div>
                 </div>
               </div>
@@ -335,10 +409,32 @@ export default class MemoryInPixel extends Component {
                       Reflective mode leverages ambient light to eliminate the
                       need for a backlight. Choose from multiple sizes in
                       64-color, plus monochrome. Our lightweight design includes
-                      the display driver circuits integrated into the panel - no
-                      silicon driver ICs required - yielding an exceptionally
-                      thin display module.
+                      the display driver circuits integrated into the panel -{" "}
+                      <strong>
+                        <i>no silicon driver ICs required</i>
+                      </strong>{" "}
+                      - yielding an exceptionally thin display module.
                     </p>
+                  </div>
+                  <div
+                    style={{
+                      justifyContent: "center",
+                      display: "flex",
+                      width: "100%",
+                    }}
+                  >
+                    <Button
+                      className="redButton"
+                      onClick={() => this.myRef.current.scrollIntoView()}
+                      size="lg"
+                      variant="outline-danger"
+                      style={{
+                        marginRight: 20,
+                        width: "100%",
+                      }}
+                    >
+                      Contact Sharp
+                    </Button>
                   </div>
                 </div>
               </div>
@@ -518,8 +614,205 @@ export default class MemoryInPixel extends Component {
               </Button>
             </div>
           </div>
+
         </div>
         <div className="padding-top-30"></div>
+        <div
+          ref={this.myRef}
+          style={{
+            backgroundColor: "rgba(45,47,65,1)",
+            width: "100%",
+            justifyContent: "center",
+            display: "flex",
+          }}
+        >
+          <div
+            className="row"
+            style={{
+              maxWidth: "1140px",
+              display: "flex",
+              alignItems: "flex-start",
+              justifyContent: "center",
+              flexDirection: "row",
+              padding: 20,
+              margin: 0,
+            }}
+          >
+            <div className="col-md-6">
+              <div className="padding-top-50 d-none d-md-block"></div>
+              <div className="padding-top-50"></div>
+              <h1
+                style={{
+                  fontSize: "3rem",
+                  textAlign: "left",
+                  color: "white",
+                }}
+              >
+                <strong>Let’s Talk.</strong>
+              </h1>
+              <p
+                style={{
+                  color: "white",
+                  textAlign: "left",
+                  padding: "20px 0px",
+                }}
+              >
+                Please drop us a line. A member of the Sharp team will get in
+                touch with you ASAP to talk about the Memory LCD as a perfect
+                fit for your next design.
+              </p>
+            </div>
+            <div className="col-md-6">
+              <div className="padding-top-50 d-none d-md-block"></div>
+              <div className="padding-top-50"></div>
+              <Form1 noValidate onSubmit={this.onSubmit}>
+                <Form1.Row style={{ paddingBottom: 10 }}>
+                  <Col>
+                    <Form1.Control
+                      aria-label="Email"
+                      placeholder="Email"
+                      aria-required={true}
+                      required
+                      type="email"
+                      onChange={(event) =>
+                        this.setState({ email: event.currentTarget.value })
+                      }
+                      value={this.state.email}
+                    />
+                    <Form1.Control.Feedback type="invalid">
+                      Please provide a valid email id.
+                    </Form1.Control.Feedback>
+                  </Col>
+                </Form1.Row>
+                <Form1.Row style={{ paddingBottom: 10 }}>
+                  <Col>
+                    <Form1.Control
+                      aria-required={true}
+                      aria-label="Name"
+                      required
+                      placeholder="Name"
+                      onChange={(event) =>
+                        this.setState({ name: event.currentTarget.value })
+                      }
+                      value={this.state.name}
+                    />
+                    <Form1.Control.Feedback type="invalid">
+                      Name field cannot be empty
+                    </Form1.Control.Feedback>
+                  </Col>
+                </Form1.Row>
+
+                <Form1.Row style={{ paddingBottom: 10 }}>
+                  <Col>
+                    <Form1.Control
+                      aria-label="Country Code"
+                      placeholder="+1"
+                      aria-required={true}
+                      required
+                      onChange={(event) =>
+                        this.setState({
+                          mobileCode: event.currentTarget.value,
+                        })
+                      }
+                      value={this.state.mobileCode}
+                    />
+                    <Form1.Control.Feedback type="invalid">
+                      Country code field cannot be empty
+                    </Form1.Control.Feedback>
+                  </Col>
+                  <Col xs={10}>
+                    <Form1.Control
+                      aria-label="Contact Number"
+                      placeholder="Contact number"
+                      aria-required={true}
+                      required
+                      onChange={(event) =>
+                        this.setState({ mobile: event.currentTarget.value })
+                      }
+                      value={this.state.mobile}
+                      maxLength={10}
+                    />
+                    <Form1.Control.Feedback type="invalid">
+                      Phone number field cannot be empty
+                    </Form1.Control.Feedback>
+                  </Col>
+                </Form1.Row>
+                <Form1.Row style={{ paddingBottom: 10 }}>
+                  <Col>
+                    <Form1.Control
+                      aria-label="Comment"
+                      aria-required={true}
+                      required
+                      as="textarea"
+                      rows="3"
+                      placeholder="Comments(optional)"
+                      onChange={(event) =>
+                        this.setState({ message: event.currentTarget.value })
+                      }
+                      value={this.state.message}
+                    />
+                    <Form1.Control.Feedback type="invalid">
+                      Message field cannot be empty
+                    </Form1.Control.Feedback>
+                  </Col>
+                </Form1.Row>
+                <Button
+                  aria-label="Submit Form Button"
+                  className="redButton"
+                  style={{ marginTop: 10, width: "100%" }}
+                  variant="primary"
+                  type="submit"
+                  disabled={this.state.submit}
+                >
+                  Submit
+                </Button>
+                {/* <div style={{ paddingBottom: 50 }}></div> */}
+                <Loader
+                  type="TailSpin"
+                  color="#e26565"
+                  height={50}
+                  width={50}
+                  timeout={0} //3 secs
+                  visible={this.state.showLoader}
+                  style={{ margin: "10px" }}
+                />
+                <Toast
+                  onClose={() =>
+                    this.setState({ show: false, submit: false })
+                  }
+                  show={this.state.show}
+                  className="toastSuccess"
+                // transition="Fade"
+                >
+                  <Toast.Header>
+                    <strong className="me-auto">Success</strong>
+                  </Toast.Header>
+                  <Toast.Body>
+                    Thank You! <br /> Your query has been successfully
+                    submitted.
+                  </Toast.Body>
+                </Toast>
+                <Toast
+                  onClose={() =>
+                    this.setState({ showError: false, submit: false })
+                  }
+                  show={this.state.showError}
+                  className="toastError"
+                // transition="Fade"
+                >
+                  <Toast.Header>
+                    <strong className="me-auto">Error</strong>
+                  </Toast.Header>
+                  <Toast.Body>
+                    We were unable to recieve your query. Please try again.
+                  </Toast.Body>
+                </Toast>
+                <div style={{ paddingBottom: 50 }}></div>
+                <div style={{ paddingBottom: 50 }}></div>
+              </Form1>
+            </div>
+          </div>
+        </div>
 
         <Footer />
       </div>

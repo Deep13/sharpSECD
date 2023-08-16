@@ -23,6 +23,10 @@ import Toast from "react-bootstrap/Toast";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import Loader from "react-loader-spinner";
 export default class MemoryInPixelLanding extends Component {
+  componentDidMount() {
+    window.location.href =
+      "#/MemoryInPixel";
+  }
   constructor(props) {
     super(props);
     this.state = {
@@ -111,14 +115,16 @@ export default class MemoryInPixelLanding extends Component {
               alt="SHARP Logo"
               src={logo}
               style={{ width: "35%", paddingTop: "50px", maxWidth: 300 }}
+
             />
-            <div style={{ paddingTop: 150 }}>
+            <div style={{ paddingTop: 150 }} className="mb-ptop-60">
               <h1
                 style={{
                   color: "white",
                   fontSize: "5rem",
                   textAlign: "center",
                 }}
+                className='mb-font-3'
               >
                 Memory in Pixel LCDs
               </h1>
@@ -128,6 +134,7 @@ export default class MemoryInPixelLanding extends Component {
                   fontSize: "2.5rem",
                   textAlign: "center",
                 }}
+                className='mb-font-2'
               >
                 <strong>
                   High Ambient-Light Performance. Long Battery Life.
@@ -187,7 +194,7 @@ export default class MemoryInPixelLanding extends Component {
                     alignItems: "flex-start",
                   }}
                 >
-                  <h1 style={{ fontSize: "3rem" }}>
+                  <h1 style={{ fontSize: "3rem" }} className='mb-font-2'>
                     <strong>INTRODUCING SHARP MEMORY IN PIXEL LCDs</strong>
                   </h1>
                   <div className="row" style={{ margin: 0, width: "100%" }}>
@@ -257,7 +264,7 @@ export default class MemoryInPixelLanding extends Component {
                 margin: 0,
               }}
             >
-              <h1 style={{ fontSize: "3rem" }}>
+              <h1 style={{ fontSize: "3rem" }} className='mb-font-2'>
                 <strong>
                   THE PERFECT SOLUTION FOR SMALL-SCREEN APPLICATIONS THAT
                   REQUIRE A BATTERY.
@@ -369,7 +376,7 @@ export default class MemoryInPixelLanding extends Component {
                 <div className="padding-top-50 d-none d-md-block"></div>
                 <div className="padding-top-50 d-none d-md-block"></div>
                 <div className="padding-top-50"></div>
-                <h1 style={{ fontSize: "3rem" }}>
+                <h1 style={{ fontSize: "3rem" }} className='mb-font-2'>
                   <strong>PERFORMANCE IN HIGH AMBIENT LIGHT</strong>
                 </h1>
                 <div className="row" style={{ margin: 0, width: "100%" }}>
@@ -746,7 +753,7 @@ export default class MemoryInPixelLanding extends Component {
                     }
                     show={this.state.show}
                     className="toastSuccess"
-                    // transition="Fade"
+                  // transition="Fade"
                   >
                     <Toast.Header>
                       <strong className="me-auto">Success</strong>
@@ -762,7 +769,7 @@ export default class MemoryInPixelLanding extends Component {
                     }
                     show={this.state.showError}
                     className="toastError"
-                    // transition="Fade"
+                  // transition="Fade"
                   >
                     <Toast.Header>
                       <strong className="me-auto">Error</strong>

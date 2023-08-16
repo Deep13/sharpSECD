@@ -203,7 +203,7 @@ export const products = [
     desc:
       "This Sharp Memory-in-Pixel LCD delivers static or moving images in 64 colors, making it perfect for a variety of wrist-top and handheld products. The TFT-module’s reflective mode and ultra-low-power requirements make it perfect for wrist-top applications that require a battery.",
     PN: "LS021B7DD02",
-    "LIFE CYCLE": "Pre-production",
+    "LIFE CYCLE": "Production",
     "CONTRAST RATIO": "25:1",
     "DISPLAY MODE": "Normally Black",
     "NUMBER OF COLORS": "64",

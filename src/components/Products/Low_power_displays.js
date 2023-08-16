@@ -241,7 +241,6 @@ export default class LowPowerDisplay extends Component {
                   size="lg"
                   onClick={() => this.myRef.current.scrollIntoView()}
                   variant="outline-danger"
-                  href="#/reflective-igzo-displays-product"
                   style={{ marginTop: 20, marginBottom: 50 }}
                 >
                   Contact Sharp
@@ -1089,7 +1088,7 @@ export default class LowPowerDisplay extends Component {
                 fontSize: "1.6rem",
               }}
             >
-              Options range from high-contrast mnonochrome and
+              Options range from high-contrast monochrome and
               <span>
                 <a
                   style={{ color: "black", textDecoration: "underline" }}
@@ -1110,7 +1109,7 @@ export default class LowPowerDisplay extends Component {
                 </a>
               </span>
               . These options address every type of content that might be needed
-              in outdoor and mobile applications
+              in outdoor and mobile applications.
             </p>
           </div>
           <div className="padding-top-50"></div>
