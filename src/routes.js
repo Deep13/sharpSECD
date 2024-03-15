@@ -17,6 +17,10 @@ import News from "./components/News";
 import RIGZOLinkedIn from "./components/RIGZOLinkedIn";
 import MemoryInPixel from "./components/MemoryInPixel";
 import ReflectiveIGZO from "./components/ReflectiveIGZO";
+import ODonnellMIP from "./components/ODonnellMIP";
+import MIPTCS from "./components/MIPTCS";
+import MIPITM from "./components/MIPITM";
+import ControlSales from "./components/ControlSales";
 import RIGZOGoogle from "./components/RIGZOGoogle";
 import MemoryInPixelLanding from "./components/MemoryInPixelLanding";
 import ReflectiveLCDLanding from "./components/ReflectiveLCDLanding";
@@ -55,7 +59,7 @@ function Routes() {
           path="/custom-camera-modules-product"
           component={Custom_camera}
         />
-        <Route path="/igzo-8k-displays-product" component={Product4k8k} />
+        {/* <Route path="/igzo-8k-displays-product" component={Product4k8k} /> */}
         <Route
           path="/reflective-igzo-displays-product"
           component={ReflectiveIGZOProduct}
@@ -73,6 +77,10 @@ function Routes() {
         <Route path="/LowPowerDisplays" component={Low_power_displays} />
         <Route path="/ReflectiveIGZO" component={ReflectiveIGZO} />
         <Route path="/MemoryInPixelLanding" component={MemoryInPixelLanding} />
+        <Route path="/MemoryInPixel-TCS" component={MIPTCS} />
+        {/* <Route path="/MemoryInPixel-IntelliMark" component={MIPITM} /> */}
+        <Route path="/MemoryInPixel-ODonnell" component={ODonnellMIP} />
+        <Route path="/MemoryInPixel-Control-Sales" component={ControlSales} />
         <Route path="/*" component={NotFound} />
       </Switch>
     </HashRouter>

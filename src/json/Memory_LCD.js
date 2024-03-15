@@ -1,6 +1,33 @@
 export const products = [
   {
     Applications:
+      "Industrial security/keypad; HVAC UI control; Hand-held industrial metering and detection; Small marine peripheral devices; Sport computers: Golf, hiking, boating, biking; Medical: Portable and wearables; Consumer wearables; Remote, battery-powered device; IOT devices w/user interface; Outdoor equipment",
+    "DIAGONAL SIZE": "2.16 inch",
+    desc:
+      "This high-contrast, high-reflectivity 2.16-inch Memory in Pixel display provides excellent viewability in high-ambient environments and can be either front-lit or back-lit. It features a 24Hz refresh for smooth animations and transitions, and its low power operation requires just 80uW for a static image hold and 100uW @ 1Hz update.",
+    PN: "LS022B7DH03",
+    "LIFE CYCLE": "Production",
+    "CONTRAST RATIO": "18:1",
+    "DISPLAY MODE": "Normally White",
+    "NUMBER OF COLORS": "Monochrome",
+    "OPERATING TEMP": "-15° to 70°C",
+    "STORAGE TEMP": "-30°C to +80°C",
+    "OUTLINE DIMENSIONS": "35.48 x 48.54 x 0.745 mm",
+    "PIXEL FORMAT": "240 x 320",
+    "RESPONSE TIME": "20 ms",
+    "VIEWING ANGLE 12 O'CLOCK": "60°",
+    "VIEWING ANGLE 6 O'CLOCK": "60°",
+    "VIEWING ANGLE SIDE TO SIDE": "120°",
+    DOCUMENTS: [
+      {
+        name: "Sharp-LCD-Specification-LS022B7DH03_SPEC_LD2023X09",
+        link: require("../assets/Documents/LS022B7DH03_SPEC_LD2023X09_20231017.pdf"),
+      },
+    ],
+    img: require("../assets/Memory in Pixel Drawings/Sharp-LS022B7DH03.png"),
+  },
+  {
+    Applications:
       "Advertising, ATMs, Automotive , Climate Control, Factory Automation, Gaming/Lottery, Handheld Devices, Health/Fitness/Sports, Home Automation, In-flight Entertainment, Industrial Controls, Kiosks, MedicalDevices, Multimedia, Navigation/Transportation, POS Terminals, Test and Measurement, Wearable Technology, White Goods",
     "DIAGONAL SIZE": "1.08 inch",
     desc:
@@ -132,10 +159,6 @@ export const products = [
         name: "Sharp-LCD-Specification-LS013B7DH05-12-17-19",
         link: require("../assets/Documents/Sharp-LCD-Specification-LS013B7DH05-12-17-19.pdf"),
       },
-      // {
-      //   name: "Sharp-LCD-Specification-LS013B7DH05-6-5-15",
-      //   link: require("../assets/Documents/Sharp-LCD-Specification-LS013B7DH05-6-5-15.pdf"),
-      // },
     ],
   },
   {
@@ -160,8 +183,8 @@ export const products = [
     img: require("../assets/Memory in Pixel Drawings/Sharp-LS014B7DD01-Mechanical-Drawing.jpg"),
     DOCUMENTS: [
       {
-        name: "Sharp-Tech-Literature-LS014B7DD01-12-2-19",
-        link: require("../assets/Documents/Sharp-Tech-Literature-LS014B7DD01-12-2-19.pdf"),
+        name: "LS014B7DD01 Spec.",
+        link: require("../assets/Documents/LS014B7DD01_Spec_LCP-0620031B.pdf"),
       },
     ],
   },

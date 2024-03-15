@@ -13,6 +13,10 @@ const emailIds = {
     "carrollb@sharpsec.com,karamy@xposureunlimited.com",
   "5-inch R-IGZO Landing": "carrollb@sharpsec.com,karamy@xposureunlimited.com",
   "Low Power Display": "carrollb@sharpsec.com,karamy@xposureunlimited.com",
+  "O'Donnell": "carrollb@sharpsec.com,karamy@xposureunlimited.com,lberndt@odonnell.com",
+  "TCS": "carrollb@sharpsec.com,karamy@xposureunlimited.com,ashley@tc-sales.com",
+  "IntelliMark": "carrollb@sharpsec.com,karamy@xposureunlimited.com,secdintellimarkwebcontact@sharpsec.com",
+  "Control Sales": "carrollb@sharpsec.com,karamy@xposureunlimited.com,lisay@controlsales.com",
   "Reflective LCD Landing Page":
     "carrollb@sharpsec.com,karamy@xposureunlimited.com",
 };

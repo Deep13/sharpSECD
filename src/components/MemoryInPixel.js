@@ -224,12 +224,12 @@ export default class MemoryInPixel extends Component {
                   >
                     <Button
                       className="redButton"
-                      href="#/contact"
+                      onClick={() => this.myRef.current.scrollIntoView()}
                       size="lg"
                       variant="outline-danger"
                       style={{ marginRight: 20 }}
                     >
-                      Find a Rep
+                      Talk to an Expert
                     </Button>
                     <Button
                       className="redButton"
@@ -246,14 +246,13 @@ export default class MemoryInPixel extends Component {
           </div>
           <div
             style={{
-              backgroundImage: `url(${bg1})`,
+              // backgroundImage: `url(${bg1})`,
               width: "100%",
               justifyContent: "center",
               display: "flex",
               backgroundSize: "cover",
               backgroundPosition: "center center",
               backgroundRepeat: "no-repeat",
-              minHeight: "100vh",
             }}
           >
             <div
@@ -261,8 +260,8 @@ export default class MemoryInPixel extends Component {
               style={{
                 maxWidth: "1140px",
                 display: "flex",
-                paddingTop: "100px",
-                paddingBottom: "100px",
+                paddingTop: "30px",
+                paddingBottom: "30px",
                 alignItems: "center",
                 paddingRight: 20,
                 paddingLeft: 20,
@@ -355,7 +354,7 @@ export default class MemoryInPixel extends Component {
           </div>
           <div
             style={{
-              backgroundImage: `url(${bg2})`,
+              // backgroundImage: `url(${bg2})`,
               width: "100%",
               justifyContent: "center",
               display: "flex",
@@ -373,10 +372,10 @@ export default class MemoryInPixel extends Component {
             >
               <div>
                 <div className="padding-top-50 d-none d-md-block"></div>
+                {/* <div className="padding-top-50 d-none d-md-block"></div>
                 <div className="padding-top-50 d-none d-md-block"></div>
                 <div className="padding-top-50 d-none d-md-block"></div>
-                <div className="padding-top-50 d-none d-md-block"></div>
-                <div className="padding-top-50 d-none d-md-block"></div>
+                <div className="padding-top-50 d-none d-md-block"></div> */}
                 <div className="padding-top-50"></div>
                 <h1 style={{ fontSize: "3rem" }}>
                   <strong>PERFORMANCE IN HIGH AMBIENT LIGHT</strong>
@@ -597,12 +596,12 @@ export default class MemoryInPixel extends Component {
             >
               <Button
                 className="redButton"
-                href="#/contact"
+                onClick={() => this.myRef.current.scrollIntoView()}
                 size="lg"
                 variant="outline-danger"
                 style={{ marginRight: 20 }}
               >
-                Find a Rep
+                Talk to an Expert
               </Button>
               <Button
                 className="redButton"
@@ -665,7 +664,7 @@ export default class MemoryInPixel extends Component {
             <div className="col-md-6">
               <div className="padding-top-50 d-none d-md-block"></div>
               <div className="padding-top-50"></div>
-              <Form1 noValidate onSubmit={this.onSubmit}>
+              <Form1 noValidate className="MIPContactForm" onSubmit={this.onSubmit}>
                 <Form1.Row style={{ paddingBottom: 10 }}>
                   <Col>
                     <Form1.Control

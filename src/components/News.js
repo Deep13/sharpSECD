@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import convdisp from "../assets/Sharp-Press-Landing-Page-Hero-2.jpg";
 import convdisp1 from "../assets/news-1.jpeg";
 import news2 from "../assets/news-9-aug.png";
+import news3 from "../assets/news3.png";
 import Image from "react-bootstrap/Image";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -89,6 +90,45 @@ class MemoryLCD extends Component {
           <div className="row container-row-85">
             <div className="col-md-6" style={{ padding: 0 }}>
               <h2 style={{ textDecoration: "underline" }}>
+                Sharp Memory in Pixel Display Combines Superb Visual Detail with Low-Power Operation
+              </h2>
+              <p>March 12, 2024</p>
+              <p>
+                Today, Sharp announced its new high-contrast, highly-reflective 2.16-inch (diagonal) monochrome Memory in Pixel display. The display (part number LS022B7DH03) provides excellent viewability in high-ambient environments and can be either front-lit or back-lit for dim/dark environments.
+                <br />
+                <a
+                  className="redLink"
+                  href={require("../assets/Documents/news-3.pdf")}
+                  // onClick={() => openDoc(key)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: "#e61d24" }}
+                >
+                  Read More..
+                </a>
+              </p>
+            </div>
+            <div
+              className="col-md-6"
+              style={{ justifyContent: "center", display: "flex" }}
+            >
+              <Image
+                role="presentation"
+                alt="Memory LCD Banner"
+                src={news3}
+                style={{ maxHeight: 400 }}
+                fluid
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          className="padding-top-50 padding-bottom-30"
+          style={{ backgroundColor: "#e4e4e4" }}
+        >
+          <div className="row container-row-85">
+            <div className="col-md-6" style={{ padding: 0 }}>
+              <h2 style={{ textDecoration: "underline" }}>
                 Sharp’s New 64-color Memory LCD is Perfect for Wearable Product
                 Designs
               </h2>
@@ -133,14 +173,14 @@ class MemoryLCD extends Component {
           <div className="row container-row-85">
             <div className="col-md-6" style={{ padding: 0 }}>
               <h2 style={{ textDecoration: "underline" }}>
-              Sharp’s New R-IGZO 5.0-inch Display Now Available with Backlight Option
+                Sharp’s New R-IGZO 5.0-inch Display Now Available with Backlight Option
               </h2>
               <p>August 9, 2022</p>
               <p>
-              Today, Sharp Electronics Corporation Device Division (SECD) announced
-that its new Reflective IGZO (R-IGZO) 5.0-inch Class (diagonal) display for handheld applications is now available in a
-backlit option. This update provides added flexibility to achieve superb sunlight viewability with incredibly low power
-consumption. Samples are available now, with mass production starting in Q1 of 2023.
+                Today, Sharp Electronics Corporation Device Division (SECD) announced
+                that its new Reflective IGZO (R-IGZO) 5.0-inch Class (diagonal) display for handheld applications is now available in a
+                backlit option. This update provides added flexibility to achieve superb sunlight viewability with incredibly low power
+                consumption. Samples are available now, with mass production starting in Q1 of 2023.
                 <br />
                 <a
                   className="redLink"
@@ -168,6 +208,7 @@ consumption. Samples are available now, with mass production starting in Q1 of 2
             </div>
           </div>
         </div>
+
         <Footer />
       </div>
     );

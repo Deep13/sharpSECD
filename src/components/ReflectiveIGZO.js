@@ -808,7 +808,7 @@ export default class ReflectiveIGZO extends Component {
                 </p>
               </div>
               <div style={{ width: "70%" }}>
-                <Form1 noValidate onSubmit={this.onSubmit}>
+                <Form1 noValidate className="RIContactForm" onSubmit={this.onSubmit}>
                   <Form1.Row style={{ paddingBottom: 10 }}>
                     <Col>
                       <Form1.Control
@@ -940,7 +940,7 @@ export default class ReflectiveIGZO extends Component {
                     }
                     show={this.state.show}
                     className="toastSuccess"
-                    // transition="Fade"
+                  // transition="Fade"
                   >
                     <Toast.Header>
                       <strong className="me-auto">Success</strong>
@@ -956,7 +956,7 @@ export default class ReflectiveIGZO extends Component {
                     }
                     show={this.state.showError}
                     className="toastError"
-                    // transition="Fade"
+                  // transition="Fade"
                   >
                     <Toast.Header>
                       <strong className="me-auto">Error</strong>

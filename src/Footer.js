@@ -72,16 +72,6 @@ class Footer extends Component {
             href="/"
             style={{ color: "white" }}
             onClick={(event) =>
-              this.callFunct(event, "/igzo-8k-displays-product")
-            }
-          >
-            IGZO 8K Displays
-          </a>
-          <br />
-          <a
-            href="/"
-            style={{ color: "white" }}
-            onClick={(event) =>
               this.callFunct(event, "/industrial-lcds-product")
             }
           >

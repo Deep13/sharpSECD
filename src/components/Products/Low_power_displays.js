@@ -21,6 +21,8 @@ import image4 from "../../assets/R-IGZO LCD.png";
 import image5 from "../../assets/Sharp 5 R-IGZO Low-Power Performance.png";
 import image6 from "../../assets/Sharp 31.5 R-IGZO Low-Power Performance.png";
 import image7 from "../../assets/Low-Power Performance.png";
+import image8 from "../../assets/Sharp_thumb.png";
+import doc from "../../assets/Documents/Sharp Low-Power Displays White Paper.pdf";
 
 export default class LowPowerDisplay extends Component {
   constructor(props) {
@@ -1113,8 +1115,44 @@ export default class LowPowerDisplay extends Component {
             </p>
           </div>
           <div className="padding-top-50"></div>
-          {/* <div className="padding-top-50"></div> */}
+          <div
+            style={{
+              paddingInline: "10%",
+              display: 'flex', flexDirection: 'row',
+              width: "100%"
+            }}>
+            <img
+              style={{ width: "100%", maxWidth: 150 }}
+              src={image8}
+              role="presentation"
+              alt="Document Thumbnail"
+            />
+            <div style={{ display: 'flex', flexDirection: 'column', marginLeft: 30, alignItems: 'center' }}>
+              <h2
+                style={{
+                  fontSize: "1.8rem",
+                }}
+              >
+                Get the Low Power LCD Whitepaper
+              </h2>
+              <Button
+                className="redButton"
+                size="lg"
+                variant="outline-danger"
+                href={doc}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ marginTop: 20, marginBottom: 50, maxWidth: 200 }}
+              >
+                Download Now
+              </Button>
+            </div>
+
+          </div>
+          <div className="padding-top-50"></div>
         </div>
+
+
         {/* <div className="padding-top-30"></div> */}
 
         <div
@@ -1154,7 +1192,7 @@ export default class LowPowerDisplay extends Component {
               </h1>
             </div>
             <div style={{ width: "70%", marginTop: "5rem" }}>
-              <Form1 noValidate onSubmit={this.onSubmit}>
+              <Form1 noValidate className="LPDContactForm" onSubmit={this.onSubmit}>
                 <Form1.Row style={{ paddingBottom: 10 }}>
                   <Col>
                     <Form1.Control
