@@ -914,7 +914,7 @@ export default class LowPowerDisplay extends Component {
                     </p>
                     <p>
                       With a typical high-bright (1000 nit) transmissive no
-                      backlight, the R-IGZO display is 11SmW at 60Hz. display,
+                      backlight, the R-IGZO display is 115mW at 60Hz. display,
                       the total power is 3.2W at 60Hz refresh. With which is
                       just 3.6% of the power requirement.
                     </p>
@@ -940,10 +940,9 @@ export default class LowPowerDisplay extends Component {
                       marginTop: 20,
                     }}
                   >
-                    {`Back//ght pomr is 0.33 w at 50 nits. Only needed at night. \n
-                    •Powerco11sumprioncomparison(5"HD720basis) \n
-                    •Refleceive IGZO is 3.6% ofthe power compared !O a high-brighr uonsmissive
-                    display.`}
+                    Backlight power is 0.33 W at 50 nits. Only needed at night.<br />
+                    • Power consumption comparison (5" HD720 basis)<br />
+                    • Reflective IGZO is 3.6% of the power compared to a high-bright transmissive display.
                   </p>
                 </div>
               </div>

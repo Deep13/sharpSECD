@@ -519,6 +519,16 @@ span:focus {
   border-color: rgb(237, 12, 12) !important;
   background-color: rgb(237, 12, 12) !important;
 }
+.blueButton {
+  border-color: #0169ff !important;
+  background-color: #0169ff !important;
+  color: white !important;
+}
+
+.blueButton:hover {
+  border-color: #4185e6 !important;
+  background-color: #4185e6 !important;
+}
 
 .greyButton {
   border-color: #6a93b1 !important;
@@ -622,10 +632,145 @@ circle:hover {
 ::-webkit-scrollbar-thumb:hover {
   background: #b30000;
 }
+
+/*eposter css */
+.show-on-mobile {
+  display: none;
+}
+.signage-section {
+  padding: 100px 0px;
+}
+.signage-section h1 {
+  font-size: 5.5rem;
+}
+.meet-section {
+  padding: 100px 0px;
+}
+.meet-section h2 {
+  font-size: 3rem;
+}
+.meet-section p {
+  font-size: 2.4rem;
+  line-height: 65px;
+}
+.biker-section {
+  background-image: url("./assets/eposters/Mountain_Biker.jpg");
+  padding: 100px 50px;
+}
+.biker-section h2 {
+  color: white;
+  font-size: 3rem;
+}
+.biker-section ul {
+  color: white;
+  font-size: 2.4rem;
+  margin: 50px 0px;
+  line-height: 65px;
+}
+.green-section h2 {
+  font-size: 3rem;
+}
+.green-section {
+  padding: 100px 0px;
+}
+.green-section div {
+  padding: 0px 50px;
+}
+.green-section p {
+  font-size: 1.5rem;
+}
+.key-section {
+  padding: 80px 50px;
+}
+.key-section h2 {
+  font-size: 3rem;
+}
+
+.key-section ul {
+  font-size: 2rem;
+  line-height: 65px;
+  margin: 50px 0px;
+}
+
+.key-section p {
+  font-size: 1.8rem;
+}
+/*eposter css*/
+
 @media only screen and (max-width: 960px) {
+  .mob-width-300 {
+    max-width: 200px;
+    margin: 20px 0px;
+  }
   .left-fixed {
     position: initial;
     width: auto;
+  }
+  .hide-on-mobile {
+    display: none;
+  }
+  .show-on-mobile {
+    display: block !important;
+  }
+  .signage-section {
+    padding: 0px 30px 20px 30px !important;
+  }
+  .signage-section h1 {
+    font-size: 4rem !important;
+    margin-top: 30px;
+  }
+  .meet-section {
+    padding: 50px 60px !important;
+  }
+  .meet-section h2 {
+    font-size: 2.5rem !important;
+  }
+  .meet-section p {
+    font-size: 2rem !important;
+    line-height: 50px !important;
+  }
+  .biker-section {
+    background-image: none !important;
+    padding: 30px 0px 30px 0px !important;
+  }
+  .biker-section h2 {
+    color: black;
+    padding: 40px 50px 0px 50px;
+    font-size: 2.5rem;
+  }
+  .biker-section ul {
+    color: black;
+    padding: 0px 80px 40px 100px;
+    font-size: 2rem;
+    margin: 30px 0px;
+    line-height: 50px;
+  }
+  .green-section h2 {
+    font-size: 2rem;
+  }
+  .green-section {
+    padding: 100px 50px;
+  }
+  .green-section div {
+    padding: 0px 0px;
+  }
+  h3 {
+    font-size: 1.5rem !important;
+  }
+  .green-section p {
+    font-size: 1rem;
+  }
+  .key-section h2 {
+    font-size: 2.5rem;
+  }
+  .key-section ul {
+    font-size: 1.5rem;
+    line-height: 50px;
+    margin: 30px 0px;
+    padding-left: 15px;
+  }
+  .key-section p {
+    font-size: 1rem;
   }
 }
 

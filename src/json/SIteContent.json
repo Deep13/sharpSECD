@@ -243,6 +243,12 @@
     {
       "type": "Product",
       "link": "/memory-in-pixel-lcds-product",
+      "header": "LS022B7DH03",
+      "content": "LS022B7DH03 This high-contrast, high-reflectivity 2.16-inch Memory in Pixel display provides excellent viewability in high-ambient environments and can be either front-lit or back-lit. It features a 24Hz refresh for smooth animations and transitions, and its low power operation requires just 80uW for a static image hold and 100uW @ 1Hz update."
+    },
+    {
+      "type": "Product",
+      "link": "/memory-in-pixel-lcds-product",
       "header": "LS027B7DH01A",
       "content": "LS027B7DH01A This HR-TFT Transflective model is Sharp's first Transflective Memory LCD. Add a backlight with this display for excellent viewing in dark ambient conditions."
     },

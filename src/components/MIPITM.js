@@ -7,7 +7,7 @@ import image1 from "../assets/Sharp-Memory-In-Pixel_700x1082.jpg";
 import arrow from "../assets/arrow.png";
 import bg1 from "../assets/bg1.jpeg";
 import bg2 from "../assets/bg2.jpeg";
-import TCSLogo from "../assets/TCS Logo.png";
+import IntelliMark from "../assets/IM Logo Blue.png";
 import mobile from "../assets/mobile.jpeg";
 import SHARP_Logo_red from "../assets/SHARP_Logo_red.png";
 import image2 from "../assets/Bike_966x644.jpg";
@@ -86,7 +86,7 @@ export default class MIPITM extends Component {
         return (
             <div>
                 <Helmet>
-                    <title>Memory-in-Pixel-TCS - Sharp</title>
+                    <title>Memory-in-Pixel-IntelliMark - Sharp</title>
                     <meta name="description" content="Sharp-Memory-in-Pixel" />
                 </Helmet>
 
@@ -165,7 +165,7 @@ export default class MIPITM extends Component {
                         }}
                     >
                         <strong>
-                            Creating top product solutions with Tech Coast Sales
+                            Creating top product solutions with IntelliMark
                         </strong>
                     </p>
                 </div>
@@ -691,9 +691,9 @@ export default class MIPITM extends Component {
 
                                                 <img
                                                     style={{ width: "80%" }}
-                                                    src={TCSLogo}
+                                                    src={IntelliMark}
                                                     role="presentation"
-                                                    alt="TCSLogo"
+                                                    alt="IntelliMark"
                                                 />
                                             </div>
                                             <p style={{ textAlign: 'center' }}></p>

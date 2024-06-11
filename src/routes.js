@@ -24,6 +24,8 @@ import ControlSales from "./components/ControlSales";
 import RIGZOGoogle from "./components/RIGZOGoogle";
 import MemoryInPixelLanding from "./components/MemoryInPixelLanding";
 import ReflectiveLCDLanding from "./components/ReflectiveLCDLanding";
+import Eposters from "./components/Eposters";
+import LowPowerODonnel from "./components/LowPowerODonnel";
 import { Cookies } from "react-cookie-consent";
 import ReactGA from "react-ga";
 import LinkedInTag from "react-linkedin-insight";
@@ -78,7 +80,9 @@ function Routes() {
         <Route path="/ReflectiveIGZO" component={ReflectiveIGZO} />
         <Route path="/MemoryInPixelLanding" component={MemoryInPixelLanding} />
         <Route path="/MemoryInPixel-TCS" component={MIPTCS} />
-        {/* <Route path="/MemoryInPixel-IntelliMark" component={MIPITM} /> */}
+        <Route path="/MemoryInPixel-IntelliMark" component={MIPITM} />
+        <Route path="/Low-Power-ODonnell" component={LowPowerODonnel} />
+        <Route path="/eposters" component={Eposters} />
         <Route path="/MemoryInPixel-ODonnell" component={ODonnellMIP} />
         <Route path="/MemoryInPixel-Control-Sales" component={ControlSales} />
         <Route path="/*" component={NotFound} />
