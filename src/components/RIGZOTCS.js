@@ -61,7 +61,7 @@ export default class RIGZOTCS extends Component {
       message: this.state.demo
         ? "Yes, I’d like to request a demo. " + this.state.message
         : this.state.message,
-      subject: ["Control Sales R-IGZO"],
+      subject: ["Control Sales R-IGZO TCS"],
     };
     axios
       .post("/api/form", data)
