@@ -269,7 +269,7 @@ export default class LowPowerODonnel extends Component {
                                     variant="outline-danger"
                                     style={{ marginTop: 20, marginBottom: 50 }}
                                 >
-                                    Contact Sharp
+                                    Contact Us
                                 </Button>
                             </div>
                             {/* <div className="padding-top-50"></div> */}

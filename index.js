@@ -19,6 +19,7 @@ const emailIds = {
   "Control Sales": "carrollb@sharpsec.com,karamy@xposureunlimited.com,lisay@controlsales.com",
   "O'Donnell Low Power": "carrollb@sharpsec.com,karamy@xposureunlimited.com,LBerndt@odonnell.com",
   "ePoster": "carrollb@sharpsec.com,karamy@xposureunlimited.com",
+  "Control Sales R-IGZO": "ashley@tc-sales.com,carrollb@sharpsec.com,karamy@xposureunlimited.com",
   "Reflective LCD Landing Page":
     "carrollb@sharpsec.com,karamy@xposureunlimited.com",
 };
