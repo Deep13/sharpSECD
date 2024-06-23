@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Helmet } from "react-helmet";
 import Screen3 from "../assets/Sunflower_Image.jpeg";
-import controlsaleslogo from "../assets/control-sales-logo.png";
+import controlsaleslogo from "../assets/TCS Logo.png";
 import handheldimage1 from "../assets/Handheld1.jpeg";
 import handheldimage2 from "../assets/Handheld2.jpeg";
 import handheldimage3 from "../assets/Handheld3.jpeg";
@@ -194,7 +194,7 @@ export default class RIGZOTCS extends Component {
               Creating top product solutions with {' '}
             </strong>
             <img
-              style={{ marginLeft: 10 }}
+              style={{ marginLeft: 10, height: 60 }}
               src={controlsaleslogo}
               role="presentation"
               alt="Control Sales Logo"
@@ -213,7 +213,7 @@ export default class RIGZOTCS extends Component {
         >
           <Button
             className="redButton"
-            onClick={() => window.open("mailto:jcoombs@controlsales.com", "_blank")}
+            onClick={() => this.myRef.current.scrollIntoView()}
             size="lg"
             variant="outline-danger"
             style={{ paddingRight: 50, paddingLeft: 50 }}
@@ -711,7 +711,7 @@ export default class RIGZOTCS extends Component {
                         the best team.
 
                       </p>
-                      <div>
+                      <div style={{ textAlign: 'center' }}>
 
 
                         <img
@@ -721,10 +721,7 @@ export default class RIGZOTCS extends Component {
                           alt="Control Sales Logo"
                         />
                       </div>
-                      <p>+</p>
-                      <div>
-
-
+                      <div style={{ textAlign: 'center' }}>
                         <img
                           style={{ width: "80%" }}
                           src={SHARP_Logo_red}

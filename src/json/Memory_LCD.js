@@ -26,7 +26,7 @@ export const products = [
         link: require("../assets/Documents/Sharp-LCD-Specification-LS011B7DH03-11-24-17.pdf"),
       },
     ],
-    img: require("../assets/Memory in Pixel Drawings/Sharp-LS011B7DH03-Mechanical-Drawing.png"),
+    img: [require("../assets/Memory in Pixel Drawings/Sharp-LS011B7DH03-Mechanical-Drawing.png")],
   },
   {
     Applications:
@@ -48,7 +48,7 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "60°",
     "VIEWING ANGLE 6 O'CLOCK": "60°",
     "VIEWING ANGLE SIDE TO SIDE": "120°",
-    img: require("../assets/Memory in Pixel Drawings/Sharp-LS012B7DD06A-Mechanical-Drawing.png"),
+    img: [require("../assets/Memory in Pixel Drawings/Sharp-LS012B7DD06A-Mechanical-Drawing.png")],
     DOCUMENTS: [
       {
         name: "Sharp-LCD-Specification-LS012B7DD06A-12-2-19",
@@ -76,7 +76,7 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "60°",
     "VIEWING ANGLE 6 O'CLOCK": "60°",
     "VIEWING ANGLE SIDE TO SIDE": "120°",
-    img: require("../assets/Memory in Pixel Drawings/Sharp-LS013B7DH05-Mechanical-Drawing.png"),
+    img: [require("../assets/Memory in Pixel Drawings/Sharp-LS013B7DH05-Mechanical-Drawing.png")],
     DOCUMENTS: [
       {
         name: "Sharp-LCD-Specification-LS013B7DH05-12-17-19",
@@ -105,7 +105,7 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "60°",
     "VIEWING ANGLE 6 O'CLOCK": "60°",
     "VIEWING ANGLE SIDE TO SIDE": "120°",
-    img: require("../assets/Memory in Pixel Drawings/Sharp-LS013B7DH03-Mechanical-Drawing.png"),
+    img: [require("../assets/Memory in Pixel Drawings/Sharp-LS013B7DH03-Mechanical-Drawing.png")],
     DOCUMENTS: [
       {
         name: "Sharp-LCD-Specification-LS013B7DH03-10-7-17",
@@ -133,7 +133,7 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "60°",
     "VIEWING ANGLE 6 O'CLOCK": "60°",
     "VIEWING ANGLE SIDE TO SIDE": "120°",
-    img: require("../assets/Memory in Pixel Drawings/Sharp-LS013B7DD02-Technical-Drawing.jpg"),
+    img: [require("../assets/Memory in Pixel Drawings/Sharp-LS013B7DD02-Technical-Drawing.jpg")],
     DOCUMENTS: [
       {
         name: "Sharp-Tech-Literature-LS013B7DD02-12-2-19",
@@ -161,7 +161,7 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "60°",
     "VIEWING ANGLE 6 O'CLOCK": "60°",
     "VIEWING ANGLE SIDE TO SIDE": "120°",
-    img: require("../assets/Memory in Pixel Drawings/Sharp-LS014B7DD01-Mechanical-Drawing.jpg"),
+    img: [require("../assets/Memory in Pixel Drawings/Sharp-LS014B7DD01-Mechanical-Drawing.jpg")],
     DOCUMENTS: [
       {
         name: "LS014B7DD01 Spec.",
@@ -189,7 +189,7 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "60°",
     "VIEWING ANGLE 6 O'CLOCK": "60°",
     "VIEWING ANGLE SIDE TO SIDE": "120°",
-    img: require("../assets/Memory in Pixel Drawings/Sharp-LS018B7DH02-Mechanical-Drawing.jpg"),
+    img: [require("../assets/Memory in Pixel Drawings/Sharp-LS018B7DH02-Mechanical-Drawing.jpg")],
     DOCUMENTS: [
       // {
       //   name: "Sharp-LCD-Specification-LS018B7DH02-10-2-17",
@@ -221,7 +221,7 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "60°",
     "VIEWING ANGLE 6 O'CLOCK": "60°",
     "VIEWING ANGLE SIDE TO SIDE": "120°",
-    img: require("../assets/Memory in Pixel Drawings/Sharp-LS021B7DD02-Mechanical-Drawing.jpg"),
+    img: [require("../assets/Memory in Pixel Drawings/Sharp-LS021B7DD02-Mechanical-Drawing.jpg")],
     DOCUMENTS: [
       {
         name: "LS021B7DD02_Spec_LCP-0620032_201201",
@@ -255,7 +255,7 @@ export const products = [
         link: require("../assets/Documents/LS022B7DH03_SPEC_LD2023X09_20231017.pdf"),
       },
     ],
-    img: require("../assets/Memory in Pixel Drawings/Sharp-LS022B7DH03.png"),
+    img: [require("../assets/Memory in Pixel Drawings/Sharp-LS022B7DH03.png")],
   },
   {
     Applications:
@@ -277,7 +277,7 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "60°",
     "VIEWING ANGLE 6 O'CLOCK": "60°",
     "VIEWING ANGLE SIDE TO SIDE": "110°",
-    img: require("../assets/Memory in Pixel Drawings/Sharp-LS027B7DH01A-Mechanical-Drawing.png"),
+    img: [require("../assets/Memory in Pixel Drawings/Sharp-LS027B7DH01A-Mechanical-Drawing.png")],
     DOCUMENTS: [
       {
         name: "LS027B7DH01 Spec (LD-28305A)",
@@ -309,11 +309,39 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "60°",
     "VIEWING ANGLE 6 O'CLOCK": "60°",
     "VIEWING ANGLE SIDE TO SIDE": "120°",
-    img: require("../assets/Memory in Pixel Drawings/Sharp-LS032B7DD02-Mechanical-Drawing.png"),
+    img: [require("../assets/Memory in Pixel Drawings/Sharp-LS032B7DD02-Mechanical-Drawing.png")],
     DOCUMENTS: [
       {
         name: "Sharp-LCD-Specification-LS032B7DD02-6-19-17",
         link: require("../assets/Documents/Sharp-LCD-Specification-LS032B7DD02-6-19-17.pdf"),
+      },
+    ],
+  },
+  {
+    Applications:
+      "Industrial security/keypad; HVAC UI control; Hand-held industrial metering and detection; Small marine peripheral devices; Sport computers: Golf, hiking, boating, biking; Medical: Portable and wearables; Consumer wearables; Remote, battery-powered device; IOT devices w/user interface; Outdoor equipment",
+    "DIAGONAL SIZE": "3.54 inch",
+    desc:
+      "This high-contrast, highly-reflective 3.5-inch (diagonal) 64-color Memory in Pixel display (part number LS035Q7DD01) renders color at 18% NTSC and is 9.0% reflective, which makes images pop even in direct sunlight or high ambient lighting scenarios. It features an 18Hz refresh rate for smooth animations and transitions, and its low-power operation requires just 1uW for a static image hold and 23uW for a 1Hz update.",
+    PN: "LS035Q7DD01",
+    "LIFE CYCLE": "Production",
+    "CONTRAST RATIO": "25:1",
+    "REFLECTIVITY": "9.0%",
+    "DISPLAY MODE": "Normally Black",
+    "NUMBER OF COLORS": "64 color",
+    "OPERATING TEMP": "-20°C to +70°C",
+    "STORAGE TEMP": "-30°C to +80°C",
+    "OUTLINE DIMENSIONS": "74.84 × 59.92 × 0.91 mm",
+    "PIXEL FORMAT": "320 × 240",
+    "RESPONSE TIME": "20 ms",
+    "VIEWING ANGLE 12 O'CLOCK": "60°",
+    "VIEWING ANGLE 6 O'CLOCK": "60°",
+    "VIEWING ANGLE SIDE TO SIDE": "120°",
+    img: [require("../assets/Memory in Pixel Drawings/LS035Q7DD01_SPEC_LD2023702A.jpg"), require("../assets/Memory in Pixel Drawings/Sharp-MIP-3-5-inch-LS035Q7DD01.jpg")],
+    DOCUMENTS: [
+      {
+        name: "Sharp-LCD-Specification-LS035Q7DD01_LD2023702A_2023.10.25",
+        link: require("../assets/Documents/LS035Q7DD01_SPEC_LD2023702A_2023.10.25.pdf"),
       },
     ],
   },
@@ -337,7 +365,7 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "60°",
     "VIEWING ANGLE 6 O'CLOCK": "60°",
     "VIEWING ANGLE SIDE TO SIDE": "120°",
-    img: require("../assets/Memory in Pixel Drawings/Sharp-LS044Q7DH01-Mechanical-Drawing.png"),
+    img: [require("../assets/Memory in Pixel Drawings/Sharp-LS044Q7DH01-Mechanical-Drawing.png")],
     DOCUMENTS: [
       {
         name: "Sharp-LCD-Specification-LS044Q7DH01-10-17-19",

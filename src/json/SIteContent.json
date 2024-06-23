@@ -283,6 +283,12 @@
       "content": "LQ080Y3LW01A This WVGA (800 × 480) automotive-grade display features 650 nits of brightness and 1800:1 contrast ratio, right out of the box, for use in high-performance industrial products. The display is perfect for viewability in the toughest environments, and high ambient light applications. The module also features an extended temperature range and a 50,000-hour LED backlight."
     },
     {
+      "type": "Product",
+      "link": "/memory-in-pixel-lcds-product",
+      "header": "LS035Q7DD01",
+      "content": "LS035Q7DD01 This high-contrast, highly-reflective 3.5-inch (diagonal) 64-color Memory in Pixel display (part number LS035Q7DD01) renders color at 18% NTSC and is 9.0% reflective, which makes images pop even in direct sunlight or high ambient lighting scenarios. It features an 18Hz refresh rate for smooth animations and transitions, and its low-power operation requires just 1uW for a static image hold and 23uW for a 1Hz update."
+    },
+    {
       "type": "Page",
       "link": "/news",
       "header": "Sharp SECD News",

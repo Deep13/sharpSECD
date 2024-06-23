@@ -19,7 +19,7 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "85°",
     "VIEWING ANGLE 6 O'CLOCK": "85°",
     "VIEWING ANGLE SIDE TO SIDE": "170°",
-    img: require("../assets/Industrial LCD Drawings/Sharp-LS032B3SX02-Mechnical-Drawing.jpg"),
+    img: [require("../assets/Industrial LCD Drawings/Sharp-LS032B3SX02-Mechnical-Drawing.jpg")],
     DOCUMENTS: [
       {
         link: require("../assets/Documents/Sharp-LS032B3SX02-Specification.pdf"),
@@ -47,7 +47,7 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "80°",
     "VIEWING ANGLE 6 O'CLOCK": "80°",
     "VIEWING ANGLE SIDE TO SIDE": "160°",
-    img: require("../assets/Industrial LCD Drawings/Sharp-LQ064X3LW02-Mechanical-Drawing.gif"),
+    img: [require("../assets/Industrial LCD Drawings/Sharp-LQ064X3LW02-Mechanical-Drawing.gif")],
     DOCUMENTS: [
       {
         link: require("../assets/Documents/LQ064X3LW02_LD29X01A_SEC_D_20210408.pdf"),
@@ -75,7 +75,7 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "50°",
     "VIEWING ANGLE 6 O'CLOCK": "70°",
     "VIEWING ANGLE SIDE TO SIDE": "140°",
-    img: require("../assets/Industrial LCD Drawings/Sharp-LQ070Y3LG05-Mechanical-Drawing.gif"),
+    img: [require("../assets/Industrial LCD Drawings/Sharp-LQ070Y3LG05-Mechanical-Drawing.gif")],
     DOCUMENTS: [
       {
         link: require("../assets/Documents/Sharp-LCD-Specification-LQ070Y3LG05-1-20-15.pdf"),
@@ -103,7 +103,7 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "60°",
     "VIEWING ANGLE 6 O'CLOCK": "55°",
     "VIEWING ANGLE SIDE TO SIDE": "130°",
-    img: require("../assets/Industrial LCD Drawings/Sharp-LQ084S3LG03-Mechanical-Drawing.gif"),
+    img: [require("../assets/Industrial LCD Drawings/Sharp-LQ084S3LG03-Mechanical-Drawing.gif")],
     DOCUMENTS: [
       {
         link: require("../assets/Documents/Sharp-LCD-Specification-LQ084S3LG03-6-1-11.pdf"),
@@ -131,7 +131,7 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "80°",
     "VIEWING ANGLE 6 O'CLOCK": "80°",
     "VIEWING ANGLE SIDE TO SIDE": "160°",
-    img: require("../assets/Industrial LCD Drawings/Sharp-LQ084S3LG11-Mechanical-Drawing.gif"),
+    img: [require("../assets/Industrial LCD Drawings/Sharp-LQ084S3LG11-Mechanical-Drawing.gif")],
     DOCUMENTS: [
       {
         link: require("../assets/Documents/Sharp-LCD-Specification-LQ084S3LG11-10-22-18.pdf"),
@@ -159,7 +159,7 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "60°",
     "VIEWING ANGLE 6 O'CLOCK": "50°",
     "VIEWING ANGLE SIDE TO SIDE": "120°",
-    img: require("../assets/Industrial LCD Drawings/Sharp-LQ104S1LG75-Mechanical-Drawing.gif"),
+    img: [require("../assets/Industrial LCD Drawings/Sharp-LQ104S1LG75-Mechanical-Drawing.gif")],
     DOCUMENTS: [
       {
         link: require("../assets/Documents/Sharp-LCD-Specification-LQ104S1LG75-2-3-17.pdf"),
@@ -187,7 +187,7 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "50°",
     "VIEWING ANGLE 6 O'CLOCK": "60°",
     "VIEWING ANGLE SIDE TO SIDE": "140°",
-    img: require("../assets/Industrial LCD Drawings/Sharp-LQ104S1LG81-Mechanical-Drawing.gif"),
+    img: [require("../assets/Industrial LCD Drawings/Sharp-LQ104S1LG81-Mechanical-Drawing.gif")],
     DOCUMENTS: [
       {
         link: require("../assets/Documents/Sharp-LCD-Specification-LQ104S1LG81-6-20-12.pdf"),
@@ -215,7 +215,7 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "80°",
     "VIEWING ANGLE 6 O'CLOCK": "60°",
     "VIEWING ANGLE SIDE TO SIDE": "160°",
-    img: require("../assets/Industrial LCD Drawings/Sharp-LQ104V1DG74-Mechanical-Drawing-clean.png"),
+    img: [require("../assets/Industrial LCD Drawings/Sharp-LQ104V1DG74-Mechanical-Drawing-clean.png")],
     DOCUMENTS: [
       {
         link: require("../assets/Documents/Sharp-LCD-Specification-LQ104V1DG74-1-23-18.pdf"),
@@ -243,7 +243,7 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "65°",
     "VIEWING ANGLE 6 O'CLOCK": "80°",
     "VIEWING ANGLE SIDE TO SIDE": "160°",
-    img: require("../assets/Industrial LCD Drawings/Sharp-LQ104V1DG81-Mechanical-Drawing.gif"),
+    img: [require("../assets/Industrial LCD Drawings/Sharp-LQ104V1DG81-Mechanical-Drawing.gif")],
     DOCUMENTS: [
       {
         link: require("../assets/Documents/Sharp-LCD-Specification-LQ104V1DG81-9-1-11.pdf"),
@@ -271,7 +271,7 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "65°",
     "VIEWING ANGLE 6 O'CLOCK": "80°",
     "VIEWING ANGLE SIDE TO SIDE": "160°",
-    img: require("../assets/Industrial LCD Drawings/Sharp-LQ104V1LG81-Mechanical-Drawing.gif"),
+    img: [require("../assets/Industrial LCD Drawings/Sharp-LQ104V1LG81-Mechanical-Drawing.gif")],
     DOCUMENTS: [
       {
         link: require("../assets/Documents/Sharp-LCD-Specification-LQ104V1LG81-8-30-11.pdf"),
@@ -299,7 +299,7 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "65°",
     "VIEWING ANGLE 6 O'CLOCK": "80°",
     "VIEWING ANGLE SIDE TO SIDE": "160°",
-    img: require("../assets/Industrial LCD Drawings/Sharp-LQ121K1LG52-Mechanical-Drawing.gif"),
+    img: [require("../assets/Industrial LCD Drawings/Sharp-LQ121K1LG52-Mechanical-Drawing.gif")],
     DOCUMENTS: [
       {
         link: require("../assets/Documents/Sharp-LCD-Specification-LQ121K1LG52-12-3-10.pdf"),
@@ -327,7 +327,7 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "80°",
     "VIEWING ANGLE 6 O'CLOCK": "65°",
     "VIEWING ANGLE SIDE TO SIDE": "160°",
-    img: require("../assets/Industrial LCD Drawings/Sharp-LQ121K1LG58-Mechanical-Drawing-clean.png"),
+    img: [require("../assets/Industrial LCD Drawings/Sharp-LQ121K1LG58-Mechanical-Drawing-clean.png")],
     DOCUMENTS: [
       {
         link: require("../assets/Documents/Sharp-LCD-Specification-LQ121K1LG58-12-6-16.pdf"),
@@ -355,7 +355,7 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "60°",
     "VIEWING ANGLE 6 O'CLOCK": "80°",
     "VIEWING ANGLE SIDE TO SIDE": "160°",
-    img: require("../assets/Industrial LCD Drawings/Sharp-LQ121S1LG88-Mechanical-Drawing.gif"),
+    img: [require("../assets/Industrial LCD Drawings/Sharp-LQ121S1LG88-Mechanical-Drawing.gif")],
     DOCUMENTS: [
       {
         link: require("../assets/Documents/Sharp-LCD-Specification-LQ121S1LG88 6-26-12.pdf"),
@@ -383,7 +383,7 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "85°",
     "VIEWING ANGLE 6 O'CLOCK": "85°",
     "VIEWING ANGLE SIDE TO SIDE": "170°",
-    img: require("../assets/Industrial LCD Drawings/Sharp-LQ150X1LW95-Mechanical-Drawing.png"),
+    img: [require("../assets/Industrial LCD Drawings/Sharp-LQ150X1LW95-Mechanical-Drawing.png")],
     DOCUMENTS: [
       {
         link: require("../assets/Documents/Sharp-LCD-Specification-LQ150X1LW95-6-16-14.pdf"),
@@ -411,7 +411,7 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "85°",
     "VIEWING ANGLE 6 O'CLOCK": "85°",
     "VIEWING ANGLE SIDE TO SIDE": "170°",
-    img: require("../assets/Industrial LCD Drawings/Sharp-LQ150X1LW96-Mechanical-Drawing.png"),
+    img: [require("../assets/Industrial LCD Drawings/Sharp-LQ150X1LW96-Mechanical-Drawing.png")],
     DOCUMENTS: [
       {
         link: require("../assets/Documents/Sharp-LCD-Specification-LQ150X1LW96-7-16-14.pdf"),
@@ -439,7 +439,7 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "85°",
     "VIEWING ANGLE 6 O'CLOCK": "85°",
     "VIEWING ANGLE SIDE TO SIDE": "170°",
-    img: require("../assets/Industrial LCD Drawings/Sharp-LQ150X1LX83-Mechanical-Drawing.png"),
+    img: [require("../assets/Industrial LCD Drawings/Sharp-LQ150X1LX83-Mechanical-Drawing.png")],
     DOCUMENTS: [
       {
         link: require("../assets/Documents/SPEC_EJ_SEC-D_LQ150X1LX83_LCY-W-18503A_180727.pdf"),
@@ -467,7 +467,7 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "85°",
     "VIEWING ANGLE 6 O'CLOCK": "85°",
     "VIEWING ANGLE SIDE TO SIDE": "170°",
-    img: require("../assets/Industrial LCD Drawings/Sharp-LQ150X1LX95-Mechanical-Drawing.gif"),
+    img: [require("../assets/Industrial LCD Drawings/Sharp-LQ150X1LX95-Mechanical-Drawing.gif")],
     DOCUMENTS: [
       {
         link: require("../assets/Documents/Sharp-LCD-Specification-LQ150X1LX95-2-20-14.pdf"),
@@ -495,7 +495,7 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "85°",
     "VIEWING ANGLE 6 O'CLOCK": "85°",
     "VIEWING ANGLE SIDE TO SIDE": "170°",
-    img: require("../assets/Industrial LCD Drawings/Sharp-LQ150X1LX96-Mechanical-Drawing.gif"),
+    img: [require("../assets/Industrial LCD Drawings/Sharp-LQ150X1LX96-Mechanical-Drawing.gif")],
     DOCUMENTS: [
       {
         link: require("../assets/Documents/Sharp-LCD-Specification-LQ150X1LX96-7-13-16.pdf"),
@@ -523,7 +523,7 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "85°",
     "VIEWING ANGLE 6 O'CLOCK": "85°",
     "VIEWING ANGLE SIDE TO SIDE": "170°",
-    img: require("../assets/Industrial LCD Drawings/Sharp-LQ156T3LW03-Mechanical-Drawing.gif"),
+    img: [require("../assets/Industrial LCD Drawings/Sharp-LQ156T3LW03-Mechanical-Drawing.gif")],
     DOCUMENTS: [
       {
         link: require("../assets/Documents/Sharp-LCD-Specification-LQ156T3LW03-8-27-15.pdf"),
@@ -551,7 +551,7 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "85°",
     "VIEWING ANGLE 6 O'CLOCK": "85°",
     "VIEWING ANGLE SIDE TO SIDE": "170°",
-    img: require("../assets/Industrial LCD Drawings/Sharp-LQ156T3LW05-Mechanical-Drawing-clean.png"),
+    img: [require("../assets/Industrial LCD Drawings/Sharp-LQ156T3LW05-Mechanical-Drawing-clean.png")],
     DOCUMENTS: [
       {
         link: require("../assets/Documents/Sharp-LCD-Specification-LQ156T3LW05-10-27-17.pdf"),
@@ -579,7 +579,7 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "85°",
     "VIEWING ANGLE 6 O'CLOCK": "85°",
     "VIEWING ANGLE SIDE TO SIDE": "170°",
-    img: require("../assets/Industrial LCD Drawings/Sharp-LQ190E1LW72-Mechanical-Drawing.png"),
+    img: [require("../assets/Industrial LCD Drawings/Sharp-LQ190E1LW72-Mechanical-Drawing.png")],
     DOCUMENTS: [
       {
         link: require("../assets/Documents/Sharp-LCD-Specification-LQ190E1LW72-6-24-14.pdf"),
@@ -607,7 +607,7 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "85°",
     "VIEWING ANGLE 6 O'CLOCK": "85°",
     "VIEWING ANGLE SIDE TO SIDE": "170°",
-    img: require("../assets/Industrial LCD Drawings/Sharp-LQ190E1LX75T-Mechanical-Drawing-clean.png"),
+    img: [require("../assets/Industrial LCD Drawings/Sharp-LQ190E1LX75T-Mechanical-Drawing-clean.png")],
     DOCUMENTS: [
       {
         link: require("../assets/Documents/Sharp-LCD-Specification-LQ190E1LX75T-6-23-15.pdf"),
@@ -635,7 +635,7 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "85°",
     "VIEWING ANGLE 6 O'CLOCK": "85°",
     "VIEWING ANGLE SIDE TO SIDE": "170°",
-    img: require("../assets/Industrial LCD Drawings/Sharp-LQ190E1LX76-Mechanical-Drawing-clean.png"),
+    img: [require("../assets/Industrial LCD Drawings/Sharp-LQ190E1LX76-Mechanical-Drawing-clean.png")],
     DOCUMENTS: [
       {
         link: require("../assets/Documents/Sharp-LCD-Specification-LQ190E1LX76-4-11-18.pdf"),
@@ -662,7 +662,7 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "80°",
     "VIEWING ANGLE 6 O'CLOCK": "80°",
     "VIEWING ANGLE SIDE TO SIDE": "160°",
-    img: require("../assets/Industrial LCD Drawings/Sharp-LQ080Y3LW01A-Mechanical-Drawing.jpeg"),
+    img: [require("../assets/Industrial LCD Drawings/Sharp-LQ080Y3LW01A-Mechanical-Drawing.jpeg")],
     DOCUMENTS: [
       {
         link: require("../assets/Documents/SPEC_SEC-D_LQ080Y3LW01A_LD2022102A_220127.pdf"),

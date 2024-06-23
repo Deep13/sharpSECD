@@ -30,12 +30,15 @@ const Productdetail = (props) => {
           <div>
             <div className="row padding-top-30">
               <div className="col-lg-5" style={{ padding: 10 }}>
-                <Image
-                  alt="Product Image"
-                  className="left-fixed"
-                  src={props.items.img ? props.items.img : placeholderImage}
-                  fluid
-                />
+                {props.items.img.map((val, index) => {
+                  return <Image
+                    alt={`Product Image ${index + 1}`}
+                    // className="left-fixed"
+                    src={val ? val : placeholderImage}
+                    fluid
+                  />
+                })}
+
               </div>
               <div className="col-lg-7">
                 {props.items.desc && (
@@ -112,7 +115,7 @@ const Productdetail = (props) => {
                 </div>
                 {props.items.Applications && (
                   <div className="row">
-                    <div className="col-sm-3">Applications:</div>
+                    <div className="col-sm-3" style={{ paddingRight: 0 }}>Applications:</div>
                     <div tabIndex={0} className="col-sm-9">
                       <div tabIndex={-1}>
                         <div>{props.items.Applications}</div>

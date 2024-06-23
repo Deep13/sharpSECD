@@ -213,7 +213,7 @@ export default class ControlSalesRIGZO extends Component {
                 >
                     <Button
                         className="redButton"
-                        onClick={() => window.open("mailto:jcoombs@controlsales.com", "_blank")}
+                        onClick={() => this.myRef.current.scrollIntoView()}
                         size="lg"
                         variant="outline-danger"
                         style={{ paddingRight: 50, paddingLeft: 50 }}
