@@ -328,7 +328,7 @@ export const products = [
     "CONTRAST RATIO": "25:1",
     "REFLECTIVITY": "9.0%",
     "DISPLAY MODE": "Normally Black",
-    "NUMBER OF COLORS": "64 color",
+    "NUMBER OF COLORS": "64",
     "OPERATING TEMP": "-20°C to +70°C",
     "STORAGE TEMP": "-30°C to +80°C",
     "OUTLINE DIMENSIONS": "74.84 × 59.92 × 0.91 mm",
