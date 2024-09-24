@@ -142,6 +142,9 @@ export default class ReflectiveIGZO extends Component {
                       alignItems: "flex-start",
                     }}
                   >
+                    <h1 className="mb-2-5" style={{ fontSize: "3.5rem" }}>
+                      <strong>R-IGZO</strong>
+                    </h1>
                     <h1 className="mb-2-5" style={{ fontSize: "3rem" }}>
                       <strong>A New Standard for Low-Power Displays</strong>
                     </h1>

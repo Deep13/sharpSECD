@@ -6,7 +6,7 @@
       "address": "",
       "website": "www.sharpsma.com",
       "phone": "919.466.6981",
-      "email": "info@sharpsec.com",
+      "email": "secdinfo@sharpsec.com",
       "fax": ""
     }
   ],
@@ -110,12 +110,12 @@
   "US-FL": [
     {
       "title": "Florida",
-      "company": "Sun Marketing",
-      "address": "626 Montreal Avenue, Melbourne, FL 32935",
-      "website": "www.sunmkt.com",
-      "phone": "321.253.5035",
-      "email": "sunmkt@sunmkt.com",
-      "fax": "321-253-5039"
+      "company": "Sharp Electronics Corporation, Device Division",
+      "address": "",
+      "website": "www.sharpsma.com",
+      "phone": "919.466.6981",
+      "email": "secdinfo@sharpsec.com",
+      "fax": ""
     }
   ],
   "US-GA": [
@@ -136,7 +136,7 @@
       "address": "",
       "website": "www.sharpsma.com",
       "phone": "919.466.6981",
-      "email": "info@sharpsec.com",
+      "email": "secdinfo@sharpsec.com",
       "fax": ""
     }
   ],
@@ -154,12 +154,12 @@
   "US-ID": [
     {
       "title": "Idaho North",
-      "company": "Epic Technical Sales",
-      "address": "13940 113th Ave NE, Kirkland, WA 98034",
-      "website": "www.epicnw.com",
-      "phone": "503.292.7922",
-      "email": "info@EPICnw.com",
-      "fax": "425-827-0350"
+      "company": "Sharp Electronics Corporation, Device Division",
+      "address": "",
+      "website": "www.SharpSECD.com",
+      "phone": "919.466.6981",
+      "email": "secdinfo@sharpsec.com",
+      "fax": ""
     },
     {
       "title": "Idaho South",
@@ -282,11 +282,11 @@
   "US-MN": [
     {
       "title": "Minnesota",
-      "company": "Matrix",
-      "address": "8957 Aztec Drive, Eden Prairie, MN 55347",
-      "website": "www.matrix-dt.com",
-      "phone": "952.400.1070",
-      "email": "info@matrix-dt.com",
+      "company": "StaffCo",
+      "address": "",
+      "website": "https://s-cinc.com",
+      "phone": "800-321-6092",
+      "email": "sales@s-cinc.com",
       "fax": ""
     }
   ],
@@ -337,11 +337,11 @@
   "US-ND": [
     {
       "title": "North Dakota",
-      "company": "Matrix",
-      "address": "8957 Aztec Drive, Eden Prairie, MN 55347",
-      "website": "www.matrix-dt.com",
-      "phone": "952.400.1070",
-      "email": "info@matrix-dt.com",
+      "company": "StaffCo",
+      "address": "",
+      "website": "https://s-cinc.com",
+      "phone": "800-321-6092",
+      "email": "sales@s-cinc.com",
       "fax": ""
     }
   ],
@@ -463,12 +463,12 @@
   "US-OR": [
     {
       "title": "Oregon",
-      "company": "Epic Technical Sales",
-      "address": "9400 SW Beaverton-Hillsdale Hwy Suite 140, Beaverton, OR 97005",
-      "website": "www.epicnw.com",
-      "phone": "503.292.7922",
-      "email": "info@EPICnw.com",
-      "fax": "503-292-7903"
+      "company": "Sharp Electronics Corporation, Device Division",
+      "address": "",
+      "website": "www.SharpSECD.com",
+      "phone": "919.466.6981",
+      "email": "secdinfo@sharpsec.com",
+      "fax": ""
     }
   ],
   "US-PA": [
@@ -516,11 +516,11 @@
   "US-SD": [
     {
       "title": "South Dakota",
-      "company": "Matrix",
-      "address": "8957 Aztec Drive, Eden Prairie, MN 55347",
-      "website": "www.matrix-dt.com",
-      "phone": "952.400.1070",
-      "email": "info@matrix-dt.com",
+      "company": "StaffCo",
+      "address": "",
+      "website": "https://s-cinc.com",
+      "phone": "800-321-6092",
+      "email": "sales@s-cinc.com",
       "fax": ""
     }
   ],
@@ -582,12 +582,12 @@
   "US-WA": [
     {
       "title": "Washington",
-      "company": "Epic Technical Sales",
-      "address": "13940 113th Ave NE, Kirkland, WA 98034",
-      "website": "www.epicnw.com",
-      "phone": "503.292.7922",
-      "email": "info@EPICnw.com",
-      "fax": "425-827-0350"
+      "company": "Sharp Electronics Corporation, Device Division",
+      "address": "",
+      "website": "www.SharpSECD.com",
+      "phone": "919.466.6981",
+      "email": "secdinfo@sharpsec.com",
+      "fax": ""
     }
   ],
   "US-WI": [
@@ -635,11 +635,11 @@
     },
     {
       "title": "West Canada",
-      "company": "Epic Technical Sales",
+      "company": "Sharp Electronics Corporation, Device Division",
       "address": "",
-      "website": "www.epicnw.com",
-      "phone": "403.769.1881",
-      "email": "info@EPICnw.com",
+      "website": "www.SharpSECD.com",
+      "phone": "919.466.6981",
+      "email": "secdinfo@sharpsec.com",
       "fax": ""
     }
   ],
@@ -650,18 +650,18 @@
       "address": "",
       "website": "www.sharpsma.com",
       "phone": "919.466.6981",
-      "email": "info@sharpsec.com",
+      "email": "secdinfo@sharpsec.com",
       "fax": ""
     }
   ],
   "PR-PR": [
     {
       "title": "Puerto Rico",
-      "company": "Sun Marketing",
+      "company": "Sharp Electronics Corporation, Device Division",
       "address": "",
-      "website": "www.sunmkt.com",
-      "phone": "321.253.5035",
-      "email": "sunmkt@sunmkt.com",
+      "website": "www.sharpsma.com",
+      "phone": "919.466.6981",
+      "email": "secdinfo@sharpsec.com",
       "fax": ""
     }
   ]
