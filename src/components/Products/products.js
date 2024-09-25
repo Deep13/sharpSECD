@@ -249,7 +249,7 @@ class Products extends Component {
     return (
       <div>
         <Helmet>
-          <title>Products | Industrial LCD - Sharp</title>
+          <title>Products | General Purpose LCD - Sharp</title>
           <meta
             name="description"
             content="Sharp’s high-brightness, high-contrast, wide viewing angle, and wide operating temperatures displays optimized for challenging environments."

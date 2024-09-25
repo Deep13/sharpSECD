@@ -14,9 +14,9 @@
     },
     {
       "type": "Page",
-      "link": "/industrial-lcds-product",
-      "header": "Industrial LCDs",
-      "content": "Industrial LCDs Whether you are looking for an industrial TFT LCD from our stock line-up, a display with premium out-of-the-box performance under Sharp warranty, or a specialized multi-touch PCAP or High-Brightness value-added solution, we have the display to meet your needs. Plus, our deep engineering resources and U.S.-based technical support give you the boost you need to get to market quickly."
+      "link": "/general-purpose-lcds",
+      "header": "General Purpose LCDs",
+      "content": "General Purpose LCDs Whether you are looking for an industrial TFT LCD from our stock line-up, a display with premium out-of-the-box performance under Sharp warranty, or a specialized multi-touch PCAP or High-Brightness value-added solution, we have the display to meet your needs. Plus, our deep engineering resources and U.S.-based technical support give you the boost you need to get to market quickly."
     },
     {
       "type": "Page",
@@ -46,7 +46,7 @@
       "type": "Page",
       "link": "/",
       "header": "Home",
-      "content": "Make Your Product Shine with Our Reflective, Low-Power, Sunlight Viewable Displays Sharp wrote the book when it comes to displays that perform in the most challenging environments. Today, there are endless applications for displays that can stand up to extreme lighting conditions or the need to render mission-critical detail.Our line-up includes the best in Sharp reflective technology, from our Memory-in-Pixel LCDs to new Reflective IGZO display modules that enable thin, lightweight products with ultra-low power requirements. And we continue to offer some of the toughest Industrial LCD specifications in the industry. Memory-in-Pixel LCDs Our Memory-in-Pixel displays offer best-of-class performance with ultra-low power consumption and high readability in almost any ambient lighting environment. Choose from eye-catching 64-color or high-contrast monochrome for designs ranging from wearables to medical devices to smart meters and many more. Memory in pixel LCD Reflective IGZO Our full-color, low-power Reflective IGZO displays are the latest advancement built on Sharp’s IGZO-TFT technology. They’re the perfect solution for battery-operated handheld and outdoor applications where fantastic readability is required. Reflect IGZO 8K Displays Our ultra-high-definition 8K displays deliver an unparalleled viewing experience with 3D-like feeling, depth, and high-resolution detail. See our 31.5-inch 8K display, which delivers some of the world’s highest quality with the combination of 8K + HDR + 120Hz drive options built on Sharp IGZO. 8k Displays Industrial LCDs Whether it’s all-Sharp out of the box or a high-performance solution by a Sharp value-add partner, we work with you and the industry’s best talent to find the perfect Industrial LCD module for your project. We deliver multi-touch PCAP, high-brightness, high-contrast, wide viewing angles, and wide operating temperatures for performance in the most challenging environments."
+      "content": "Make Your Product Shine with Our Reflective, Low-Power, Sunlight Viewable Displays Sharp wrote the book when it comes to displays that perform in the most challenging environments. Today, there are endless applications for displays that can stand up to extreme lighting conditions or the need to render mission-critical detail.Our line-up includes the best in Sharp reflective technology, from our Memory-in-Pixel LCDs to new Reflective IGZO display modules that enable thin, lightweight products with ultra-low power requirements. And we continue to offer some of the toughest General Purpose LCD specifications in the industry. Memory-in-Pixel LCDs Our Memory-in-Pixel displays offer best-of-class performance with ultra-low power consumption and high readability in almost any ambient lighting environment. Choose from eye-catching 64-color or high-contrast monochrome for designs ranging from wearables to medical devices to smart meters and many more. Memory in pixel LCD Reflective IGZO Our full-color, low-power Reflective IGZO displays are the latest advancement built on Sharp’s IGZO-TFT technology. They’re the perfect solution for battery-operated handheld and outdoor applications where fantastic readability is required. Reflect IGZO 8K Displays Our ultra-high-definition 8K displays deliver an unparalleled viewing experience with 3D-like feeling, depth, and high-resolution detail. See our 31.5-inch 8K display, which delivers some of the world’s highest quality with the combination of 8K + HDR + 120Hz drive options built on Sharp IGZO. 8k Displays General Purpose LCDs Whether it’s all-Sharp out of the box or a high-performance solution by a Sharp value-add partner, we work with you and the industry’s best talent to find the perfect General Purpose LCD module for your project. We deliver multi-touch PCAP, high-brightness, high-contrast, wide viewing angles, and wide operating temperatures for performance in the most challenging environments."
     },
     {
       "type": "Page",
@@ -56,139 +56,139 @@
     },
     {
       "type": "Product",
-      "link": "/industrial-lcds-product",
+      "link": "/general-purpose-lcds",
       "header": "LS032B3SX02",
       "content": "LS032B3SX02 This 3.15-inch Chip-on-Glass (COG), full in-cell touch panel with integrated cover glass, features a high contrast of 1000:1 paired with 630 nits of brightness for dazzling performance in high-bright ambient conditions. Color is rendered at 69% NTSC ratio to deliver additional richness for both still and video content. The MIPI interface industrial display also features wide viewing angles for excellent viewability in a variety of environments."
     },
     {
       "type": "Product",
-      "link": "/industrial-lcds-product",
+      "link": "/general-purpose-lcds",
       "header": "LQ064X3LW02",
       "content": "LQ064X3LW02 This 6.4-inch (diagonal) XGA display delivers a 800:1 contrast ratio and 350 nits of brightness. It is ideal for use in test and measurement applications where a high-resolution display is required, medical applications, and a number of additional industrial applications. The panel features a dot pitch of 0.12675 and an LVDS interface."
     },
     {
       "type": "Product",
-      "link": "/industrial-lcds-product",
+      "link": "/general-purpose-lcds",
       "header": "LQ070Y3LG05",
       "content": "LQ070Y3LG05 This 15:9 aspect WVGA module features an LVDS interface, fast response time of 16 ms, an LED backlight (with built-in driver), and brightness and contrast ratings of 350 nits and 500:1, respectively. The module also incorporates anti-glare and 3H hard coatings."
     },
     {
       "type": "Product",
-      "link": "/industrial-lcds-product",
+      "link": "/general-purpose-lcds",
       "header": "LQ084S3LG03",
       "content": "LQ084S3LG03 This module features a 50,000-hr rated backlight, extended operating and storage temperature ranges, plus shock and vibration resistance."
     },
     {
       "type": "Product",
-      "link": "/industrial-lcds-product",
+      "link": "/general-purpose-lcds",
       "header": "LQ084S3LG11",
       "content": "LQ084S3LG11 This 8.4-inch (diagonal) SVGA display delivers a 600:1 contrast ratio and 400 nits of brightness. It is ideal for use in test and measurement applications where a high-resolution display is required, medical applications, and a number of additional industrial applications. The display has an LVDS interface."
     },
     {
       "type": "Product",
-      "link": "/industrial-lcds-product",
+      "link": "/general-purpose-lcds",
       "header": "LQ104S1LG75",
       "content": "LQ104S1LG75 This high-performance 10.4-inch (diagonal) SVGA TFT display is optimized to perform in extreme industrial environments such as agriculture, marine navigation, and others. It delivers 1100 nits of brightness out of the box for superb viewability in high ambient light conditions and includes a built-in LED backlight driver. The display is readable while wearing polarized sunglasses."
     },
     {
       "type": "Product",
-      "link": "/industrial-lcds-product",
+      "link": "/general-purpose-lcds",
       "header": "LQ104S1LG81",
       "content": "LQ104S1LG81 This 4:3 aspect SVGA Module features a 50,000-hr LED backlight (built-in driver), LVDS interface, extended temperature capability, shock and vibration resistance, and 3H hard coating."
     },
     {
       "type": "Product",
-      "link": "/industrial-lcds-product",
+      "link": "/general-purpose-lcds",
       "header": "LQ104V1DG74",
       "content": "LQ104V1DG74 This 10.4-inch TFT LCD module has a wide high- and low-temperature operation range and high contrast of 800:1, making it ideal for industrial applications."
     },
     {
       "type": "Product",
-      "link": "/industrial-lcds-product",
+      "link": "/general-purpose-lcds",
       "header": "LQ104V1DG81",
       "content": "LQ104V1DG81 This module features a 50,000-hr rated backlight with a built-in driver. An LVDS interface version of this module is also available, see LQ104V1LG81. For Specifications, see your local Sharp Representative."
     },
     {
       "type": "Product",
-      "link": "/industrial-lcds-product",
+      "link": "/general-purpose-lcds",
       "header": "LQ104V1LG81",
       "content": "LQ104V1LG81 This module with high contrast features a 50,000-hr rated backlight, extended temperature, shock, and vibration ratings; built-in backlight driver. An LVDS interface version is also available, see: LQ104V1LG81. For Specifications, see your local Sharp Representative."
     },
     {
       "type": "Product",
-      "link": "/industrial-lcds-product",
+      "link": "/general-purpose-lcds",
       "header": "LQ121K1LG52",
       "content": "LQ121K1LG52 This 16:10 aspect ratio module features 50,000-hr backlight and built-in backlight driver circuitry."
     },
     {
       "type": "Product",
-      "link": "/industrial-lcds-product",
+      "link": "/general-purpose-lcds",
       "header": "LQ121K1LG58",
       "content": "LQ121K1LG58 This 16:10 aspect ratio WXGA LCD module features high brightness and contrast, 70% NTSC ratio, extended temperature operations, a 50,000 hr. backlight, and built-in LED driver circuitry."
     },
     {
       "type": "Product",
-      "link": "/industrial-lcds-product",
+      "link": "/general-purpose-lcds",
       "header": "LQ121S1LG88",
       "content": "LQ121S1LG88 This 12.1-inch Sharp SVGA TFT LCD features an LVDS interface, 450 nits of brightness, and a high 800:1 contrast ratio for excellent viewability in tough ambient lighting conditions. The module includes a built-in LED Driver for ease of design. "
     },
     {
       "type": "Product",
-      "link": "/industrial-lcds-product",
+      "link": "/general-purpose-lcds",
       "header": "LQ150X1LW95",
       "content": "LQ150X1LW95 This TFT LCD panel from Sharp features a high contrast ratio of 1500:1 and brightness of 400 nits. It also boasts wide viewing angles for added viewability. It has an LVDS interface and a built-in LED driver for ease of design."
     },
     {
       "type": "Product",
-      "link": "/industrial-lcds-product",
+      "link": "/general-purpose-lcds",
       "header": "LQ150X1LW96",
       "content": "LQ150X1LW96 This 15.0-inch LCD display module features an exceptionally high 1500:1 contrast ratio. A brightness of 500 nits and a wide viewing angle further add to the panel's viewability in tough environments."
     },
     {
       "type": "Product",
-      "link": "/industrial-lcds-product",
+      "link": "/general-purpose-lcds",
       "header": "LQ150X1LX83",
       "content": "LQ150X1LX83 This LCD module features an extremely high contrast of 1500:1 for viewability in extreme environments. It also renders color at 70% NTSC. A built-in LED driver is included."
     },
     {
       "type": "Product",
-      "link": "/industrial-lcds-product",
+      "link": "/general-purpose-lcds",
       "header": "LQ150X1LX95",
       "content": "LQ150X1LX95 This Normally Black 4:3 aspect XGA module, features extremely high contrast, extremely wide symmetrical viewing cone, 70% NTSC colorimetry, LVDS interface, and a white LED backlight which carries a 50,000 hour lifetime rating. It also has an anti-glare and 3H hard coating."
     },
     {
       "type": "Product",
-      "link": "/industrial-lcds-product",
+      "link": "/general-purpose-lcds",
       "header": "LQ150X1LX96",
       "content": "LQ150X1LX96 This Normally Black 4:3 aspect XGA module features extremely high contrast, extremely wide symmetrical viewing cone, 70% NTSC colorimetry, LVDS interface, and a white LED backlight which carries a 50,000 hour lifetime rating. It also has an anti-glare and 3H hard coating."
     },
     {
       "type": "Product",
-      "link": "/industrial-lcds-product",
+      "link": "/general-purpose-lcds",
       "header": "LQ156T3LW03",
       "content": "LQ156T3LW03 This 15.6-inch display combines a bright LED backlight with color filtering to render 76% NTSC. This results in bright, vivid images that are ideal for multi-media applications. The LCD also features wide viewing angles."
     },
     {
       "type": "Product",
-      "link": "/industrial-lcds-product",
+      "link": "/general-purpose-lcds",
       "header": "LQ156T3LW05",
       "content": "LQ156T3LW05 This LCD display module features a bright 400-nit backlight and high color rendering at 76% NTSC. It is ideal for multimedia applications and viewing at wide angles. High contrast of 1000:1 further expands the module's viewability and performance."
     },
     {
       "type": "Product",
-      "link": "/industrial-lcds-product",
+      "link": "/general-purpose-lcds",
       "header": "LQ190E1LW72",
       "content": "LQ190E1LW72 This LCD module features an extremely high contrast of 1500:1, complemented with 350 nits of brightness, for viewability in extreme environments. A built-in LED driver is included."
     },
     {
       "type": "Product",
-      "link": "/industrial-lcds-product",
+      "link": "/general-purpose-lcds",
       "header": "LQ190E1LX75T",
       "content": "LQ190E1LX75T This Normally Black 5:4 aspect SXGA module, features extremely high contrast, extremely wide symmetrical viewing cone, an LVDS interface, and a white LED backlight which carries a 70,000 hour lifetime rating. It also has an anti-glare and 3H hard coating."
     },
     {
       "type": "Product",
-      "link": "/industrial-lcds-product",
+      "link": "/general-purpose-lcds",
       "header": "LQ190E1LX76",
       "content": "LQ190E1LX76 This SXGA TFT LDC panel features high contrast of 1500:1 and 470 nits of brightness to render extremely crisp images. It is ideal for viewability in challenging lighting conditions."
     },
@@ -278,7 +278,7 @@
     },
     {
       "type": "Product",
-      "link": "/industrial-lcds-product",
+      "link": "/general-purpose-lcds",
       "header": "LQ080Y3LW01A",
       "content": "LQ080Y3LW01A This WVGA (800 × 480) automotive-grade display features 650 nits of brightness and 1800:1 contrast ratio, right out of the box, for use in high-performance industrial products. The display is perfect for viewability in the toughest environments, and high ambient light applications. The module also features an extended temperature range and a 50,000-hour LED backlight."
     },
