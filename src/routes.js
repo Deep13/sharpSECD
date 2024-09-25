@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { HashRouter, Switch, Route, useHistory } from "react-router-dom";
+import { HashRouter, Switch, Route, useHistory, Redirect } from "react-router-dom";
 import App from "./App";
 import Products from "./components/Products/products";
 // import Productdetail from "./components/Products/productdetail";
@@ -54,7 +54,8 @@ function Routes() {
     <HashRouter>
       <Switch>
         <Route path="/" exact component={App} />
-        <Route path="/industrial-lcds-product" component={Products} />
+        <Route path="/industrial-lcds-product" render={() => <Redirect to="/general-purpose-lcds" />} />
+        <Route path="/general-purpose-lcds" component={Products} />
         <Route
           path="/memory-in-pixel-lcds-product"
           component={MemoryLCDProduct}

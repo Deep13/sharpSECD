@@ -7,7 +7,7 @@ export const products = [
       "This 6.4-inch (diagonal) XGA display delivers a 800:1 contrast ratio and 350 nits of brightness. It is ideal for use in test and measurement applications where a high-resolution display is required, medical applications, and a number of additional industrial applications. The panel features a dot pitch of 0.12675 and an LVDS interface.",
     PN: "LQ064X3LW02",
     BRIGHTNESS: "350 nits",
-    "LIFE CYCLE": "Production",
+    "LIFE CYCLE": "Discontinued",
     "CONTRAST RATIO": "800:1",
     "DISPLAY MODE": "Normally Black",
     "NUMBER OF COLORS": "16.7M",
@@ -22,8 +22,8 @@ export const products = [
     img: [require("../assets/Industrial LCD Drawings/Sharp-LQ064X3LW02-Mechanical-Drawing.gif")],
     DOCUMENTS: [
       {
-        link: require("../assets/Documents/LQ064X3LW02_LD29X01A_SEC_D_20210408.pdf"),
-        name: "LQ064X3LW02_LD29X01A_SEC_D_20210408",
+        link: require("../assets/Documents/PCN-2024-8-20-01-LW02.pdf"),
+        name: "PCN-2024-8-20-01-LW02",
       },
     ],
   },
@@ -91,7 +91,7 @@ export const products = [
       "This module features a 50,000-hr rated backlight, extended operating and storage temperature ranges, plus shock and vibration resistance.",
     PN: "LQ084S3LG03",
     BRIGHTNESS: "330 nits",
-    "LIFE CYCLE": "Production",
+    "LIFE CYCLE": "Discontinued",
     "CONTRAST RATIO": "450:1",
     "DISPLAY MODE": "Normally White",
     "NUMBER OF COLORS": "16.7M",
@@ -106,8 +106,8 @@ export const products = [
     img: [require("../assets/Industrial LCD Drawings/Sharp-LQ084S3LG03-Mechanical-Drawing.gif")],
     DOCUMENTS: [
       {
-        link: require("../assets/Documents/Sharp-LCD-Specification-LQ084S3LG03-6-1-11.pdf"),
-        name: "Sharp-LCD-Specification-LQ084S3LG03-6-1-11",
+        link: require("../assets/Documents/PCN-2024-8-20-01-LG03.pdf"),
+        name: "PCN-2024-8-20-01-LG03",
       },
     ],
   },
@@ -119,7 +119,7 @@ export const products = [
       "This 8.4-inch (diagonal) SVGA display delivers a 600:1 contrast ratio and 400 nits of brightness. It is ideal for use in test and measurement applications where a high-resolution display is required, medical applications, and a number of additional industrial applications. The display has an LVDS interface.",
     PN: "LQ084S3LG11",
     BRIGHTNESS: "400 nits",
-    "LIFE CYCLE": "Production",
+    "LIFE CYCLE": "Discontinued",
     "CONTRAST RATIO": "600:1",
     "DISPLAY MODE": "Normally White",
     "NUMBER OF COLORS": "16.7M",
@@ -134,8 +134,8 @@ export const products = [
     img: [require("../assets/Industrial LCD Drawings/Sharp-LQ084S3LG11-Mechanical-Drawing.gif")],
     DOCUMENTS: [
       {
-        link: require("../assets/Documents/Sharp-LCD-Specification-LQ084S3LG11-10-22-18.pdf"),
-        name: "Sharp-LCD-Specification-LQ084S3LG11-10-22-18",
+        link: require("../assets/Documents/PCN-2024-8-20-01-LG11.pdf"),
+        name: "PCN-2024-8-20-01-LG11",
       },
     ],
   },
@@ -147,7 +147,7 @@ export const products = [
       "This high-performance 10.4-inch (diagonal) SVGA TFT display is optimized to perform in extreme industrial environments such as agriculture, marine navigation, and others. It delivers 1100 nits of brightness out of the box for superb viewability in high ambient light conditions and includes a built-in LED backlight driver. The display is readable while wearing polarized sunglasses.",
     PN: "LQ104S1LG75",
     BRIGHTNESS: "1100 nits",
-    "LIFE CYCLE": "Production",
+    "LIFE CYCLE": "Discontinued",
     "CONTRAST RATIO": "400:1",
     "DISPLAY MODE": "Normally White",
     "NUMBER OF COLORS": "262,144",
@@ -162,8 +162,8 @@ export const products = [
     img: [require("../assets/Industrial LCD Drawings/Sharp-LQ104S1LG75-Mechanical-Drawing.gif")],
     DOCUMENTS: [
       {
-        link: require("../assets/Documents/Sharp-LCD-Specification-LQ104S1LG75-2-3-17.pdf"),
-        name: "Sharp-LCD-Specification-LQ104S1LG75-2-3-17",
+        link: require("../assets/Documents/PCN-2024-8-20-01-LG75.pdf"),
+        name: "PCN-2024-8-20-01-LG75",
       },
     ],
   },
@@ -175,7 +175,7 @@ export const products = [
       "This 4:3 aspect SVGA Module features a 50,000-hr LED backlight (built-in driver), LVDS interface, extended temperature capability, shock and vibration resistance, and 3H hard coating.",
     PN: "LQ104S1LG81",
     BRIGHTNESS: "420 nits",
-    "LIFE CYCLE": "Production",
+    "LIFE CYCLE": "Discontinued",
     "CONTRAST RATIO": "600:1",
     "DISPLAY MODE": "Normally White",
     "NUMBER OF COLORS": "262,144",
@@ -190,8 +190,8 @@ export const products = [
     img: [require("../assets/Industrial LCD Drawings/Sharp-LQ104S1LG81-Mechanical-Drawing.gif")],
     DOCUMENTS: [
       {
-        link: require("../assets/Documents/Sharp-LCD-Specification-LQ104S1LG81-6-20-12.pdf"),
-        name: "Sharp-LCD-Specification-LQ104S1LG81-6-20-12",
+        link: require("../assets/Documents/PCN-2024-8-20-01-S1LG81.pdf"),
+        name: "PCN-2024-8-20-01-S1LG81",
       },
     ],
   },
@@ -203,7 +203,7 @@ export const products = [
       "This module features a 50,000-hr rated backlight with a built-in driver. An LVDS interface version of this module is also available, see LQ104V1LG81. For Specifications, see your local Sharp Representative.",
     PN: "LQ104V1DG81",
     BRIGHTNESS: "450 nits",
-    "LIFE CYCLE": "Production",
+    "LIFE CYCLE": "Discontinued",
     "CONTRAST RATIO": "800:1",
     "DISPLAY MODE": "Normally White",
     "NUMBER OF COLORS": "262,144",
@@ -218,8 +218,8 @@ export const products = [
     img: [require("../assets/Industrial LCD Drawings/Sharp-LQ104V1DG81-Mechanical-Drawing.gif")],
     DOCUMENTS: [
       {
-        link: require("../assets/Documents/Sharp-LCD-Specification-LQ104V1DG81-9-1-11.pdf"),
-        name: "Sharp-LCD-Specification-LQ104V1DG81-9-1-11",
+        link: require("../assets/Documents/PCN-2024-8-20-01-DG81.pdf"),
+        name: "PCN-2024-8-20-01-DG81",
       },
     ],
   },
@@ -231,7 +231,7 @@ export const products = [
       "This module with high contrast features a 50,000-hr rated backlight, extended temperature, shock, and vibration ratings; built-in backlight driver. An LVDS interface version is also available, see: LQ104V1LG81. For Specifications, see your local Sharp Representative.",
     PN: "LQ104V1LG81",
     BRIGHTNESS: "450 nits",
-    "LIFE CYCLE": "Production",
+    "LIFE CYCLE": "Discontinued",
     "CONTRAST RATIO": "800:1",
     "DISPLAY MODE": "Normally White",
     "NUMBER OF COLORS": "262,144",
@@ -246,8 +246,8 @@ export const products = [
     img: [require("../assets/Industrial LCD Drawings/Sharp-LQ104V1LG81-Mechanical-Drawing.gif")],
     DOCUMENTS: [
       {
-        link: require("../assets/Documents/Sharp-LCD-Specification-LQ104V1LG81-8-30-11.pdf"),
-        name: "Sharp-LCD-Specification-LQ104V1LG81-8-30-11",
+        link: require("../assets/Documents/PCN-2024-8-20-01-V1LG81.pdf"),
+        name: "PCN-2024-8-20-01-V1LG81",
       },
     ],
   },
@@ -259,7 +259,7 @@ export const products = [
       "This 16:10 aspect ratio module features 50,000-hr backlight and built-in backlight driver circuitry.",
     PN: "LQ121K1LG52",
     BRIGHTNESS: "400 nits",
-    "LIFE CYCLE": "Production",
+    "LIFE CYCLE": "Discontinued",
     "CONTRAST RATIO": "800:1",
     "DISPLAY MODE": "Normally White",
     "NUMBER OF COLORS": "16.7M",
@@ -274,8 +274,8 @@ export const products = [
     img: [require("../assets/Industrial LCD Drawings/Sharp-LQ121K1LG52-Mechanical-Drawing.gif")],
     DOCUMENTS: [
       {
-        link: require("../assets/Documents/Sharp-LCD-Specification-LQ121K1LG52-12-3-10.pdf"),
-        name: "Sharp-LCD-Specification-LQ121K1LG52-12-3-10",
+        link: require("../assets/Documents/PCN-2024-8-20-01-LG52.pdf"),
+        name: "PCN-2024-8-20-01-LG52",
       },
     ],
   },
@@ -287,7 +287,7 @@ export const products = [
       "This 16:10 aspect ratio WXGA LCD module features high brightness and contrast, 70% NTSC ratio, extended temperature operations, a 50,000 hr. backlight, and built-in LED driver circuitry.",
     PN: "LQ121K1LG58",
     BRIGHTNESS: "700 nits",
-    "LIFE CYCLE": "Production",
+    "LIFE CYCLE": "Discontinued",
     "CONTRAST RATIO": "800:1",
     "DISPLAY MODE": "Normally White",
     "NUMBER OF COLORS": "16.7M",
@@ -302,8 +302,8 @@ export const products = [
     img: [require("../assets/Industrial LCD Drawings/Sharp-LQ121K1LG58-Mechanical-Drawing-clean.png")],
     DOCUMENTS: [
       {
-        link: require("../assets/Documents/Sharp-LCD-Specification-LQ121K1LG58-12-6-16.pdf"),
-        name: "Sharp-LCD-Specification-LQ121K1LG58-12-6-16",
+        link: require("../assets/Documents/PCN-2024-8-20-01-LG58.pdf"),
+        name: "PCN-2024-8-20-01-LG58",
       },
     ],
   },

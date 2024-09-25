@@ -123,7 +123,7 @@ class Headernav extends Component {
                     this.selectNavigate("/industrial-lcds-product")
                   }
                 >
-                  Industrial LCDs
+                  General Purpose LCDs
                 </NavDropdown.Item>
                 <NavDropdown.Item
                   onClick={() =>

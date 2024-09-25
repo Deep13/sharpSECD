@@ -22,7 +22,7 @@
       "title": "CONTRAST RATIO",
       "values": ["14:1", "18:1", "20:1", "25:1", "35:1"]
     },
-    { "title": "LIFE CYCLE", "values": ["Production", "Pre-production"] },
+    { "title": "LIFE CYCLE", "values": ["Production", "Pre-production", "Discontinued"] },
     { "title": "NUMBER OF COLORS", "values": ["Monochrome", "64"] },
 
     {

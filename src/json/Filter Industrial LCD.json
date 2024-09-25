@@ -57,7 +57,7 @@
       "title": "DISPLAY MODE",
       "values": ["Normally Black", "Normally White"]
     },
-    { "title": "LIFE CYCLE", "values": ["Production"] },
+    { "title": "LIFE CYCLE", "values": ["Production","Pre-production", "Discontinued" ] },
     { "title": "NUMBER OF COLORS", "values": ["16.7M", "262,144"] },
     {
       "title": "OUTLINE DIMENSIONS",

@@ -267,10 +267,10 @@ class Products extends Component {
             style={{ padding: 0 }}
           >
             <div tabIndex={-1} style={{ height: "100%" }}>
-              <h1>Industrial LCDs</h1>
+              <h1>General Purpose LCDs</h1>
               <br />
               <p>
-                Whether you are looking for an industrial TFT LCD from our stock
+                Whether you are looking for a General Purpose LCD from our stock
                 line-up, a display with premium out-of-the-box performance under
                 Sharp warranty, or a specialized multi-touch PCAP or
                 High-Brightness value-added solution, we have the display to

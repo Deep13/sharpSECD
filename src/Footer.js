@@ -75,7 +75,7 @@ class Footer extends Component {
               this.callFunct(event, "/industrial-lcds-product")
             }
           >
-            Industrial LCDs
+            General Purpose LCDs
           </a>
           <br />
           <a

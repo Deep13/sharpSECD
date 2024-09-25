@@ -190,7 +190,7 @@ class Body extends Component {
               }
             >
               {" "}
-              Industrial LCD{" "}
+              General Purpose LCD{" "}
             </a>
             module for your project.
           </Card.Text>
