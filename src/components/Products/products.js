@@ -53,8 +53,13 @@ class Products extends Component {
 
       this.scrollToRef(this.products);
     } else {
+      var a = [];
+      a["LIFE CYCLE"] = ["Production"];
+      this.onDoFilter(a)
       window.scrollTo({ top: 0, behavior: "auto" });
     }
+
+
   }
   handleTableSearch = (value) => {
     var text = value.currentTarget.value;
@@ -151,26 +156,12 @@ class Products extends Component {
     }
   };
 
-  // selectFilter2 = (items) => {
-  //   var totalFilterValue = this.state.filter;
-  //   var item = items.currentTarget.dataset;
-  //   if (items.currentTarget.checked) {
-  //     totalFilterValue.push({
-  //       [item.category]: item.option,
-  //     });
-  //   } else {
-  //     totalFilterValue = totalFilterValue.filter(
-  //       (obj) => obj[item.category] !== item.option
-  //     );
-  //   }
-  //   this.onDoFilter(totalFilterValue);
-  // };
   selectFilter = (items) => {
     var totalFilterValue = this.state.filter;
     var item = items.currentTarget.dataset;
     if (items.currentTarget.checked) {
       totalFilterValue[item.category] &&
-      totalFilterValue[item.category].length > 0
+        totalFilterValue[item.category].length > 0
         ? totalFilterValue[item.category].push(item.option)
         : (totalFilterValue[item.category] = [item.option]);
     } else {
@@ -375,6 +366,7 @@ class Products extends Component {
                             {item.values.map((content, key) => {
                               return (
                                 <Form.Check
+                                  id={content}
                                   key={key}
                                   type="checkbox"
                                   aria-label={item.title + " " + content}
@@ -382,6 +374,7 @@ class Products extends Component {
                                   data-category={item.title}
                                   data-option={content}
                                   onChange={this.selectFilter}
+                                  defaultChecked={content == "Production" ? true : false}
                                 />
                               );
                             })}

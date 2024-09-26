@@ -53,6 +53,11 @@ class Memory_lcd extends Component {
       this.scrollToRef(this.products);
       this.handleSearch(search);
     }
+    else {
+      var a = [];
+      a["LIFE CYCLE"] = ["Production"];
+      this.onDoFilter(a)
+    }
   }
   handleTableSearch = (value) => {
     var text = value.currentTarget.value;
@@ -145,7 +150,7 @@ class Memory_lcd extends Component {
     var item = items.currentTarget.dataset;
     if (items.currentTarget.checked) {
       totalFilterValue[item.category] &&
-      totalFilterValue[item.category].length > 0
+        totalFilterValue[item.category].length > 0
         ? totalFilterValue[item.category].push(item.option)
         : (totalFilterValue[item.category] = [item.option]);
     } else {
@@ -348,6 +353,7 @@ class Memory_lcd extends Component {
                                   data-category={item.title}
                                   data-option={content}
                                   onChange={this.selectFilter}
+                                  defaultChecked={content == "Production" ? true : false}
                                 />
                               );
                             })}
