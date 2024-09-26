@@ -54,7 +54,7 @@ class Products extends Component {
       this.scrollToRef(this.products);
     } else {
       var a = [];
-      a["LIFE CYCLE"] = ["Production"];
+      a["LIFE CYCLE"] = ["Production", "Pre-production"];
       this.onDoFilter(a)
       window.scrollTo({ top: 0, behavior: "auto" });
     }
@@ -374,7 +374,7 @@ class Products extends Component {
                                   data-category={item.title}
                                   data-option={content}
                                   onChange={this.selectFilter}
-                                  defaultChecked={content == "Production" ? true : false}
+                                  defaultChecked={content == "Production" || content == "Pre-production" ? true : false}
                                 />
                               );
                             })}

@@ -55,7 +55,7 @@ class Memory_lcd extends Component {
     }
     else {
       var a = [];
-      a["LIFE CYCLE"] = ["Production"];
+      a["LIFE CYCLE"] = ["Production", "Pre-production"];
       this.onDoFilter(a)
     }
   }
@@ -353,7 +353,7 @@ class Memory_lcd extends Component {
                                   data-category={item.title}
                                   data-option={content}
                                   onChange={this.selectFilter}
-                                  defaultChecked={content == "Production" ? true : false}
+                                  defaultChecked={content == "Production" || content == "Pre-production" ? true : false}
                                 />
                               );
                             })}
