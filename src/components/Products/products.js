@@ -3,7 +3,7 @@ import HighlightOffIcon from "@material-ui/icons/HighlightOff";
 import { Image, Button, Form, FormControl } from "react-bootstrap";
 import Pagination from "react-js-pagination";
 import lcdImage from "../../assets/product_industrial_lcd.jpg";
-import Productitem from "./prodctitem";
+import Productitem from "./GPProductitem";
 import Footer from "../../Footer";
 import Productdetail from "./productdetail";
 import Accordion from "react-bootstrap/Accordion";
