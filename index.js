@@ -21,6 +21,7 @@ const emailIds = {
   "ePoster": "carrollb@sharpsec.com,karamy@xposureunlimited.com",
   "Control Sales R-IGZO": "jcoombs@controlsales.com,carrollb@sharpsec.com,karamy@xposureunlimited.com",
   "Control Sales R-IGZO TCS": "ashley@tc-sales.com,carrollb@sharpsec.com,karamy@xposureunlimited.com",
+  "ePoster Displays": "secdinfo2@sharpsec.com",
   "Reflective LCD Landing Page":
     "carrollb@sharpsec.com,karamy@xposureunlimited.com",
 };
