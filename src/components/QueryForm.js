@@ -186,27 +186,23 @@ export default function QueryForm(props) {
               <ListItemText primary={"General query"} />
             </MenuItem>
             <ListSubheader>Product</ListSubheader>
-            <MenuItem key={"R-IGZO Displays"} value={"R-IGZO Displays"}>
-              <Checkbox checked={subject.indexOf("R-IGZO Displays") > -1} />
-              <ListItemText primary={"R-IGZO Displays"} />
+            <MenuItem key={"Memory in Pixel Displays"} value={"Memory in Pixel Displays"}>
+              <Checkbox checked={subject.indexOf("Memory in Pixel Displays") > -1} />
+              <ListItemText primary={"Memory in Pixel Displays"} />
             </MenuItem>
-            {/* <MenuItem key={"8K Display"} value={"8K Display"}>
-              <Checkbox checked={subject.indexOf("8K Display") > -1} />
-              <ListItemText primary={"8K Display"} />
-            </MenuItem> */}
+            <MenuItem key={"ePoster Signage Display Modules"} value={"ePoster Signage Display Modules"}>
+              <Checkbox checked={subject.indexOf("ePoster Signage Display Modules") > -1} />
+              <ListItemText primary={"ePoster Signage Display Modules"} />
+            </MenuItem>
             <MenuItem
-              key={"Custom Camera Module"}
-              value={"Custom Camera Module"}
+              key={"General Purpose Displays"}
+              value={"General Purpose Displays"}
             >
               <Checkbox
-                checked={subject.indexOf("Custom Camera Module") > -1}
+                checked={subject.indexOf("General Purpose Displays") > -1}
               />
-              <ListItemText primary={"Custom Camera Module"} />
+              <ListItemText primary={"General Purpose Displays"} />
             </MenuItem>
-            {/* <MenuItem value={"8K Display"}>8K Display</MenuItem>
-            <MenuItem value={"Custom Camera Module"}>
-              Custom Camera Module
-            </MenuItem> */}
           </Select>
           {errorText && (
             <FormHelperText style={{ marginLeft: 0, color: "#a91e2c" }}>
@@ -333,7 +329,7 @@ export default function QueryForm(props) {
               delay={3000}
               autohide
               className="toastSuccess"
-              // transition="Fade"
+            // transition="Fade"
             >
               <Toast.Body>
                 Thank You! <br /> Your query has been successfully submitted.
@@ -345,7 +341,7 @@ export default function QueryForm(props) {
               delay={3000}
               autohide
               className="toastError"
-              // transition="Fade"
+            // transition="Fade"
             >
               {/* <Toast.Header>
               <strong className="mr-auto">Success</strong>

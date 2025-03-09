@@ -23,6 +23,7 @@ class Footer extends Component {
         style={{
           backgroundColor: "black",
           padding: 50,
+          margin: 0
         }}
       >
         <div
@@ -33,7 +34,7 @@ class Footer extends Component {
           }}
         >
           <div style={{ color: "white" }}>
-            <img alt="SHARP Logo" src={logo} style={{ width: 200 }} />
+            <img className="footer-logo" alt="SHARP Logo" src={logo} style={{ width: 200 }} />
             <br />
             Sharp Electronics Corporation Device Division
             <br />

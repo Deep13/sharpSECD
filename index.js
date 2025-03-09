@@ -6,9 +6,9 @@ const cors = require("cors");
 const app = express();
 const emailIds = {
   "General query": "SECDinfo@sharpsec.com",
-  "R-IGZO Displays": "SECDinfo@sharpsec.com",
-  "8K Display": "SECDinfo@sharpsec.com",
-  "Custom Camera Module": "changa@sharpsec.com",
+  "Memory in Pixel Displays": "SECDinfo@sharpsec.com",
+  "ePoster Signage Display Modules": "SECDinfo@sharpsec.com",
+  "General Purpose Displays": "SECDinfo@sharpsec.com",
   "Memory-in-pixel Landing":
     "carrollb@sharpsec.com,karamy@xposureunlimited.com",
   "5-inch R-IGZO Landing": "carrollb@sharpsec.com,karamy@xposureunlimited.com",
@@ -21,7 +21,7 @@ const emailIds = {
   "ePoster": "carrollb@sharpsec.com,karamy@xposureunlimited.com",
   "Control Sales R-IGZO": "jcoombs@controlsales.com,carrollb@sharpsec.com,karamy@xposureunlimited.com",
   "Control Sales R-IGZO TCS": "ashley@tc-sales.com,carrollb@sharpsec.com,karamy@xposureunlimited.com",
-  "ePoster Displays": "secdinfo2@sharpsec.com",
+  "ePoster Landing": "secdinfo2@sharpsec.com",
   "Reflective LCD Landing Page":
     "carrollb@sharpsec.com,karamy@xposureunlimited.com",
 };

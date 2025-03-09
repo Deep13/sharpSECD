@@ -61,10 +61,10 @@ function Routes() {
           path="/memory-in-pixel-lcds-product"
           component={MemoryLCDProduct}
         />
-        <Route
+        {/* <Route
           path="/custom-camera-modules-product"
           component={Custom_camera}
-        />
+        /> */}
         {/* <Route path="/igzo-8k-displays-product" component={Product4k8k} /> */}
         <Route
           path="/reflective-igzo-displays-product"
@@ -72,16 +72,16 @@ function Routes() {
         />
         <Route path="/contact" component={Contact} />
         <Route path="/news" component={News} />
-        <Route path="/igzo-technology" component={IGZO} />
-        <Route path="/reflective-igzo-technology" component={RIGZO} />
+        {/* <Route path="/igzo-technology" component={IGZO} /> */}
+        {/* <Route path="/reflective-igzo-technology" component={RIGZO} /> */}
         <Route path="/search-result/:search" component={SearchResults} />
         <Route path="/memory-in-pixel-lcds-technology" component={MemoryLCD} />
         <Route path="/R-IGZO-LinkedIn" component={RIGZOLinkedIn} />
         <Route path="/ReflectiveLCDLanding" component={ReflectiveLCDLanding} />
         <Route path="/R-IGZO-Google" component={RIGZOGoogle} />
         <Route path="/MemoryInPixel" component={MemoryInPixel} />
-        <Route path="/LowPowerDisplays" component={Low_power_displays} />
-        <Route path="/ReflectiveIGZO" component={ReflectiveIGZO} />
+        {/* <Route path="/LowPowerDisplays" component={Low_power_displays} /> */}
+        {/* <Route path="/ReflectiveIGZO" component={ReflectiveIGZO} /> */}
         <Route path="/MemoryInPixelLanding" component={MemoryInPixelLanding} />
         <Route path="/MemoryInPixel-TCS" component={MIPTCS} />
         <Route path="/MemoryInPixel-IntelliMark" component={MIPITM} />

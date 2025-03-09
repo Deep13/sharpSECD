@@ -8,6 +8,7 @@ import Earth from "../assets/eposter_displays/Earth.png";
 import Low from "../assets/eposter_displays/Low.png";
 import Lobbies from "../assets/eposter_displays/ePosterLobbies.jpg";
 import Rental from "../assets/eposter_displays/ePosterRental.jpg";
+import Education from "../assets/eposter_displays/Edutation_ePoster.jpg";
 import sharp_logo from "../assets/SHARP_Logo_red.png";
 import ePosterSummerSale from "../assets/eposter_displays/ePosterMallSquare.jpg";
 import Retail from "../assets/eposter_displays/Retail.jpg";
@@ -55,7 +56,7 @@ class Eposters_Displays extends Component {
             mobile: this.state.mobileCode + "-" + this.state.mobile,
             email: this.state.email,
             message: this.state.message,
-            subject: ["ePoster Displays"],
+            subject: ["ePoster Landing"],
         };
         axios
             .post("/api/form", data)
@@ -101,24 +102,22 @@ class Eposters_Displays extends Component {
                     <div
                         className="poster-section"
                         tabIndex={0}
-                        style={{ width: "100%", textAlign: 'left', backgroundPosition: "center", paddingTop: 250, paddingBottom: 250 }}
                     >
                         <img
-                            className=""
+                            className="poster-sharp-logo"
                             src={sharp_logo}
-                            style={{ width: 400 }}
                             role="presentation"
                             alt="Control Sales Logo"
                         />
-                        <div style={{ marginBottom: 40, marginTop: 40 }}>
-                            <h2 style={{ fontSize: 60 }} >
-                                <strong>SAY GOOD-BYE</strong>
-                            </h2>
-                            <h2 style={{ fontSize: 60 }}>
+                        <div className="text-center-mb" style={{ marginBottom: 40, marginTop: 40 }}>
+                            <h3 style={{ fontSize: 60 }} >
+                                <strong>SAY GOODBYE</strong>
+                            </h3>
+                            <h3 style={{ fontSize: 60 }}>
                                 <strong>TO PRINTED SIGNAGE.</strong>
-                            </h2>
+                            </h3>
                         </div>
-                        <h2 style={{ color: "white", maxWidth: 600 }}><strong>Meet your no-hassle, zero-power* digital for posters and signage.</strong></h2>
+                        <h2 className="text-center-mb" style={{ color: "white", maxWidth: 600 }}><strong>Meet your no-hassle, zero-power* digital solution for poster and signage applications.</strong></h2>
                     </div>
                     <div
                         className="row key-section"
@@ -130,7 +129,9 @@ class Eposters_Displays extends Component {
                                 <strong>INTRODUCING ePOSTER</strong>
                             </h2>
                             <span style={{ fontSize: 35 }}>
-                                Printing is expensive, inflexible and time-consuming. Welcome to the future of low-power digital signage displays. Sharp and E-ink have come together to bring you one of the industry's leading electronic poster solutions.
+                                Printing is expensive, inflexible, and time-consuming. Welcome to the future of low power
+                                paper replacement signage. Sharp and E Ink have come together to bring you one of the
+                                industry's leading electronic poster display modules.
                             </span>
                             <br />
                             <Button
@@ -141,7 +142,7 @@ class Eposters_Displays extends Component {
                                 Contact Sharp
                             </Button>
                         </div>
-                        <div className="col-lg-6" style={{ paddingRight: 0 }}>
+                        <div className="col-lg-6 hide-on-mobile" style={{ paddingRight: 0 }}>
                             <img
                                 src={ePosterSummerSale}
                                 style={{ width: "100%" }}
@@ -152,7 +153,7 @@ class Eposters_Displays extends Component {
                         </div>
                     </div>
                     <div
-                        className="row"
+                        className="row hassle-block"
                         tabIndex={0}
                         style={{ background: "#fff", width: "100%", textAlign: 'left', backgroundPosition: "top", backgroundImage: `url(${ePosterElevatorDarker})`, marginLeft: 0 }}
                     >
@@ -161,12 +162,12 @@ class Eposters_Displays extends Component {
                                 <strong>CREATE FLEXIBLE, EFFICIENT ePOSTER SOLUTIONS</strong>
                             </h2>
                             <span style={{ fontSize: 35 }}>
-                                The Sharp E-Poster enables you to build e-signage products that:
+                                The Sharp ePoster enables you to build signage products that:
                             </span>
                             <br />
                             <ul style={{ fontSize: 31, marginLeft: 0, paddingLeft: 20, marginTop: 30 }}>
                                 <li>Eliminate hassles of printing</li>
-                                <li>Allow simple updates from a laptop</li>
+                                <li>Allow cloud-based content management</li>
                                 <li>Save time</li>
                                 <li>Save labor</li>
                                 <li>Save money</li>
@@ -174,39 +175,39 @@ class Eposters_Displays extends Component {
                         </div>
                     </div>
                     <div
-                        className="row"
+                        className="row application-section"
                         tabIndex={0}
                         style={{ padding: 0, background: "#2d2f40", width: "100%", textAlign: 'left', backgroundPosition: "top", padding: "80px 250px", marginLeft: 0 }}
                     >
                         <h2 style={{ paddingBottom: 30, fontSize: '3rem', width: '100%', color: "white" }}>
                             <strong>APPLICATIONS INCLUDE</strong>
                         </h2>
-                        <div className="col-lg-4" style={{ padding: "20px 20px" }}>
+                        <div className="col-lg-4 col-md-6" style={{ padding: "20px 20px" }}>
                             <img
                                 src={Restaurant}
-                                style={{ height: '100%', width: "100%" }}
+                                style={{ width: "100%" }}
                                 role="presentation"
                                 alt="Restaurant"
                             />
                             <h2 style={{ paddingTop: 10, fontSize: '2rem', width: '100%', color: "white", textAlign: 'center' }}>
-                                <strong>Restaurants</strong>
+                                <strong>Restaurants & Cinema</strong>
                             </h2>
                         </div>
-                        <div className="col-lg-4" style={{ padding: "20px 20px" }}>
+                        <div className="col-lg-4 col-md-6" style={{ padding: "20px 20px" }}>
                             <img
-                                src={Cinema}
-                                style={{ height: '100%', width: "100%" }}
+                                src={Education}
+                                style={{ width: "100%" }}
                                 role="presentation"
-                                alt="Cinema"
+                                alt="Education"
                             />
                             <h2 style={{ paddingTop: 10, fontSize: '2rem', width: '100%', color: "white", textAlign: 'center' }}>
-                                <strong>Cinema</strong>
+                                <strong>Education</strong>
                             </h2>
                         </div>
-                        <div className="col-lg-4" style={{ padding: "20px 20px" }}>
+                        <div className="col-lg-4 col-md-6" style={{ padding: "20px 20px" }}>
                             <img
                                 src={Healthcare}
-                                style={{ height: '100%', width: "100%" }}
+                                style={{ width: "100%" }}
                                 role="presentation"
                                 alt="Healthcare"
                             />
@@ -214,11 +215,11 @@ class Eposters_Displays extends Component {
                                 <strong>Healthcare</strong>
                             </h2>
                         </div>
-                        <div style={{ width: "100%", height: 70 }}></div>
-                        <div className="col-lg-4" style={{ padding: "20px 20px" }}>
+                        <div className="hide-on-mobile" style={{ width: "100%", height: 70 }}></div>
+                        <div className="col-lg-4 col-md-6" style={{ padding: "20px 20px" }}>
                             <img
                                 src={Rental}
-                                style={{ height: '100%', width: "100%" }}
+                                style={{ width: "100%" }}
                                 role="presentation"
                                 alt="Rental"
                             />
@@ -226,10 +227,10 @@ class Eposters_Displays extends Component {
                                 <strong>Retail</strong>
                             </h2>
                         </div>
-                        <div className="col-lg-4" style={{ padding: "20px 20px" }}>
+                        <div className="col-lg-4 col-md-6" style={{ padding: "20px 20px" }}>
                             <img
                                 src={Lobbies}
-                                style={{ height: '100%', width: "100%" }}
+                                style={{ width: "100%" }}
                                 role="presentation"
                                 alt="Lobbies"
                             />
@@ -237,10 +238,10 @@ class Eposters_Displays extends Component {
                                 <strong>Lobbies</strong>
                             </h2>
                         </div>
-                        <div className="col-lg-4" style={{ padding: "20px 20px" }}>
+                        <div className="col-lg-4 col-md-6" style={{ padding: "20px 20px" }}>
                             <img
                                 src={Hotel}
-                                style={{ height: '100%', width: "100%" }}
+                                style={{ width: "100%" }}
                                 role="presentation"
                                 alt="Hotel"
                             />
@@ -266,7 +267,7 @@ class Eposters_Displays extends Component {
                         </div>
                         <div className="col-lg-6" style={{ padding: "20px 20px", paddingRight: 50 }}>
                             <h2 style={{ color: "black" }}>
-                                <strong>Key Features</strong>
+                                <strong>KEY FEATURES</strong>
                             </h2>
                             <ul style={{ color: "black", marginBottom: 0 }}>
                                 <li>28.5-inch (diagonal)</li>
@@ -276,7 +277,7 @@ class Eposters_Displays extends Component {
                                 <li>60k color gamut with E Ink's Spectra6</li>
                                 <li>Thin, lightweight, multi-panel capability</li>
                                 <li>Enables cloud-based management</li>
-                                <li>Battery, PoE, or PoWiFi installation</li>
+                                <li>Enables battery, PoE, or PoWiFi installation</li>
                             </ul>
                             <br />
                             <Button
@@ -294,7 +295,7 @@ class Eposters_Displays extends Component {
                         style={{ width: "100%", textAlign: 'center', backgroundPosition: "center", display: "flex", flexDirection: 'column', alignItems: "center", backgroundColor: "#d9d9d9" }}
                     >
                         <h2 >
-                            <strong>TLOW POWER REQUIREMENT = LOW COST OF OWNERSHIP</strong>
+                            <strong>LOW POWER REQUIREMENT = LOW COST OF OWNERSHIP</strong>
                         </h2>
                         <div
                             className="row"
@@ -309,7 +310,7 @@ class Eposters_Displays extends Component {
                                     alt="Zero power"
                                 />
                                 <h3 style={{ fontWeight: "bold" }}>ZERO POWER</h3>
-                                <p style={{ fontWeight: 500 }}>ePaper technology enables zero-power operation while maintaining a static image hold</p>
+                                <p style={{ fontWeight: 500 }}>ePoster technology enables zero-power operation while maintaining a static image hold</p>
                             </div>
                             <div className="col-lg-4" style={{ textAlign: "center" }}>
                                 <img
@@ -334,7 +335,7 @@ class Eposters_Displays extends Component {
                         </div>
                     </div>
                     <div
-                        className="row key-section"
+                        className="row key-section retail-section "
                         tabIndex={0}
                         style={{ background: "#fff", width: "100%", textAlign: 'left', backgroundPosition: "top", marginLeft: 0, padding: 0 }}
                     >
@@ -343,10 +344,13 @@ class Eposters_Displays extends Component {
                                 <strong>SIMPLE. SMART. SIGNAGE.</strong>
                             </h2>
                             <span style={{ fontSize: 35 }}>
-                                Crisp, colorful visuals. Stylish, slim modules. Simple opertaion.
+                                Crisp, colorful visuals. Stylish, slim module. Simple operation.
                                 <br />
                                 <br />
-                                Developing electronic public information display signage is within reach. Replace your paper signage today with Sharp's E-Poster.
+                                Enables market-leading paperless public information displays.
+                                <br />
+                                <br />
+                                Replace paper signage with Sharp's ePoster display module today.
                             </span>
                         </div>
                         <div className="col-lg-6" style={{ paddingRight: 0 }}>
@@ -383,7 +387,7 @@ class Eposters_Displays extends Component {
                             <div >
                                 <div className="padding-top-50 d-none d-md-block"></div>
                                 <div className="padding-top-50"></div>
-                                <div className="hide-on-mobile">
+                                <div>
                                     <h1
                                         className="mb-2-5"
                                         style={{
@@ -393,8 +397,8 @@ class Eposters_Displays extends Component {
                                         }}
                                     >
                                         <strong>
-                                            LET'S TALK ABOUT ePOSTERS FOR YOUR NEXT
-                                            <br />DIGITAL SIGNAGE PRODUCT DESIGN
+                                            LET'S TALK ABOUT ePOSTER FOR YOUR NEXT
+                                            <br />SIGNAGE PRODUCT DESIGN
                                         </strong>
                                     </h1>
                                     <p
@@ -407,32 +411,7 @@ class Eposters_Displays extends Component {
                                         Provide your contact info and we'll reach out ASAP.
                                     </p>
                                 </div>
-                                <div className="show-on-mobile">
-                                    <h1
-                                        className="mb-2-5"
-                                        style={{
-                                            fontSize: "3rem",
-                                            textAlign: "left",
-                                            color: "white",
-                                        }}
-                                    >
-                                        <strong>
-                                            Let's Talk.
-                                        </strong>
-                                    </h1>
-                                    <p
-                                        style={{
-                                            color: "white",
-                                            textAlign: "left",
-                                        }}
-                                    >
-                                        Please drop us a line. A member
-                                        of the Sharp team will get in
-                                        touch with you ASAP to talk
-                                        about the ePoster as a perfect
-                                        fit for your next design.
-                                    </p>
-                                </div>
+
                             </div>
                             <div style={{ width: "70%" }}>
                                 <Form1 noValidate className="ePosterDisplays" onSubmit={this.onSubmit}>
