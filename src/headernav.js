@@ -131,7 +131,7 @@ class Headernav extends Component {
                     <li><a className="dropdown-item" href="#" onClick={() => this.selectNavigate("/memory-in-pixel-lcds-technology")}>Technology</a></li>
                   </ul>
                 </NavDropdown.Item> */}
-                {/* <NavDropdown.Item
+                <NavDropdown.Item
                   className="no-drop-color"
                 >
                   ePoster Display Modules
@@ -141,7 +141,7 @@ class Headernav extends Component {
                   >
                     Overview
                   </NavDropdown.Item>
-                </NavDropdown.Item> */}
+                </NavDropdown.Item>
                 {/* <NavDropdown.Item className="dropdown-toggle" id="more-services">
                   ePoster Display Modules
                   <ul className="dropdown-menu second-level drop-two">
