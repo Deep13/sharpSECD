@@ -102,10 +102,11 @@ class Headernav extends Component {
               >
                 <NavDropdown.Item
                   className="no-drop-color"
+                  style={{ fontWeight: "bold" }}
                 >
                   Memory in Pixel LCDs
                   <NavDropdown.Item
-                    className="drop-color top-border-white"
+                    className="drop-color"
                     onClick={() => this.selectNavigate("/MemoryInPixel")}
                   >
                     Overview
@@ -133,10 +134,11 @@ class Headernav extends Component {
                 </NavDropdown.Item> */}
                 <NavDropdown.Item
                   className="no-drop-color"
+                  style={{ fontWeight: "bold" }}
                 >
                   ePoster Display Modules
                   <NavDropdown.Item
-                    className="drop-color top-border-white"
+                    className="drop-color"
                     onClick={() => this.selectNavigate("/eposters-displays")}
                   >
                     Overview
@@ -150,10 +152,11 @@ class Headernav extends Component {
                 </NavDropdown.Item> */}
                 <NavDropdown.Item
                   className="no-drop-color"
+                  style={{ fontWeight: "bold" }}
                 >
                   General Purpose LCDs
                   <NavDropdown.Item
-                    className="drop-color top-border-white"
+                    className="drop-color"
                     onClick={() => this.selectNavigate("/industrial-lcds-product")}
                   >
                     Find a Product

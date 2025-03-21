@@ -83,7 +83,7 @@ class Contact extends Component {
                 </div>
                 <Mapsvg />
                 <div className="h3" style={{ textAlign: "center" }}>
-                  Click on the Map to FInd a Local Authorized Sales Representative
+                  Click on the Map to Find a Local Authorized Sales Representative
                   <br />
                   <span className="h5">
                     For inquiries from
