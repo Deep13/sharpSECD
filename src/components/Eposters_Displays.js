@@ -3,7 +3,7 @@ import Restaurant from "../assets/eposter_displays/ePosterRestaurant.jpg";
 import Hotel from "../assets/eposter_displays/ePosterHotel.jpg";
 import Healthcare from "../assets/eposter_displays/ePosterHealthcare.jpg";
 import Cinema from "../assets/eposter_displays/ePosterCinema.jpg";
-import GRAND from "../assets/eposter_displays/GRAND.jpg";
+import GRAND from "../assets/eposter_displays/grand_1.jpeg";
 import Earth from "../assets/eposter_displays/Earth.png";
 import Low from "../assets/eposter_displays/Low.png";
 import Lobbies from "../assets/eposter_displays/ePosterLobbies.jpg";
@@ -45,6 +45,11 @@ class Eposters_Displays extends Component {
         };
         this.myRef = React.createRef();
     }
+    callFunct = (event, link) => {
+        event.preventDefault();
+        window.location.href = "#" + link;
+        // alert(text);
+    };
     onSubmit = (event) => {
         event.preventDefault();
         this.setState({
@@ -102,6 +107,7 @@ class Eposters_Displays extends Component {
                     <div
                         className="poster-section"
                         tabIndex={0}
+                        style={{ position: "relative" }}
                     >
                         <img
                             className="poster-sharp-logo"
@@ -117,7 +123,8 @@ class Eposters_Displays extends Component {
                                 <strong>TO PRINTED SIGNAGE.</strong>
                             </h3>
                         </div>
-                        <h2 className="text-center-mb" style={{ color: "white", maxWidth: 600 }}><strong>Meet your no-hassle, zero-power* digital solution for poster and signage applications.</strong></h2>
+                        <h2 className="text-center-mb" style={{ color: "white", maxWidth: 600 }}><strong>Meet our no-hassle, paper replacement display module for signage applications. Uses zero-power in static image mode.</strong></h2>
+                        <p style={{ fontWeight: 300, marginTop: 20, fontSize: "1rem", textAlign: "center", position: "absolute", right: 50, bottom: 10, color: "white", fontStyle: "italic", fontWeight: 'bold' }}>Screen images shown are simulated unless otherwise noted. Actual display will differ. </p>
                     </div>
                     <div
                         className="row key-section"
@@ -155,7 +162,7 @@ class Eposters_Displays extends Component {
                     <div
                         className="row hassle-block"
                         tabIndex={0}
-                        style={{ background: "#fff", width: "100%", textAlign: 'left', backgroundPosition: "top", backgroundImage: `url(${ePosterElevatorDarker})`, marginLeft: 0 }}
+                        style={{ background: "#fff", width: "100%", textAlign: 'left', backgroundPosition: "top", backgroundImage: `url(${ePosterElevatorDarker})`, marginLeft: 0, backgroundSize: "cover" }}
                     >
                         <div className="col-lg-6" style={{ padding: 30, margin: 80, backgroundColor: "#00000024", color: "white" }}>
                             <h2 style={{ paddingBottom: 30, fontSize: '3rem' }}>
@@ -255,14 +262,14 @@ class Eposters_Displays extends Component {
                         tabIndex={0}
                         style={{ background: "#FFF", width: "100%", textAlign: 'left', backgroundPosition: "top", marginLeft: 0 }}
                     >
-                        <div className="col-lg-6" style={{ padding: "20px 50px" }}>
+                        <div className="col-lg-6" style={{ padding: "20px 50px", display: "flex", flexDirection: "column", justifyContent: 'flex-start', alignItems: "center" }}>
                             <img
                                 src={GRAND}
-                                style={{ width: "100%" }}
+                                style={{ maxHeight: 700 }}
                                 role="presentation"
                                 alt="Control Sales Logo"
                             />
-                            <p style={{ fontWeight: 300, marginTop: 20, fontSize: "1rem", textAlign: "center" }}>*Screen images shown are simulated pictures. Actual display will differ. </p>
+                            <p style={{ fontWeight: 300, marginTop: 20, fontSize: "1rem", textAlign: "center" }}>Actual photograph of display in zero-power operation </p>
 
                         </div>
                         <div className="col-lg-6" style={{ padding: "20px 20px", paddingRight: 50 }}>
@@ -272,7 +279,7 @@ class Eposters_Displays extends Component {
                             <ul style={{ color: "black", marginBottom: 0 }}>
                                 <li>28.5-inch (diagonal)</li>
                                 <li>2160 x 3060 resolution</li>
-                                <li>*Zero power with static image hold</li>
+                                <li>Zero power with static image hold</li>
                                 <li>High contrast plus 30% reflectivity</li>
                                 <li>60k color gamut with E Ink's Spectra6</li>
                                 <li>Thin, lightweight, multi-panel capability</li>
@@ -282,10 +289,15 @@ class Eposters_Displays extends Component {
                             <br />
                             <Button
                                 size="lg"
-                                onClick={() => this.myRef.current.scrollIntoView()}
+                                onClick={(event) =>
+                                    this.callFunct(
+                                        event,
+                                        "/Eposters_product"
+                                    )
+                                }
                                 style={{ backgroundColor: "rgb(237, 12, 12)", borderColor: "rgb(237, 12, 12)", color: "white", marginTop: 10, borderRadius: 0, fontSize: 20, width: '100%', maxWidth: 300 }}
                             >
-                                Contact Sharp
+                                Find a Product
                             </Button>
                         </div>
                     </div>

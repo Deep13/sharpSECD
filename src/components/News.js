@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import convdisp from "../assets/Sharp-Press-Landing-Page-Hero-2.jpg";
-import convdisp1 from "../assets/news-1.jpeg";
+import convdisp1 from "../assets/news2.png";
 import news2 from "../assets/news-9-aug.png";
 import news3 from "../assets/news3.png";
+import news1 from "../assets/Sharp-ePoster-28.5-inch--Display.jpg";
 import Image from "react-bootstrap/Image";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -90,6 +91,49 @@ class MemoryLCD extends Component {
           <div className="row container-row-85">
             <div className="col-md-6" style={{ padding: 0 }}>
               <h2 style={{ textDecoration: "underline" }}>
+                Sharp’s ePoster Display Module Eliminates Paper Signage Expense and Waste
+              </h2>
+              <p>April 03, 2025</p>
+              <p>
+                Today, Sharp announced its new 28.5-inch
+                ePoster display. The 2160 x 3060 display module
+                enables an ultra-low-power alternative to the
+                expense and material waste of A2 (420 mm x 594
+                mm) poster printing.
+                <br />
+                <a
+                  className="redLink"
+                  href={require("../assets/Documents/Sharp-ePoster-28.5-inch--PR-FINAL.pdf")}
+                  // onClick={() => openDoc(key)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: "#e61d24" }}
+                >
+                  Read More..
+                </a>
+              </p>
+            </div>
+            <div
+              className="col-md-6"
+              style={{ justifyContent: "center", display: "flex" }}
+            >
+              <Image
+                role="presentation"
+                alt="ePoster Banner"
+                src={news1}
+                style={{ maxHeight: 400 }}
+                fluid
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          className="padding-top-50 padding-bottom-30"
+          style={{ backgroundColor: "#e4e4e4" }}
+        >
+          <div className="row container-row-85">
+            <div className="col-md-6" style={{ padding: 0 }}>
+              <h2 style={{ textDecoration: "underline" }}>
                 Sharp Memory in Pixel Display Combines Superb Visual Detail with Low-Power Operation
               </h2>
               <p>March 12, 2024</p>
@@ -160,48 +204,6 @@ class MemoryLCD extends Component {
                 role="presentation"
                 alt="Memory LCD Banner"
                 src={convdisp1}
-                style={{ maxHeight: 400 }}
-                fluid
-              />
-            </div>
-          </div>
-        </div>
-        <div
-          className="padding-top-50 padding-bottom-30"
-          style={{ backgroundColor: "#e4e4e4" }}
-        >
-          <div className="row container-row-85">
-            <div className="col-md-6" style={{ padding: 0 }}>
-              <h2 style={{ textDecoration: "underline" }}>
-                Sharp’s New R-IGZO 5.0-inch Display Now Available with Backlight Option
-              </h2>
-              <p>August 9, 2022</p>
-              <p>
-                Today, Sharp Electronics Corporation Device Division (SECD) announced
-                that its new Reflective IGZO (R-IGZO) 5.0-inch Class (diagonal) display for handheld applications is now available in a
-                backlit option. This update provides added flexibility to achieve superb sunlight viewability with incredibly low power
-                consumption. Samples are available now, with mass production starting in Q1 of 2023.
-                <br />
-                <a
-                  className="redLink"
-                  href={require("../assets/Documents/news-2.pdf")}
-                  // onClick={() => openDoc(key)}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ color: "#e61d24" }}
-                >
-                  Read More..
-                </a>
-              </p>
-            </div>
-            <div
-              className="col-md-6"
-              style={{ justifyContent: "center", display: "flex" }}
-            >
-              <Image
-                role="presentation"
-                alt="Memory LCD Banner"
-                src={news2}
                 style={{ maxHeight: 400 }}
                 fluid
               />

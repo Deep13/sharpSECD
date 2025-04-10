@@ -8,6 +8,7 @@ import MemoryLCD from "./components/Technologies/MemoryLCD";
 import RIGZO from "./components/Technologies/RIGZO";
 import IGZO from "./components/Technologies/IGZO";
 import MemoryLCDProduct from "./components/Products/Memory_lcd";
+import Eposters_product from "./components/Eposters_product";
 import ReflectiveIGZOProduct from "./components/Products/Reflective_IGZO";
 import Product4k8k from "./components/Products/Product4k8k";
 import Custom_camera from "./components/Products/Custom_camera";
@@ -83,6 +84,7 @@ function Routes() {
         {/* <Route path="/LowPowerDisplays" component={Low_power_displays} /> */}
         {/* <Route path="/ReflectiveIGZO" component={ReflectiveIGZO} /> */}
         <Route path="/MemoryInPixelLanding" component={MemoryInPixelLanding} />
+        <Route path="/Eposters_product" component={Eposters_product} />
         <Route path="/MemoryInPixel-TCS" component={MIPTCS} />
         <Route path="/MemoryInPixel-IntelliMark" component={MIPITM} />
         <Route path="/Low-Power-ODonnell" component={LowPowerODonnel} />
