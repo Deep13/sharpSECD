@@ -3,7 +3,7 @@ import Restaurant from "../assets/eposter_displays/ePosterRestaurant.jpg";
 import Hotel from "../assets/eposter_displays/ePosterHotel.jpg";
 import Healthcare from "../assets/eposter_displays/ePosterHealthcare.jpg";
 import Cinema from "../assets/eposter_displays/ePosterCinema.jpg";
-import GRAND from "../assets/eposter_displays/grand_1.jpeg";
+import GRAND from "../assets/eposter_displays/grand_1.jpg";
 import Earth from "../assets/eposter_displays/Earth.png";
 import Low from "../assets/eposter_displays/Low.png";
 import Lobbies from "../assets/eposter_displays/ePosterLobbies.jpg";

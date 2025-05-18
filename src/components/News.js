@@ -4,6 +4,7 @@ import convdisp1 from "../assets/news2.png";
 import news2 from "../assets/news-9-aug.png";
 import news3 from "../assets/news3.png";
 import news1 from "../assets/Sharp-ePoster-28.5-inch--Display.jpg";
+import news4 from "../assets/Sharp-MIP-3-5-inch-LS035Q7DD01.png";
 import Image from "react-bootstrap/Image";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -82,6 +83,46 @@ class MemoryLCD extends Component {
               src={convdisp}
               fluid
             />
+          </div>
+        </div>
+        <div
+          className="padding-top-50 padding-bottom-30"
+          style={{ backgroundColor: "#e4e4e4" }}
+        >
+          <div className="row container-row-85">
+            <div className="col-md-6" style={{ padding: 0 }}>
+              <h2 style={{ textDecoration: "underline" }}>
+                Sharp’s New Memory in Pixel LCD Features 64-Colors, Super Low-Power, and High Reflectivity for
+                Portable Applications
+              </h2>
+              <p>May 6, 2025</p>
+              <p>
+                Sharp has announced its new high-contrast, highly reflective 3.5-inch (diagonal) 64-color Memory in Pixel display. It renders color at 18% NTSC and has a 9.0% reflectivity, which makes images pop even in direct sunlight or high-ambient lighting scenarios.
+                <br />
+                <a
+                  className="redLink"
+                  href={require("../assets/Documents/news-4.pdf")}
+                  // onClick={() => openDoc(key)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: "#e61d24" }}
+                >
+                  Read More..
+                </a>
+              </p>
+            </div>
+            <div
+              className="col-md-6"
+              style={{ justifyContent: "center", display: "flex" }}
+            >
+              <Image
+                role="presentation"
+                alt="Memory in Pixel display"
+                src={news4}
+                style={{ maxHeight: 400 }}
+                fluid
+              />
+            </div>
           </div>
         </div>
         <div
@@ -210,6 +251,7 @@ class MemoryLCD extends Component {
             </div>
           </div>
         </div>
+
 
         <Footer />
       </div>

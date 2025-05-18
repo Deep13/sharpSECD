@@ -303,10 +303,10 @@ export const products = [
         name: "LS027B7DH01 Spec (LD-28305A)",
         link: require("../assets/Documents/LS027B7DH01 Spec (LD-28305A).pdf"),
       },
-      {
-        name: "Sharp-IIS-LS027B7DH01A-11-27-13",
-        link: require("../assets/Documents/Sharp-IIS-LS027B7DH01A-11-27-13.pdf"),
-      },
+      // {
+      //   name: "Sharp-IIS-LS027B7DH01A-11-27-13",
+      //   link: require("../assets/Documents/Sharp-IIS-LS027B7DH01A-11-27-13.pdf"),
+      // },
     ],
   },
   {
