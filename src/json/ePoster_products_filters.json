@@ -1,0 +1,34 @@
+{
+  "content": [
+    {
+      "title": "DIAGONAL SIZE",
+      "values": ["28.5 inch"]
+    },
+    {
+      "title": "CONTRAST RATIO",
+      "values": ["22:1"]
+    },
+    { "title": "LIFE CYCLE", "values": ["Production"] },
+    { "title": "NUMBER OF COLORS", "values": ["60,000"] },
+
+    {
+      "title": "OUTLINE DIMENSIONS",
+      "values": ["424.0 x 602.1 x 0.9 mm"]
+    },
+    {
+      "title": "OPERATING TEMP",
+      "values": ["-0°C to +50°C"]
+    },
+    {
+      "title": "PIXEL FORMAT",
+      "values": ["2160 x 3060"]
+    },
+
+    { "title": "RESPONSE TIME", "values": ["15 seconds"] },
+    { "title": "STORAGE TEMP", "values": ["-25°C to +60°C"] },
+    {
+      "title": "REFLECTIVITY",
+      "values": ["34%"]
+    }
+  ]
+}

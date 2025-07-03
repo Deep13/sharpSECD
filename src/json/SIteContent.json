@@ -106,7 +106,7 @@
       "type": "Product",
       "link": "/general-purpose-lcds",
       "header": "LQ104V1DG81",
-      "content": "LQ104V1DG81 This module features a 50,000-hr rated backlight with a built-in driver. An LVDS interface version of this module is also available, see LQ104V1LG81. For Specifications, see your local Sharp Representative."
+      "content": "LQ104V1DG81 This 10.4-inch Sharp TFT LCD features 450 nits of brightness, and a high 800:1 contrast ratio for excellent viewability in tough ambient lighting conditions. The module includes a built-in LED Driver for ease of design."
     },
     {
       "type": "Product",
@@ -293,6 +293,12 @@
       "link": "/news",
       "header": "Sharp SECD News",
       "content": "Visit this page for the latest product and technology news from Sharp SECD.For media inquiries, please contact: Karamy Muessig, Xposure Unlimited Karamy@XposureUnlimited.com Memory LCD Banner Sharp’s New R-IGZO 5-inch Display Sets Standard for Sunlight Viewability with Low-Power July 15, 2021 Today, Sharp Electronics Corporation Device Division (SECD) unveiled its new Reflective IGZO (R-IGZO) 5-inch (diagonal) display for handheld applications. This latest IGZO-based innovation brings an unbeatable solution for sunlight viewability in handheld technology with incredibly low power consumption. Samples are available now, with mass production starting in July 2021."
+    },
+    {
+      "type": "Product",
+      "link": "/Eposters_product",
+      "header": "LP285A6NW11",
+      "content": "LP285A6NW11 This 2160 x 3060 display module provides an ultra-low-power alternative to the expense and material waste of A2 (420 mm x 594 mm) poster printing. It is built on an IGZO backplane, which enables high resolution and thin borders. The display boasts stunning visuals with a 60k color gamut and zero-power static image hold thanks to the incorporation of E Ink’s Spectra 6 technology."
     }
   ]
 }

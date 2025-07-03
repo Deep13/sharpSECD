@@ -38,15 +38,13 @@ const Productitem = (props) => {
                   {props.item["OPERATING TEMP"]}
                 </div>
                 <div style={{ padding: "3px" }}>
-                  <span className="h6">Storage Temperature: </span>
-                  {props.item["STORAGE TEMP"]}
+                  <span className="h6">Image Hold Power (Typ.): </span>
+                  {props.item["Image Hold Power (Typ.)"]}
                 </div>
-                {props.item["BRIGHTNESS"] && (
-                  <div style={{ padding: "3px" }}>
-                    <span className="h6">Brightness: </span>
-                    {props.item["BRIGHTNESS"]}
-                  </div>
-                )}
+                <div style={{ padding: "3px" }}>
+                  <span className="h6">1Hz Update Power (Typ.): </span>
+                  {props.item["1Hz Update Power (Typ.)"]}
+                </div>
               </div>
             </div>
           </Card.Body>

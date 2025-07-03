@@ -38,7 +38,7 @@ export default class MemoryInPixel extends Component {
       showError: false,
     };
     this.myRef = React.createRef();
-  };
+  }
   onSubmit = (event) => {
     // this.setState({ selectedAreaCode: val });
     event.preventDefault();
@@ -87,8 +87,11 @@ export default class MemoryInPixel extends Component {
     return (
       <div>
         <Helmet>
-          <title>Memory-in-Pixel - Sharp</title>
-          <meta name="description" content="Sharp-Memory-in-Pixel" />
+          <title>Ultra-Low Power Memory-in-Pixel LCDs | Sharp SECD</title>
+          <meta
+            name="description"
+            content="Discover Sharp's ultra-low power Memory-in-Pixel LCDs with high ambient-light performance and 64-color options—ideal for wearables, meters & more."
+          />
         </Helmet>
 
         <div
@@ -168,7 +171,7 @@ export default class MemoryInPixel extends Component {
                   style={{ width: "100%" }}
                   src={image1}
                   role="presentation"
-                  alt="Sharp MIP"
+                  alt="Sharp Memory-in-Pixel LCD demo with Epson controller"
                 />
                 <p
                   style={{
@@ -296,7 +299,7 @@ export default class MemoryInPixel extends Component {
                     style={{ width: "100%" }}
                     src={image2}
                     role="presentation"
-                    alt="THE PERFECT SOLUTION"
+                    alt="A display on a bicycle suggesting high outdoor performance in bright light."
                   />
                 </div>
               </div>
@@ -314,8 +317,8 @@ export default class MemoryInPixel extends Component {
                       handheld, wearable, and other small-screen applications.
                       Embedded, 1-bit memory in every pixel allows for an
                       always-on display capable of delivering high-contrast,
-                      high-resolution content. Ultra-low power consumption
-                      means better heat management, too.
+                      high-resolution content. Ultra-low power consumption means
+                      better heat management, too.
                       <a
                         href="/"
                         onClick={(event) =>
@@ -443,7 +446,7 @@ export default class MemoryInPixel extends Component {
                     style={{ width: "100%" }}
                     src={image3}
                     role="presentation"
-                    alt="display without a frontlight or backlight"
+                    alt="Sharp Memory-in-Pixel LCD in reflective mode without backlight"
                   />
                   <p
                     style={{
@@ -613,7 +616,6 @@ export default class MemoryInPixel extends Component {
               </Button>
             </div>
           </div>
-
         </div>
         <div className="padding-top-30"></div>
         <div
@@ -664,7 +666,11 @@ export default class MemoryInPixel extends Component {
             <div className="col-md-6">
               <div className="padding-top-50 d-none d-md-block"></div>
               <div className="padding-top-50"></div>
-              <Form1 noValidate className="MIPContactForm" onSubmit={this.onSubmit}>
+              <Form1
+                noValidate
+                className="MIPContactForm"
+                onSubmit={this.onSubmit}
+              >
                 <Form1.Row style={{ paddingBottom: 10 }}>
                   <Col>
                     <Form1.Control
@@ -776,12 +782,10 @@ export default class MemoryInPixel extends Component {
                   style={{ margin: "10px" }}
                 />
                 <Toast
-                  onClose={() =>
-                    this.setState({ show: false, submit: false })
-                  }
+                  onClose={() => this.setState({ show: false, submit: false })}
                   show={this.state.show}
                   className="toastSuccess"
-                // transition="Fade"
+                  // transition="Fade"
                 >
                   <Toast.Header>
                     <strong className="me-auto">Success</strong>
@@ -797,7 +801,7 @@ export default class MemoryInPixel extends Component {
                   }
                   show={this.state.showError}
                   className="toastError"
-                // transition="Fade"
+                  // transition="Fade"
                 >
                   <Toast.Header>
                     <strong className="me-auto">Error</strong>

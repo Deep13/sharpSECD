@@ -23,6 +23,7 @@ class Footer extends Component {
         style={{
           backgroundColor: "black",
           padding: 50,
+          margin: 0
         }}
       >
         <div
@@ -33,11 +34,15 @@ class Footer extends Component {
           }}
         >
           <div style={{ color: "white" }}>
-            <img alt="SHARP Logo" src={logo} style={{ width: 200 }} />
-            <br />
-            Sharp Electronics Corporation Device Division
-            <br />
-            <span>201 NE Park Plaza Drive Suite 167 Vancouver, WA 98684</span>
+            <img className="footer-logo" alt="SHARP Logo" src={logo} style={{ width: 200 }} />
+
+            <div style={{ marginLeft: 10 }}>
+              Sharp Electronics Corporation, Device Division
+              <br />
+              <span>100 Paragon Drive</span>
+              <br />
+              <span>Montvale, New Jersey 07645</span>
+            </div>
           </div>
         </div>
         <div
@@ -48,46 +53,72 @@ class Footer extends Component {
         >
           <span style={{ fontSize: "2em", color: "white" }}>Products</span>
           <br />
-          <a
-            href="/"
-            style={{ color: "white" }}
-            onClick={(event) =>
-              this.callFunct(event, "/memory-in-pixel-lcds-product")
-            }
+          <p
+            style={{ color: "white", fontWeight: "bold", fontSize: '0.8rem', marginBottom: 0 }}
           >
             Memory in Pixel LCDs
-          </a>
-          <br />
-          <a
-            href="/"
-            style={{ color: "white" }}
-            onClick={(event) =>
-              this.callFunct(event, "/reflective-igzo-displays-product")
-            }
+          </p>
+          <div style={{ marginLeft: 10, display: 'flex', flexDirection: "column" }}>
+            <a
+              href="/"
+              style={{ color: "white" }}
+              onClick={(event) =>
+                this.callFunct(event, "/MemoryInPixel")
+              }
+            >
+              Overview
+            </a>
+            <a
+              href="/"
+              style={{ color: "white" }}
+              onClick={(event) =>
+                this.callFunct(event, "/memory-in-pixel-lcds-product")
+              }
+            >
+              Find a Product
+            </a>
+            <a
+              href="/"
+              style={{ color: "white" }}
+              onClick={(event) =>
+                this.callFunct(event, "/memory-in-pixel-lcds-technology")
+              }
+            >
+              Technology
+            </a>
+          </div>
+          <p
+            style={{ color: "white", fontWeight: "bold", fontSize: '0.8rem', marginBottom: 0 }}
           >
-            Reflective IGZO Displays
-          </a>
-          <br />
-          <a
-            href="/"
-            style={{ color: "white" }}
-            onClick={(event) =>
-              this.callFunct(event, "/industrial-lcds-product")
-            }
+            ePoster Display Modules
+          </p>
+          <div style={{ marginLeft: 10, display: 'flex', flexDirection: "column" }}>
+            <a
+              href="/"
+              style={{ color: "white" }}
+              onClick={(event) =>
+                this.callFunct(event, "/eposters-displays")
+              }
+            >
+              Overview
+            </a>
+          </div>
+          <p
+            style={{ color: "white", fontWeight: "bold", fontSize: '0.8rem', marginBottom: 0 }}
           >
             General Purpose LCDs
-          </a>
-          <br />
-          <a
-            href="/"
-            style={{ color: "white" }}
-            onClick={(event) =>
-              this.callFunct(event, "/custom-camera-modules-product")
-            }
-          >
-            Custom Camera Modules
-          </a>
-          <br />
+          </p>
+          <div style={{ marginLeft: 10, display: 'flex', flexDirection: "column" }}>
+            <a
+              href="/"
+              style={{ color: "white" }}
+              onClick={(event) =>
+                this.callFunct(event, "/industrial-lcds-product")
+              }
+            >
+              Find a Product
+            </a>
+          </div>
         </div>
         <div
           className="col-md-3"
@@ -95,34 +126,16 @@ class Footer extends Component {
             fontSize: "0.8rem",
           }}
         >
-          <span style={{ fontSize: "2em", color: "white" }}>Technologies</span>
+          <span style={{ fontSize: "2em", color: "white" }}>About Sharp</span>
           <br />
           <a
             href="/"
             style={{ color: "white" }}
             onClick={(event) =>
-              this.callFunct(event, "/memory-in-pixel-lcds-technology")
+              this.callFunct(event, "/news")
             }
           >
-            Memory in Pixel
-          </a>
-          <br />
-          <a
-            href="/"
-            style={{ color: "white" }}
-            onClick={(event) =>
-              this.callFunct(event, "/reflective-igzo-technology")
-            }
-          >
-            Reflective IGZO
-          </a>
-          <br />
-          <a
-            href="/"
-            style={{ color: "white" }}
-            onClick={(event) => this.callFunct(event, "/igzo-technology")}
-          >
-            IGZO
+            News
           </a>
         </div>
         <div

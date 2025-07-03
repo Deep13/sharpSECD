@@ -58,10 +58,11 @@ p {
 .MuiChip-root.makeStyles-chip-4 {
   background-color: #a91e2c !important;
 }
-a.dropdown-item:focus,
+/* a.dropdown-item:focus,
 a.dropdown-item:hover {
-  background-color: #a91e2c !important;
-}
+  background-color: transparent !important;
+} */
+
 .skip-main:focus {
   opacity: 1;
   cursor: pointer !important;
@@ -206,7 +207,7 @@ a.dropdown-item:hover {
 .home-banner {
   width: 100%;
   height: 680px;
-  background-image: url(/static/media/home_header.db952935.jpg);
+  /* background-image: url(/static/media/home_header.db952935.jpg); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -514,6 +515,12 @@ span:focus {
   background-color: #a91e2c !important;
   color: white !important;
 }
+.lightRedButton {
+  border-color: #e61d24 !important;
+  background-color: #e61d24 !important;
+  color: white !important;
+  border-radius: 0px !important;
+}
 
 .redButton:hover {
   border-color: rgb(237, 12, 12) !important;
@@ -653,10 +660,30 @@ circle:hover {
   font-size: 2.4rem;
   line-height: 65px;
 }
+.poster-section {
+  background-image: url("./assets/eposter_displays/ePoster Hero Desktop.jpg");
+  padding: 100px 80px;
+  width: 100%;
+  text-align: left;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 250px;
+  padding-bottom: 250px;
+}
 .biker-section {
   background-image: url("./assets/eposters/Mountain_Biker.jpg");
   padding: 100px 50px;
 }
+.poster-section h2 {
+  color: white;
+  font-size: 3rem;
+}
+.poster-section h3 {
+  color: white;
+  font-size: 60px;
+}
+
 .biker-section h2 {
   color: white;
   font-size: 3rem;
@@ -696,8 +723,120 @@ circle:hover {
   font-size: 1.8rem;
 }
 /*eposter css*/
+.poster-sharp-logo {
+  width: 400px;
+}
+
+/*dropdwon*/
+.second-level {
+  position: absolute;
+  left: 100% !important;
+  top: 0 !important;
+  display: none;
+  min-width: 180px;
+  background-color: white;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 5px 0;
+}
+
+/* Show second-level dropdown on hover */
+#more-services:hover .second-level {
+  display: block;
+}
+
+.drop-two {
+  top: 35px !important;
+}
+
+.drop-three {
+  top: 70px !important;
+}
+
+.drop-color:hover {
+  background-color: #a91e2c !important;
+}
+.no-drop-color:hover {
+  background-color: transparent !important;
+}
+.top-border-white {
+  border-top: 1px solid white !important;
+}
+
+.banner-div {
+  padding: 0px 60px;
+}
+.banner-div h1 {
+  text-align: left;
+  font-size: 3rem;
+}
 
 @media only screen and (max-width: 960px) {
+  .mb-top {
+    padding-top: 30px;
+  }
+  .mb-center {
+    justify-content: center !important;
+  }
+  .mb-center-align {
+    text-align: center !important;
+  }
+  .hassle-block h2 {
+    font-size: 2rem !important;
+  }
+  .hassle-block span {
+    font-size: 30px !important;
+  }
+  .hassle-block ul {
+    font-size: 25px !important;
+  }
+  .application-section {
+    padding: 80px 40px !important;
+  }
+  .application-section h2 {
+    font-size: 2rem !important;
+  }
+  .key-section {
+    flex-direction: column-reverse;
+    gap: 40px;
+    padding: 0px !important;
+  }
+  .key-section h2 {
+    font-size: 35px !important;
+  }
+  .key-section span {
+    font-size: 25px !important;
+  }
+  .retail-section {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+  .footer-logo {
+    width: 140px !important;
+  }
+  .poster-section {
+    background-image: url("./assets/eposter_displays/ePoster_HERO_Mobile.jpg");
+    padding-top: 40px;
+    background-position: top;
+  }
+  .poster-section h2 {
+    font-size: 30px !important;
+  }
+  .poster-section h3 {
+    color: white;
+    font-size: 40px !important;
+  }
+  .col-lg-6 {
+    padding: 30px !important;
+    margin: 0px !important;
+  }
+  .poster-sharp-logo {
+    width: 200px;
+    margin-bottom: 200px;
+  }
+  .text-center-mb {
+    text-align: center;
+  }
   .mob-width-300 {
     max-width: 200px;
     margin: 20px 0px;
@@ -772,9 +911,18 @@ circle:hover {
   .key-section p {
     font-size: 1rem;
   }
+  .banner-div h1 {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .banner-div {
+    padding: 0px;
+  }
 }
-
-@media only screen and (max-width: 400px) {
+.last-div {
+  flex-direction: row;
+}
+@media only screen and (max-width: 500px) {
   .mb-font-2 {
     font-size: 2rem !important;
   }
@@ -783,6 +931,19 @@ circle:hover {
   }
   .mb-ptop-60 {
     padding-top: 60px !important;
+  }
+  .icon-devices > div {
+    flex-direction: column;
+    align-items: center !important;
+  }
+  .icon-devices > div div {
+    margin-top: 0px !important;
+  }
+  .icon-devices-right > div {
+    flex-direction: column-reverse !important;
+  }
+  .icon-devices {
+    margin-top: 20px !important;
   }
 }
 

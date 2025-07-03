@@ -52,6 +52,10 @@ class Memory_lcd extends Component {
     if (search) {
       this.scrollToRef(this.products);
       this.handleSearch(search);
+    } else {
+      var a = [];
+      a["LIFE CYCLE"] = ["Production", "Pre-production"];
+      this.onDoFilter(a);
     }
   }
   handleTableSearch = (value) => {
@@ -209,10 +213,10 @@ class Memory_lcd extends Component {
     return (
       <div>
         <Helmet>
-          <title>Products | Memory LCD - Sharp</title>
+          <title>Memory-in-Pixel LCD Product Lineup | Sharp SECD</title>
           <meta
             name="description"
-            content="Ultra-low power consumption and high readability displays for almost any lighting environment."
+            content="Explore available sizes of MIP displays for battery-powered applications. 64-color or monochrome."
           />
         </Helmet>
         <div
@@ -279,7 +283,7 @@ class Memory_lcd extends Component {
           >
             <Image
               role="presentation"
-              alt="Product Memory LCD"
+              alt="Grid of Sharp Memory-in-Pixel LCD modules with product specs"
               src={lcdImage}
               fluid
             />
@@ -348,6 +352,12 @@ class Memory_lcd extends Component {
                                   data-category={item.title}
                                   data-option={content}
                                   onChange={this.selectFilter}
+                                  defaultChecked={
+                                    content == "Production" ||
+                                    content == "Pre-production"
+                                      ? true
+                                      : false
+                                  }
                                 />
                               );
                             })}

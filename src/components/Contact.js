@@ -82,8 +82,8 @@ class Contact extends Component {
                   {this.state.selectedAreaTitle}
                 </div>
                 <Mapsvg />
-                <div style={{ fontSize: "1.5rem", textAlign: "center" }}>
-                  Click on the map area to see locations
+                <div className="h3" style={{ textAlign: "center" }}>
+                  Click on the Map to Find a Local Authorized Sales Representative
                   <br />
                   <span className="h5">
                     For inquiries from
@@ -319,7 +319,7 @@ class Contact extends Component {
           </div>
           <div tabIndex={0} className="col-md-4" style={{ padding: 0 }}>
             <div tabIndex={-1} style={{ height: "100%", padding: 10 }}>
-              <div className="h3">Contact our experts</div>
+              <div className="h3">Contact a SHARP Expert</div>
               <div>
                 <p>
                   If you have questions about our products, solutions and

@@ -101,74 +101,88 @@ class Headernav extends Component {
                 title="Products"
               >
                 <NavDropdown.Item
-                  onClick={() => this.selectNavigate("/MemoryInPixel")}
+                  className="no-drop-color"
+                  style={{ fontWeight: "bold" }}
                 >
                   Memory in Pixel LCDs
+                  <NavDropdown.Item
+                    className="drop-color"
+                    onClick={() => this.selectNavigate("/MemoryInPixel")}
+                  >
+                    Overview
+                  </NavDropdown.Item>
+                  <NavDropdown.Item
+                    className="drop-color"
+                    onClick={() => this.selectNavigate("/memory-in-pixel-lcds-product")}
+                  >
+                    Find a Product
+                  </NavDropdown.Item>
+                  <NavDropdown.Item
+                    className="drop-color"
+                    onClick={() => this.selectNavigate("/memory-in-pixel-lcds-technology")}
+                  >
+                    Technology
+                  </NavDropdown.Item>
                 </NavDropdown.Item>
-                <NavDropdown.Item
-                  onClick={() => this.selectNavigate("/ReflectiveIGZO")}
-                >
-                  Reflective IGZO Displays
-                </NavDropdown.Item>
-                {/* <NavDropdown.Item
-                  onClick={() =>
-                    this.selectNavigate("/igzo-8k-displays-product")
-                  }
-                >
-                  IGZO 8K Displays
+                {/* <NavDropdown.Item className="dropdown-toggle" id="more-services" >
+                  Memory in Pixel LCDs
+                  <ul className="dropdown-menu second-level">
+                    <li><a className="dropdown-item" href="#" onClick={() => this.selectNavigate("/MemoryInPixel")}>Overview</a></li>
+                    <li><a className="dropdown-item" href="#" onClick={() => this.selectNavigate("/memory-in-pixel-lcds-product")}>Find a Product</a></li>
+                    <li><a className="dropdown-item" href="#" onClick={() => this.selectNavigate("/memory-in-pixel-lcds-technology")}>Technology</a></li>
+                  </ul>
                 </NavDropdown.Item> */}
-                {/* <NavDropdown.Divider /> */}
                 <NavDropdown.Item
-                  onClick={() =>
-                    this.selectNavigate("/industrial-lcds-product")
-                  }
+                  className="no-drop-color"
+                  style={{ fontWeight: "bold" }}
+                >
+                  ePoster Display Modules
+                  <NavDropdown.Item
+                    className="drop-color"
+                    onClick={() => this.selectNavigate("/eposters-displays")}
+                  >
+                    Overview
+                  </NavDropdown.Item>
+                  <NavDropdown.Item
+                    className="drop-color"
+                    onClick={() => this.selectNavigate("/Eposters_product")}
+                  >
+                    Find a Product
+                  </NavDropdown.Item>
+                </NavDropdown.Item>
+                {/* <NavDropdown.Item className="dropdown-toggle" id="more-services">
+                  ePoster Display Modules
+                  <ul className="dropdown-menu second-level drop-two">
+                    <li><a className="dropdown-item" href="#" onClick={() => this.selectNavigate("/eposters-displays")}>Overview</a></li>
+                  </ul>
+                </NavDropdown.Item> */}
+                <NavDropdown.Item
+                  className="no-drop-color"
+                  style={{ fontWeight: "bold" }}
                 >
                   General Purpose LCDs
+                  <NavDropdown.Item
+                    className="drop-color"
+                    onClick={() => this.selectNavigate("/industrial-lcds-product")}
+                  >
+                    Find a Product
+                  </NavDropdown.Item>
                 </NavDropdown.Item>
-                <NavDropdown.Item
-                  onClick={() =>
-                    this.selectNavigate("/custom-camera-modules-product")
-                  }
-                >
-                  Custom Camera Modules
-                </NavDropdown.Item>
+                {/* <NavDropdown.Item className="dropdown-toggle" id="more-services">
+                  General Purpose LCDs
+                  <ul className="dropdown-menu second-level drop-three">
+                    <li><a className="dropdown-item" href="#" onClick={() => this.selectNavigate("/industrial-lcds-product")}>Find a Product</a></li>
+                  </ul>
+                </NavDropdown.Item> */}
+
 
               </NavDropdown>
-              <NavDropdown
-                show={this.state.showTech}
-                onMouseEnter={this.showDropdownTech}
-                onMouseLeave={this.hideDropdownTech}
-                onClick={this.showDropdownTech}
-                onFocus={this.hideDropdown}
-                title="Technologies"
+              <Nav.Link
+                onFocus={this.hideAll}
+                onClick={() => this.selectNavigate("/about")}
               >
-                <NavDropdown.Item
-                  onClick={() =>
-                    this.selectNavigate("/memory-in-pixel-lcds-technology")
-                  }
-                >
-                  Memory in Pixel
-                </NavDropdown.Item>
-                <NavDropdown.Item
-                  onClick={() =>
-                    this.selectNavigate("/reflective-igzo-technology")
-                  }
-                >
-                  Reflective IGZO
-                </NavDropdown.Item>
-                <NavDropdown.Item
-                  onClick={() => this.selectNavigate("/igzo-technology")}
-                >
-                  IGZO
-                </NavDropdown.Item>
-                <NavDropdown.Item
-                  onClick={() =>
-                    this.selectNavigate("/LowPowerDisplays")
-                  }
-                >
-                  Low Power LCDs
-                </NavDropdown.Item>
-              </NavDropdown>
+                About
+              </Nav.Link>
               <Nav.Link
                 onFocus={this.hideAll}
                 onClick={() => this.selectNavigate("/news")}

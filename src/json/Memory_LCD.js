@@ -20,6 +20,8 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "60°",
     "VIEWING ANGLE 6 O'CLOCK": "60°",
     "VIEWING ANGLE SIDE TO SIDE": "120°",
+    "Image Hold Power (Typ.)": "15 uW",
+    "1Hz Update Power (Typ.)": "25 uW",
     DOCUMENTS: [
       {
         name: "Sharp-LCD-Specification-LS011B7DH03-11-24-17",
@@ -48,6 +50,8 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "60°",
     "VIEWING ANGLE 6 O'CLOCK": "60°",
     "VIEWING ANGLE SIDE TO SIDE": "120°",
+    "Image Hold Power (Typ.)": "11 uW",
+    "1Hz Update Power (Typ.)": "33 uW",
     img: [require("../assets/Memory in Pixel Drawings/Sharp-LS012B7DD06A-Mechanical-Drawing.png")],
     DOCUMENTS: [
       {
@@ -76,6 +80,8 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "60°",
     "VIEWING ANGLE 6 O'CLOCK": "60°",
     "VIEWING ANGLE SIDE TO SIDE": "120°",
+    "Image Hold Power (Typ.)": "25 uW",
+    "1Hz Update Power (Typ.)": "35 uW",
     img: [require("../assets/Memory in Pixel Drawings/Sharp-LS013B7DH05-Mechanical-Drawing.png")],
     DOCUMENTS: [
       {
@@ -105,6 +111,8 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "60°",
     "VIEWING ANGLE 6 O'CLOCK": "60°",
     "VIEWING ANGLE SIDE TO SIDE": "120°",
+    "Image Hold Power (Typ.)": "12 uW",
+    "1Hz Update Power (Typ.)": "50 uW",
     img: [require("../assets/Memory in Pixel Drawings/Sharp-LS013B7DH03-Mechanical-Drawing.png")],
     DOCUMENTS: [
       {
@@ -133,6 +141,8 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "60°",
     "VIEWING ANGLE 6 O'CLOCK": "60°",
     "VIEWING ANGLE SIDE TO SIDE": "120°",
+    "Image Hold Power (Typ.)": "3 uW",
+    "1Hz Update Power (Typ.)": "12 uW",
     img: [require("../assets/Memory in Pixel Drawings/Sharp-LS013B7DD02-Technical-Drawing.jpg")],
     DOCUMENTS: [
       {
@@ -161,6 +171,8 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "60°",
     "VIEWING ANGLE 6 O'CLOCK": "60°",
     "VIEWING ANGLE SIDE TO SIDE": "120°",
+    "Image Hold Power (Typ.)": "3.4 uW",
+    "1Hz Update Power (Typ.)": "14 uW",
     img: [require("../assets/Memory in Pixel Drawings/Sharp-LS014B7DD01-Mechanical-Drawing.jpg")],
     DOCUMENTS: [
       {
@@ -189,6 +201,8 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "60°",
     "VIEWING ANGLE 6 O'CLOCK": "60°",
     "VIEWING ANGLE SIDE TO SIDE": "120°",
+    "Image Hold Power (Typ.)": "15 uW",
+    "1Hz Update Power (Typ.)": "100 uW",
     img: [require("../assets/Memory in Pixel Drawings/Sharp-LS018B7DH02-Mechanical-Drawing.jpg")],
     DOCUMENTS: [
       // {
@@ -221,6 +235,8 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "60°",
     "VIEWING ANGLE 6 O'CLOCK": "60°",
     "VIEWING ANGLE SIDE TO SIDE": "120°",
+    "Image Hold Power (Typ.)": "32 uW",
+    "1Hz Update Power (Typ.)": "45 uW",
     img: [require("../assets/Memory in Pixel Drawings/Sharp-LS021B7DD02-Mechanical-Drawing.jpg")],
     DOCUMENTS: [
       {
@@ -249,6 +265,8 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "60°",
     "VIEWING ANGLE 6 O'CLOCK": "60°",
     "VIEWING ANGLE SIDE TO SIDE": "120°",
+    "Image Hold Power (Typ.)": "80 uW",
+    "1Hz Update Power (Typ.)": "100 uW",
     DOCUMENTS: [
       {
         name: "Sharp-LCD-Specification-LS022B7DH03_SPEC_LD2023X09",
@@ -277,16 +295,18 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "60°",
     "VIEWING ANGLE 6 O'CLOCK": "60°",
     "VIEWING ANGLE SIDE TO SIDE": "110°",
+    "Image Hold Power (Typ.)": "50 uW",
+    "1Hz Update Power (Typ.)": "175 uW",
     img: [require("../assets/Memory in Pixel Drawings/Sharp-LS027B7DH01A-Mechanical-Drawing.png")],
     DOCUMENTS: [
       {
         name: "LS027B7DH01 Spec (LD-28305A)",
         link: require("../assets/Documents/LS027B7DH01 Spec (LD-28305A).pdf"),
       },
-      {
-        name: "Sharp-IIS-LS027B7DH01A-11-27-13",
-        link: require("../assets/Documents/Sharp-IIS-LS027B7DH01A-11-27-13.pdf"),
-      },
+      // {
+      //   name: "Sharp-IIS-LS027B7DH01A-11-27-13",
+      //   link: require("../assets/Documents/Sharp-IIS-LS027B7DH01A-11-27-13.pdf"),
+      // },
     ],
   },
   {
@@ -309,6 +329,8 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "60°",
     "VIEWING ANGLE 6 O'CLOCK": "60°",
     "VIEWING ANGLE SIDE TO SIDE": "120°",
+    "Image Hold Power (Typ.)": "30 uW",
+    "1Hz Update Power (Typ.)": "250 uW",
     img: [require("../assets/Memory in Pixel Drawings/Sharp-LS032B7DD02-Mechanical-Drawing.png")],
     DOCUMENTS: [
       {
@@ -337,6 +359,8 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "60°",
     "VIEWING ANGLE 6 O'CLOCK": "60°",
     "VIEWING ANGLE SIDE TO SIDE": "120°",
+    "Image Hold Power (Typ.)": "1.05 uW",
+    "1Hz Update Power (Typ.)": "22.8 uW",
     img: [require("../assets/Memory in Pixel Drawings/LS035Q7DD01_SPEC_LD2023702A.jpg"), require("../assets/Memory in Pixel Drawings/Sharp-MIP-3-5-inch-LS035Q7DD01.jpg")],
     DOCUMENTS: [
       {
@@ -365,6 +389,8 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "60°",
     "VIEWING ANGLE 6 O'CLOCK": "60°",
     "VIEWING ANGLE SIDE TO SIDE": "120°",
+    "Image Hold Power (Typ.)": "100 uW",
+    "1Hz Update Power (Typ.)": "600 uW",
     img: [require("../assets/Memory in Pixel Drawings/Sharp-LS044Q7DH01-Mechanical-Drawing.png")],
     DOCUMENTS: [
       {

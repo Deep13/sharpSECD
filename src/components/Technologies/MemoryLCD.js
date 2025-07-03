@@ -25,10 +25,10 @@ class MemoryLCD extends Component {
     return (
       <div>
         <Helmet>
-          <title>Technology | Memory LCD - Sharp</title>
+          <title>Memory-in-Pixel LCD Technology Overview | Sharp SECD</title>
           <meta
             name="description"
-            content="Ultra-low power consumption displays for long battery life, our MIP products are perfect for outdoor applications."
+            content="Understand how Sharp’s Memory-in-Pixel LCDs use embedded pixel memory to enable ultra-low power, high-resolution, sunlight-readable display designs."
           />
         </Helmet>
         <div
@@ -91,7 +91,7 @@ class MemoryLCD extends Component {
           >
             <Image
               role="presentation"
-              alt="Memory LCD Banner"
+              alt="Photograph of a blank Sharp Memory in Pixel landscape mode low power reflective display "
               src={convdisp}
               fluid
             />
@@ -190,7 +190,7 @@ class MemoryLCD extends Component {
             <img
               className="mob-img-full"
               role="presentation"
-              alt="Sharp-Technology-MIP-Power-Consumption"
+              alt="Power consumption for 1.28” and 2.7” Memory LCDs "
               src={convdisp1}
             />
           </div>
@@ -245,7 +245,7 @@ class MemoryLCD extends Component {
             <img
               className="mob-img-full"
               role="presentation"
-              alt="Sharp-Technology-MIP-Power-Consumption"
+              alt="Diagram showing an example of data memory in each pixel for the Sharp Memory in Pixel LCD."
               src={convdisp2}
             />
           </div>
@@ -372,7 +372,7 @@ class MemoryLCD extends Component {
             <img
               className="mob-img-full"
               role="presentation"
-              alt="Sharp-Technology-MIP-Power-Consumption"
+              alt="Table showing fast image refresh time for the Sharp Memory in Pixel LCD."
               src={convdisp3}
             />
           </div>
@@ -461,7 +461,7 @@ class MemoryLCD extends Component {
             <img
               className="mob-img-full"
               role="presentation"
-              alt="Sharp-Technology-MIP-Power-Consumption"
+              alt="A diagram showing the simple 3-Wire Interface of a Sharp Memory in Pixel LCD."
               src={convdisp4}
             />
           </div>
