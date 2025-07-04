@@ -101,6 +101,7 @@ class Eposters_Displays extends Component {
         </Helmet>
         <div className="row" style={{ width: "100%", margin: 0 }}>
           <div
+            aria-label="Concept image of Sharp ePoster used for museum exhibit signage"
             className="poster-section"
             tabIndex={0}
             style={{ position: "relative" }}
@@ -202,6 +203,7 @@ class Eposters_Displays extends Component {
             </div>
           </div>
           <div
+            aria-label="Visual mock-up showing potential elevator signage using Sharp ePoster"
             className="row hassle-block"
             tabIndex={0}
             style={{
@@ -736,7 +738,7 @@ class Eposters_Displays extends Component {
                     }
                     show={this.state.show}
                     className="toastSuccess"
-                    // transition="Fade"
+                  // transition="Fade"
                   >
                     <Toast.Header>
                       <strong className="me-auto">Success</strong>
@@ -752,7 +754,7 @@ class Eposters_Displays extends Component {
                     }
                     show={this.state.showError}
                     className="toastError"
-                    // transition="Fade"
+                  // transition="Fade"
                   >
                     <Toast.Header>
                       <strong className="me-auto">Error</strong>
