@@ -41,6 +41,7 @@ export default function AboutUs() {
         />
       </Helmet>
       <div
+        aria-label="Sharp logo with mountain landscape and vibrant red tundra, illustrating display clarity and color performance"
         style={{
           backgroundImage: `url(${Screen3})`,
           backgroundSize: "cover",

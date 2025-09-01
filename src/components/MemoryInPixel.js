@@ -95,6 +95,7 @@ export default class MemoryInPixel extends Component {
         </Helmet>
 
         <div
+          aria-label="Person checking GPS smartwatch outdoors with mountains in background, illustrating high sunlight readability of Sharp Memory LCDs"
           style={{
             alignItems: "center",
             backgroundImage: `url(${Screen3})`,
@@ -150,6 +151,7 @@ export default class MemoryInPixel extends Component {
           </div>
         </div>
         <div
+
           style={{
             display: "flex",
             alignItems: "center",
@@ -785,7 +787,7 @@ export default class MemoryInPixel extends Component {
                   onClose={() => this.setState({ show: false, submit: false })}
                   show={this.state.show}
                   className="toastSuccess"
-                  // transition="Fade"
+                // transition="Fade"
                 >
                   <Toast.Header>
                     <strong className="me-auto">Success</strong>
@@ -801,7 +803,7 @@ export default class MemoryInPixel extends Component {
                   }
                   show={this.state.showError}
                   className="toastError"
-                  // transition="Fade"
+                // transition="Fade"
                 >
                   <Toast.Header>
                     <strong className="me-auto">Error</strong>

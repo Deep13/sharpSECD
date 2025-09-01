@@ -57,10 +57,10 @@ class Contact extends Component {
     return (
       <div>
         <Helmet>
-          <title>Contact Us - Sharp</title>
+          <title>Contact Sharp SECD – Speak with a Display Technology Expert</title>
           <meta
             name="description"
-            content="Contact Sharp today about the perfect display module solution for your next product."
+            content="Reach out to Sharp SECD for product inquiries, technical support, or to find your local sales representative. We’re here to help with your display needs."
           />
         </Helmet>
         <div className="row container-row-85">
