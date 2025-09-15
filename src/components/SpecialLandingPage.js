@@ -750,7 +750,7 @@ class SpecialLandingPage extends Component {
               <div style={{ width: "70%" }}>
                 <Form1
                   noValidate
-                  className={`ePosterDisplays ${selectedCompany.companyName}`}
+                  className={`ePosterDisplays ${selectedCompany.meta.contactFormClass}`}
                   onSubmit={this.onSubmit}
                 >
                   <Form1.Row style={{ paddingBottom: 10 }}>
