@@ -13,16 +13,30 @@ const emailIds = {
     "carrollb@sharpsec.com,karamy@xposureunlimited.com",
   "5-inch R-IGZO Landing": "carrollb@sharpsec.com,karamy@xposureunlimited.com",
   "Low Power Display": "carrollb@sharpsec.com,karamy@xposureunlimited.com",
-  "O'Donnell": "carrollb@sharpsec.com,karamy@xposureunlimited.com,lberndt@odonnell.com",
-  "TCS": "carrollb@sharpsec.com,karamy@xposureunlimited.com,ashley@tc-sales.com",
-  "IntelliMark": "carrollb@sharpsec.com,karamy@xposureunlimited.com,secdintellimarkwebcontact@sharpsec.com",
-  "Control Sales": "carrollb@sharpsec.com,karamy@xposureunlimited.com,lisay@controlsales.com",
-  "O'Donnell Low Power": "carrollb@sharpsec.com,karamy@xposureunlimited.com,LBerndt@odonnell.com",
-  "ePoster": "carrollb@sharpsec.com,karamy@xposureunlimited.com",
-  "Control Sales R-IGZO": "jcoombs@controlsales.com,carrollb@sharpsec.com,karamy@xposureunlimited.com",
-  "Control Sales R-IGZO TCS": "ashley@tc-sales.com,carrollb@sharpsec.com,karamy@xposureunlimited.com",
+  "O'Donnell":
+    "carrollb@sharpsec.com,karamy@xposureunlimited.com,lberndt@odonnell.com",
+  TCS: "carrollb@sharpsec.com,karamy@xposureunlimited.com,ashley@tc-sales.com",
+  IntelliMark:
+    "carrollb@sharpsec.com,karamy@xposureunlimited.com,secdintellimarkwebcontact@sharpsec.com",
+  "Control Sales":
+    "carrollb@sharpsec.com,karamy@xposureunlimited.com,lisay@controlsales.com",
+  "O'Donnell Low Power":
+    "carrollb@sharpsec.com,karamy@xposureunlimited.com,LBerndt@odonnell.com",
+  ePoster: "carrollb@sharpsec.com,karamy@xposureunlimited.com",
+  "Control Sales R-IGZO":
+    "jcoombs@controlsales.com,carrollb@sharpsec.com,karamy@xposureunlimited.com",
+  "Control Sales R-IGZO TCS":
+    "ashley@tc-sales.com,carrollb@sharpsec.com,karamy@xposureunlimited.com",
   "Reflective LCD Landing Page":
     "carrollb@sharpsec.com,karamy@xposureunlimited.com",
+  "control-sales-form":
+    "lisay@controlsales.com,CarrollB@sharpsec.com,karamy@xposureunlimited.com",
+  "thom-luke-sales-form":
+    "rick@thomlukesales.com,CarrollB@sharpsec.com,karamy@xposureunlimited.com",
+  "quantum-form":
+    "lori@quantumsales.ca,CarrollB@sharpsec.com,karamy@xposureunlimited.com",
+  "tech-coast-sales-form":
+    "ashley@tc-sales.com,CarrollB@sharpsec.com,karamy@xposureunlimited.com",
 };
 app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({ extended: true }));

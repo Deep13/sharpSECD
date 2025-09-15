@@ -135,7 +135,7 @@ class SpecialLandingPage extends Component {
       mobile: this.state.mobileCode + "-" + this.state.mobile,
       email: this.state.email,
       message: this.state.message,
-      subject: ["ePoster Landing"],
+      subject: [companyData[this.props.companyName].meta.contactFormClass],
     };
     axios
       .post("/api/form", data)
