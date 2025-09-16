@@ -1,5 +1,11 @@
 import React, { useEffect } from "react";
-import { HashRouter, Switch, Route, useHistory, Redirect } from "react-router-dom";
+import {
+  HashRouter,
+  Switch,
+  Route,
+  useHistory,
+  Redirect,
+} from "react-router-dom";
 import App from "./App";
 import Products from "./components/Products/products";
 // import Productdetail from "./components/Products/productdetail";
@@ -34,7 +40,8 @@ import RIGZOTCS from "./components/RIGZOTCS";
 import { Cookies } from "react-cookie-consent";
 import ReactGA from "react-ga";
 import LinkedInTag from "react-linkedin-insight";
-import Low_power_displays from './components/Products/Low_power_displays'
+import Low_power_displays from "./components/Products/Low_power_displays";
+import SpecialLandingPage from "./components/SpecialLandingPage";
 
 function Routes() {
   const history = useHistory();
@@ -57,7 +64,10 @@ function Routes() {
     <HashRouter>
       <Switch>
         <Route path="/" exact component={App} />
-        <Route path="/industrial-lcds-product" render={() => <Redirect to="/general-purpose-lcds" />} />
+        <Route
+          path="/industrial-lcds-product"
+          render={() => <Redirect to="/general-purpose-lcds" />}
+        />
         <Route path="/general-purpose-lcds" component={Products} />
         <Route
           path="/memory-in-pixel-lcds-product"
@@ -96,6 +106,23 @@ function Routes() {
         <Route path="/eposters-displays" component={Eposters_Displays} />
         <Route path="/MemoryInPixel-ODonnell" component={ODonnellMIP} />
         <Route path="/MemoryInPixel-Control-Sales" component={ControlSales} />
+
+        <Route
+          path="/eposters-displays-tech-coast"
+          render={() => <SpecialLandingPage companyName="techCoastSales" />}
+        />
+        <Route
+          path="/eposters-displays-quantum"
+          render={() => <SpecialLandingPage companyName="quantum" />}
+        />
+        <Route
+          path="/eposters-displays-control-sales"
+          render={() => <SpecialLandingPage companyName="controlSales" />}
+        />
+        <Route
+          path="/eposters-displays-thom-luke"
+          render={() => <SpecialLandingPage companyName="thomLukeSales" />}
+        />
         <Route path="/*" component={NotFound} />
       </Switch>
     </HashRouter>
