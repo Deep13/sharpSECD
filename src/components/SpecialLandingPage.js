@@ -26,14 +26,19 @@ import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import Loader from "react-loader-spinner";
 import axios from "axios";
 import techCoastSalesBanner from "../assets/partnerLogos/techCoastSales.png";
+import techCoastSalesBanner2 from "../assets/partnerLogos/techCoastSales.jpg";
 import controlSalesBanner from "../assets/partnerLogos/controlSales.png";
+import controlSalesBanner2 from "../assets/partnerLogos/controlSales.jpg";
 import thomLukeSalesBanner from "../assets/partnerLogos/thomLukeSales.png";
-import quantumBanner from "../assets/partnerLogos/quantum.png";
+import thomLukeSalesBanner2 from "../assets/partnerLogos/thomLukeSales.jpg";
+import quantumBanner from "../assets/partnerLogos/quantum2.png";
+import quantumBanner2 from "../assets/partnerLogos/quantum.png";
 AOS.init();
 // import { Button, Form, FormControl, Table } from "react-bootstrap";
 const companyData = {
   techCoastSales: {
     bannerImg: techCoastSalesBanner,
+    bannerImg2: techCoastSalesBanner2,
     bannerTitle: "Tech Coast Sales – ePoster Product Overview",
     meta: {
       canonical: "https://sharpsecd.com/#/eposters-displays",
@@ -52,6 +57,7 @@ const companyData = {
 
   thomLukeSales: {
     bannerImg: thomLukeSalesBanner,
+    bannerImg2: thomLukeSalesBanner2,
     bannerTitle: "Thom Luke Sales – ePoster Product Overview",
     meta: {
       canonical: "https://sharpsecd.com/#/eposters-displays",
@@ -69,6 +75,7 @@ const companyData = {
 
   quantum: {
     bannerImg: quantumBanner,
+    bannerImg2: quantumBanner2,
     bannerTitle: "Quantum – ePoster Product Overview",
     meta: {
       canonical: "https://sharpsecd.com/#/eposters-displays",
@@ -86,6 +93,7 @@ const companyData = {
 
   controlSales: {
     bannerImg: controlSalesBanner,
+    bannerImg2: controlSalesBanner2,
     bannerTitle: "Control Sales – ePoster Product Overview",
     meta: {
       canonical: "https://sharpsecd.com/#/eposters-displays",
@@ -195,15 +203,9 @@ class SpecialLandingPage extends Component {
             tabIndex={0}
             style={{ position: "relative" }}
           >
-            <img
-              className="poster-sharp-logo"
-              src={sharp_logo}
-              role="presentation"
-              alt="Control Sales Logo"
-            />
             <div
               className="text-center-mb"
-              style={{ marginBottom: 40, marginTop: 40 }}
+              style={{ marginBottom: 40, marginTop: 20 }}
             >
               <h3 style={{ fontSize: 60 }}>
                 <strong>SAY GOODBYE</strong>
@@ -261,7 +263,7 @@ class SpecialLandingPage extends Component {
               }}
             >
               <img
-                src={selectedCompany.bannerImg}
+                src={selectedCompany.bannerImg2}
                 alt={selectedCompany.bannerTitle}
                 style={{
                   width: "100%",
@@ -296,7 +298,7 @@ class SpecialLandingPage extends Component {
                   maxWidth: 320,
                 }}
               >
-                Contact Sharp
+                Contact Us
               </Button>
             </div>
 
@@ -351,7 +353,7 @@ class SpecialLandingPage extends Component {
                 }}
               >
                 <li>Eliminate hassles of printing</li>
-                <li>Allow cloud-based content management</li>
+                <li>Allow simple updates from a laptop</li>
                 <li>Save time</li>
                 <li>Save labor</li>
                 <li>Save money</li>
@@ -558,7 +560,7 @@ class SpecialLandingPage extends Component {
               <br />
               <Button
                 size="lg"
-                onClick={(event) => this.callFunct(event, "/Eposters_product")}
+                onClick={() => this.myRef.current.scrollIntoView()}
                 style={{
                   backgroundColor: "rgb(237, 12, 12)",
                   borderColor: "rgb(237, 12, 12)",
@@ -570,7 +572,7 @@ class SpecialLandingPage extends Component {
                   maxWidth: 300,
                 }}
               >
-                Find a Product
+                Contact Us
               </Button>
             </div>
           </div>
@@ -679,7 +681,7 @@ class SpecialLandingPage extends Component {
           <div
             ref={this.myRef}
             style={{
-              backgroundColor: "rgba(45,47,65,1)",
+              backgroundColor: "#a6a6a6",
               width: "100%",
               justifyContent: "center",
               display: "flex",
