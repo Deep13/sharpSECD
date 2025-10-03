@@ -33,6 +33,7 @@ import thomLukeSalesBanner from "../assets/partnerLogos/thomLukeSales.png";
 import thomLukeSalesBanner2 from "../assets/partnerLogos/thomLukeSales.jpg";
 import quantumBanner from "../assets/partnerLogos/quantum2.png";
 import quantumBanner2 from "../assets/partnerLogos/quantum.png";
+import oDonnel from "../assets/partnerLogos/oDonnell.png";
 import Head from "next/head";
 import { Form, Row } from "react-bootstrap";
 import Image from "next/image";
@@ -109,6 +110,25 @@ const companyData = {
         "karamy@xposureunlimited.com",
       ],
       url: "https://sharpsecd.com/#/eposters-displays-control-sales",
+    },
+  },
+
+  oDonnell: {
+    bannerImg: oDonnel,
+    bannerImg2: oDonnel,
+    bannerTitle: "O'Donnell – ePoster Product Overview",
+    meta: {
+      canonical: "https://sharpsecd.com/#/eposters-displays",
+      noindex: true,
+      follow: true,
+      contactFormClass: "odonnell-sales-form",
+      contactFormEmails: [
+        "LBerndt@odonnell.com",
+        "CarrollB@sharpsec.com",
+        "karamy@xposureunlimited.com",
+        "yeep@sharpusa.com",
+      ],
+      url: "https://sharpsecd.com/#/eposters-displays-odonnell",
     },
   },
 };
