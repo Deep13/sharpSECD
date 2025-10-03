@@ -190,11 +190,12 @@ class SearchResults extends Component {
                     </InputGroup> */}
           </Form>
         </div>
-        {this.state.aProducts.length === 0 && this.state.aPages.length === 0 && (
-          <div style={{ color: "#e61d24", textAlign: "center" }}>
-            <h3>No results found</h3>
-          </div>
-        )}
+        {this.state.aProducts.length === 0 &&
+          this.state.aPages.length === 0 && (
+            <div style={{ color: "#e61d24", textAlign: "center" }}>
+              <h3>No results found</h3>
+            </div>
+          )}
         {this.state.aProducts.length > 0 && (
           <div
             className="row container-row-85 padding-top-30 padding-bottom-30"

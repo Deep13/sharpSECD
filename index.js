@@ -33,10 +33,12 @@ const emailIds = {
     "lisay@controlsales.com,CarrollB@sharpsec.com,karamy@xposureunlimited.com",
   "thom-luke-sales-form":
     "rick@thomlukesales.com,CarrollB@sharpsec.com,karamy@xposureunlimited.com",
-  "quantum-form":
+  "quantum-sales-form":
     "lori@quantumsales.ca,CarrollB@sharpsec.com,karamy@xposureunlimited.com",
   "tech-coast-sales-form":
     "ashley@tc-sales.com,CarrollB@sharpsec.com,karamy@xposureunlimited.com",
+  "odonnell-sales-form":
+    "LBerndt@odonnell.com,CarrollB@sharpsec.com,karamy@xposureunlimited.com,yeep@sharpusa.com",
 };
 app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({ extended: true }));

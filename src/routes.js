@@ -123,6 +123,10 @@ function Routes() {
           path="/eposters-displays-thom-luke"
           render={() => <SpecialLandingPage companyName="thomLukeSales" />}
         />
+        <Route
+          path="/eposters-displays-odonnell"
+          render={() => <SpecialLandingPage companyName="oDonnell" />}
+        />
         <Route path="/*" component={NotFound} />
       </Switch>
     </HashRouter>
