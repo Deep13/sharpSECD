@@ -1,103 +1,172 @@
+"use client";
+
+import { ParallaxProvider } from "react-scroll-parallax";
+import Jumbo from "@/components/Jumbo";
+import Footer from "@/components/Footer";
+import FullHeightDivWithImageRight from "@/components/FullHeightDivWithImageRight";
+import HomeContent from "@/json/HomeContent";
+import { Card } from "react-bootstrap";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+
+import picture1 from "@/assets/Picture1.jpg";
+import picture2 from "@/assets/Picture2.jpg";
+import picture4 from "@/assets/Picture4.jpg";
+import logo from "@/assets/Sharp-Logo.png";
 
 export default function Home() {
-  return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+  const router = useRouter();
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
+  const handleLink = (e, link) => {
+    e.preventDefault();
+    router.push(link); // ✅ Next.js navigation (no reload)
+  };
+
+  return (
+    <ParallaxProvider
+      init={{
+        smoothScrollingDuration: 100,
+        smoothScrolling: true,
+        forceHeight: false,
+      }}
+    >
+      <main className="bg-white">
+        <Jumbo />
+
+        {/* Intro Section */}
+        <section
+          className="mobile-padding-40 text-center justify-center p-[60px]"
+          role="main"
+        >
+          <div tabIndex={0} id="main-content">
+            <h1
+              tabIndex={-1}
+              className="main-header text-left"
+              style={{ fontSize: "2.5rem" }}
+            >
+              Make Your Product Shine with Our Reflective, Low-Power, Sunlight
+              Viewable Displays
+            </h1>
+          </div>
+
+          <div className="row">
+            <div tabIndex={0} className="col-md-6">
+              <div
+                tabIndex={-1}
+                className="mob-top-div text-left text-[1.2rem] pt-12 pr-12"
+              >
+                <div className="mb-4">
+                  Sharp wrote the book when it comes to displays that perform in
+                  the most challenging environments. Today, there are endless
+                  applications for displays that can stand up to extreme
+                  lighting conditions or the need to render mission-critical
+                  detail.
+                </div>
+                <div className="mb-4">
+                  Our line-up includes the best in Sharp reflective technology,
+                  from our Memory-in-Pixel LCDs to new Reflective IGZO display
+                  modules that enable thin, lightweight products with ultra-low
+                  power requirements. And we continue to offer some of the
+                  toughest Industrial LCD specifications in the industry.
+                </div>
+              </div>
+            </div>
+
+            <div className="col-md-6 flex justify-center items-center p-[60px]">
+              <Image
+                src={logo}
+                alt="SHARP Logo"
+                role="presentation"
+                style={{ width: "70%" }}
+              />
+            </div>
+          </div>
+        </section>
+
+        {/* FullHeight Sections */}
+        <FullHeightDivWithImageRight
+          bg="#e4e4e4"
+          content={HomeContent.content[0]}
+          image={picture1}
+          alt="Memory in pixel LCD"
+        >
+          <Card.Text className="text-left text-[1.2rem]">
+            Our
+            <a
+              href="/memory-in-pixel-lcds-product"
+              className="text-[#e61d24]"
+              onClick={(e) => handleLink(e, "/memory-in-pixel-lcds-product")}
+            >
+              {" "}
+              Memory-in-Pixel{" "}
+            </a>
+            displays offer best-of-class performance with ultra-low power
+            consumption and high readability in almost any ambient lighting
+            environment.
+          </Card.Text>
+          <Card.Text className="text-left text-[1.2rem]">
+            Choose from eye-catching 64-color or high-contrast monochrome for
+            designs ranging from wearables to medical devices to smart meters
+            and many more.
+          </Card.Text>
+        </FullHeightDivWithImageRight>
+
+        <FullHeightDivWithImageRight
+          bg="white"
+          content={HomeContent.content[1]}
+          image={picture2}
+          alt="Reflect IGZO"
+        >
+          <Card.Text className="text-left text-[1.2rem]">
+            Our full-color, low-power
+            <a
+              href="/reflective-igzo-displays-product"
+              className="text-[#e61d24]"
+              onClick={(e) =>
+                handleLink(e, "/reflective-igzo-displays-product")
+              }
+            >
+              {" "}
+              Reflective IGZO{" "}
+            </a>
+            displays are the latest advancement built on Sharp’s IGZO-TFT
+            technology.
+          </Card.Text>
+          <Card.Text className="text-left text-[1.2rem]">
+            They’re the perfect solution for battery-operated handheld and
+            outdoor applications where fantastic readability is required.
+          </Card.Text>
+        </FullHeightDivWithImageRight>
+
+        <FullHeightDivWithImageRight
+          bg="#e4e4e4"
+          content={HomeContent.content[3]}
+          image={picture4}
+          alt="Industrial LCD"
+        >
+          <Card.Text className="text-left text-[1.2rem]">
+            Whether it’s all-Sharp out of the box or a high-performance solution
+            by a Sharp value-add partner, we work with you and the industry’s
+            best talent to find the perfect
+            <a
+              href="/industrial-lcds-product"
+              className="text-[#e61d24]"
+              onClick={(e) => handleLink(e, "/industrial-lcds-product")}
+            >
+              {" "}
+              General Purpose LCD{" "}
+            </a>
+            module for your project.
+          </Card.Text>
+          <Card.Text className="text-left text-[1.2rem]">
+            We deliver multi-touch PCAP, high-brightness, high-contrast, wide
+            viewing angles, and wide operating temperatures for performance in
+            the most challenging environments.
+          </Card.Text>
+        </FullHeightDivWithImageRight>
+
+        <Footer />
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+    </ParallaxProvider>
   );
 }

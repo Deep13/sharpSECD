@@ -1,0 +1,85 @@
+{
+  "content": [
+    {
+      "title": "DIAGONAL SIZE",
+      "values": [
+        "1.08 inch",
+        "1.19 inch Round",
+        "1.26 inch",
+        "1.29 inch Round",
+        "1.28 inch",
+        "1.39 inch Round",
+        "1.80 inch",
+        "2.13 inch",
+        "2.16 inch",
+        "2.70 inch",
+        "3.16 inch",
+        "3.54 inch",
+        "4.40 inch"
+      ]
+    },
+    {
+      "title": "CONTRAST RATIO",
+      "values": ["14:1", "18:1", "20:1", "25:1", "35:1"]
+    },
+    { "title": "LIFE CYCLE", "values": ["Production", "Pre-production", "Discontinued"] },
+    { "title": "NUMBER OF COLORS", "values": ["Monochrome", "64"] },
+
+    {
+      "title": "OUTLINE DIMENSIONS",
+      "values": [
+        "24.68 x 30.00  x 0.745 mm",
+        "26.6 × 30.3 × 0.741 mm",
+        "32.00 x 14.00 x 0.745 mm",
+        "31.00 x 41.46 x 0.745 mm",
+        "33.04 × 33.94 × 0.89 mm",
+        "35.4 x 48.6 x 0.91 mm",
+        "35.48 x 48.54 x 0.745 mm",
+        "35.56 x 36.26 x 0.91 mm",
+        "38.08 x 38.78 x 0.91 mm",
+        "47.02 × 76.0 × 0.705 mm",
+        "62.8 × 42.82 × 1.64 mm",
+        "74.84 × 59.92 × 0.91 mm",
+        "94.8 × 75.2 × 1.64 mm"
+      ]
+    },
+    {
+      "title": "OPERATING TEMP",
+      "values": ["-20°C to +70°C"]
+    },
+    {
+      "title": "PIXEL FORMAT",
+      "values": [
+        "128 × 128",
+        "144 x 168",
+        "160 x 68",
+        "230 x 303",
+        "240 x 320",
+        "240 x 240",
+        "260 x 260",
+        "280 x 280",
+        "320 × 240",
+        "336 × 536",
+        "400 × 240"
+      ]
+    },
+
+    { "title": "RESPONSE TIME", "values": ["20 ms"] },
+    { "title": "STORAGE TEMP", "values": ["-30°C to +80°C"] },
+    {
+      "title": "REFLECTIVITY",
+      "values": [
+        "8.4%",
+        "8.70%",
+        "9.0%",
+        "14.0%",
+        "14.5%",
+        "15.5%",
+        "16.5%",
+        "16.6%",
+        "17.5%",
+        "18.0%"
+      ]
+    }
+  ]
+}
