@@ -20,7 +20,7 @@ class Contact extends Component {
       previous: null,
     };
 
-    console.log(contact_data);
+    // console.log(contact_data);
   }
   componentDidMount() {
     window.scrollTo({ top: 0, behavior: "auto" });
