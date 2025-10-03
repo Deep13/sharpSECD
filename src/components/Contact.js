@@ -19,6 +19,8 @@ class Contact extends Component {
       selectedAreaTitle: "",
       previous: null,
     };
+
+    console.log(contact_data);
   }
   componentDidMount() {
     window.scrollTo({ top: 0, behavior: "auto" });
@@ -57,7 +59,9 @@ class Contact extends Component {
     return (
       <div>
         <Helmet>
-          <title>Contact Sharp SECD – Speak with a Display Technology Expert</title>
+          <title>
+            Contact Sharp SECD – Speak with a Display Technology Expert
+          </title>
           <meta
             name="description"
             content="Reach out to Sharp SECD for product inquiries, technical support, or to find your local sales representative. We’re here to help with your display needs."
@@ -83,7 +87,8 @@ class Contact extends Component {
                 </div>
                 <Mapsvg />
                 <div className="h3" style={{ textAlign: "center" }}>
-                  Click on the Map to Find a Local Authorized Sales Representative
+                  Click on the Map to Find a Local Authorized Sales
+                  Representative
                   <br />
                   <span className="h5">
                     For inquiries from
