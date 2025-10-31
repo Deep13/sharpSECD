@@ -25,6 +25,7 @@ import Toast from "react-bootstrap/Toast";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import Loader from "react-loader-spinner";
 import axios from "axios";
+import IntroVideo from "../assets/ePosterVideo.mp4";
 AOS.init();
 // import { Button, Form, FormControl, Table } from "react-bootstrap";
 
@@ -143,7 +144,6 @@ class Eposters_Displays extends Component {
                 bottom: 10,
                 color: "white",
                 fontStyle: "italic",
-                fontWeight: "bold",
               }}
             >
               Screen images shown are simulated unless otherwise noted. Actual
@@ -166,7 +166,23 @@ class Eposters_Displays extends Component {
               <h2 style={{ color: "black", paddingBottom: 30 }}>
                 <strong>INTRODUCING ePOSTER</strong>
               </h2>
-              <span style={{ fontSize: 35 }}>
+              <video
+                src={IntroVideo}
+                controls
+                autoPlay
+                muted
+                loop
+                playsInline
+                style={{
+                  width: "100%",
+                  maxWidth: 600,
+                  borderRadius: 0,
+                  marginBottom: 20,
+                }}
+              >
+                Your browser does not support the video tag.
+              </video>
+              <span style={{ fontSize: 24 }}>
                 Printing is expensive, inflexible, and time-consuming. Welcome
                 to the future of low power paper replacement signage. Sharp and
                 E Ink have come together to bring you one of the industry's
@@ -180,11 +196,11 @@ class Eposters_Displays extends Component {
                   backgroundColor: "rgb(237, 12, 12)",
                   borderColor: "rgb(237, 12, 12)",
                   color: "white",
-                  marginTop: 40,
+                  marginTop: 30,
                   borderRadius: 0,
-                  fontSize: 20,
+                  fontSize: 15,
                   width: "100%",
-                  maxWidth: 320,
+                  maxWidth: 270,
                 }}
               >
                 Contact Sharp
@@ -738,7 +754,7 @@ class Eposters_Displays extends Component {
                     }
                     show={this.state.show}
                     className="toastSuccess"
-                  // transition="Fade"
+                    // transition="Fade"
                   >
                     <Toast.Header>
                       <strong className="me-auto">Success</strong>
@@ -754,7 +770,7 @@ class Eposters_Displays extends Component {
                     }
                     show={this.state.showError}
                     className="toastError"
-                  // transition="Fade"
+                    // transition="Fade"
                   >
                     <Toast.Header>
                       <strong className="me-auto">Error</strong>
