@@ -160,34 +160,56 @@ class Eposters_Displays extends Component {
               backgroundPosition: "top",
               marginLeft: 0,
               padding: 0,
+              display: "flex",
+              alignItems: "stretch",
             }}
           >
             <div className="col-lg-6" style={{ padding: 80 }}>
               <h2 style={{ color: "black", paddingBottom: 30 }}>
                 <strong>INTRODUCING ePOSTER</strong>
               </h2>
-              <video
-                src={IntroVideo}
-                controls
-                autoPlay
-                muted
-                loop
-                playsInline
+              <div
                 style={{
-                  width: "100%",
-                  maxWidth: 600,
-                  borderRadius: 0,
-                  marginBottom: 20,
+                  display: "flex",
+                  flexDirection: "column",
                 }}
               >
-                Your browser does not support the video tag.
-              </video>
-              <span style={{ fontSize: 24 }}>
-                Printing is expensive, inflexible, and time-consuming. Welcome
-                to the future of low power paper replacement signage. Sharp and
-                E Ink have come together to bring you one of the industry's
-                leading electronic poster display modules.
-              </span>
+                <video
+                  src={IntroVideo}
+                  controls
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  style={{
+                    width: "100%",
+                    maxWidth: 600,
+                    borderRadius: 0,
+                    marginBottom: 20,
+                  }}
+                >
+                  Your browser does not support the video tag.
+                </video>
+                <div style={{ fontSize: 24 }}>
+                  Printing is expensive, inflexible, and time-consuming. Welcome
+                  to the future of low power paper replacement signage. Sharp
+                  and E Ink have come together to bring you one of the
+                  industry's leading electronic poster display modules.
+                </div>
+
+                <h3
+                  style={{ color: "black", paddingBottom: 10, paddingTop: 40 }}
+                >
+                  <strong>ATTENDING CES?</strong>
+                </h3>
+                <div style={{ fontSize: 24 }}>
+                  The ePoster module will be on display at the show – but only
+                  behind closed doors. Want your own sneak peek to see if it
+                  will fit your next signage product’s design? Click “Contact
+                  Sharp” and add in the message that you’d like to see this
+                  dazzling display up close and personal.
+                </div>
+              </div>
               <br />
               <Button
                 size="lg"
@@ -212,7 +234,7 @@ class Eposters_Displays extends Component {
             >
               <img
                 src={ePosterSummerSale}
-                style={{ width: "100%" }}
+                style={{ width: "100%", height: "100%", objectFit: "cover" }}
                 role="presentation"
                 alt="Stock image graphic with signage display showing how ePoster will look in a mall or retail environment "
               />
@@ -456,7 +478,9 @@ class Eposters_Displays extends Component {
                 <li>2160 x 3060 resolution</li>
                 <li>Zero power with static image hold</li>
                 <li>High contrast plus 30% reflectivity</li>
-                <li>60k color gamut with E Ink's Spectra6</li>
+                <li>
+                  60k color gamut with E Ink's Spectra<sup>TM</sup> 6
+                </li>
                 <li>Thin, lightweight, multi-panel capability</li>
                 <li>Enables cloud-based management</li>
                 <li>Enables battery, PoE, or PoWiFi installation</li>
