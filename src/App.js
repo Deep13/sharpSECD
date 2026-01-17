@@ -4,6 +4,7 @@ import { ParallaxProvider } from "react-scroll-parallax";
 import "./scrollbar.css";
 import Screen3 from "./assets/home_header.jpg";
 import { Helmet } from "react-helmet";
+import NewBody from "./NewBody";
 
 class App extends Component {
   render() {
@@ -17,12 +18,14 @@ class App extends Component {
       >
         <div role="main" style={{ backgroundColor: "white" }}>
           <Helmet>
+            <title>Low-Power LCD Displays & ePoster Modules | Sharp SECD</title>
             <meta
               name="description"
-              content="Sharp reflective display modules enable products with ultra-low power requirements and stunning bright-light viewability."
+              content="Sharp SECD delivers world-class low-power, sunlight-viewable LCDs and ePoster display modules. Explore reflective, Memory in Pixel, and general-purpose displays."
             />
           </Helmet>
-          <Body />
+          {/* <Body /> */}
+          <NewBody />
         </div>
       </ParallaxProvider>
     );
