@@ -330,7 +330,8 @@
   }
 
   .card-text-content p {
-    font-size: 0.85rem;
+    font-size: 1rem;
+    font-weight: 600;
   }
 }
 /* --- SECTION 5: NEWS SLIDER --- */
@@ -641,5 +642,61 @@
   .slide-cta {
     width: 100%; /* Full width button on mobile for better UX */
     padding: 15px;
+  }
+}
+.replay-button {
+  position: absolute;
+  /* Anchor to exact center of the hero section */
+  top: 50%;
+  left: 50%;
+  /* Offset the button by half its own width/height to center perfectly */
+  transform: translate(-50%, -50%);
+
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  z-index: 40;
+  border-radius: 50%; /* Cleaner than 100% */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Use variables or fixed sizes that scale via Media Queries */
+  width: 100px;
+  height: 100px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.replay-button:hover {
+  background: var(--sharp-red);
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.replay-icon {
+  font-size: 3rem !important;
+  color: white;
+}
+
+/* --- Responsive Adjustments for the Button --- */
+@media (max-width: 768px) {
+  .replay-button {
+    width: 80px;
+    height: 80px;
+  }
+  .replay-icon {
+    font-size: 2.2rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .replay-button {
+    width: 60px;
+    height: 60px;
+  }
+  .replay-icon {
+    font-size: 1.8rem !important;
   }
 }

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import "./NewBody.css";
 // Replace these imports with your actual asset paths
 import video1 from "./assets/new-home/vid1.mp4";
@@ -16,12 +16,18 @@ import Carousel64 from "./assets/new-home/64Carousel.jpg";
 import CarouselColor from "./assets/new-home/64ColorsCarousel.png";
 import epostersCarousel from "./assets/new-home/ePosterCarousel.jpg";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
+import { PlayArrow } from "@material-ui/icons";
 
 const NewBody = () => {
   const [activeSlide, setActiveSlide] = useState(0);
   const history = useHistory(); // 2. Initialize history
+  const [video1Ended, setVideo1Ended] = useState(false);
+  const [video2Ended, setVideo2Ended] = useState(false);
   const [video1Error, setVideo1Error] = useState(false);
   const [video2Error, setVideo2Error] = useState(false);
+
+  const video1Ref = useRef(null);
+  const video2Ref = useRef(null);
 
   // Helper function for navigation
   const navigateTo = (path) => {
@@ -71,7 +77,11 @@ const NewBody = () => {
             muted
             playsInline
             className="hero-video"
-            onEnded={(e) => e.target.pause()}
+            onEnded={(e) => {
+              setVideo1Ended(true);
+              e.target.pause();
+            }} // Pause at end
+            ref={video1Ref}
             onError={() => setVideo1Error(true)} // Trigger backup on error
           >
             <source src={video1} type="video/mp4" />
@@ -83,9 +93,18 @@ const NewBody = () => {
             alt="Sharp SECD hero video with mountain landscape and text stating ‘The world leader in low-power, sunlight-viewable displays."
           />
         )}
-
-        {/* No more full-screen .hero-overlay div needed if the box has its own background */}
-
+        {!video1Error && video1Ended && (
+          <div
+            className="replay-button"
+            onClick={() => {
+              video1Ref.current.currentTime = 0;
+              video1Ref.current.play();
+              setVideo1Ended(false);
+            }}
+          >
+            <PlayArrow className="replay-icon" />
+          </div>
+        )}
         <div className="hero-content">
           <div className="logo-wrapper">
             <img src={sharpLogo} alt="Sharp Logo" className="sharp-logo" />
@@ -131,6 +150,11 @@ const NewBody = () => {
             loop
             playsInline
             className="section-video"
+            ref={video2Ref}
+            onEnded={(e) => {
+              setVideo2Ended(true);
+              e.target.pause();
+            }} // Pause at end
             onError={() => setVideo2Error(true)} // Trigger backup on error
           >
             <source src={video2} type="video/mp4" />
@@ -141,6 +165,18 @@ const NewBody = () => {
             className="section-video"
             alt="Abstract dark technology background behind Sharp SECD features: world-class technologies, built to last, and US-based support"
           />
+        )}
+        {!video2Error && video2Ended && (
+          <div
+            className="replay-button"
+            onClick={() => {
+              video2Ref.current.currentTime = 0;
+              video2Ref.current.play();
+              setVideo2Ended(false);
+            }}
+          >
+            <PlayArrow className="replay-icon" />
+          </div>
         )}
         <div className="video-overlay"></div>
 
@@ -286,7 +322,9 @@ const NewBody = () => {
       {/* 5. NEWS SLIDER SECTION */}
       <section className="display-news">
         <div className="news-header-bar">
-          <h2 className="news-header-text">SHARP DISPLAY NEWS</h2>
+          <div className="slide-left-text">
+            <h2 className="mobileHead">SHARP DISPLAY NEWS</h2>
+          </div>
         </div>
 
         <div className="slider-outer-wrapper">
