@@ -37,6 +37,27 @@ const NewBody = () => {
     window.scrollTo(0, 0); // Good practice to scroll to top on change
   };
 
+  const [touchStart, setTouchStart] = useState(0);
+  const [touchEnd, setTouchEnd] = useState(0);
+
+  const handleTouchStart = (e) => setTouchStart(e.targetTouches[0].clientX);
+  const handleTouchMove = (e) => setTouchEnd(e.targetTouches[0].clientX);
+
+  const handleTouchEnd = () => {
+    if (!touchStart || !touchEnd) return;
+    const distance = touchStart - touchEnd;
+    const isLeftSwipe = distance > 50;
+    const isRightSwipe = distance < -50;
+
+    if (isLeftSwipe && activeSlide < slideData.length - 1) {
+      setActiveSlide(activeSlide + 1);
+    } else if (isRightSwipe && activeSlide > 0) {
+      setActiveSlide(activeSlide - 1);
+    }
+    setTouchStart(0);
+    setTouchEnd(0);
+  };
+
   const slideData = [
     {
       id: 0,
@@ -323,16 +344,21 @@ const NewBody = () => {
       <section className="display-news">
         <div className="news-header-bar">
           <div className="slide-left-text">
-            <h2 className="mobileHead">SHARP DISPLAY NEWS</h2>
+            <h2 className="mobileHead">SHARP DISPLAY NEWS: </h2>
           </div>
         </div>
 
-        <div className="slider-outer-wrapper">
+        <div
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
+          onTouchEnd={handleTouchEnd}
+          className="slider-outer-wrapper"
+        >
           <div
             className="slider-container"
             style={{
               transform: `translateX(-${
-                activeSlide * (window.innerWidth <= 480 ? 100 : 92.5)
+                activeSlide * (window.innerWidth <= 1024 ? 100 : 92.5)
               }%)`,
             }}
           >

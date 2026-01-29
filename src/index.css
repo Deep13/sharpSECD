@@ -1,9 +1,9 @@
 @import url("//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
@@ -257,8 +257,8 @@ a.dropdown-item:hover {
   width: auto !important;
 }
 .code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family:
+    source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 .contact-container {
   padding: 50px 130px;
@@ -999,4 +999,36 @@ circle:hover {
   .mb-2-5 {
     font-size: 2.5rem !important;
   }
+}
+
+/* Ensure the collapse container takes up full width */
+.navbar-collapse {
+  justify-content: flex-end; /* Pushes content to the right */
+}
+
+/* Ensure the Nav component itself pushes to the right */
+.ml-auto.navbar-nav {
+  margin-left: auto !important;
+}
+
+/* Specific styling for the Search Form to keep it inline and right-aligned */
+.headerSearch {
+  display: flex;
+  align-items: center;
+  margin-left: 20px; /* Space between links and search */
+}
+
+/* Fix for the Search Input clumping */
+.search {
+  width: 0;
+  padding: 0;
+  border: none;
+  transition: all 0.4s ease;
+}
+
+.search.expanded {
+  width: 200px;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
 }
