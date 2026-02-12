@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./NewBody.css";
 // Replace these imports with your actual asset paths
 import video1 from "./assets/new-home/vid1.mp4";
@@ -28,35 +28,6 @@ const NewBody = () => {
 
   const video1Ref = useRef(null);
   const video2Ref = useRef(null);
-
-  // Helper function for navigation
-  const navigateTo = (path) => {
-    // If your app uses HashRouter, this will automatically handle the '#'
-    // If it uses BrowserRouter, it will handle clean URLs.
-    history.push(path);
-    window.scrollTo(0, 0); // Good practice to scroll to top on change
-  };
-
-  const [touchStart, setTouchStart] = useState(0);
-  const [touchEnd, setTouchEnd] = useState(0);
-
-  const handleTouchStart = (e) => setTouchStart(e.targetTouches[0].clientX);
-  const handleTouchMove = (e) => setTouchEnd(e.targetTouches[0].clientX);
-
-  const handleTouchEnd = () => {
-    if (!touchStart || !touchEnd) return;
-    const distance = touchStart - touchEnd;
-    const isLeftSwipe = distance > 50;
-    const isRightSwipe = distance < -50;
-
-    if (isLeftSwipe && activeSlide < slideData.length - 1) {
-      setActiveSlide(activeSlide + 1);
-    } else if (isRightSwipe && activeSlide > 0) {
-      setActiveSlide(activeSlide - 1);
-    }
-    setTouchStart(0);
-    setTouchEnd(0);
-  };
 
   const slideData = [
     {
@@ -88,6 +59,43 @@ const NewBody = () => {
     },
   ];
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveSlide((prev) => (prev === slideData.length - 1 ? 0 : prev + 1));
+    }, 5000); // Switches every 5 seconds
+
+    return () => clearInterval(interval); // Cleanup on unmount
+  }, [slideData.length]);
+
+  // Helper function for navigation
+  const navigateTo = (path) => {
+    // If your app uses HashRouter, this will automatically handle the '#'
+    // If it uses BrowserRouter, it will handle clean URLs.
+    history.push(path);
+    window.scrollTo(0, 0); // Good practice to scroll to top on change
+  };
+
+  const [touchStart, setTouchStart] = useState(0);
+  const [touchEnd, setTouchEnd] = useState(0);
+
+  const handleTouchStart = (e) => setTouchStart(e.targetTouches[0].clientX);
+  const handleTouchMove = (e) => setTouchEnd(e.targetTouches[0].clientX);
+
+  const handleTouchEnd = () => {
+    if (!touchStart || !touchEnd) return;
+    const distance = touchStart - touchEnd;
+    const isLeftSwipe = distance > 50;
+    const isRightSwipe = distance < -50;
+
+    if (isLeftSwipe && activeSlide < slideData.length - 1) {
+      setActiveSlide(activeSlide + 1);
+    } else if (isRightSwipe && activeSlide > 0) {
+      setActiveSlide(activeSlide - 1);
+    }
+    setTouchStart(0);
+    setTouchEnd(0);
+  };
+
   return (
     <div className="new-body">
       {/* 1. HERO SECTION */}
@@ -96,6 +104,7 @@ const NewBody = () => {
           <video
             autoPlay
             muted
+            loop
             playsInline
             className="hero-video"
             onEnded={(e) => {
@@ -123,7 +132,7 @@ const NewBody = () => {
               setVideo1Ended(false);
             }}
           >
-            <PlayArrow className="replay-icon" />
+            {/* <PlayArrow className="replay-icon" /> */}
           </div>
         )}
         <div className="hero-content">
@@ -357,9 +366,7 @@ const NewBody = () => {
           <div
             className="slider-container"
             style={{
-              transform: `translateX(-${
-                activeSlide * (window.innerWidth <= 1024 ? 100 : 92.5)
-              }%)`,
+              transform: `translateX(-${activeSlide * 100}%)`,
             }}
           >
             {slideData.map((slide, index) => (
