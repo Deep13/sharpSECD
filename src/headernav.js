@@ -75,7 +75,11 @@ class Headernav extends Component {
           expand="lg"
         >
           <Navbar.Brand ref={this.header} href="/">
-            <img alt="SHARP Logo" src={logo} style={{ width: 120 }} />
+            <img
+              alt="Sharp SECD - World Leader in Display Technology"
+              src={logo}
+              style={{ width: 120 }}
+            />
           </Navbar.Brand>
           <Button
             onKeyDown={this.onSkipMainContent}
@@ -113,13 +117,17 @@ class Headernav extends Component {
                   </NavDropdown.Item>
                   <NavDropdown.Item
                     className="drop-color"
-                    onClick={() => this.selectNavigate("/memory-in-pixel-lcds-product")}
+                    onClick={() =>
+                      this.selectNavigate("/memory-in-pixel-lcds-product")
+                    }
                   >
                     Find a Product
                   </NavDropdown.Item>
                   <NavDropdown.Item
                     className="drop-color"
-                    onClick={() => this.selectNavigate("/memory-in-pixel-lcds-technology")}
+                    onClick={() =>
+                      this.selectNavigate("/memory-in-pixel-lcds-technology")
+                    }
                   >
                     Technology
                   </NavDropdown.Item>
@@ -163,7 +171,9 @@ class Headernav extends Component {
                   General Purpose LCDs
                   <NavDropdown.Item
                     className="drop-color"
-                    onClick={() => this.selectNavigate("/industrial-lcds-product")}
+                    onClick={() =>
+                      this.selectNavigate("/industrial-lcds-product")
+                    }
                   >
                     Find a Product
                   </NavDropdown.Item>
@@ -174,8 +184,6 @@ class Headernav extends Component {
                     <li><a className="dropdown-item" href="#" onClick={() => this.selectNavigate("/industrial-lcds-product")}>Find a Product</a></li>
                   </ul>
                 </NavDropdown.Item> */}
-
-
               </NavDropdown>
               <Nav.Link
                 onFocus={this.hideAll}
