@@ -23,6 +23,7 @@ import image6 from "../../assets/Sharp 31.5 R-IGZO Low-Power Performance.png";
 import image7 from "../../assets/Low-Power Performance.png";
 import image8 from "../../assets/Sharp_thumb.png";
 import doc from "../../assets/Documents/Sharp Low-Power Displays White Paper.pdf";
+import { Link } from "react-router-dom";
 
 export default class LowPowerDisplay extends Component {
   constructor(props) {
@@ -43,7 +44,7 @@ export default class LowPowerDisplay extends Component {
   }
   callFunct = (event, link) => {
     event.preventDefault();
-    window.location.href = "#" + link;
+    window.location.href = link;
     // history.push(link);
     // alert(text);
   };
@@ -88,7 +89,7 @@ export default class LowPowerDisplay extends Component {
   };
   callFunct = (event, link) => {
     event.preventDefault();
-    window.location.href = "#" + link;
+    window.location.href = link;
     // alert(text);
   };
   componentDidMount() {
@@ -210,23 +211,22 @@ export default class LowPowerDisplay extends Component {
                 game, enabling a whole new world of designs. Choose from
                 Monochrome and 64-color
                 <span>
-                  <a
+                  <Link
                     style={{ color: "black", textDecoration: "underline" }}
-                    href="https://sharpsecd.com/#/MemoryInPixel"
+                    to="https://sharpsecd.com/MemoryInPixel"
                   >
                     {" "}
-                    Memory-In-Pixel (MIP) LCDs
-                    {" "}
-                  </a>
+                    Memory-In-Pixel (MIP) LCDs{" "}
+                  </Link>
                 </span>
                 or full-color, high-resolution{" "}
                 <span>
-                  <a
+                  <Link
                     style={{ color: "black", textDecoration: "underline" }}
-                    href="https://sharpsecd.com/#/ReflectiveIGZO"
+                    to="https://sharpsecd.com/ReflectiveIGZO"
                   >
                     Reflective IGZO displays.
-                  </a>
+                  </Link>
                 </span>
               </p>
               <div className="padding-top-50"></div>
@@ -477,15 +477,15 @@ export default class LowPowerDisplay extends Component {
                     <p>
                       Our{" "}
                       <span>
-                        <a
+                        <Link
                           style={{
                             color: "black",
                             textDecoration: "underline",
                           }}
-                          href="https://sharpsecd.com/#/memory-in-pixel-lcds-technology"
+                          to="https://sharpsecd.com/memory-in-pixel-lcds-technology"
                         >
                           Memory-In-Pixel (MIP) technology{" "}
-                        </a>
+                        </Link>
                       </span>{" "}
                       provides high-performance solutions for wearable and
                       portable applications - or any product with a battery.
@@ -503,7 +503,8 @@ export default class LowPowerDisplay extends Component {
                         className="redButton"
                         size="lg"
                         variant="outline-danger"
-                        href="#/MemoryInPixel"
+                        as={Link}
+                        to="/MemoryInPixel"
                         style={{ marginTop: 20, marginBottom: 50 }}
                       >
                         Learn More
@@ -513,7 +514,8 @@ export default class LowPowerDisplay extends Component {
                         size="lg"
                         onClick={() => this.myRef.current.scrollIntoView()}
                         variant="outline-danger"
-                        href="#"
+                        as={Link}
+                        to="/"
                         style={{ marginTop: 20, marginBottom: 50 }}
                       >
                         Request a Demo
@@ -758,40 +760,40 @@ export default class LowPowerDisplay extends Component {
                     <p>
                       Our{" "}
                       <span>
-                        <a
+                        <Link
                           style={{
                             color: "black",
                             textDecoration: "underline",
                           }}
-                          href="https://sharpsecd.com/#/ReflectiveIGZO"
+                          to="https://sharpsecd.com/ReflectiveIGZO"
                         >
                           Reflective IGZO displays{" "}
-                        </a>
+                        </Link>
                       </span>{" "}
                       combine full-color and high resolution in a low-power
                       reflective LCD Current available{" "}
                       <span>
-                        <a
+                        <Link
                           style={{
                             color: "black",
                             textDecoration: "underline",
                           }}
-                          href="https://sharpsecd.com/#/reflective-igzo-displays-product"
+                          to="https://sharpsecd.com/reflective-igzo-displays-product"
                         >
                           sizes are 5.0-inch (diagonal)
-                        </a>
+                        </Link>
                       </span>{" "}
                       for hand-held, portable applications and{" "}
                       <span>
-                        <a
+                        <Link
                           style={{
                             color: "black",
                             textDecoration: "underline",
                           }}
-                          href="https://sharpsecd.com/#/reflective-igzo-displays-product"
+                          to="https://sharpsecd.com/reflective-igzo-displays-product"
                         >
                           31.5-inch (diagonal){" "}
-                        </a>
+                        </Link>
                       </span>
                       targeted at outdoor signage applications. Both sizes
                       include low-power backlighting for low-ambient viewing.
@@ -806,7 +808,8 @@ export default class LowPowerDisplay extends Component {
                         className="redButton"
                         size="lg"
                         variant="outline-danger"
-                        href="#/ReflectiveIGZO"
+                        as={Link}
+                        to="/ReflectiveIGZO"
                         style={{ marginTop: 20, marginBottom: 50 }}
                       >
                         Learn More
@@ -816,7 +819,8 @@ export default class LowPowerDisplay extends Component {
                         size="lg"
                         onClick={() => this.myRef.current.scrollIntoView()}
                         variant="outline-danger"
-                        href="#"
+                        as={Link}
+                        to="/"
                         style={{ marginTop: 20, marginBottom: 50 }}
                       >
                         Request a Demo
@@ -892,16 +896,16 @@ export default class LowPowerDisplay extends Component {
                       problems for thermal management and power dissipation at
                       the system level.
                       <span>
-                        <a
+                        <Link
                           style={{
                             color: "black",
                             textDecoration: "underline",
                           }}
-                          href="https://sharpsecd.com/#/reflective-igzo-displays-product"
+                          to="https://sharpsecd.com/reflective-igzo-displays-product"
                         >
                           {" "}
                           Sharp's 5" R-IGZO display{" "}
-                        </a>
+                        </Link>
                       </span>
                       negates the need for such a backlight, resulting in an
                       extremely low-power solution for handheld and portable
@@ -940,9 +944,11 @@ export default class LowPowerDisplay extends Component {
                       marginTop: 20,
                     }}
                   >
-                    Backlight power is 0.33 W at 50 nits. Only needed at night.<br />
-                    • Power consumption comparison (5" HD720 basis)<br />
-                    • Reflective IGZO is 3.6% of the power compared to a high-bright transmissive display.
+                    Backlight power is 0.33 W at 50 nits. Only needed at night.
+                    <br />
+                    • Power consumption comparison (5" HD720 basis)
+                    <br />• Reflective IGZO is 3.6% of the power compared to a
+                    high-bright transmissive display.
                   </p>
                 </div>
               </div>
@@ -1018,15 +1024,15 @@ export default class LowPowerDisplay extends Component {
                     </p>
                     <p>
                       <span>
-                        <a
+                        <Link
                           style={{
                             color: "black",
                             textDecoration: "underline",
                           }}
-                          href="https://sharpsecd.com/#/reflective-igzo-displays-product"
+                          to="https://sharpsecd.com/reflective-igzo-displays-product"
                         >
                           Sharp's 31.5" R-IGZO display{" "}
-                        </a>
+                        </Link>
                       </span>
                       is targeted at outdoor signage enabling solar or
                       Power-Over-Ethernet (POE) installations. This negates the
@@ -1091,23 +1097,23 @@ export default class LowPowerDisplay extends Component {
             >
               Options range from high-contrast monochrome and
               <span>
-                <a
+                <Link
                   style={{ color: "black", textDecoration: "underline" }}
-                  href="https://sharpsecd.com/#/MemoryInPixel"
+                  to="https://sharpsecd.com/MemoryInPixel"
                 >
                   {" "}
                   64-color MIP displays
-                </a>
+                </Link>
               </span>{" "}
               to full-color{" "}
               <span>
-                <a
+                <Link
                   style={{ color: "black", textDecoration: "underline" }}
-                  href="https://sharpsecd.com/#/ReflectiveIGZO"
+                  to="https://sharpsecd.com/ReflectiveIGZO"
                 >
                   {" "}
                   full-color, high-resolution R-IGZO displays
-                </a>
+                </Link>
               </span>
               . These options address every type of content that might be needed
               in outdoor and mobile applications.
@@ -1117,16 +1123,25 @@ export default class LowPowerDisplay extends Component {
           <div
             style={{
               paddingInline: "10%",
-              display: 'flex', flexDirection: 'row',
-              width: "100%"
-            }}>
+              display: "flex",
+              flexDirection: "row",
+              width: "100%",
+            }}
+          >
             <img
               style={{ width: "100%", maxWidth: 150 }}
               src={image8}
               role="presentation"
               alt="Document Thumbnail"
             />
-            <div style={{ display: 'flex', flexDirection: 'column', marginLeft: 30, alignItems: 'center' }}>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                marginLeft: 30,
+                alignItems: "center",
+              }}
+            >
               <h2
                 style={{
                   fontSize: "1.8rem",
@@ -1146,11 +1161,9 @@ export default class LowPowerDisplay extends Component {
                 Download Now
               </Button>
             </div>
-
           </div>
           <div className="padding-top-50"></div>
         </div>
-
 
         {/* <div className="padding-top-30"></div> */}
 
@@ -1191,7 +1204,11 @@ export default class LowPowerDisplay extends Component {
               </h1>
             </div>
             <div style={{ width: "70%", marginTop: "5rem" }}>
-              <Form1 noValidate className="LPDContactForm" onSubmit={this.onSubmit}>
+              <Form1
+                noValidate
+                className="LPDContactForm"
+                onSubmit={this.onSubmit}
+              >
                 <Form1.Row style={{ paddingBottom: 10 }}>
                   <Col>
                     <Form1.Control
@@ -1321,7 +1338,7 @@ export default class LowPowerDisplay extends Component {
                   onClose={() => this.setState({ show: false, submit: false })}
                   show={this.state.show}
                   className="toastSuccess"
-                // transition="Fade"
+                  // transition="Fade"
                 >
                   <Toast.Header>
                     <strong className="me-auto">Success</strong>
@@ -1337,7 +1354,7 @@ export default class LowPowerDisplay extends Component {
                   }
                   show={this.state.showError}
                   className="toastError"
-                // transition="Fade"
+                  // transition="Fade"
                 >
                   <Toast.Header>
                     <strong className="me-auto">Error</strong>

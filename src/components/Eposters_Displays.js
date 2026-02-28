@@ -48,7 +48,7 @@ class Eposters_Displays extends Component {
   }
   callFunct = (event, link) => {
     event.preventDefault();
-    window.location.href = "#" + link;
+    window.location.href = link;
     // alert(text);
   };
   onSubmit = (event) => {

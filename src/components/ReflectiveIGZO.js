@@ -24,6 +24,8 @@ import axios from "axios";
 import Toast from "react-bootstrap/Toast";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import Loader from "react-loader-spinner";
+import { Link } from "react-router-dom";
+
 export default class ReflectiveIGZO extends Component {
   constructor(props) {
     super(props);
@@ -43,7 +45,7 @@ export default class ReflectiveIGZO extends Component {
   }
   callFunct = (event, link) => {
     event.preventDefault();
-    window.location.href = "#" + link;
+    window.location.href = link;
     // history.push(link);
     // alert(text);
   };
@@ -88,7 +90,7 @@ export default class ReflectiveIGZO extends Component {
   };
   callFunct = (event, link) => {
     event.preventDefault();
-    window.location.href = "#" + link;
+    window.location.href = link;
     // alert(text);
   };
   componentDidMount() {
@@ -186,14 +188,16 @@ export default class ReflectiveIGZO extends Component {
                         className="redButton"
                         size="lg"
                         variant="outline-danger"
-                        href="#/reflective-igzo-displays-product"
+                        as={Link}
+                        to="/reflective-igzo-displays-product"
                         style={{ marginRight: 20 }}
                       >
                         View Products
                       </Button>
                       <Button
                         className="greyButton"
-                        href="#"
+                        as={Link}
+                        to="/"
                         onClick={() => this.myRef.current.scrollIntoView()}
                         size="lg"
                         variant="outline-danger"
@@ -355,7 +359,7 @@ export default class ReflectiveIGZO extends Component {
                     >
                       <Button
                         className="redButton"
-                        href="#"
+                        as={Link} to="/"
                         onClick={() => this.myRef.current.scrollIntoView()}
                         size="lg"
                         variant="outline-danger"
@@ -367,7 +371,7 @@ export default class ReflectiveIGZO extends Component {
                         className="redButton"
                         size="lg"
                         variant="outline-danger"
-                        href="#/reflective-igzo-displays-product"
+                       
                       >
                         View Products
                       </Button>
@@ -743,14 +747,16 @@ export default class ReflectiveIGZO extends Component {
                 className="redButton"
                 size="lg"
                 variant="outline-danger"
-                href="#/reflective-igzo-displays-product"
+                as={Link}
+                to="/reflective-igzo-displays-product"
                 style={{ marginRight: 20 }}
               >
                 View Products
               </Button>
               <Button
                 className="greyButton"
-                href="#"
+                as={Link}
+                to="/"
                 onClick={() => this.myRef.current.scrollIntoView()}
                 size="lg"
                 variant="outline-danger"
@@ -811,7 +817,11 @@ export default class ReflectiveIGZO extends Component {
                 </p>
               </div>
               <div style={{ width: "70%" }}>
-                <Form1 noValidate className="RIContactForm" onSubmit={this.onSubmit}>
+                <Form1
+                  noValidate
+                  className="RIContactForm"
+                  onSubmit={this.onSubmit}
+                >
                   <Form1.Row style={{ paddingBottom: 10 }}>
                     <Col>
                       <Form1.Control
@@ -943,7 +953,7 @@ export default class ReflectiveIGZO extends Component {
                     }
                     show={this.state.show}
                     className="toastSuccess"
-                  // transition="Fade"
+                    // transition="Fade"
                   >
                     <Toast.Header>
                       <strong className="me-auto">Success</strong>
@@ -959,7 +969,7 @@ export default class ReflectiveIGZO extends Component {
                     }
                     show={this.state.showError}
                     className="toastError"
-                  // transition="Fade"
+                    // transition="Fade"
                   >
                     <Toast.Header>
                       <strong className="me-auto">Error</strong>
@@ -971,8 +981,8 @@ export default class ReflectiveIGZO extends Component {
                   <div style={{ paddingBottom: 50 }}></div>
                   <p style={{ color: "white" }}>
                     Looking for a smaller size class reflective displays?
-                    <a
-                      href="/"
+                    <Link
+                      to="/memory-in-pixel-lcds-product"
                       style={{ color: "#e61d24" }}
                       onClick={(event) =>
                         this.callFunct(event, "/memory-in-pixel-lcds-product")
@@ -980,7 +990,7 @@ export default class ReflectiveIGZO extends Component {
                     >
                       {" "}
                       Visit our Memory in Pixel product page
-                    </a>
+                    </Link>
                     .
                   </p>
                   <div style={{ paddingBottom: 50 }}></div>

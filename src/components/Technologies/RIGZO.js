@@ -7,6 +7,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Footer from "../../Footer";
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
+
 AOS.init();
 // import { Button, Form, FormControl, Table } from "react-bootstrap";
 
@@ -16,7 +18,7 @@ class RIGZO extends Component {
   }
   callFunct = (event, link) => {
     event.preventDefault();
-    window.location.href = "#" + link;
+    window.location.href = link;
   };
   render() {
     return (
@@ -45,14 +47,10 @@ class RIGZO extends Component {
               <p>
                 Reflective IGZO technology yields full-color reflective, outdoor
                 readable, low-power displays built on Sharp’s signature{" "}
-                <a
-                  href="/"
-                  style={{ color: "#e61d24" }}
-                  onClick={(event) => this.callFunct(event, "/igzo-technology")}
-                >
+                <Link to="/igzo-technology" style={{ color: "#e61d24" }}>
                   {" "}
                   IGZO-TFT technology{" "}
-                </a>
+                </Link>
                 . It’s the perfect solution when good outdoor readability and
                 battery operation is required.
               </p>

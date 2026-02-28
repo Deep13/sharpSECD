@@ -14,6 +14,8 @@ import filters from "../../json/Filter Industrial LCD";
 import "aos/dist/aos.css";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
+
 AOS.init();
 class Products extends Component {
   constructor(props) {
@@ -166,7 +168,7 @@ class Products extends Component {
       totalFilterValue[item.category] = totalFilterValue[item.category].filter(
         (obj) => {
           return obj !== item.option;
-        }
+        },
       );
       if (totalFilterValue[item.category].length === 0) {
         delete totalFilterValue[item.category];
@@ -188,21 +190,21 @@ class Products extends Component {
           return (
             filters[key].find(
               (filter) =>
-                getValue(filter) === getValue(item["VIEWING ANGLE 6 O'CLOCK"])
+                getValue(filter) === getValue(item["VIEWING ANGLE 6 O'CLOCK"]),
             ) ||
             filters[key].find(
               (filter) =>
-                getValue(filter) === getValue(item["VIEWING ANGLE 12 O'CLOCK"])
+                getValue(filter) === getValue(item["VIEWING ANGLE 12 O'CLOCK"]),
             ) ||
             filters[key].find(
               (filter) =>
                 getValue(filter) ===
-                getValue(item["VIEWING ANGLE SIDE TO SIDE"])
+                getValue(item["VIEWING ANGLE SIDE TO SIDE"]),
             )
           );
         } else {
           return filters[key].find(
-            (filter) => getValue(filter) === getValue(item[key])
+            (filter) => getValue(filter) === getValue(item[key]),
           );
         }
       });
@@ -274,7 +276,8 @@ class Products extends Component {
                   aria-label="Find your local rep"
                   size="lg"
                   variant="outline-danger"
-                  href="#/contact"
+                  as={Link}
+                  to="/contact"
                 >
                   Find a Rep
                 </Button>
@@ -456,7 +459,8 @@ class Products extends Component {
                       aria-label="Find your local rep"
                       size="lg"
                       variant="outline-danger"
-                      href="#/contact"
+                      as={Link}
+                      to="/contact"
                     >
                       Find a Rep
                     </Button>

@@ -14,6 +14,8 @@ import { Helmet } from "react-helmet";
 import { products } from "../json/ePoster_products";
 import filters from "../json/ePoster_products_filters";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
+
 AOS.init();
 class Eposters_product extends Component {
   constructor(props) {
@@ -156,7 +158,7 @@ class Eposters_product extends Component {
       totalFilterValue[item.category] = totalFilterValue[item.category].filter(
         (obj) => {
           return obj !== item.option;
-        }
+        },
       );
       if (totalFilterValue[item.category].length === 0) {
         delete totalFilterValue[item.category];
@@ -174,7 +176,7 @@ class Eposters_product extends Component {
         // ignores an empty filter
         if (!filters[key].length) return true;
         return filters[key].find(
-          (filter) => getValue(filter) === getValue(item[key])
+          (filter) => getValue(filter) === getValue(item[key]),
         );
       });
     });
@@ -206,7 +208,7 @@ class Eposters_product extends Component {
   };
   callFunct = (event, link) => {
     event.preventDefault();
-    window.location.href = "#" + link;
+    window.location.href = link;
     // alert(text);
   };
   render() {
@@ -416,7 +418,8 @@ class Eposters_product extends Component {
                       aria-label="Find your local rep"
                       size="lg"
                       variant="outline-danger"
-                      href="#/contact"
+                      as={Link}
+                      to="/contact"
                     >
                       Find a Rep
                     </Button>

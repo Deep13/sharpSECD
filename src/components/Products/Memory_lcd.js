@@ -14,6 +14,7 @@ import { Helmet } from "react-helmet";
 import { products } from "../../json/Memory_LCD";
 import filters from "../../json/Filter Memory LCD";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 AOS.init();
 class Memory_lcd extends Component {
   constructor(props) {
@@ -156,7 +157,7 @@ class Memory_lcd extends Component {
       totalFilterValue[item.category] = totalFilterValue[item.category].filter(
         (obj) => {
           return obj !== item.option;
-        }
+        },
       );
       if (totalFilterValue[item.category].length === 0) {
         delete totalFilterValue[item.category];
@@ -174,7 +175,7 @@ class Memory_lcd extends Component {
         // ignores an empty filter
         if (!filters[key].length) return true;
         return filters[key].find(
-          (filter) => getValue(filter) === getValue(item[key])
+          (filter) => getValue(filter) === getValue(item[key]),
         );
       });
     });
@@ -206,7 +207,7 @@ class Memory_lcd extends Component {
   };
   callFunct = (event, link) => {
     event.preventDefault();
-    window.location.href = "#" + link;
+    window.location.href = link;
     // alert(text);
   };
   render() {
@@ -241,30 +242,28 @@ class Memory_lcd extends Component {
               </p>
               <p>
                 View{" "}
-                <a
-                  href="/"
-                  style={{ color: "#e61d24" }}
-                  onClick={(event) => this.callFunct(event, "/MemoryInPixel")}
-                >
+                <Link to="/MemoryInPixel" style={{ color: "#e61d24" }}>
                   {" "}
                   Memory in Pixel LCD product details.{" "}
-                </a>
+                </Link>
                 <br />
                 Learn more about{" "}
-                <a
-                  href="/"
+                <Link
+                  to="/memory-in-pixel-lcds-technology"
                   style={{ color: "#e61d24" }}
-                  onClick={(event) =>
-                    this.callFunct(event, "/memory-in-pixel-lcds-technology")
-                  }
                 >
                   {" "}
                   Memory in Pixel LCD technology.{" "}
-                </a>
+                </Link>
               </p>
 
               <div>
-                <Button size="lg" variant="outline-danger" href="#/contact">
+                <Button
+                  size="lg"
+                  variant="outline-danger"
+                  as={Link}
+                  to="/contact"
+                >
                   Find a Rep
                 </Button>
               </div>
@@ -436,7 +435,8 @@ class Memory_lcd extends Component {
                       aria-label="Find your local rep"
                       size="lg"
                       variant="outline-danger"
-                      href="#/contact"
+                      as={Link}
+                      to="/contact"
                     >
                       Find a Rep
                     </Button>

@@ -18,6 +18,8 @@ import axios from "axios";
 import Toast from "react-bootstrap/Toast";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import Loader from "react-loader-spinner";
+import { Link } from "react-router-dom";
+
 export default class MemoryInPixel extends Component {
   constructor(props) {
     super(props);
@@ -37,7 +39,7 @@ export default class MemoryInPixel extends Component {
   }
   callFunct = (event, link) => {
     event.preventDefault();
-    window.location.href = "#" + link;
+    window.location.href = link;
     // alert(text);
   };
   onSubmit = (event) => {
@@ -440,7 +442,8 @@ export default class MemoryInPixel extends Component {
                       >
                         <Button
                           className="redButton"
-                          href="#/MemoryInPixel"
+                          as={Link}
+                          to="/MemoryInPixel"
                           size="lg"
                           variant="outline-danger"
                           style={{ marginBottom: 20 }}
@@ -506,7 +509,8 @@ export default class MemoryInPixel extends Component {
                       >
                         <Button
                           className="redButton"
-                          href="#/ReflectiveIGZO"
+                          as={Link}
+                          to="/ReflectiveIGZO"
                           size="lg"
                           variant="outline-danger"
                           style={{ marginBottom: 20 }}

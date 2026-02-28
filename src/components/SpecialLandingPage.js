@@ -42,7 +42,7 @@ const companyData = {
     bannerImg2: techCoastSalesBanner2,
     bannerTitle: "Tech Coast Sales – ePoster Product Overview",
     meta: {
-      canonical: "https://sharpsecd.com/#/eposters-displays",
+      canonical: "https://sharpsecd.com/eposters-displays",
       noindex: true,
       follow: true,
       contactFormClass: "tech-coast-sales-form",
@@ -52,7 +52,7 @@ const companyData = {
         "karamy@xposureunlimited.com",
         "yeep@sharpusa.com",
       ],
-      url: "https://sharpsecd.com/#/eposters-displays-tech-coast",
+      url: "https://sharpsecd.com/eposters-displays-tech-coast",
     },
   },
 
@@ -61,7 +61,7 @@ const companyData = {
     bannerImg2: thomLukeSalesBanner2,
     bannerTitle: "Thom Luke Sales – ePoster Product Overview",
     meta: {
-      canonical: "https://sharpsecd.com/#/eposters-displays",
+      canonical: "https://sharpsecd.com/eposters-displays",
       noindex: true,
       follow: true,
       contactFormClass: "thom-luke-sales-form",
@@ -70,7 +70,7 @@ const companyData = {
         "CarrollB@sharpsec.com",
         "karamy@xposureunlimited.com",
       ],
-      url: "https://sharpsecd.com/#/eposters-displays-thom-luke",
+      url: "https://sharpsecd.com/eposters-displays-thom-luke",
     },
   },
 
@@ -79,7 +79,7 @@ const companyData = {
     bannerImg2: quantumBanner2,
     bannerTitle: "Quantum – ePoster Product Overview",
     meta: {
-      canonical: "https://sharpsecd.com/#/eposters-displays",
+      canonical: "https://sharpsecd.com/eposters-displays",
       noindex: true,
       follow: true,
       contactFormClass: "quantum-sales-form",
@@ -88,7 +88,7 @@ const companyData = {
         "CarrollB@sharpsec.com",
         "karamy@xposureunlimited.com",
       ],
-      url: "https://sharpsecd.com/#/eposters-displays-quantum",
+      url: "https://sharpsecd.com/eposters-displays-quantum",
     },
   },
 
@@ -97,7 +97,7 @@ const companyData = {
     bannerImg2: controlSalesBanner2,
     bannerTitle: "Control Sales – ePoster Product Overview",
     meta: {
-      canonical: "https://sharpsecd.com/#/eposters-displays",
+      canonical: "https://sharpsecd.com/eposters-displays",
       noindex: true,
       follow: true,
       contactFormClass: "control-sales-form",
@@ -106,7 +106,7 @@ const companyData = {
         "CarrollB@sharpsec.com",
         "karamy@xposureunlimited.com",
       ],
-      url: "https://sharpsecd.com/#/eposters-displays-control-sales",
+      url: "https://sharpsecd.com/eposters-displays-control-sales",
     },
   },
 
@@ -115,7 +115,7 @@ const companyData = {
     bannerImg2: oDonnel,
     bannerTitle: "O'Donnell – ePoster Product Overview",
     meta: {
-      canonical: "https://sharpsecd.com/#/eposters-displays",
+      canonical: "https://sharpsecd.com/eposters-displays",
       noindex: true,
       follow: true,
       contactFormClass: "odonnell-sales-form",
@@ -125,7 +125,7 @@ const companyData = {
         "karamy@xposureunlimited.com",
         "yeep@sharpusa.com",
       ],
-      url: "https://sharpsecd.com/#/eposters-displays-odonnell",
+      url: "https://sharpsecd.com/eposters-displays-odonnell",
     },
   },
 };
@@ -149,7 +149,7 @@ class SpecialLandingPage extends Component {
   }
   callFunct = (event, link) => {
     event.preventDefault();
-    window.location.href = "#" + link;
+    window.location.href = link;
     // alert(text);
   };
   onSubmit = (event) => {
@@ -211,7 +211,7 @@ class SpecialLandingPage extends Component {
 
           <link
             rel="canonical"
-            href="https://sharpsecd.com/#/eposters-displays"
+            href="https://sharpsecd.com/eposters-displays"
           ></link>
 
           <meta name="robots" content="noindex, follow" />

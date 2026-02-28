@@ -52,7 +52,7 @@ class Headernav extends Component {
   selectNavigate = (route) => {
     this.header.current.focus();
     this.setState({ navExpanded: false });
-    window.location.href = "#" + route;
+    window.location.href = route;
   };
   search = (event) => {
     event.preventDefault();
@@ -62,7 +62,7 @@ class Headernav extends Component {
     var searchq = document.getElementById("searchId").value;
     document.getElementById("searchId").value = "";
     // this.setState({ navExpanded: false });
-    window.location.href = "#/search-result/" + searchq;
+    window.location.href = "/search-result/" + searchq;
   };
 
   render() {
@@ -135,9 +135,9 @@ class Headernav extends Component {
                 {/* <NavDropdown.Item className="dropdown-toggle" id="more-services" >
                   Memory in Pixel LCDs
                   <ul className="dropdown-menu second-level">
-                    <li><a className="dropdown-item" href="#" onClick={() => this.selectNavigate("/MemoryInPixel")}>Overview</a></li>
-                    <li><a className="dropdown-item" href="#" onClick={() => this.selectNavigate("/memory-in-pixel-lcds-product")}>Find a Product</a></li>
-                    <li><a className="dropdown-item" href="#" onClick={() => this.selectNavigate("/memory-in-pixel-lcds-technology")}>Technology</a></li>
+                    <li><a className="dropdown-item" as={Link} to="/" onClick={() => this.selectNavigate("/MemoryInPixel")}>Overview</a></li>
+                    <li><a className="dropdown-item" as={Link} to="/" onClick={() => this.selectNavigate("/memory-in-pixel-lcds-product")}>Find a Product</a></li>
+                    <li><a className="dropdown-item" as={Link} to="/" onClick={() => this.selectNavigate("/memory-in-pixel-lcds-technology")}>Technology</a></li>
                   </ul>
                 </NavDropdown.Item> */}
                 <NavDropdown.Item
@@ -161,7 +161,7 @@ class Headernav extends Component {
                 {/* <NavDropdown.Item className="dropdown-toggle" id="more-services">
                   ePoster Display Modules
                   <ul className="dropdown-menu second-level drop-two">
-                    <li><a className="dropdown-item" href="#" onClick={() => this.selectNavigate("/eposters-displays")}>Overview</a></li>
+                    <li><a className="dropdown-item" as={Link} to="/" onClick={() => this.selectNavigate("/eposters-displays")}>Overview</a></li>
                   </ul>
                 </NavDropdown.Item> */}
                 <NavDropdown.Item
@@ -181,7 +181,7 @@ class Headernav extends Component {
                 {/* <NavDropdown.Item className="dropdown-toggle" id="more-services">
                   General Purpose LCDs
                   <ul className="dropdown-menu second-level drop-three">
-                    <li><a className="dropdown-item" href="#" onClick={() => this.selectNavigate("/industrial-lcds-product")}>Find a Product</a></li>
+                    <li><a className="dropdown-item" as={Link} to="/" onClick={() => this.selectNavigate("/industrial-lcds-product")}>Find a Product</a></li>
                   </ul>
                 </NavDropdown.Item> */}
               </NavDropdown>

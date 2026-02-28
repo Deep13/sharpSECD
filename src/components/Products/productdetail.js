@@ -4,6 +4,8 @@ import { Table } from "react-bootstrap";
 import placeholderImage from "../../assets/placeholder.png";
 import { Button, Image } from "react-bootstrap";
 import Modal from "react-bootstrap/Modal";
+import { Link } from "react-router-dom";
+
 const Productdetail = (props) => {
   // console.log(props.items);
   return (
@@ -31,14 +33,15 @@ const Productdetail = (props) => {
             <div className="row padding-top-30">
               <div className="col-lg-5" style={{ padding: 10 }}>
                 {props.items.img.map((val, index) => {
-                  return <Image
-                    alt={`Product Image ${index + 1}`}
-                    // className="left-fixed"
-                    src={val ? val : placeholderImage}
-                    fluid
-                  />
+                  return (
+                    <Image
+                      alt={`Product Image ${index + 1}`}
+                      // className="left-fixed"
+                      src={val ? val : placeholderImage}
+                      fluid
+                    />
+                  );
                 })}
-
               </div>
               <div className="col-lg-7">
                 {props.items.desc && (
@@ -54,7 +57,7 @@ const Productdetail = (props) => {
                 )}
 
                 <div className="padding-top-30 padding-bottom-30">
-                  <Button href="#/contact" variant="outline-danger">
+                  <Button as={Link} to="/contact" variant="outline-danger">
                     Find a Rep
                   </Button>
                 </div>
@@ -69,16 +72,16 @@ const Productdetail = (props) => {
                           return (
                             <tr key={index}>
                               <td>
-                                <a
+                                <Link
                                   className="redLink"
                                   // href={Pdf}
-                                  href={key.link}
+                                  to={key.link}
                                   // onClick={() => openDoc(key)}
                                   target="_blank"
                                   rel="noopener noreferrer"
                                 >
                                   {key.name}
-                                </a>
+                                </Link>
                               </td>
                             </tr>
                           );
@@ -115,7 +118,9 @@ const Productdetail = (props) => {
                 </div>
                 {props.items.Applications && (
                   <div className="row">
-                    <div className="col-sm-3" style={{ paddingRight: 0 }}>Applications:</div>
+                    <div className="col-sm-3" style={{ paddingRight: 0 }}>
+                      Applications:
+                    </div>
                     <div tabIndex={0} className="col-sm-9">
                       <div tabIndex={-1}>
                         <div>{props.items.Applications}</div>

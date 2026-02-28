@@ -27,7 +27,7 @@ import Footer from "../Footer";
 export default function AboutUs() {
   const callFunct = (event, link) => {
     event.preventDefault();
-    window.location.href = "#" + link;
+    window.location.href = link;
     // alert(text);
   };
   return (
