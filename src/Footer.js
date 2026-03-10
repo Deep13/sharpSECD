@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import logo from "./assets/Sharp-Logo.png";
+import { Link } from "react-router-dom";
 
 // import Badge from '@material-ui/core/Badge';
 // import MailIcon from '@material-ui/icons/Mail';
@@ -11,7 +12,7 @@ class Footer extends Component {
   // }
   callFunct = (event, link) => {
     event.preventDefault();
-    window.location.href = "#" + link;
+    window.location.href = link;
     // history.push(link);
     // alert(text);
   };
@@ -23,7 +24,7 @@ class Footer extends Component {
         style={{
           backgroundColor: "black",
           padding: 50,
-          margin: 0
+          margin: 0,
         }}
       >
         <div
@@ -34,7 +35,12 @@ class Footer extends Component {
           }}
         >
           <div style={{ color: "white" }}>
-            <img className="footer-logo" alt="SHARP Logo" src={logo} style={{ width: 200 }} />
+            <img
+              className="footer-logo"
+              alt="SHARP Logo"
+              src={logo}
+              style={{ width: 200 }}
+            />
 
             <div style={{ marginLeft: 10 }}>
               Sharp Electronics Corporation, Device Division
@@ -54,70 +60,87 @@ class Footer extends Component {
           <span style={{ fontSize: "2em", color: "white" }}>Products</span>
           <br />
           <p
-            style={{ color: "white", fontWeight: "bold", fontSize: '0.8rem', marginBottom: 0 }}
+            style={{
+              color: "white",
+              fontWeight: "bold",
+              fontSize: "0.8rem",
+              marginBottom: 0,
+            }}
           >
             Memory in Pixel LCDs
           </p>
-          <div style={{ marginLeft: 10, display: 'flex', flexDirection: "column" }}>
-            <a
-              href="/"
+          <div
+            style={{ marginLeft: 10, display: "flex", flexDirection: "column" }}
+          >
+            <Link
+              to="/MemoryInPixel"
               style={{ color: "white" }}
-              onClick={(event) =>
-                this.callFunct(event, "/MemoryInPixel")
-              }
+              onClick={(event) => this.callFunct(event, "/MemoryInPixel")}
             >
               Overview
-            </a>
-            <a
-              href="/"
+            </Link>
+            <Link
+              to="/memory-in-pixel-lcds-product"
               style={{ color: "white" }}
               onClick={(event) =>
                 this.callFunct(event, "/memory-in-pixel-lcds-product")
               }
             >
               Find a Product
-            </a>
-            <a
-              href="/"
+            </Link>
+            <Link
+              to="/memory-in-pixel-lcds-technology"
               style={{ color: "white" }}
               onClick={(event) =>
                 this.callFunct(event, "/memory-in-pixel-lcds-technology")
               }
             >
               Technology
-            </a>
+            </Link>
           </div>
           <p
-            style={{ color: "white", fontWeight: "bold", fontSize: '0.8rem', marginBottom: 0 }}
+            style={{
+              color: "white",
+              fontWeight: "bold",
+              fontSize: "0.8rem",
+              marginBottom: 0,
+            }}
           >
             ePoster Display Modules
           </p>
-          <div style={{ marginLeft: 10, display: 'flex', flexDirection: "column" }}>
-            <a
-              href="/"
+          <div
+            style={{ marginLeft: 10, display: "flex", flexDirection: "column" }}
+          >
+            <Link
+              to="/eposters-displays"
               style={{ color: "white" }}
-              onClick={(event) =>
-                this.callFunct(event, "/eposters-displays")
-              }
+              onClick={(event) => this.callFunct(event, "/eposters-displays")}
             >
               Overview
-            </a>
+            </Link>
           </div>
           <p
-            style={{ color: "white", fontWeight: "bold", fontSize: '0.8rem', marginBottom: 0 }}
+            style={{
+              color: "white",
+              fontWeight: "bold",
+              fontSize: "0.8rem",
+              marginBottom: 0,
+            }}
           >
             General Purpose LCDs
           </p>
-          <div style={{ marginLeft: 10, display: 'flex', flexDirection: "column" }}>
-            <a
-              href="/"
+          <div
+            style={{ marginLeft: 10, display: "flex", flexDirection: "column" }}
+          >
+            <Link
+              to="/industrial-lcds-product"
               style={{ color: "white" }}
               onClick={(event) =>
                 this.callFunct(event, "/industrial-lcds-product")
               }
             >
               Find a Product
-            </a>
+            </Link>
           </div>
         </div>
         <div
@@ -128,15 +151,13 @@ class Footer extends Component {
         >
           <span style={{ fontSize: "2em", color: "white" }}>About Sharp</span>
           <br />
-          <a
-            href="/"
+          <Link
+            to="/news"
             style={{ color: "white" }}
-            onClick={(event) =>
-              this.callFunct(event, "/news")
-            }
+            onClick={(event) => this.callFunct(event, "/news")}
           >
             News
-          </a>
+          </Link>
         </div>
         <div
           className="col-md-3"
@@ -144,13 +165,13 @@ class Footer extends Component {
             fontSize: "0.8rem",
           }}
         >
-          <a
-            href="/"
+          <Link
+            to="/contact"
             style={{ color: "white", fontSize: "2em" }}
             onClick={(event) => this.callFunct(event, "/contact")}
           >
             Contact
-          </a>
+          </Link>
           <br />
           <a
             target="_blank"

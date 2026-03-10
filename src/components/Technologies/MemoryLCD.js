@@ -10,6 +10,7 @@ import "aos/dist/aos.css";
 import Footer from "../../Footer";
 import { Button } from "react-bootstrap";
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 AOS.init();
 // import { Button, Form, FormControl, Table } from "react-bootstrap";
 
@@ -19,7 +20,7 @@ class MemoryLCD extends Component {
   }
   callFunct = (event, link) => {
     event.preventDefault();
-    window.location.href = "#" + link;
+    window.location.href = link;
   };
   render() {
     return (
@@ -50,16 +51,12 @@ class MemoryLCD extends Component {
               </span>
               <p>
                 The{" "}
-                <a
-                  href="/"
+                <Link
+                  to="/memory-in-pixel-lcds-product"
                   style={{ color: "#e61d24" }}
-                  onClick={(event) =>
-                    this.callFunct(event, "/memory-in-pixel-lcds-product")
-                  }
                 >
-                  {" "}
-                  Memory-in-Pixel LCD{" "}
-                </a>{" "}
+                  Memory-in-Pixel LCD
+                </Link>{" "}
                 combines matrix technology with a one-bit memory circuit
                 embedded into every pixel, so information is retained once it's
                 written.
@@ -71,7 +68,12 @@ class MemoryLCD extends Component {
                 (electronic paper) displays.
               </p>
               <div>
-                <Button size="lg" variant="outline-danger" href="#/contact">
+                <Button
+                  size="lg"
+                  variant="outline-danger"
+                  as={Link}
+                  to="/contact"
+                >
                   Find a Rep
                 </Button>
               </div>

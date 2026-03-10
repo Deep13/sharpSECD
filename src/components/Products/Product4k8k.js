@@ -7,6 +7,8 @@ import Footer from "../../Footer";
 import { Helmet } from "react-helmet";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
+
 AOS.init();
 class Product4k8k extends Component {
   constructor(props) {
@@ -22,7 +24,7 @@ class Product4k8k extends Component {
   }
   callFunct = (event, link) => {
     event.preventDefault();
-    window.location.href = "#" + link;
+    window.location.href = link;
   };
   handleClose = () => this.setState({ show: false });
   handleShow = () => this.setState({ show: true });
@@ -63,16 +65,10 @@ class Product4k8k extends Component {
                     When your application relies on images that are crystal
                     clear down to the most minute detail, 8K resolution displays
                     built on{" "}
-                    <a
-                      href="/"
-                      style={{ color: "#e61d24" }}
-                      onClick={(event) =>
-                        this.callFunct(event, "/igzo-technology")
-                      }
-                    >
+                    <Link to="/igzo-technology" style={{ color: "#e61d24" }}>
                       {" "}
                       Sharp’s signature IGZO technology{" "}
-                    </a>{" "}
+                    </Link>{" "}
                     deliver the goods. They’re perfect for application ranging
                     from 3D to medical to military to broadcast and more.
                   </p>

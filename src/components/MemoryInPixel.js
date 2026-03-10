@@ -23,6 +23,8 @@ import axios from "axios";
 import Toast from "react-bootstrap/Toast";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import Loader from "react-loader-spinner";
+import { Link } from "react-router-dom";
+
 export default class MemoryInPixel extends Component {
   constructor(props) {
     super(props);
@@ -77,7 +79,7 @@ export default class MemoryInPixel extends Component {
   };
   callFunct = (event, link) => {
     event.preventDefault();
-    window.location.href = "#" + link;
+    window.location.href = link;
     // alert(text);
   };
   componentDidMount() {
@@ -151,7 +153,6 @@ export default class MemoryInPixel extends Component {
           </div>
         </div>
         <div
-
           style={{
             display: "flex",
             alignItems: "center",
@@ -240,7 +241,8 @@ export default class MemoryInPixel extends Component {
                       className="redButton"
                       size="lg"
                       variant="outline-danger"
-                      href="#/memory-in-pixel-lcds-product"
+                      as={Link}
+                      to="/memory-in-pixel-lcds-product"
                     >
                       View Products
                     </Button>
@@ -321,19 +323,19 @@ export default class MemoryInPixel extends Component {
                       always-on display capable of delivering high-contrast,
                       high-resolution content. Ultra-low power consumption means
                       better heat management, too.
-                      <a
-                        href="/"
+                      <Link
+                        to="/memory-in-pixel-lcds-technology"
                         onClick={(event) =>
                           this.callFunct(
                             event,
-                            "/memory-in-pixel-lcds-technology"
+                            "/memory-in-pixel-lcds-technology",
                           )
                         }
                         style={{ color: "#e61d24" }}
                       >
                         {" "}
                         See more about Memory LCD technology here.{" "}
-                      </a>
+                      </Link>
                     </p>
                   </div>
                   <div
@@ -612,7 +614,8 @@ export default class MemoryInPixel extends Component {
                 className="redButton"
                 size="lg"
                 variant="outline-danger"
-                href="#/memory-in-pixel-lcds-product"
+                as={Link}
+                to="/memory-in-pixel-lcds-product"
               >
                 View Products
               </Button>
@@ -787,7 +790,7 @@ export default class MemoryInPixel extends Component {
                   onClose={() => this.setState({ show: false, submit: false })}
                   show={this.state.show}
                   className="toastSuccess"
-                // transition="Fade"
+                  // transition="Fade"
                 >
                   <Toast.Header>
                     <strong className="me-auto">Success</strong>
@@ -803,7 +806,7 @@ export default class MemoryInPixel extends Component {
                   }
                   show={this.state.showError}
                   className="toastError"
-                // transition="Fade"
+                  // transition="Fade"
                 >
                   <Toast.Header>
                     <strong className="me-auto">Error</strong>

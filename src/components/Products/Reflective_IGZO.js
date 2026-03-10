@@ -9,6 +9,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { products } from "../../json/RIGZOProduct";
 import { Helmet } from "react-helmet";
+import {Link} from "react-router-dom";
+
 AOS.init();
 class Reflective_IGZO extends Component {
   constructor(props) {
@@ -25,7 +27,7 @@ class Reflective_IGZO extends Component {
   }
   callFunct = (event, link) => {
     event.preventDefault();
-    window.location.href = "#" + link;
+    window.location.href = link;
   };
   onSubmit = (event) => {
     event.preventDefault();
@@ -74,26 +76,24 @@ class Reflective_IGZO extends Component {
               </p>
               <p>
                 View{" "}
-                <a
-                  href="/"
+                <Link
+                  to="/ReflectiveIGZO"
                   style={{ color: "#e61d24" }}
-                  onClick={(event) => this.callFunct(event, "/ReflectiveIGZO")}
                 >
                   {" "}
                   R-IGZO product details{" "}
-                </a>
+                </Link>
                 <br />
                 Learn more about{" "}
-                <a
-                  href="/"
+                <Link
+                  to="/reflective-igzo-technology"
                   style={{ color: "#e61d24" }}
-                  onClick={(event) =>
-                    this.callFunct(event, "/reflective-igzo-technology")
+                >
                   }
                 >
                   {" "}
                   R-IGZO technology{" "}
-                </a>
+                </Link>
               </p>
               <div style={{ padding: "30px 0 20px 0" }}>
                 <h4>Our current R-IGZO line-up includes:</h4>

@@ -25,6 +25,8 @@ import axios from "axios";
 import Toast from "react-bootstrap/Toast";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import Loader from "react-loader-spinner";
+import { Link } from "react-router-dom";
+
 export default class RIGZOTCS extends Component {
   constructor(props) {
     super(props);
@@ -44,7 +46,7 @@ export default class RIGZOTCS extends Component {
   }
   callFunct = (event, link) => {
     event.preventDefault();
-    window.location.href = "#" + link;
+    window.location.href = link;
     // history.push(link);
     // alert(text);
   };
@@ -89,7 +91,7 @@ export default class RIGZOTCS extends Component {
   };
   callFunct = (event, link) => {
     event.preventDefault();
-    window.location.href = "#" + link;
+    window.location.href = link;
     // alert(text);
   };
   componentDidMount() {
@@ -173,26 +175,25 @@ export default class RIGZOTCS extends Component {
             </div>
           </div>
         </div>
-        <div style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          background: "rgb(115 115 115)",
-          padding: "20px 0"
-
-        }}>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            background: "rgb(115 115 115)",
+            padding: "20px 0",
+          }}
+        >
           <p
             style={{
               color: "white",
               fontSize: "1.8rem",
               textAlign: "center",
               marginBottom: 0,
-              verticalAlign: 'center'
+              verticalAlign: "center",
             }}
           >
-            <strong>
-              Creating top product solutions with {' '}
-            </strong>
+            <strong>Creating top product solutions with </strong>
             <img
               style={{ marginLeft: 10, height: 60 }}
               src={controlsaleslogo}
@@ -200,7 +201,6 @@ export default class RIGZOTCS extends Component {
               alt="Control Sales Logo"
             />
           </p>
-
         </div>
         <div
           style={{
@@ -208,7 +208,7 @@ export default class RIGZOTCS extends Component {
             display: "flex",
             width: "100%",
             marginTop: 20,
-            marginBottom: 20
+            marginBottom: 20,
           }}
         >
           <Button
@@ -450,7 +450,6 @@ export default class RIGZOTCS extends Component {
             </div>
           </div>
 
-
           <div
             style={{
               backgroundColor: "#fff",
@@ -462,7 +461,6 @@ export default class RIGZOTCS extends Component {
               backgroundRepeat: "no-repeat",
             }}
           >
-
             <div
               className="row"
               style={{
@@ -487,10 +485,7 @@ export default class RIGZOTCS extends Component {
               </div>
               <div className="padding-top-50"></div>
               <div className="padding-top-50"></div>
-              <div
-                className="col-md-4"
-                style={{ padding: "30px 0px" }}
-              >
+              <div className="col-md-4" style={{ padding: "30px 0px" }}>
                 <div>
                   <img
                     style={{ width: "100%" }}
@@ -500,10 +495,7 @@ export default class RIGZOTCS extends Component {
                   />
                 </div>
               </div>
-              <div
-                className="col-md-4"
-                style={{ padding: "30px 0px" }}
-              >
+              <div className="col-md-4" style={{ padding: "30px 0px" }}>
                 <div>
                   <img
                     style={{ width: "100%" }}
@@ -513,10 +505,7 @@ export default class RIGZOTCS extends Component {
                   />
                 </div>
               </div>
-              <div
-                className="col-md-4"
-                style={{ padding: "30px 0px" }}
-              >
+              <div className="col-md-4" style={{ padding: "30px 0px" }}>
                 <div>
                   <img
                     style={{ width: "100%" }}
@@ -528,7 +517,6 @@ export default class RIGZOTCS extends Component {
               </div>
             </div>
           </div>
-
 
           <div
             className="row"
@@ -666,13 +654,12 @@ export default class RIGZOTCS extends Component {
           </div>
           <div
             style={{
-              backgroundColor: 'rgb(232 230 230)',
+              backgroundColor: "rgb(232 230 230)",
               width: "100%",
               justifyContent: "center",
               display: "flex",
             }}
           >
-
             <div
               className="row"
               style={{
@@ -686,10 +673,14 @@ export default class RIGZOTCS extends Component {
                 margin: 0,
               }}
             >
-
               <div
                 className="row"
-                style={{ margin: 0, width: "100%", alignItems: "flex-start", paddingTop: 30 }}
+                style={{
+                  margin: 0,
+                  width: "100%",
+                  alignItems: "flex-start",
+                  paddingTop: 30,
+                }}
               >
                 <div tabIndex={0} className="col-md-6">
                   <div tabIndex={-1} style={{ height: "100%", padding: 10 }}>
@@ -700,20 +691,17 @@ export default class RIGZOTCS extends Component {
                         alignItems: "center",
                       }}
                     >
-                      <h1 style={{ fontSize: "2rem", textAlign: 'center' }} className='mb-font-2'>
-                        <strong>
-                          STRONGER TOGETHER.
-                        </strong>
+                      <h1
+                        style={{ fontSize: "2rem", textAlign: "center" }}
+                        className="mb-font-2"
+                      >
+                        <strong>STRONGER TOGETHER.</strong>
                       </h1>
                       <p>
-                        Bringing the top products
-                        to market requires having
-                        the best team.
-
+                        Bringing the top products to market requires having the
+                        best team.
                       </p>
-                      <div style={{ textAlign: 'center' }}>
-
-
+                      <div style={{ textAlign: "center" }}>
                         <img
                           style={{ width: "80%", marginTop: 30 }}
                           src={controlsaleslogo}
@@ -721,7 +709,7 @@ export default class RIGZOTCS extends Component {
                           alt="Control Sales Logo"
                         />
                       </div>
-                      <div style={{ textAlign: 'center' }}>
+                      <div style={{ textAlign: "center" }}>
                         <img
                           style={{ width: "80%" }}
                           src={SHARP_Logo_red}
@@ -734,8 +722,6 @@ export default class RIGZOTCS extends Component {
                 </div>
                 <div className="col-md-6" style={{ padding: 30 }}>
                   <div>
-
-
                     <img
                       style={{ width: "100%" }}
                       src={handshake}
@@ -798,7 +784,11 @@ export default class RIGZOTCS extends Component {
                 </p>
               </div>
               <div style={{ width: "70%" }}>
-                <Form1 noValidate className="TCS-R-IGZO" onSubmit={this.onSubmit}>
+                <Form1
+                  noValidate
+                  className="TCS-R-IGZO"
+                  onSubmit={this.onSubmit}
+                >
                   <Form1.Row style={{ paddingBottom: 10 }}>
                     <Col>
                       <Form1.Control
@@ -930,7 +920,7 @@ export default class RIGZOTCS extends Component {
                     }
                     show={this.state.show}
                     className="toastSuccess"
-                  // transition="Fade"
+                    // transition="Fade"
                   >
                     <Toast.Header>
                       <strong className="me-auto">Success</strong>
@@ -946,7 +936,7 @@ export default class RIGZOTCS extends Component {
                     }
                     show={this.state.showError}
                     className="toastError"
-                  // transition="Fade"
+                    // transition="Fade"
                   >
                     <Toast.Header>
                       <strong className="me-auto">Error</strong>
@@ -958,8 +948,8 @@ export default class RIGZOTCS extends Component {
                   <div style={{ paddingBottom: 50 }}></div>
                   <p style={{ color: "white" }}>
                     Looking for a smaller size class reflective displays?
-                    <a
-                      href="/"
+                    <Link
+                      to="/memory-in-pixel-lcds-product"
                       style={{ color: "#e61d24" }}
                       onClick={(event) =>
                         this.callFunct(event, "/memory-in-pixel-lcds-product")
@@ -967,7 +957,7 @@ export default class RIGZOTCS extends Component {
                     >
                       {" "}
                       Visit our Memory in Pixel product page
-                    </a>
+                    </Link>
                     .
                   </p>
                   <div style={{ paddingBottom: 50 }}></div>

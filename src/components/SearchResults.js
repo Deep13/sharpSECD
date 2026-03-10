@@ -217,7 +217,7 @@ class SearchResults extends Component {
                       }}
                       aria-label={item.header}
                       variant="link"
-                      href={"#" + item.link + "?search=" + item.header}
+                      href={item.link + "?search=" + item.header}
                     >
                       {item.header}
                     </Button>
@@ -246,7 +246,7 @@ class SearchResults extends Component {
                     }}
                     aria-label={item.header}
                     variant="link"
-                    href={"#" + item.link}
+                    href={item.link}
                   >
                     {item.header}
                   </Button>

@@ -1,86 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
-  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
   <url>
     <loc>https://sharpsecd.com/</loc>
-    <lastmod>2023-05-03T15:46:50+00:00</lastmod>
+    <lastmod>2026-02-28T10:30:00+00:00</lastmod>
   </url>
   <url>
-    <loc>https://sharpsecd.com/#/MemoryInPixel</loc>
-    <lastmod>2023-05-03T15:46:50+00:00</lastmod>
+    <loc>https://sharpsecd.com/about</loc>
   </url>
   <url>
-    <loc>https://sharpsecd.com/#/industrial-lcds-product</loc>
-    <lastmod>2023-05-03T15:46:50+00:00</lastmod>
+    <loc>https://sharpsecd.com/contact</loc>
   </url>
   <url>
-    <loc>https://sharpsecd.com/#/memory-in-pixel-lcds-product</loc>
-    <lastmod>2023-05-03T15:46:50+00:00</lastmod>
-  </url>
-  <url>
-    <loc>https://sharpsecd.com/#/custom-camera-modules-product</loc>
-    <lastmod>2023-05-03T15:46:50+00:00</lastmod>
-  </url>
-  <url>
-    <loc>https://sharpsecd.com/#/igzo-8k-displays-product</loc>
-    <lastmod>2023-05-03T15:46:50+00:00</lastmod>
-  </url>
-  <url>
-    <loc>https://sharpsecd.com/#/reflective-igzo-displays-product</loc>
-    <lastmod>2023-05-03T15:46:50+00:00</lastmod>
-  </url>
-  <url>
-    <loc>https://sharpsecd.com/#/contact</loc>
-    <lastmod>2023-05-03T15:46:50+00:00</lastmod>
-  </url>
-  <url>
-    <loc>https://sharpsecd.com/#/news</loc>
-    <lastmod>2023-05-03T15:46:50+00:00</lastmod>
-  </url>
-  <url>
-    <loc>https://sharpsecd.com/#/igzo-technology</loc>
-    <lastmod>2023-05-03T15:46:50+00:00</lastmod>
-  </url>
-  <url>
-    <loc>https://sharpsecd.com/#/reflective-igzo-technology</loc>
-    <lastmod>2023-05-03T15:46:50+00:00</lastmod>
-  </url>
-  <url>
-    <loc>https://sharpsecd.com/#/search-result</loc>
-    <lastmod>2023-05-03T15:46:50+00:00</lastmod>
-  </url>
-  <url>
-    <loc>https://sharpsecd.com/#/memory-in-pixel-lcds-technology</loc>
-    <lastmod>2023-05-03T15:46:50+00:00</lastmod>
-  </url>
-  <url>
-    <loc>https://sharpsecd.com/#/R-IGZO-LinkedIn</loc>
-    <lastmod>2023-05-03T15:46:50+00:00</lastmod>
-  </url>
-  <url>
-    <loc>https://sharpsecd.com/#/ReflectiveLCDLanding</loc>
-    <lastmod>2023-05-03T15:46:50+00:00</lastmod>
-  </url>
-  <url>
-    <loc>https://sharpsecd.com/#/R-IGZO-Google</loc>
-    <lastmod>2023-05-03T15:46:50+00:00</lastmod>
-  </url>
-  <url>
-    <loc>https://sharpsecd.com/#/LowPowerDisplays</loc>
-    <lastmod>2023-05-03T15:46:50+00:00</lastmod>
-  </url>
-  <url>
-    <loc>https://sharpsecd.com/#/ReflectiveIGZO</loc>
-    <lastmod>2023-05-03T15:46:50+00:00</lastmod>
-  </url>
-  <url>
-    <loc>https://sharpsecd.com/#/MemoryInPixelLanding</loc>
-    <lastmod>2023-05-03T15:46:50+00:00</lastmod>
+    <loc>https://sharpsecd.com/news</loc>
   </url>
 
+  <url>
+    <loc>https://sharpsecd.com/general-purpose-lcds</loc>
+  </url>
+  <url>
+    <loc>https://sharpsecd.com/memory-in-pixel-lcds-product</loc>
+  </url>
+  <url>
+    <loc>https://sharpsecd.com/reflective-igzo-displays-product</loc>
+  </url>
+  <url>
+    <loc>https://sharpsecd.com/eposters_product</loc>
+  </url>
+
+  <url>
+    <loc>https://sharpsecd.com/memory-in-pixel-lcds-technology</loc>
+  </url>
+  <url>
+    <loc>https://sharpsecd.com/eposters</loc>
+  </url>
+  <url>
+    <loc>https://sharpsecd.com/eposters-displays</loc>
+  </url>
+
+  <url>
+    <loc>https://sharpsecd.com/MemoryInPixel</loc>
+  </url>
+  <url>
+    <loc>https://sharpsecd.com/MemoryInPixelLanding</loc>
+  </url>
+  <url>
+    <loc>https://sharpsecd.com/ReflectiveLCDLanding</loc>
+  </url>
+  <url>
+    <loc>https://sharpsecd.com/R-IGZO-LinkedIn</loc>
+  </url>
+  <url>
+    <loc>https://sharpsecd.com/R-IGZO-Google</loc>
+  </url>
+
+  <url>
+    <loc>https://sharpsecd.com/eposters-displays-tech-coast</loc>
+  </url>
+  <url>
+    <loc>https://sharpsecd.com/eposters-displays-quantum</loc>
+  </url>
+  <url>
+    <loc>https://sharpsecd.com/eposters-displays-control-sales</loc>
+  </url>
+  <url>
+    <loc>https://sharpsecd.com/eposters-displays-thom-luke</loc>
+  </url>
+  <url>
+    <loc>https://sharpsecd.com/eposters-displays-odonnell</loc>
+  </url>
 
 </urlset>

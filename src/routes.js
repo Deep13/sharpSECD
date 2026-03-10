@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import {
-  HashRouter,
+  BrowserRouter,
   Switch,
   Route,
   useHistory,
@@ -61,7 +61,7 @@ function Routes() {
   }, [history]);
 
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Switch>
         <Route path="/" exact component={App} />
         <Route
@@ -129,7 +129,7 @@ function Routes() {
         />
         <Route path="/*" component={NotFound} />
       </Switch>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 export default Routes;

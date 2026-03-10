@@ -60,11 +60,7 @@ class MemoryLCD extends Component {
                   Karamy [at] XposureUnlimited.com
                 </a>
               </p>
-              <div>
-                {/* <Button size="lg" variant="outline-danger" href="#/contact">
-                  Find a Rep
-                </Button> */}
-              </div>
+              <div></div>
             </div>
           </div>
           <div

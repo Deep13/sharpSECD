@@ -12,11 +12,12 @@ import picture2 from "./assets/Picture2.jpg";
 import picture3 from "./assets/Picture3.jpg";
 import picture4 from "./assets/Picture4.jpg";
 import logo from "./logo.png";
+import { Link } from "react-router-dom";
 
 class Body extends Component {
   callFunct = (event, link) => {
     event.preventDefault();
-    window.location.href = "#" + link;
+    window.location.href = link;
     // history.push(link);
     // alert(text);
   };
@@ -92,12 +93,12 @@ class Body extends Component {
           content={HomeContent.content[0]}
           image={picture1}
           alt="Memory in pixel LCD"
-          link="#/memory-in-pixel-lcds-product"
+          link="/memory-in-pixel-lcds-product"
         >
           <Card.Text style={{ textAlign: "left", fontSize: "1.2rem" }}>
             Our
-            <a
-              href="/"
+            <Link
+              to="/memory-in-pixel-lcds-product"
               style={{ color: "#e61d24" }}
               onClick={(event) =>
                 this.callFunct(event, "/memory-in-pixel-lcds-product")
@@ -105,7 +106,7 @@ class Body extends Component {
             >
               {" "}
               Memory-in-Pixel{" "}
-            </a>
+            </Link>
             displays offer best-of-class performance with ultra-low power
             consumption and high readability in almost any ambient lighting
             environment.
@@ -121,12 +122,12 @@ class Body extends Component {
           content={HomeContent.content[1]}
           image={picture2}
           alt="Reflect IGZO"
-          link="#/reflective-igzo-displays-product"
+          link="/reflective-igzo-displays-product"
         >
           <Card.Text style={{ textAlign: "left", fontSize: "1.2rem" }}>
             Our full-color, low-power
-            <a
-              href="/"
+            <Link
+              to="/reflective-igzo-displays-product"
               style={{ color: "#e61d24" }}
               onClick={(event) =>
                 this.callFunct(event, "/reflective-igzo-displays-product")
@@ -134,7 +135,7 @@ class Body extends Component {
             >
               {" "}
               Reflective IGZO{" "}
-            </a>
+            </Link>
             displays are the latest advancement built on Sharp’s IGZO-TFT
             technology.
           </Card.Text>
@@ -147,7 +148,7 @@ class Body extends Component {
           bg="#e4e4e4"
           content={HomeContent.content[2]}
           image={picture3}
-          link="#/igzo-8k-displays-product"
+          link="/igzo-8k-displays-product"
           alt="8k Displays"
         >
           <Card.Text style={{ textAlign: "left", fontSize: "1.2rem" }}>
@@ -175,15 +176,15 @@ class Body extends Component {
           bg="#e4e4e4"
           content={HomeContent.content[3]}
           image={picture4}
-          link="#/industrial-lcds-product"
+          link="/industrial-lcds-product"
           alt="Industrial LCD"
         >
           <Card.Text style={{ textAlign: "left", fontSize: "1.2rem" }}>
             Whether it’s all-Sharp out of the box or a high-performance solution
             by a Sharp value-add partner, we work with you and the industry’s
             best talent to find the perfect
-            <a
-              href="/"
+            <Link
+              to="/industrial-lcds-product"
               style={{ color: "#e61d24" }}
               onClick={(event) =>
                 this.callFunct(event, "/industrial-lcds-product")
@@ -191,7 +192,7 @@ class Body extends Component {
             >
               {" "}
               General Purpose LCD{" "}
-            </a>
+            </Link>
             module for your project.
           </Card.Text>
           <Card.Text style={{ textAlign: "left", fontSize: "1.2rem" }}>
