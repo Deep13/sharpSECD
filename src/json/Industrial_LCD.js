@@ -3,8 +3,7 @@ export const products = [
     Applications:
       "Wearable Technology,Mobile Phones,Remote Controls,Performance Tracking Devices,Parking Meters,Smart Utility Meters,Medical Monitoring Devices, Wristwatches,Fish Finders,White Goods,Retail Tags,Any product with a battery",
     "DIAGONAL SIZE": "6.4 inch",
-    desc:
-      "This 6.4-inch (diagonal) XGA display delivers a 800:1 contrast ratio and 350 nits of brightness. It is ideal for use in test and measurement applications where a high-resolution display is required, medical applications, and a number of additional industrial applications. The panel features a dot pitch of 0.12675 and an LVDS interface.",
+    desc: "This 6.4-inch (diagonal) XGA display delivers a 800:1 contrast ratio and 350 nits of brightness. It is ideal for use in test and measurement applications where a high-resolution display is required, medical applications, and a number of additional industrial applications. The panel features a dot pitch of 0.12675 and an LVDS interface.",
     PN: "LQ064X3LW02",
     BRIGHTNESS: "350 nits",
     "LIFE CYCLE": "Discontinued",
@@ -19,7 +18,9 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "80°",
     "VIEWING ANGLE 6 O'CLOCK": "80°",
     "VIEWING ANGLE SIDE TO SIDE": "160°",
-    img: [require("../assets/Industrial LCD Drawings/Sharp-LQ064X3LW02-Mechanical-Drawing.gif")],
+    img: [
+      require("../assets/Industrial LCD Drawings/Sharp-LQ064X3LW02-Mechanical-Drawing.gif"),
+    ],
     DOCUMENTS: [
       {
         link: require("../assets/Documents/PCN-2024-8-20-01-LW02.pdf"),
@@ -31,8 +32,7 @@ export const products = [
     Applications:
       "Wearable Technology,Mobile Phones,Remote Controls,Performance Tracking Devices,Parking Meters,Smart Utility Meters,Medical Monitoring Devices, Wristwatches,Fish Finders,White Goods,Retail Tags,Any product with a battery",
     "DIAGONAL SIZE": "7.0 inch",
-    desc:
-      "This 15:9 aspect WVGA module features an LVDS interface, fast response time of 16 ms, an LED backlight (with built-in driver), and brightness and contrast ratings of 350 nits and 500:1, respectively. The module also incorporates anti-glare and 3H hard coatings.",
+    desc: "This 15:9 aspect WVGA module features an LVDS interface, fast response time of 16 ms, an LED backlight (with built-in driver), and brightness and contrast ratings of 350 nits and 500:1, respectively. The module also incorporates anti-glare and 3H hard coatings.",
     PN: "LQ070Y3LG05",
     BRIGHTNESS: "380 nits",
     "LIFE CYCLE": "Production",
@@ -47,7 +47,9 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "50°",
     "VIEWING ANGLE 6 O'CLOCK": "70°",
     "VIEWING ANGLE SIDE TO SIDE": "140°",
-    img: [require("../assets/Industrial LCD Drawings/Sharp-LQ070Y3LG05-Mechanical-Drawing.gif")],
+    img: [
+      require("../assets/Industrial LCD Drawings/Sharp-LQ070Y3LG05-Mechanical-Drawing.gif"),
+    ],
     DOCUMENTS: [
       {
         link: require("../assets/Documents/Sharp-LCD-Specification-LQ070Y3LG05-1-20-15.pdf"),
@@ -58,12 +60,11 @@ export const products = [
 
   {
     Applications: "",
-    desc:
-      "This WVGA (800 × 480) automotive-grade display features 650 nits of brightness and 1800:1 contrast ratio, right out of the box, for use in high-performance industrial products. The display is perfect for viewability in the toughest environments, and high ambient light applications. The module also features an extended temperature range and a 50,000-hour LED backlight.",
+    desc: "This WVGA (800 × 480) automotive-grade display features 650 nits of brightness and 1800:1 contrast ratio, right out of the box, for use in high-performance industrial products. The display is perfect for viewability in the toughest environments, and high ambient light applications. The module also features an extended temperature range and a 50,000-hour LED backlight.",
     PN: "LQ080Y3LW01A",
     "DIAGONAL SIZE": "8.0 inch",
     BRIGHTNESS: "650 nits",
-    "LIFE CYCLE": "Production",
+    "LIFE CYCLE": "Discontinued",
     "CONTRAST RATIO": "1800:1",
     "DISPLAY MODE": "Normally Black",
     "NUMBER OF COLORS": "16.7M",
@@ -75,11 +76,13 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "80°",
     "VIEWING ANGLE 6 O'CLOCK": "80°",
     "VIEWING ANGLE SIDE TO SIDE": "160°",
-    img: [require("../assets/Industrial LCD Drawings/Sharp-LQ080Y3LW01A-Mechanical-Drawing.jpeg")],
+    img: [
+      require("../assets/Industrial LCD Drawings/Sharp-LQ080Y3LW01A-Mechanical-Drawing.jpeg"),
+    ],
     DOCUMENTS: [
       {
-        link: require("../assets/Documents/SPEC_SEC-D_LQ080Y3LW01A_LD2022102A_220127.pdf"),
-        name: "SPEC_SEC-D_LQ080Y3LW01A_LD2022102A_220127",
+        link: require("../assets/Documents/PCN-2026-15-02-01-IA.pdf"),
+        name: "PCN-2026-15-02-01-IA",
       },
     ],
   },
@@ -87,8 +90,7 @@ export const products = [
     Applications:
       "Wearable Technology,Mobile Phones,Remote Controls,Performance Tracking Devices,Parking Meters,Smart Utility Meters,Medical Monitoring Devices, Wristwatches,Fish Finders,White Goods,Retail Tags,Any product with a battery",
     "DIAGONAL SIZE": "8.4 inch",
-    desc:
-      "This module features a 50,000-hr rated backlight, extended operating and storage temperature ranges, plus shock and vibration resistance.",
+    desc: "This module features a 50,000-hr rated backlight, extended operating and storage temperature ranges, plus shock and vibration resistance.",
     PN: "LQ084S3LG03",
     BRIGHTNESS: "330 nits",
     "LIFE CYCLE": "Discontinued",
@@ -103,7 +105,9 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "60°",
     "VIEWING ANGLE 6 O'CLOCK": "55°",
     "VIEWING ANGLE SIDE TO SIDE": "130°",
-    img: [require("../assets/Industrial LCD Drawings/Sharp-LQ084S3LG03-Mechanical-Drawing.gif")],
+    img: [
+      require("../assets/Industrial LCD Drawings/Sharp-LQ084S3LG03-Mechanical-Drawing.gif"),
+    ],
     DOCUMENTS: [
       {
         link: require("../assets/Documents/PCN-2024-8-20-01-LG03.pdf"),
@@ -115,8 +119,7 @@ export const products = [
     Applications:
       "Wearable Technology,Mobile Phones,Remote Controls,Performance Tracking Devices,Parking Meters,Smart Utility Meters,Medical Monitoring Devices, Wristwatches,Fish Finders,White Goods,Retail Tags,Any product with a battery",
     "DIAGONAL SIZE": "8.4 inch",
-    desc:
-      "This 8.4-inch (diagonal) SVGA display delivers a 600:1 contrast ratio and 400 nits of brightness. It is ideal for use in test and measurement applications where a high-resolution display is required, medical applications, and a number of additional industrial applications. The display has an LVDS interface.",
+    desc: "This 8.4-inch (diagonal) SVGA display delivers a 600:1 contrast ratio and 400 nits of brightness. It is ideal for use in test and measurement applications where a high-resolution display is required, medical applications, and a number of additional industrial applications. The display has an LVDS interface.",
     PN: "LQ084S3LG11",
     BRIGHTNESS: "400 nits",
     "LIFE CYCLE": "Discontinued",
@@ -131,7 +134,9 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "80°",
     "VIEWING ANGLE 6 O'CLOCK": "80°",
     "VIEWING ANGLE SIDE TO SIDE": "160°",
-    img: [require("../assets/Industrial LCD Drawings/Sharp-LQ084S3LG11-Mechanical-Drawing.gif")],
+    img: [
+      require("../assets/Industrial LCD Drawings/Sharp-LQ084S3LG11-Mechanical-Drawing.gif"),
+    ],
     DOCUMENTS: [
       {
         link: require("../assets/Documents/PCN-2024-8-20-01-LG11.pdf"),
@@ -143,8 +148,7 @@ export const products = [
     Applications:
       "Wearable Technology,Mobile Phones,Remote Controls,Performance Tracking Devices,Parking Meters,Smart Utility Meters,Medical Monitoring Devices, Wristwatches,Fish Finders,White Goods,Retail Tags,Any product with a battery",
     "DIAGONAL SIZE": "10.4 inch",
-    desc:
-      "This high-performance 10.4-inch (diagonal) SVGA TFT display is optimized to perform in extreme industrial environments such as agriculture, marine navigation, and others. It delivers 1100 nits of brightness out of the box for superb viewability in high ambient light conditions and includes a built-in LED backlight driver. The display is readable while wearing polarized sunglasses.",
+    desc: "This high-performance 10.4-inch (diagonal) SVGA TFT display is optimized to perform in extreme industrial environments such as agriculture, marine navigation, and others. It delivers 1100 nits of brightness out of the box for superb viewability in high ambient light conditions and includes a built-in LED backlight driver. The display is readable while wearing polarized sunglasses.",
     PN: "LQ104S1LG75",
     BRIGHTNESS: "1100 nits",
     "LIFE CYCLE": "Discontinued",
@@ -159,7 +163,9 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "60°",
     "VIEWING ANGLE 6 O'CLOCK": "50°",
     "VIEWING ANGLE SIDE TO SIDE": "120°",
-    img: [require("../assets/Industrial LCD Drawings/Sharp-LQ104S1LG75-Mechanical-Drawing.gif")],
+    img: [
+      require("../assets/Industrial LCD Drawings/Sharp-LQ104S1LG75-Mechanical-Drawing.gif"),
+    ],
     DOCUMENTS: [
       {
         link: require("../assets/Documents/PCN-2024-8-20-01-LG75.pdf"),
@@ -171,8 +177,7 @@ export const products = [
     Applications:
       "Wearable Technology,Mobile Phones,Remote Controls,Performance Tracking Devices,Parking Meters,Smart Utility Meters,Medical Monitoring Devices, Wristwatches,Fish Finders,White Goods,Retail Tags,Any product with a battery",
     "DIAGONAL SIZE": "10.4 inch",
-    desc:
-      "This 4:3 aspect SVGA Module features a 50,000-hr LED backlight (built-in driver), LVDS interface, extended temperature capability, shock and vibration resistance, and 3H hard coating.",
+    desc: "This 4:3 aspect SVGA Module features a 50,000-hr LED backlight (built-in driver), LVDS interface, extended temperature capability, shock and vibration resistance, and 3H hard coating.",
     PN: "LQ104S1LG81",
     BRIGHTNESS: "420 nits",
     "LIFE CYCLE": "Discontinued",
@@ -187,7 +192,9 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "50°",
     "VIEWING ANGLE 6 O'CLOCK": "60°",
     "VIEWING ANGLE SIDE TO SIDE": "140°",
-    img: [require("../assets/Industrial LCD Drawings/Sharp-LQ104S1LG81-Mechanical-Drawing.gif")],
+    img: [
+      require("../assets/Industrial LCD Drawings/Sharp-LQ104S1LG81-Mechanical-Drawing.gif"),
+    ],
     DOCUMENTS: [
       {
         link: require("../assets/Documents/PCN-2024-8-20-01-S1LG81.pdf"),
@@ -199,8 +206,7 @@ export const products = [
     Applications:
       "Advertising, ATMs, Automotive, Climate Control, Factory Automation, Gaming/Lottery, Health/Fitness/Sports, Home Automation, In-flight Entertainment, Industrial Controls, Kiosks, Medical Devices, Multimedia, Navigation/Transportation, POS Terminals, Test and Measurement, White Goods.",
     "DIAGONAL SIZE": "10.4 inch",
-    desc:
-      "This 10.4-inch Sharp TFT LCD features 450 nits of brightness, and a high 800:1 contrast ratio for excellent viewability in tough ambient lighting conditions. The module includes a built-in LED Driver for ease of design",
+    desc: "This 10.4-inch Sharp TFT LCD features 450 nits of brightness, and a high 800:1 contrast ratio for excellent viewability in tough ambient lighting conditions. The module includes a built-in LED Driver for ease of design",
     PN: "LQ104V1DG81",
     BRIGHTNESS: "450 nits",
     "LIFE CYCLE": "Production",
@@ -215,7 +221,9 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "80°",
     "VIEWING ANGLE 6 O'CLOCK": "80°",
     "VIEWING ANGLE SIDE TO SIDE": "160°",
-    img: [require("../assets/Industrial LCD Drawings/Sharp-LQ104V1DG81-Tech-Drawing.png")],
+    img: [
+      require("../assets/Industrial LCD Drawings/Sharp-LQ104V1DG81-Tech-Drawing.png"),
+    ],
     DOCUMENTS: [
       {
         link: require("../assets/Documents/MP-SPEC-LQ104V1DG81.pdf"),
@@ -227,8 +235,7 @@ export const products = [
     Applications:
       "Advertising, ATMs, Automotive, Climate Control, Factory Automation, Gaming/Lottery, Health/Fitness/Sports, Home Automation, In-flight Entertainment, Industrial Controls, Kiosks, Medical Devices, Multimedia, Navigation/Transportation, POS Terminals, Test and Measurement, White Goods.",
     "DIAGONAL SIZE": "10.4 inch",
-    desc:
-      "This 10 .4-inch Sharp TFT LCD features an LVDS interface, 450 nits of brightness, and a high 800:1 contrast ratio for excellent viewability in tough ambient lighting conditions. The module includes a built-in LED Driver for ease of design",
+    desc: "This 10 .4-inch Sharp TFT LCD features an LVDS interface, 450 nits of brightness, and a high 800:1 contrast ratio for excellent viewability in tough ambient lighting conditions. The module includes a built-in LED Driver for ease of design",
     PN: "LQ104V1LG81",
     BRIGHTNESS: "450 nits",
     "LIFE CYCLE": "Production",
@@ -243,7 +250,9 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "80°",
     "VIEWING ANGLE 6 O'CLOCK": "80°",
     "VIEWING ANGLE SIDE TO SIDE": "160°",
-    img: [require("../assets/Industrial LCD Drawings/Sharp-LQ104V1LG81-Tech-Drawing.png")],
+    img: [
+      require("../assets/Industrial LCD Drawings/Sharp-LQ104V1LG81-Tech-Drawing.png"),
+    ],
     DOCUMENTS: [
       {
         link: require("../assets/Documents/MP-SPEC-LQ104V1LG81.pdf"),
@@ -255,8 +264,7 @@ export const products = [
     Applications:
       "Wearable Technology,Mobile Phones,Remote Controls,Performance Tracking Devices,Parking Meters,Smart Utility Meters,Medical Monitoring Devices, Wristwatches,Fish Finders,White Goods,Retail Tags,Any product with a battery",
     "DIAGONAL SIZE": "12.1 inch",
-    desc:
-      "This 16:10 aspect ratio module features 50,000-hr backlight and built-in backlight driver circuitry.",
+    desc: "This 16:10 aspect ratio module features 50,000-hr backlight and built-in backlight driver circuitry.",
     PN: "LQ121K1LG52",
     BRIGHTNESS: "400 nits",
     "LIFE CYCLE": "Discontinued",
@@ -271,7 +279,9 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "65°",
     "VIEWING ANGLE 6 O'CLOCK": "80°",
     "VIEWING ANGLE SIDE TO SIDE": "160°",
-    img: [require("../assets/Industrial LCD Drawings/Sharp-LQ121K1LG52-Mechanical-Drawing.gif")],
+    img: [
+      require("../assets/Industrial LCD Drawings/Sharp-LQ121K1LG52-Mechanical-Drawing.gif"),
+    ],
     DOCUMENTS: [
       {
         link: require("../assets/Documents/PCN-2024-8-20-01-LG52.pdf"),
@@ -283,8 +293,7 @@ export const products = [
     Applications:
       "Wearable Technology,Mobile Phones,Remote Controls,Performance Tracking Devices,Parking Meters,Smart Utility Meters,Medical Monitoring Devices, Wristwatches,Fish Finders,White Goods,Retail Tags,Any product with a battery",
     "DIAGONAL SIZE": "12.1 inch",
-    desc:
-      "This 16:10 aspect ratio WXGA LCD module features high brightness and contrast, 70% NTSC ratio, extended temperature operations, a 50,000 hr. backlight, and built-in LED driver circuitry.",
+    desc: "This 16:10 aspect ratio WXGA LCD module features high brightness and contrast, 70% NTSC ratio, extended temperature operations, a 50,000 hr. backlight, and built-in LED driver circuitry.",
     PN: "LQ121K1LG58",
     BRIGHTNESS: "700 nits",
     "LIFE CYCLE": "Discontinued",
@@ -299,7 +308,9 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "80°",
     "VIEWING ANGLE 6 O'CLOCK": "65°",
     "VIEWING ANGLE SIDE TO SIDE": "160°",
-    img: [require("../assets/Industrial LCD Drawings/Sharp-LQ121K1LG58-Mechanical-Drawing-clean.png")],
+    img: [
+      require("../assets/Industrial LCD Drawings/Sharp-LQ121K1LG58-Mechanical-Drawing-clean.png"),
+    ],
     DOCUMENTS: [
       {
         link: require("../assets/Documents/PCN-2024-8-20-01-LG58.pdf"),
@@ -311,8 +322,7 @@ export const products = [
     Applications:
       "Wearable Technology,Mobile Phones,Remote Controls,Performance Tracking Devices,Parking Meters,Smart Utility Meters,Medical Monitoring Devices, Wristwatches,Fish Finders,White Goods,Retail Tags,Any product with a battery",
     "DIAGONAL SIZE": "12.1 inch",
-    desc:
-      "This 12.1-inch Sharp SVGA TFT LCD features an LVDS interface, 450 nits of brightness, and a high 800:1 contrast ratio for excellent viewability in tough ambient lighting conditions. The module includes a built-in LED Driver for ease of design. ",
+    desc: "This 12.1-inch Sharp SVGA TFT LCD features an LVDS interface, 450 nits of brightness, and a high 800:1 contrast ratio for excellent viewability in tough ambient lighting conditions. The module includes a built-in LED Driver for ease of design. ",
     PN: "LQ121S1LG88",
     BRIGHTNESS: "450 nits",
     "LIFE CYCLE": "Production",
@@ -327,7 +337,9 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "60°",
     "VIEWING ANGLE 6 O'CLOCK": "80°",
     "VIEWING ANGLE SIDE TO SIDE": "160°",
-    img: [require("../assets/Industrial LCD Drawings/Sharp-LQ121S1LG88-Mechanical-Drawing.gif")],
+    img: [
+      require("../assets/Industrial LCD Drawings/Sharp-LQ121S1LG88-Mechanical-Drawing.gif"),
+    ],
     DOCUMENTS: [
       {
         link: require("../assets/Documents/Sharp-LCD-Specification-LQ121S1LG88 6-26-12.pdf"),
@@ -339,11 +351,10 @@ export const products = [
     Applications:
       "Wearable Technology,Mobile Phones,Remote Controls,Performance Tracking Devices,Parking Meters,Smart Utility Meters,Medical Monitoring Devices, Wristwatches,Fish Finders,White Goods,Retail Tags,Any product with a battery",
     "DIAGONAL SIZE": "15.0 inch",
-    desc:
-      "This Normally Black 4:3 aspect XGA module, features extremely high contrast, extremely wide symmetrical viewing cone, 70% NTSC colorimetry, LVDS interface, and a white LED backlight which carries a 50,000 hour lifetime rating. It also has an anti-glare and 3H hard coating.",
+    desc: "This Normally Black 4:3 aspect XGA module, features extremely high contrast, extremely wide symmetrical viewing cone, 70% NTSC colorimetry, LVDS interface, and a white LED backlight which carries a 50,000 hour lifetime rating. It also has an anti-glare and 3H hard coating.",
     PN: "LQ150X1LX95",
     BRIGHTNESS: "400 nits",
-    "LIFE CYCLE": "Production",
+    "LIFE CYCLE": "Discontinued",
     "CONTRAST RATIO": "1500:1",
     "DISPLAY MODE": "Normally Black",
     "NUMBER OF COLORS": "16.7M",
@@ -355,11 +366,13 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "85°",
     "VIEWING ANGLE 6 O'CLOCK": "85°",
     "VIEWING ANGLE SIDE TO SIDE": "170°",
-    img: [require("../assets/Industrial LCD Drawings/Sharp-LQ150X1LX95-Mechanical-Drawing.gif")],
+    img: [
+      require("../assets/Industrial LCD Drawings/Sharp-LQ150X1LX95-Mechanical-Drawing.gif"),
+    ],
     DOCUMENTS: [
       {
-        link: require("../assets/Documents/Sharp-LCD-Specification-LQ150X1LX95-2-20-14.pdf"),
-        name: "Sharp-LCD-Specification-LQ150X1LX95-2-20-14",
+        link: require("../assets/Documents/PCN-2026-15-02-01-IA.pdf"),
+        name: "PCN-2026-15-02-01-IA",
       },
     ],
   },
@@ -367,11 +380,10 @@ export const products = [
     Applications:
       "Wearable Technology,Mobile Phones,Remote Controls,Performance Tracking Devices,Parking Meters,Smart Utility Meters,Medical Monitoring Devices, Wristwatches,Fish Finders,White Goods,Retail Tags,Any product with a battery",
     "DIAGONAL SIZE": "15.0 inch",
-    desc:
-      "This Normally Black 4:3 aspect XGA module features extremely high contrast, extremely wide symmetrical viewing cone, 70% NTSC colorimetry, LVDS interface, and a white LED backlight which carries a 50,000 hour lifetime rating. It also has an anti-glare and 3H hard coating.",
+    desc: "This Normally Black 4:3 aspect XGA module features extremely high contrast, extremely wide symmetrical viewing cone, 70% NTSC colorimetry, LVDS interface, and a white LED backlight which carries a 50,000 hour lifetime rating. It also has an anti-glare and 3H hard coating.",
     PN: "LQ150X1LX96",
     BRIGHTNESS: "500 nits",
-    "LIFE CYCLE": "Production",
+    "LIFE CYCLE": "Discontinued",
     "CONTRAST RATIO": "1500:1",
     "DISPLAY MODE": "Normally Black",
     "NUMBER OF COLORS": "16.7M",
@@ -383,11 +395,13 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "85°",
     "VIEWING ANGLE 6 O'CLOCK": "85°",
     "VIEWING ANGLE SIDE TO SIDE": "170°",
-    img: [require("../assets/Industrial LCD Drawings/Sharp-LQ150X1LX96-Mechanical-Drawing.gif")],
+    img: [
+      require("../assets/Industrial LCD Drawings/Sharp-LQ150X1LX96-Mechanical-Drawing.gif"),
+    ],
     DOCUMENTS: [
       {
-        link: require("../assets/Documents/Sharp-LCD-Specification-LQ150X1LX96-7-13-16.pdf"),
-        name: "Sharp-LCD-Specification-LQ150X1LX96-7-13-16",
+        link: require("../assets/Documents/PCN-2026-15-02-01-IA.pdf"),
+        name: "PCN-2026-15-02-01-IA",
       },
     ],
   },
@@ -395,11 +409,10 @@ export const products = [
     Applications:
       "Wearable Technology,Mobile Phones,Remote Controls,Performance Tracking Devices,Parking Meters,Smart Utility Meters,Medical Monitoring Devices, Wristwatches,Fish Finders,White Goods,Retail Tags,Any product with a battery",
     "DIAGONAL SIZE": "15.6 inch",
-    desc:
-      "This 15.6-inch display combines a bright LED backlight with color filtering to render 76% NTSC. This results in bright, vivid images that are ideal for multi-media applications. The LCD also features wide viewing angles.",
+    desc: "This 15.6-inch display combines a bright LED backlight with color filtering to render 76% NTSC. This results in bright, vivid images that are ideal for multi-media applications. The LCD also features wide viewing angles.",
     PN: "LQ156T3LW03",
     BRIGHTNESS: "400 nits",
-    "LIFE CYCLE": "Production",
+    "LIFE CYCLE": "Discontinued",
     "CONTRAST RATIO": "1000:1",
     "DISPLAY MODE": "Normally Black",
     "NUMBER OF COLORS": "16.7M",
@@ -411,11 +424,13 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "85°",
     "VIEWING ANGLE 6 O'CLOCK": "85°",
     "VIEWING ANGLE SIDE TO SIDE": "170°",
-    img: [require("../assets/Industrial LCD Drawings/Sharp-LQ156T3LW03-Mechanical-Drawing.gif")],
+    img: [
+      require("../assets/Industrial LCD Drawings/Sharp-LQ156T3LW03-Mechanical-Drawing.gif"),
+    ],
     DOCUMENTS: [
       {
-        link: require("../assets/Documents/Sharp-LCD-Specification-LQ156T3LW03-8-27-15.pdf"),
-        name: "Sharp-LCD-Specification-LQ156T3LW03-8-27-15",
+        link: require("../assets/Documents/PCN-2026-15-02-01-IA.pdf"),
+        name: "PCN-2026-15-02-01-IA",
       },
     ],
   },
@@ -423,11 +438,10 @@ export const products = [
     Applications:
       "Wearable Technology,Mobile Phones,Remote Controls,Performance Tracking Devices,Parking Meters,Smart Utility Meters,Medical Monitoring Devices, Wristwatches,Fish Finders,White Goods,Retail Tags,Any product with a battery",
     "DIAGONAL SIZE": "19.0 inch",
-    desc:
-      "This Normally Black 5:4 aspect SXGA module, features extremely high contrast, extremely wide symmetrical viewing cone, an LVDS interface, and a white LED backlight which carries a 70,000 hour lifetime rating. It also has an anti-glare and 3H hard coating.",
+    desc: "This Normally Black 5:4 aspect SXGA module, features extremely high contrast, extremely wide symmetrical viewing cone, an LVDS interface, and a white LED backlight which carries a 70,000 hour lifetime rating. It also has an anti-glare and 3H hard coating.",
     PN: "LQ190E1LX75T",
     BRIGHTNESS: "350 nits",
-    "LIFE CYCLE": "Production",
+    "LIFE CYCLE": "Discontinued",
     "CONTRAST RATIO": "1500:1",
     "DISPLAY MODE": "Normally Black",
     "NUMBER OF COLORS": "16.7M",
@@ -439,11 +453,13 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "85°",
     "VIEWING ANGLE 6 O'CLOCK": "85°",
     "VIEWING ANGLE SIDE TO SIDE": "170°",
-    img: [require("../assets/Industrial LCD Drawings/Sharp-LQ190E1LX75T-Mechanical-Drawing-clean.png")],
+    img: [
+      require("../assets/Industrial LCD Drawings/Sharp-LQ190E1LX75T-Mechanical-Drawing-clean.png"),
+    ],
     DOCUMENTS: [
       {
-        link: require("../assets/Documents/Sharp-LCD-Specification-LQ190E1LX75T-6-23-15.pdf"),
-        name: "Sharp-LCD-Specification-LQ190E1LX75T-6-23-15",
+        link: require("../assets/Documents/PCN-2026-15-02-01-IA.pdf"),
+        name: "PCN-2026-15-02-01-IA",
       },
     ],
   },
@@ -451,11 +467,10 @@ export const products = [
     Applications:
       "Wearable Technology,Mobile Phones,Remote Controls,Performance Tracking Devices,Parking Meters,Smart Utility Meters,Medical Monitoring Devices, Wristwatches,Fish Finders,White Goods,Retail Tags,Any product with a battery",
     "DIAGONAL SIZE": "19.0 inch",
-    desc:
-      "This SXGA TFT LDC panel features high contrast of 1500:1 and 470 nits of brightness to render extremely crisp images. It is ideal for viewability in challenging lighting conditions.",
+    desc: "This SXGA TFT LDC panel features high contrast of 1500:1 and 470 nits of brightness to render extremely crisp images. It is ideal for viewability in challenging lighting conditions.",
     PN: "LQ190E1LX76",
     BRIGHTNESS: "470 nits",
-    "LIFE CYCLE": "Production",
+    "LIFE CYCLE": "Discontinued",
     "CONTRAST RATIO": "1500:1",
     "DISPLAY MODE": "Normally Black",
     "NUMBER OF COLORS": "16.7M",
@@ -467,11 +482,13 @@ export const products = [
     "VIEWING ANGLE 12 O'CLOCK": "85°",
     "VIEWING ANGLE 6 O'CLOCK": "85°",
     "VIEWING ANGLE SIDE TO SIDE": "170°",
-    img: [require("../assets/Industrial LCD Drawings/Sharp-LQ190E1LX76-Mechanical-Drawing-clean.png")],
+    img: [
+      require("../assets/Industrial LCD Drawings/Sharp-LQ190E1LX76-Mechanical-Drawing-clean.png"),
+    ],
     DOCUMENTS: [
       {
-        link: require("../assets/Documents/Sharp-LCD-Specification-LQ190E1LX76-4-11-18.pdf"),
-        name: "Sharp-LCD-Specification-LQ190E1LX76-4-11-18",
+        link: require("../assets/Documents/PCN-2026-15-02-01-IA.pdf"),
+        name: "PCN-2026-15-02-01-IA",
       },
     ],
   },

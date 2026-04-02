@@ -197,7 +197,7 @@ class Eposters_Displays extends Component {
                   industry's leading electronic poster display modules.
                 </div>
 
-                <h3
+                {/* <h3
                   style={{ color: "black", paddingBottom: 10, paddingTop: 40 }}
                 >
                   <strong>ATTENDING CES?</strong>
@@ -208,7 +208,7 @@ class Eposters_Displays extends Component {
                   will fit your next signage product’s design? Click “Contact
                   Sharp” and add in the message that you’d like to see this
                   dazzling display up close and personal.
-                </div>
+                </div> */}
               </div>
               <br />
               <Button
