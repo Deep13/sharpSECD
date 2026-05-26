@@ -22,7 +22,7 @@ class MemoryLCD extends Component {
       <div>
         <Helmet>
           <title>
-            Sarp SECD News – Latest Display Technology Announcements
+            Sharp SECD News – Latest Display Technology Announcements
           </title>
           <meta
             name="description"

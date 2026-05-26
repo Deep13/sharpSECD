@@ -5,6 +5,7 @@ import placeholderImage from "../../assets/placeholder.png";
 import { Button, Image } from "react-bootstrap";
 import Modal from "react-bootstrap/Modal";
 import { Link } from "react-router-dom";
+import CloseIcon from "@material-ui/icons/Close";
 
 const Productdetail = (props) => {
   // console.log(props.items);
@@ -19,12 +20,31 @@ const Productdetail = (props) => {
       style={{ height: "100%" }}
     >
       {props.items && (
-        <Modal.Header closeButton>
+        <Modal.Header
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+          }}
+        >
           <div tabIndex={0}>
             <div tabIndex={-1} className="h1">
               {props.items.PN}
             </div>
           </div>
+          <Button
+            aria-label="Close"
+            variant="link"
+            onClick={props.handleClose}
+            style={{
+              padding: 0,
+              color: "#e61d24",
+              cursor: "pointer",
+              lineHeight: 1,
+            }}
+          >
+            <CloseIcon style={{ fontSize: 32 }} />
+          </Button>
         </Modal.Header>
       )}
       {props.items && (

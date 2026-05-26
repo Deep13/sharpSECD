@@ -3,6 +3,34 @@ export const products = [
     {
         Applications:
             "Advertising, Cinema, Education, Healthcare, Hotel & Hospitality, Lobbies, Restaurants, Retail",
+        "DIAGONAL SIZE": "40.5 inch",
+        desc:
+            "This 3060 x 4320 display module is added to Sharp's ePoster line-up to provide an ultra-low-power alternative to the expense and material waste of A1 (594 mm x 841 mm) poster printing. It is built on an IGZO backplane, which enables high resolution and thin borders. The display boasts stunning visuals with a 60k color gamut and zero-power static image hold thanks to the incorporation of E Ink’s Spectra 6 technology.",
+        PN: "LP405A6NW01",
+        "LIFE CYCLE": "Production",
+        "CONTRAST RATIO": "22:1",
+        "REFLECTIVITY": "34%",
+        "DISPLAY MODE": "Reflective",
+        "NUMBER OF COLORS": "60,000",
+        "OPERATING TEMP": "-0°C to +50°C",
+        "STORAGE TEMP": "-25°C to +60°C",
+        "OUTLINE DIMENSIONS": "600.56 x 911.88 x 5.2 mm",
+        "PIXEL FORMAT": "3060 x 4320",
+        "RESPONSE TIME": "18 seconds",
+        "VIEWING ANGLE 12 O'CLOCK": "symmetrical",
+        "VIEWING ANGLE 6 O'CLOCK": "symmetrical",
+        "VIEWING ANGLE SIDE TO SIDE": "symmetrical",
+        DOCUMENTS: [
+            {
+                name: "260311_LD-2026301A_LP405A6NW01",
+                link: require("../assets/Documents/260311_LD-2026301A_LP405A6NW01.pdf"),
+            },
+        ],
+        img: [require("../assets/ePoster_drawings/Sharp-LP405A6NW01-Tech-Drawing.jpg")],
+    },
+    {
+        Applications:
+            "Advertising, Cinema, Education, Healthcare, Hotel & Hospitality, Lobbies, Restaurants, Retail",
         "DIAGONAL SIZE": "28.5 inch",
         desc:
             "This 2160 x 3060 display module provides an ultra-low-power alternative to the expense and material waste of A2 (420 mm x 594 mm) poster printing. It is built on an IGZO backplane, which enables high resolution and thin borders. The display boasts stunning visuals with a 60k color gamut and zero-power static image hold thanks to the incorporation of E Ink’s Spectra 6 technology.",

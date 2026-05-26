@@ -236,10 +236,18 @@ class Eposters_product extends Component {
               <h1>ePoster Display Modules</h1>
               <br />
               <p>
-                Sharp’s ePoster displays enables a paperless, ultra-low-power
-                alternative to the expense and material waste of poster
-                printing. An A2 size is available now, with other sizes planned
-                in our product development roadmap.
+                Sharp’s ePoster display modules offer an ultra-low-power,
+                paper-replacement alternative to the expense and material waste
+                of poster printing. Now, we’re introducing a new ISO A1
+                poster-size display module (40.5-inch diagonal) to complement
+                our flagship A2-sized (28.5-inch diagonal) module, expanding
+                opportunities for product developers.
+              </p>
+              <p>
+                Other products available soon from our ePoster roadmap include
+                an A3-sized (20.2-inch diagonal) module and the outdoor A1
+                Kaleido<sup>TM</sup>3 (40.5-inch diagonal) module. Visit our
+                News page for product release updates.
               </p>
             </div>
           </div>
