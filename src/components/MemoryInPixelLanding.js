@@ -111,12 +111,7 @@ export default class MemoryInPixelLanding extends Component {
               padding: 20,
             }}
           >
-            <Image
-              role="presentation"
-              alt="SHARP Logo"
-              src={logo}
-              style={{ width: "35%", paddingTop: "50px", maxWidth: 300 }}
-            />
+            <Image role="presentation" alt="SHARP Logo" src={logo} style={{ width: "35%", paddingTop: "50px", maxWidth: 300 }} />
             <div style={{ paddingTop: 150 }} className="mb-ptop-60">
               <h1
                 style={{
@@ -136,17 +131,10 @@ export default class MemoryInPixelLanding extends Component {
                 }}
                 className="mb-font-2"
               >
-                <strong>
-                  High Ambient-Light Performance. Long Battery Life.
-                </strong>
+                <strong>High Ambient-Light Performance. Long Battery Life.</strong>
               </p>
             </div>
-            <Image
-              role="presentation"
-              alt="arrow"
-              src={arrow}
-              style={{ maxWidth: "32px", paddingTop: 80 }}
-            />
+            <Image role="presentation" alt="arrow" src={arrow} style={{ maxWidth: "32px", paddingTop: 80 }} />
           </div>
         </div>
         <div
@@ -167,12 +155,7 @@ export default class MemoryInPixelLanding extends Component {
           >
             <div className="col-md-6" style={{ padding: 100 }}>
               <div>
-                <img
-                  style={{ width: "100%" }}
-                  src={image1}
-                  role="presentation"
-                  alt="Sharp MIP"
-                />
+                <img style={{ width: "100%" }} src={image1} role="presentation" alt="Sharp MIP" />
                 <p
                   style={{
                     fontStyle: "italic",
@@ -180,8 +163,7 @@ export default class MemoryInPixelLanding extends Component {
                     textAlign: "center",
                   }}
                 >
-                  *Unedited photo of Sharp MIP demo powered by Epson S1D13C00
-                  Display Controller
+                  *Unedited photo of Sharp MIP demo powered by Epson S1D13C00 Display Controller
                 </p>
               </div>
             </div>
@@ -212,11 +194,8 @@ export default class MemoryInPixelLanding extends Component {
                     ></div>
                   </div>
                   <p>
-                    Get best-of-class performance with ultra-low power
-                    consumption and high readability in almost any ambient
-                    lighting environment... plus eye-catching 64-color or
-                    high-contrast monochrome for designs ranging from wearables
-                    to medical devices to smart meters and many, many more.
+                    Get best-of-class performance with ultra-low power consumption and high readability in almost any ambient lighting environment... plus eye-catching 64-color or high-contrast
+                    monochrome for designs ranging from wearables to medical devices to smart meters and many, many more.
                   </p>
                   <div
                     style={{
@@ -225,13 +204,7 @@ export default class MemoryInPixelLanding extends Component {
                       width: "100%",
                     }}
                   >
-                    <Button
-                      className="redButton"
-                      onClick={() => this.myRef.current.scrollIntoView()}
-                      size="lg"
-                      variant="outline-danger"
-                      style={{ marginRight: 20, width: "100%" }}
-                    >
+                    <Button className="redButton" onClick={() => this.myRef.current.scrollIntoView()} size="lg" variant="outline-danger" style={{ marginRight: 20, width: "100%" }}>
                       Contact Sharp
                     </Button>
                   </div>
@@ -265,10 +238,7 @@ export default class MemoryInPixelLanding extends Component {
               }}
             >
               <h1 style={{ fontSize: "3rem" }} className="mb-font-2">
-                <strong>
-                  THE PERFECT SOLUTION FOR SMALL-SCREEN APPLICATIONS THAT
-                  REQUIRE A BATTERY.
-                </strong>
+                <strong>THE PERFECT SOLUTION FOR SMALL-SCREEN APPLICATIONS THAT REQUIRE A BATTERY.</strong>
               </h1>
               <div className="row" style={{ margin: 0, width: "100%" }}>
                 <div
@@ -284,18 +254,10 @@ export default class MemoryInPixelLanding extends Component {
                   }}
                 ></div>
               </div>
-              <div
-                className="row"
-                style={{ margin: 0, width: "100%", alignItems: "center" }}
-              >
+              <div className="row" style={{ margin: 0, width: "100%", alignItems: "center" }}>
                 <div className="col-md-6" style={{ padding: 30 }}>
                   <div>
-                    <img
-                      style={{ width: "100%" }}
-                      src={image2}
-                      role="presentation"
-                      alt="THE PERFECT SOLUTION"
-                    />
+                    <img style={{ width: "100%" }} src={image2} role="presentation" alt="THE PERFECT SOLUTION" />
                   </div>
                 </div>
                 <div tabIndex={0} className="col-md-6">
@@ -308,22 +270,9 @@ export default class MemoryInPixelLanding extends Component {
                       }}
                     >
                       <p>
-                        Sharp's Memory-in-Pixel LCDs were designed for compact
-                        handheld, wearable, and other small-screen applications.
-                        Embedded, 1-bit memory in every pixel allows for an
-                        always-on display capable of delivering high-contrast,
-                        high-resolution content. Ultra-low power consumption
-                        means better heat management, too.
-                        <Link
-                          to="/memory-in-pixel-lcds-technology"
-                          onClick={(event) =>
-                            this.callFunct(
-                              event,
-                              "/memory-in-pixel-lcds-technology",
-                            )
-                          }
-                          style={{ color: "#e61d24" }}
-                        >
+                        Sharp's Memory-in-Pixel LCDs were designed for compact handheld, wearable, and other small-screen applications. Embedded, 1-bit memory in every pixel allows for an always-on
+                        display capable of delivering high-contrast, high-resolution content. Ultra-low power consumption means better heat management, too.
+                        <Link to="/memory-in-pixel-lcds-technology" onClick={(event) => this.callFunct(event, "/memory-in-pixel-lcds-technology")} style={{ color: "#e61d24" }}>
                           {" "}
                           See more about Memory LCD technology here.{" "}
                         </Link>
@@ -336,13 +285,7 @@ export default class MemoryInPixelLanding extends Component {
                         width: "100%",
                       }}
                     >
-                      <Button
-                        className="redButton"
-                        onClick={() => this.myRef.current.scrollIntoView()}
-                        size="lg"
-                        variant="outline-danger"
-                        style={{ marginRight: 20, width: "100%" }}
-                      >
+                      <Button className="redButton" onClick={() => this.myRef.current.scrollIntoView()} size="lg" variant="outline-danger" style={{ marginRight: 20, width: "100%" }}>
                         Contact Sharp
                       </Button>
                     </div>
@@ -404,10 +347,8 @@ export default class MemoryInPixelLanding extends Component {
                     }}
                   >
                     <p>
-                      Reflective mode leverages ambient light to eliminate the
-                      need for a backlight. Choose from multiple sizes in
-                      64-color, plus monochrome. Our lightweight design includes
-                      the display driver circuits integrated into the panel -{" "}
+                      Reflective mode leverages ambient light to eliminate the need for a backlight. Choose from multiple sizes in 64-color, plus monochrome. Our lightweight design includes the
+                      display driver circuits integrated into the panel -{" "}
                       <strong>
                         <i>no silicon driver ICs required</i>
                       </strong>{" "}
@@ -438,12 +379,7 @@ export default class MemoryInPixelLanding extends Component {
               </div>
               <div className="col-md-6" style={{ padding: 30 }}>
                 <div>
-                  <img
-                    style={{ width: "100%" }}
-                    src={image3}
-                    role="presentation"
-                    alt="display without a frontlight or backlight"
-                  />
+                  <img style={{ width: "100%" }} src={image3} role="presentation" alt="display without a frontlight or backlight" />
                   <p
                     style={{
                       fontStyle: "italic",
@@ -482,51 +418,29 @@ export default class MemoryInPixelLanding extends Component {
             <div className="row">
               <div tabIndex={0} className="col-md-4">
                 <div>
-                  <img
-                    style={{ width: 90 }}
-                    src={icon}
-                    role="presentation"
-                    alt="icon"
-                  />
+                  <img style={{ width: 90 }} src={icon} role="presentation" alt="icon" />
                   <h1 style={{ fontSize: "1.75rem", padding: "1vw" }}>
                     <strong>PRODUCT LINE-UP</strong>
                   </h1>
-                  <p style={{ padding: "1vw" }}>
-                    Offered in diagonal sizes ranging from 1.08 to 4.40 inches.
-                  </p>
+                  <p style={{ padding: "1vw" }}>Offered in diagonal sizes ranging from 1.08 to 4.40 inches.</p>
                 </div>
               </div>
               <div tabIndex={0} className="col-md-4">
                 <div>
-                  <img
-                    style={{ width: 90 }}
-                    src={icon2}
-                    role="presentation"
-                    alt="icon"
-                  />
+                  <img style={{ width: 90 }} src={icon2} role="presentation" alt="icon" />
                   <h1 style={{ fontSize: "1.75rem", padding: "1vw" }}>
                     <strong>HIGH READABILITY</strong>
                   </h1>
-                  <p style={{ padding: "1vw" }}>
-                    Viewable in any light, from edge-of-vision to bright
-                    sunlight.
-                  </p>
+                  <p style={{ padding: "1vw" }}>Viewable in any light, from edge-of-vision to bright sunlight.</p>
                 </div>
               </div>
               <div tabIndex={0} className="col-md-4">
                 <div>
-                  <img
-                    style={{ width: 90 }}
-                    src={icon3}
-                    role="presentation"
-                    alt="icon"
-                  />
+                  <img style={{ width: 90 }} src={icon3} role="presentation" alt="icon" />
                   <h1 style={{ fontSize: "1.75rem", padding: "1vw" }}>
                     <strong>64-COLOR DISPLAYS</strong>
                   </h1>
-                  <p style={{ padding: "1vw" }}>
-                    Choose from 64-color or Monochrome.
-                  </p>
+                  <p style={{ padding: "1vw" }}>Choose from 64-color or Monochrome.</p>
                 </div>
               </div>
             </div>
@@ -535,52 +449,29 @@ export default class MemoryInPixelLanding extends Component {
             <div className="row">
               <div tabIndex={0} className="col-md-4">
                 <div>
-                  <img
-                    style={{ width: 90 }}
-                    src={icon4}
-                    role="presentation"
-                    alt="icon"
-                  />
+                  <img style={{ width: 90 }} src={icon4} role="presentation" alt="icon" />
                   <h1 style={{ fontSize: "1.75rem", padding: "1vw" }}>
                     <strong>OPERATING TEMPS</strong>
                   </h1>
-                  <p style={{ padding: "1vw" }}>
-                    Wide operating temperatures for the most extreme
-                    environments.
-                  </p>
+                  <p style={{ padding: "1vw" }}>Wide operating temperatures for the most extreme environments.</p>
                 </div>
               </div>
               <div tabIndex={0} className="col-md-4">
                 <div>
-                  <img
-                    style={{ width: 90 }}
-                    src={icon5}
-                    role="presentation"
-                    alt="icon"
-                  />
+                  <img style={{ width: 90 }} src={icon5} role="presentation" alt="icon" />
                   <h1 style={{ fontSize: "1.75rem", padding: "1vw" }}>
                     <strong>WIDE VIEWING ANGLE</strong>
                   </h1>
-                  <p style={{ padding: "1vw" }}>
-                    Wide, symmetrical viewing angles, typically 120° ×120°.
-                  </p>
+                  <p style={{ padding: "1vw" }}>Wide, symmetrical viewing angles, typically 120° ×120°.</p>
                 </div>
               </div>
               <div tabIndex={0} className="col-md-4">
                 <div>
-                  <img
-                    style={{ width: 90 }}
-                    src={icon6}
-                    role="presentation"
-                    alt="icon"
-                  />
+                  <img style={{ width: 90 }} src={icon6} role="presentation" alt="icon" />
                   <h1 style={{ fontSize: "1.75rem", padding: "1vw" }}>
                     <strong>SIMPLE INTERFACE</strong>
                   </h1>
-                  <p style={{ padding: "1vw" }}>
-                    Design made easy with a 3-wire SPI serial interface (SI,
-                    SCS, SCK).
-                  </p>
+                  <p style={{ padding: "1vw" }}>Design made easy with a 3-wire SPI serial interface (SI, SCS, SCK).</p>
                 </div>
               </div>
             </div>
@@ -628,9 +519,7 @@ export default class MemoryInPixelLanding extends Component {
                     padding: "20px 0px",
                   }}
                 >
-                  Please drop us a line. A member of the Sharp team will get in
-                  touch with you ASAP to talk about the Memory LCD as a perfect
-                  fit for your next design.
+                  Please drop us a line. A member of the Sharp team will get in touch with you ASAP to talk about the Memory LCD as a perfect fit for your next design.
                 </p>
               </div>
               <div className="col-md-6">
@@ -645,14 +534,10 @@ export default class MemoryInPixelLanding extends Component {
                         aria-required={true}
                         required
                         type="email"
-                        onChange={(event) =>
-                          this.setState({ email: event.currentTarget.value })
-                        }
+                        onChange={(event) => this.setState({ email: event.currentTarget.value })}
                         value={this.state.email}
                       />
-                      <Form1.Control.Feedback type="invalid">
-                        Please provide a valid email id.
-                      </Form1.Control.Feedback>
+                      <Form1.Control.Feedback type="invalid">Please provide a valid email id.</Form1.Control.Feedback>
                     </Col>
                   </Form1.Row>
                   <Form1.Row style={{ paddingBottom: 10 }}>
@@ -662,18 +547,14 @@ export default class MemoryInPixelLanding extends Component {
                         aria-label="Name"
                         required
                         placeholder="Name"
-                        onChange={(event) =>
-                          this.setState({ name: event.currentTarget.value })
-                        }
+                        onChange={(event) => this.setState({ name: event.currentTarget.value })}
                         value={this.state.name}
                       />
-                      <Form1.Control.Feedback type="invalid">
-                        Name field cannot be empty
-                      </Form1.Control.Feedback>
+                      <Form1.Control.Feedback type="invalid">Name field cannot be empty</Form1.Control.Feedback>
                     </Col>
                   </Form1.Row>
 
-                  <Form1.Row style={{ paddingBottom: 10 }}>
+                  <Form1.Row style={{ paddingBottom: 10, display: "flex", gap: 10 }}>
                     <Col>
                       <Form1.Control
                         aria-label="Country Code"
@@ -687,9 +568,7 @@ export default class MemoryInPixelLanding extends Component {
                         }
                         value={this.state.mobileCode}
                       />
-                      <Form1.Control.Feedback type="invalid">
-                        Country code field cannot be empty
-                      </Form1.Control.Feedback>
+                      <Form1.Control.Feedback type="invalid">Country code field cannot be empty</Form1.Control.Feedback>
                     </Col>
                     <Col xs={10}>
                       <Form1.Control
@@ -697,15 +576,11 @@ export default class MemoryInPixelLanding extends Component {
                         placeholder="Contact number"
                         aria-required={true}
                         required
-                        onChange={(event) =>
-                          this.setState({ mobile: event.currentTarget.value })
-                        }
+                        onChange={(event) => this.setState({ mobile: event.currentTarget.value })}
                         value={this.state.mobile}
                         maxLength={10}
                       />
-                      <Form1.Control.Feedback type="invalid">
-                        Phone number field cannot be empty
-                      </Form1.Control.Feedback>
+                      <Form1.Control.Feedback type="invalid">Phone number field cannot be empty</Form1.Control.Feedback>
                     </Col>
                   </Form1.Row>
                   <Form1.Row style={{ paddingBottom: 10 }}>
@@ -717,24 +592,13 @@ export default class MemoryInPixelLanding extends Component {
                         as="textarea"
                         rows="3"
                         placeholder="Comments(optional)"
-                        onChange={(event) =>
-                          this.setState({ message: event.currentTarget.value })
-                        }
+                        onChange={(event) => this.setState({ message: event.currentTarget.value })}
                         value={this.state.message}
                       />
-                      <Form1.Control.Feedback type="invalid">
-                        Message field cannot be empty
-                      </Form1.Control.Feedback>
+                      <Form1.Control.Feedback type="invalid">Message field cannot be empty</Form1.Control.Feedback>
                     </Col>
                   </Form1.Row>
-                  <Button
-                    aria-label="Submit Form Button"
-                    className="redButton"
-                    style={{ marginTop: 10, width: "100%" }}
-                    variant="primary"
-                    type="submit"
-                    disabled={this.state.submit}
-                  >
+                  <Button aria-label="Submit Form Button" className="redButton" style={{ marginTop: 10, width: "100%" }} variant="primary" type="submit" disabled={this.state.submit}>
                     Submit
                   </Button>
                   {/* <div style={{ paddingBottom: 50 }}></div> */}
@@ -748,9 +612,7 @@ export default class MemoryInPixelLanding extends Component {
                     style={{ margin: "10px" }}
                   />
                   <Toast
-                    onClose={() =>
-                      this.setState({ show: false, submit: false })
-                    }
+                    onClose={() => this.setState({ show: false, submit: false })}
                     show={this.state.show}
                     className="toastSuccess"
                     // transition="Fade"
@@ -759,14 +621,11 @@ export default class MemoryInPixelLanding extends Component {
                       <strong className="me-auto">Success</strong>
                     </Toast.Header>
                     <Toast.Body>
-                      Thank You! <br /> Your query has been successfully
-                      submitted.
+                      Thank You! <br /> Your query has been successfully submitted.
                     </Toast.Body>
                   </Toast>
                   <Toast
-                    onClose={() =>
-                      this.setState({ showError: false, submit: false })
-                    }
+                    onClose={() => this.setState({ showError: false, submit: false })}
                     show={this.state.showError}
                     className="toastError"
                     // transition="Fade"
@@ -774,9 +633,7 @@ export default class MemoryInPixelLanding extends Component {
                     <Toast.Header>
                       <strong className="me-auto">Error</strong>
                     </Toast.Header>
-                    <Toast.Body>
-                      We were unable to recieve your query. Please try again.
-                    </Toast.Body>
+                    <Toast.Body>We were unable to recieve your query. Please try again.</Toast.Body>
                   </Toast>
                   <div style={{ paddingBottom: 50 }}></div>
                   <div style={{ paddingBottom: 50 }}></div>

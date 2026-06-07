@@ -60,9 +60,7 @@ export default class ControlSalesRIGZO extends Component {
       name: this.state.name,
       mobile: this.state.mobileCode + "-" + this.state.mobile,
       email: this.state.email,
-      message: this.state.demo
-        ? "Yes, I’d like to request a demo. " + this.state.message
-        : this.state.message,
+      message: this.state.demo ? "Yes, I’d like to request a demo. " + this.state.message : this.state.message,
       subject: ["Control Sales R-IGZO"],
     };
     axios
@@ -151,9 +149,7 @@ export default class ControlSalesRIGZO extends Component {
                     <h1 className="mb-2-5" style={{ fontSize: "3rem" }}>
                       <strong>A New Standard for Low-Power Displays</strong>
                     </h1>
-                    <p
-                      style={{ margin: 0, fontSize: "2rem", paddingBottom: 15 }}
-                    >
+                    <p style={{ margin: 0, fontSize: "2rem", paddingBottom: 15 }}>
                       Full Color <br />
                       High Resolution <br />
                       Sunlight Readable
@@ -164,12 +160,7 @@ export default class ControlSalesRIGZO extends Component {
 
               <div className="col-md-6" style={{ padding: "0px 100px" }}>
                 <div>
-                  <img
-                    style={{ width: "100%" }}
-                    src={image1}
-                    role="presentation"
-                    alt="Sharp MIP"
-                  />
+                  <img style={{ width: "100%" }} src={image1} role="presentation" alt="Sharp MIP" />
                 </div>
               </div>
             </div>
@@ -194,12 +185,7 @@ export default class ControlSalesRIGZO extends Component {
             }}
           >
             <strong>Creating top product solutions with </strong>
-            <img
-              style={{ marginLeft: 10 }}
-              src={controlsaleslogo}
-              role="presentation"
-              alt="Control Sales Logo"
-            />
+            <img style={{ marginLeft: 10 }} src={controlsaleslogo} role="presentation" alt="Control Sales Logo" />
           </p>
         </div>
         <div
@@ -211,13 +197,7 @@ export default class ControlSalesRIGZO extends Component {
             marginBottom: 20,
           }}
         >
-          <Button
-            className="redButton"
-            onClick={() => this.myRef.current.scrollIntoView()}
-            size="lg"
-            variant="outline-danger"
-            style={{ paddingRight: 50, paddingLeft: 50 }}
-          >
+          <Button className="redButton" onClick={() => this.myRef.current.scrollIntoView()} size="lg" variant="outline-danger" style={{ paddingRight: 50, paddingLeft: 50 }}>
             Contact us
           </Button>
         </div>
@@ -271,17 +251,9 @@ export default class ControlSalesRIGZO extends Component {
                   ></div>
                 </div>
               </div>
-              <div
-                className="col-md-6"
-                style={{ paddingTop: 30, paddingBottom: 30 }}
-              >
+              <div className="col-md-6" style={{ paddingTop: 30, paddingBottom: 30 }}>
                 <div>
-                  <img
-                    style={{ width: "100%" }}
-                    src={image2}
-                    role="presentation"
-                    alt="Comparison with TFT"
-                  />
+                  <img style={{ width: "100%" }} src={image2} role="presentation" alt="Comparison with TFT" />
                 </div>
               </div>
               <div tabIndex={0} className="col-md-6">
@@ -294,17 +266,11 @@ export default class ControlSalesRIGZO extends Component {
                     }}
                   >
                     <p>
-                      <strong>
-                        High Outdoor Readability w/Full-color Moving Images
-                        @60Hz
-                      </strong>
+                      <strong>High Outdoor Readability w/Full-color Moving Images @60Hz</strong>
                     </p>
                     <p>
-                      IGZO enables unprecedented transistor miniaturization and
-                      circuit thinning, thanks to its high electron mobility
-                      rate. By raising the light transmission of each pixel,
-                      twice the resolution is achieved for the same
-                      transmittance.
+                      IGZO enables unprecedented transistor miniaturization and circuit thinning, thanks to its high electron mobility rate. By raising the light transmission of each pixel, twice the
+                      resolution is achieved for the same transmittance.
                     </p>
                   </div>
                 </div>
@@ -364,17 +330,9 @@ export default class ControlSalesRIGZO extends Component {
                   </div>
                 </div>
               </div>
-              <div
-                className="col-md-6"
-                style={{ paddingTop: 30, paddingBottom: 30 }}
-              >
+              <div className="col-md-6" style={{ paddingTop: 30, paddingBottom: 30 }}>
                 <div>
-                  <img
-                    style={{ width: "100%" }}
-                    src={image3}
-                    role="presentation"
-                    alt="ULTRA-LOW POWER CONSUMPTION"
-                  />
+                  <img style={{ width: "100%" }} src={image3} role="presentation" alt="ULTRA-LOW POWER CONSUMPTION" />
                 </div>
               </div>
             </div>
@@ -419,17 +377,9 @@ export default class ControlSalesRIGZO extends Component {
                 </div>
               </div>
 
-              <div
-                className="col-md-6"
-                style={{ paddingTop: 30, paddingBottom: 30 }}
-              >
+              <div className="col-md-6" style={{ paddingTop: 30, paddingBottom: 30 }}>
                 <div>
-                  <img
-                    style={{ width: "100%" }}
-                    src={image4}
-                    role="presentation"
-                    alt="THIN AND LIGHTWEIGHT"
-                  />
+                  <img style={{ width: "100%" }} src={image4} role="presentation" alt="THIN AND LIGHTWEIGHT" />
                 </div>
               </div>
               <div tabIndex={0} className="col-md-6">
@@ -476,10 +426,7 @@ export default class ControlSalesRIGZO extends Component {
             >
               <div style={{ width: "100%" }}>
                 <div className="padding-top-50"></div>
-                <h1
-                  className="mb-2-5"
-                  style={{ fontSize: "3rem", textAlign: "center" }}
-                >
+                <h1 className="mb-2-5" style={{ fontSize: "3rem", textAlign: "center" }}>
                   <strong>Perfect for Handheld Industrial Applications</strong>
                 </h1>
               </div>
@@ -487,32 +434,17 @@ export default class ControlSalesRIGZO extends Component {
               <div className="padding-top-50"></div>
               <div className="col-md-4" style={{ padding: "30px 0px" }}>
                 <div>
-                  <img
-                    style={{ width: "100%" }}
-                    src={handheldimage1}
-                    role="presentation"
-                    alt="THIN AND LIGHTWEIGHT"
-                  />
+                  <img style={{ width: "100%" }} src={handheldimage1} role="presentation" alt="THIN AND LIGHTWEIGHT" />
                 </div>
               </div>
               <div className="col-md-4" style={{ padding: "30px 0px" }}>
                 <div>
-                  <img
-                    style={{ width: "100%" }}
-                    src={handheldimage2}
-                    role="presentation"
-                    alt="THIN AND LIGHTWEIGHT"
-                  />
+                  <img style={{ width: "100%" }} src={handheldimage2} role="presentation" alt="THIN AND LIGHTWEIGHT" />
                 </div>
               </div>
               <div className="col-md-4" style={{ padding: "30px 0px" }}>
                 <div>
-                  <img
-                    style={{ width: "100%" }}
-                    src={handheldimage3}
-                    role="presentation"
-                    alt="THIN AND LIGHTWEIGHT"
-                  />
+                  <img style={{ width: "100%" }} src={handheldimage3} role="presentation" alt="THIN AND LIGHTWEIGHT" />
                 </div>
               </div>
             </div>
@@ -532,10 +464,7 @@ export default class ControlSalesRIGZO extends Component {
           >
             <div>
               <div className="padding-top-50"></div>
-              <h1
-                className="mb-2-5"
-                style={{ fontSize: "3rem", textAlign: "center" }}
-              >
+              <h1 className="mb-2-5" style={{ fontSize: "3rem", textAlign: "center" }}>
                 <strong>BEST-IN-CLASS R-IGZO FROM SHARP</strong>
               </h1>
             </div>
@@ -545,51 +474,29 @@ export default class ControlSalesRIGZO extends Component {
             <div className="row">
               <div tabIndex={0} className="col-md-4">
                 <div>
-                  <img
-                    style={{ width: 90 }}
-                    src={icon}
-                    role="presentation"
-                    alt="icon"
-                  />
+                  <img style={{ width: 90 }} src={icon} role="presentation" alt="icon" />
                   <h1 style={{ fontSize: "1.75rem", padding: "1vw" }}>
                     <strong>ULTRA-LOW POWER CONSUMPTION</strong>
                   </h1>
-                  <p style={{ padding: "1vw" }}>
-                    No backlight required in reflective mode.
-                  </p>
+                  <p style={{ padding: "1vw" }}>No backlight required in reflective mode.</p>
                 </div>
               </div>
               <div tabIndex={0} className="col-md-4">
                 <div>
-                  <img
-                    style={{ width: 90 }}
-                    src={icon2}
-                    role="presentation"
-                    alt="icon"
-                  />
+                  <img style={{ width: 90 }} src={icon2} role="presentation" alt="icon" />
                   <h1 style={{ fontSize: "1.75rem", padding: "1vw" }}>
                     <strong>HIGH OUTDOOR READABILITY</strong>
                   </h1>
-                  <p style={{ padding: "1vw" }}>
-                    High Outdoor Readability w/Full-color Moving Images @60Hz.
-                    Reflective electrode structure + high contrast.
-                  </p>
+                  <p style={{ padding: "1vw" }}>High Outdoor Readability w/Full-color Moving Images @60Hz. Reflective electrode structure + high contrast.</p>
                 </div>
               </div>
               <div tabIndex={0} className="col-md-4">
                 <div>
-                  <img
-                    style={{ width: 90 }}
-                    src={icon3}
-                    role="presentation"
-                    alt="icon"
-                  />
+                  <img style={{ width: 90 }} src={icon3} role="presentation" alt="icon" />
                   <h1 style={{ fontSize: "1.75rem", padding: "1vw" }}>
                     <strong>THIN AND LIGHTWEIGHT</strong>
                   </h1>
-                  <p style={{ padding: "1vw" }}>
-                    Slim, low-power backlight enables compact product designs.
-                  </p>
+                  <p style={{ padding: "1vw" }}>Slim, low-power backlight enables compact product designs.</p>
                 </div>
               </div>
             </div>
@@ -598,53 +505,29 @@ export default class ControlSalesRIGZO extends Component {
             <div className="row">
               <div tabIndex={0} className="col-md-4">
                 <div>
-                  <img
-                    style={{ width: 90 }}
-                    src={icon4}
-                    role="presentation"
-                    alt="icon"
-                  />
+                  <img style={{ width: 90 }} src={icon4} role="presentation" alt="icon" />
                   <h1 style={{ fontSize: "1.75rem", padding: "1vw" }}>
                     <strong>WIDE OPERATING TEMPS</strong>
                   </h1>
-                  <p style={{ padding: "1vw" }}>
-                    Supporting operating temperatures from -20°C to +70°C... and
-                    storage temps from -30°C to +80°C.
-                  </p>
+                  <p style={{ padding: "1vw" }}>Supporting operating temperatures from -20°C to +70°C... and storage temps from -30°C to +80°C.</p>
                 </div>
               </div>
               <div tabIndex={0} className="col-md-4">
                 <div>
-                  <img
-                    style={{ width: 90 }}
-                    src={icon5}
-                    role="presentation"
-                    alt="icon"
-                  />
+                  <img style={{ width: 90 }} src={icon5} role="presentation" alt="icon" />
                   <h1 style={{ fontSize: "1.75rem", padding: "1vw" }}>
                     <strong>20-50x FASTER THAN a-SI</strong>
                   </h1>
-                  <p style={{ padding: "1vw" }}>
-                    IGZO's electron mobility is far higher than Amorphous
-                    Silicon (a-Si) displays.
-                  </p>
+                  <p style={{ padding: "1vw" }}>IGZO's electron mobility is far higher than Amorphous Silicon (a-Si) displays.</p>
                 </div>
               </div>
               <div tabIndex={0} className="col-md-4">
                 <div>
-                  <img
-                    style={{ width: 90 }}
-                    src={icon6}
-                    role="presentation"
-                    alt="icon"
-                  />
+                  <img style={{ width: 90 }} src={icon6} role="presentation" alt="icon" />
                   <h1 style={{ fontSize: "1.75rem", padding: "1vw" }}>
                     <strong>HIGH RESOLUTION</strong>
                   </h1>
-                  <p style={{ padding: "1vw" }}>
-                    IGZO enables higher resolution at the same or lower power
-                    than a-SI solutions.
-                  </p>
+                  <p style={{ padding: "1vw" }}>IGZO enables higher resolution at the same or lower power than a-SI solutions.</p>
                 </div>
               </div>
             </div>
@@ -691,44 +574,23 @@ export default class ControlSalesRIGZO extends Component {
                         alignItems: "center",
                       }}
                     >
-                      <h1
-                        style={{ fontSize: "2rem", textAlign: "center" }}
-                        className="mb-font-2"
-                      >
+                      <h1 style={{ fontSize: "2rem", textAlign: "center" }} className="mb-font-2">
                         <strong>STRONGER TOGETHER.</strong>
                       </h1>
-                      <p>
-                        Bringing the top products to market requires having the
-                        best team.
-                      </p>
+                      <p>Bringing the top products to market requires having the best team.</p>
                       <div>
-                        <img
-                          style={{ width: "80%", marginTop: 30 }}
-                          src={controlsaleslogo}
-                          role="presentation"
-                          alt="Control Sales Logo"
-                        />
+                        <img style={{ width: "80%", marginTop: 30 }} src={controlsaleslogo} role="presentation" alt="Control Sales Logo" />
                       </div>
                       <p>+</p>
                       <div>
-                        <img
-                          style={{ width: "80%" }}
-                          src={SHARP_Logo_red}
-                          role="presentation"
-                          alt="SHARP_Logo_red"
-                        />
+                        <img style={{ width: "80%" }} src={SHARP_Logo_red} role="presentation" alt="SHARP_Logo_red" />
                       </div>
                     </div>
                   </div>
                 </div>
                 <div className="col-md-6" style={{ padding: 30 }}>
                   <div>
-                    <img
-                      style={{ width: "100%" }}
-                      src={handshake}
-                      role="presentation"
-                      alt="THE PERFECT SOLUTION"
-                    />
+                    <img style={{ width: "100%" }} src={handshake} role="presentation" alt="THE PERFECT SOLUTION" />
                   </div>
                 </div>
               </div>
@@ -768,9 +630,7 @@ export default class ControlSalesRIGZO extends Component {
                     color: "white",
                   }}
                 >
-                  <strong>
-                    LET'S TALK ABOUT R-IGZO FOR YOUR NEXT PRODUCT DESIGN{" "}
-                  </strong>
+                  <strong>LET'S TALK ABOUT R-IGZO FOR YOUR NEXT PRODUCT DESIGN </strong>
                 </h1>
                 <p
                   style={{
@@ -779,17 +639,11 @@ export default class ControlSalesRIGZO extends Component {
                     padding: "20px 40px",
                   }}
                 >
-                  Provide your contact info and we'll reach out ASAP. If you’d
-                  like to view a demo of the R-IGZO 5” display, please click the
-                  box below.{" "}
+                  Provide your contact info and we'll reach out ASAP. If you’d like to view a demo of the R-IGZO 5” display, please click the box below.{" "}
                 </p>
               </div>
-              <div style={{ width: "70%" }}>
-                <Form1
-                  noValidate
-                  className="Control-Sales-R-IGZO"
-                  onSubmit={this.onSubmit}
-                >
+              <div className="contact-resp">
+                <Form1 noValidate className="Control-Sales-R-IGZO" onSubmit={this.onSubmit}>
                   <Form1.Row style={{ paddingBottom: 10 }}>
                     <Col>
                       <Form1.Control
@@ -798,14 +652,10 @@ export default class ControlSalesRIGZO extends Component {
                         aria-required={true}
                         required
                         type="email"
-                        onChange={(event) =>
-                          this.setState({ email: event.currentTarget.value })
-                        }
+                        onChange={(event) => this.setState({ email: event.currentTarget.value })}
                         value={this.state.email}
                       />
-                      <Form1.Control.Feedback type="invalid">
-                        Please provide a valid email id.
-                      </Form1.Control.Feedback>
+                      <Form1.Control.Feedback type="invalid">Please provide a valid email id.</Form1.Control.Feedback>
                     </Col>
                   </Form1.Row>
                   <Form1.Row style={{ paddingBottom: 10 }}>
@@ -815,18 +665,14 @@ export default class ControlSalesRIGZO extends Component {
                         aria-label="Name"
                         required
                         placeholder="Name"
-                        onChange={(event) =>
-                          this.setState({ name: event.currentTarget.value })
-                        }
+                        onChange={(event) => this.setState({ name: event.currentTarget.value })}
                         value={this.state.name}
                       />
-                      <Form1.Control.Feedback type="invalid">
-                        Name field cannot be empty
-                      </Form1.Control.Feedback>
+                      <Form1.Control.Feedback type="invalid">Name field cannot be empty</Form1.Control.Feedback>
                     </Col>
                   </Form1.Row>
 
-                  <Form1.Row style={{ paddingBottom: 10 }}>
+                  <Form1.Row style={{ paddingBottom: 10, display: "flex", gap: 10 }}>
                     <Col>
                       <Form1.Control
                         aria-label="Country Code"
@@ -840,9 +686,7 @@ export default class ControlSalesRIGZO extends Component {
                         }
                         value={this.state.mobileCode}
                       />
-                      <Form1.Control.Feedback type="invalid">
-                        Country code field cannot be empty
-                      </Form1.Control.Feedback>
+                      <Form1.Control.Feedback type="invalid">Country code field cannot be empty</Form1.Control.Feedback>
                     </Col>
                     <Col xs={10}>
                       <Form1.Control
@@ -850,15 +694,11 @@ export default class ControlSalesRIGZO extends Component {
                         placeholder="Contact number"
                         aria-required={true}
                         required
-                        onChange={(event) =>
-                          this.setState({ mobile: event.currentTarget.value })
-                        }
+                        onChange={(event) => this.setState({ mobile: event.currentTarget.value })}
                         value={this.state.mobile}
                         maxLength={10}
                       />
-                      <Form1.Control.Feedback type="invalid">
-                        Phone number field cannot be empty
-                      </Form1.Control.Feedback>
+                      <Form1.Control.Feedback type="invalid">Phone number field cannot be empty</Form1.Control.Feedback>
                     </Col>
                   </Form1.Row>
                   <Form1.Row>
@@ -869,9 +709,7 @@ export default class ControlSalesRIGZO extends Component {
                           type="checkbox"
                           label="Yes, I’d like to request a demo"
                           checked={this.state.demo}
-                          onChange={(event) =>
-                            this.setState({ demo: event.currentTarget.checked })
-                          }
+                          onChange={(event) => this.setState({ demo: event.currentTarget.checked })}
                         />
                       </Form1.Group>
                     </Col>
@@ -885,24 +723,13 @@ export default class ControlSalesRIGZO extends Component {
                         as="textarea"
                         rows="3"
                         placeholder="Comments(optional)"
-                        onChange={(event) =>
-                          this.setState({ message: event.currentTarget.value })
-                        }
+                        onChange={(event) => this.setState({ message: event.currentTarget.value })}
                         value={this.state.message}
                       />
-                      <Form1.Control.Feedback type="invalid">
-                        Message field cannot be empty
-                      </Form1.Control.Feedback>
+                      <Form1.Control.Feedback type="invalid">Message field cannot be empty</Form1.Control.Feedback>
                     </Col>
                   </Form1.Row>
-                  <Button
-                    className="redButton"
-                    aria-label="Submit Form Button"
-                    style={{ marginTop: 10, width: "100%" }}
-                    variant="primary"
-                    type="submit"
-                    disabled={this.state.submit}
-                  >
+                  <Button className="redButton" aria-label="Submit Form Button" style={{ marginTop: 10, width: "100%" }} variant="primary" type="submit" disabled={this.state.submit}>
                     Submit
                   </Button>
                   {/* <div style={{ paddingBottom: 50 }}></div> */}
@@ -916,9 +743,7 @@ export default class ControlSalesRIGZO extends Component {
                     style={{ margin: "10px" }}
                   />
                   <Toast
-                    onClose={() =>
-                      this.setState({ show: false, submit: false })
-                    }
+                    onClose={() => this.setState({ show: false, submit: false })}
                     show={this.state.show}
                     className="toastSuccess"
                     // transition="Fade"
@@ -927,14 +752,11 @@ export default class ControlSalesRIGZO extends Component {
                       <strong className="me-auto">Success</strong>
                     </Toast.Header>
                     <Toast.Body>
-                      Thank You! <br /> Your query has been successfully
-                      submitted.
+                      Thank You! <br /> Your query has been successfully submitted.
                     </Toast.Body>
                   </Toast>
                   <Toast
-                    onClose={() =>
-                      this.setState({ showError: false, submit: false })
-                    }
+                    onClose={() => this.setState({ showError: false, submit: false })}
                     show={this.state.showError}
                     className="toastError"
                     // transition="Fade"
@@ -942,20 +764,12 @@ export default class ControlSalesRIGZO extends Component {
                     <Toast.Header>
                       <strong className="me-auto">Error</strong>
                     </Toast.Header>
-                    <Toast.Body>
-                      We were unable to recieve your query. Please try again.
-                    </Toast.Body>
+                    <Toast.Body>We were unable to recieve your query. Please try again.</Toast.Body>
                   </Toast>
                   <div style={{ paddingBottom: 50 }}></div>
                   <p style={{ color: "white" }}>
                     Looking for a smaller size class reflective displays?
-                    <Link
-                      to="/memory-in-pixel-lcds-product"
-                      style={{ color: "#e61d24" }}
-                      onClick={(event) =>
-                        this.callFunct(event, "/memory-in-pixel-lcds-product")
-                      }
-                    >
+                    <Link to="/memory-in-pixel-lcds-product" style={{ color: "#e61d24" }} onClick={(event) => this.callFunct(event, "/memory-in-pixel-lcds-product")}>
                       {" "}
                       Visit our Memory in Pixel product page
                     </Link>
