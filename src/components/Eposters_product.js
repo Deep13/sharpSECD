@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import HighlightOffIcon from "@material-ui/icons/HighlightOff";
 import { Image, Button, Form, FormControl } from "react-bootstrap";
 import Pagination from "react-js-pagination";
-import lcdImage from "../assets/eposters/Sharp-ePoster-Product-Page.jpg";
+import lcdImage from "../assets/eposters/ePoster Size Comparison.png";
 import Productitem from "./Eposters_product_item";
 import Footer from "../Footer";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
@@ -69,9 +69,7 @@ class Eposters_product extends Component {
 
     this.onDoFilter([]);
     event.preventDefault();
-    document
-      .querySelectorAll("input[type=checkbox]")
-      .forEach((el) => (el.checked = false));
+    document.querySelectorAll("input[type=checkbox]").forEach((el) => (el.checked = false));
   };
   handleSearch = (value) => {
     var text = value;
@@ -150,16 +148,11 @@ class Eposters_product extends Component {
     var totalFilterValue = this.state.filter;
     var item = items.currentTarget.dataset;
     if (items.currentTarget.checked) {
-      totalFilterValue[item.category] &&
-      totalFilterValue[item.category].length > 0
-        ? totalFilterValue[item.category].push(item.option)
-        : (totalFilterValue[item.category] = [item.option]);
+      totalFilterValue[item.category] && totalFilterValue[item.category].length > 0 ? totalFilterValue[item.category].push(item.option) : (totalFilterValue[item.category] = [item.option]);
     } else {
-      totalFilterValue[item.category] = totalFilterValue[item.category].filter(
-        (obj) => {
-          return obj !== item.option;
-        },
-      );
+      totalFilterValue[item.category] = totalFilterValue[item.category].filter((obj) => {
+        return obj !== item.option;
+      });
       if (totalFilterValue[item.category].length === 0) {
         delete totalFilterValue[item.category];
       }
@@ -167,17 +160,14 @@ class Eposters_product extends Component {
     this.onDoFilter(totalFilterValue);
   };
   filterPlainArray = (array, filters) => {
-    const getValue = (value) =>
-      typeof value === "string" ? value.toUpperCase() : value;
+    const getValue = (value) => (typeof value === "string" ? value.toUpperCase() : value);
     const filterKeys = Object.keys(filters);
     return array.filter((item) => {
       // validates all filter criteria
       return filterKeys.every((key) => {
         // ignores an empty filter
         if (!filters[key].length) return true;
-        return filters[key].find(
-          (filter) => getValue(filter) === getValue(item[key]),
-        );
+        return filters[key].find((filter) => getValue(filter) === getValue(item[key]));
       });
     });
   };
@@ -221,32 +211,17 @@ class Eposters_product extends Component {
             content="Discover Sharp’s available ePoster modules—a zero-power, high-contrast signage display with 60,000 colors, perfect for sustainable paper replacement solutions."
           />
         </Helmet>
-        <div
-          className="row container-row-85 padding-top-50 padding-bottom-30"
-          style={{ overflowX: "hidden" }}
-        >
-          <div
-            id="main-content"
-            role="main"
-            tabIndex={0}
-            className="col-md-6"
-            style={{ padding: 0 }}
-          >
+        <div className="row container-row-85 padding-top-50 padding-bottom-30" style={{ overflowX: "hidden" }}>
+          <div id="main-content" role="main" tabIndex={0} className="col-md-6" style={{ padding: 0, paddingRight: 40 }}>
             <div tabIndex={-1}>
               <h1>ePoster Display Modules</h1>
               <br />
               <p>
-                Sharp’s ePoster display modules offer an ultra-low-power,
-                paper-replacement alternative to the expense and material waste
-                of poster printing. Now, we’re introducing a new ISO A1
-                poster-size display module (40.5-inch diagonal) to complement
-                our flagship A2-sized (28.5-inch diagonal) module, expanding
-                opportunities for product developers.
+                Sharp’s ePoster display modules offer an ultra-low-power, paper-replacement alternative to the expense and material waste of poster printing. Now, we’re introducing a new ISO A1
+                poster-size display module (40.5-inch diagonal) to complement our flagship A2-sized (28.5-inch diagonal) module, expanding opportunities for product developers.
               </p>
               <p>
-                Other products available soon from our ePoster roadmap include
-                an A3-sized (20.2-inch diagonal) module and the outdoor A1
-                Kaleido<sup>TM</sup>3 (40.5-inch diagonal) module. Visit our
+                Other products available soon from our ePoster roadmap include an A3-sized (20.2-inch diagonal) module and the outdoor A1 Kaleido<sup>TM</sup>3 (40.5-inch diagonal) module. Visit our
                 News page for product release updates.
               </p>
             </div>
@@ -261,13 +236,9 @@ class Eposters_product extends Component {
             data-aos-once="true"
             data-aos-anchor-placement="top-center"
             className="col-md-6"
+            style={{ paddingLeft: 40 }}
           >
-            <Image
-              role="presentation"
-              alt="Concept image of Sharp ePoster 28.5-inch display module with simulated content"
-              src={lcdImage}
-              fluid
-            />
+            <Image role="presentation" alt="Concept image of Sharp ePoster 28.5-inch display module with simulated content" src={lcdImage} fluid />
             <p
               style={{
                 fontStyle: "italic",
@@ -280,10 +251,7 @@ class Eposters_product extends Component {
           </div>
         </div>
 
-        <div
-          className="mobile-padding-40 col-md-12"
-          style={{ padding: "0px 100px 40px 100px" }}
-        >
+        <div className="mobile-padding-40 col-md-12" style={{ padding: "0px 100px 40px 100px" }}>
           <div className="row">
             <div className="col-lg-3 " style={{ paddingBottom: 30 }}>
               <div
@@ -315,15 +283,8 @@ class Eposters_product extends Component {
                       <Accordion.Toggle as={Card.Header} eventKey={key}>
                         <div className="row">
                           <div className="col-9">{item.title}</div>
-                          <div
-                            className="col-3"
-                            style={{ textAlign: "right", paddingRight: 10 }}
-                          >
-                            <Button
-                              aria-label={"Refine By " + item.title}
-                              className="no-decor-button"
-                              onClick={this.toggleSlider}
-                            >
+                          <div className="col-3" style={{ textAlign: "right", paddingRight: 10 }}>
+                            <Button aria-label={"Refine By " + item.title} className="no-decor-button" onClick={this.toggleSlider}>
                               <ExpandMoreIcon />
                             </Button>
                           </div>
@@ -342,12 +303,7 @@ class Eposters_product extends Component {
                                   data-category={item.title}
                                   data-option={content}
                                   onChange={this.selectFilter}
-                                  defaultChecked={
-                                    content == "Production" ||
-                                    content == "Pre-production"
-                                      ? true
-                                      : false
-                                  }
+                                  defaultChecked={content == "Production" || content == "Pre-production" ? true : false}
                                 />
                               );
                             })}
@@ -365,21 +321,9 @@ class Eposters_product extends Component {
                   <h3>Products({this.state.pageLength})</h3>
                 </div>
                 <div className="col-lg-6">
-                  <Form
-                    inline
-                    className="headerSearch"
-                    onSubmit={this.onSubmit}
-                    style={{ justifyContent: "flex-end", padding: 5 }}
-                  >
+                  <Form inline className="headerSearch" onSubmit={this.onSubmit} style={{ justifyContent: "flex-end", padding: 5 }}>
                     {/* <InputGroup className="mb-2"> */}
-                    <FormControl
-                      variant="outline-danger"
-                      type="text"
-                      value={this.state.search}
-                      placeholder="Search by Part No."
-                      className="mr-sm-2"
-                      onChange={this.handleTableSearch}
-                    />
+                    <FormControl variant="outline-danger" type="text" value={this.state.search} placeholder="Search by Part No." className="mr-sm-2" onChange={this.handleTableSearch} />
                     <HighlightOffIcon
                       className="clearIcon"
                       style={{
@@ -398,13 +342,7 @@ class Eposters_product extends Component {
               <br />
               {this.state.data.length > 0 ? (
                 this.state.data.map((item, key) => {
-                  return (
-                    <Productitem
-                      item={item}
-                      key={key}
-                      showModal={() => this.handleShow(item)}
-                    />
-                  );
+                  return <Productitem item={item} key={key} showModal={() => this.handleShow(item)} />;
                 })
               ) : (
                 <div
@@ -419,24 +357,14 @@ class Eposters_product extends Component {
               )}
               <div className="row space-between-justify padding-30">
                 <div className="col-sm-8" style={{ paddingLeft: 0 }}>
-                  For more information on any of these products please find your
-                  local rep below
+                  For more information on any of these products please find your local rep below
                   <div style={{ padding: "10px 0px" }}>
-                    <Button
-                      aria-label="Find your local rep"
-                      size="lg"
-                      variant="outline-danger"
-                      as={Link}
-                      to="/contact"
-                    >
+                    <Button aria-label="Find your local rep" size="lg" variant="outline-danger" as={Link} to="/contact">
                       Find a Rep
                     </Button>
                   </div>
                 </div>
-                <div
-                  style={{ justifyContent: "flex-end" }}
-                  className="col-sm-4 pagination"
-                >
+                <div style={{ justifyContent: "flex-end" }} className="col-sm-4 pagination">
                   <Pagination
                     hideDisabled
                     itemClass="page-item"
@@ -452,12 +380,7 @@ class Eposters_product extends Component {
             </div>
           </div>
         </div>
-        <Productdetail
-          show={this.state.show}
-          handleClose={this.handleClose}
-          items={this.state.items}
-          parent="ML"
-        />
+        <Productdetail show={this.state.show} handleClose={this.handleClose} items={this.state.items} parent="ML" />
         <Footer />
       </div>
     );

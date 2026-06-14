@@ -108,11 +108,11 @@ class Eposters_Displays extends Component {
                 <strong>SAY GOODBYE</strong>
               </h3>
               <h3 style={{ fontSize: 60 }}>
-                <strong>TO PRINTED SIGNAGE.</strong>
+                <strong>TO PRINTING WASTE.</strong>
               </h3>
             </div>
             <h2 className="text-center-mb" style={{ color: "white", maxWidth: 600 }}>
-              <strong>Meet our no-hassle, paper replacement display module for signage applications. Uses zero-power in static image mode.</strong>
+              <strong>Our no-hassle ePoster display module enables paper replacement. Uses zero power in static image mode.</strong>
             </h2>
             <p
               style={{
@@ -241,7 +241,7 @@ class Eposters_Displays extends Component {
               <h2 style={{ paddingBottom: 30, fontSize: "3rem" }}>
                 <strong>CREATE FLEXIBLE, EFFICIENT ePOSTER SOLUTIONS</strong>
               </h2>
-              <span style={{ fontSize: 35 }}>The Sharp ePoster enables you to build signage products that:</span>
+              <span style={{ fontSize: 35 }}>The Sharp ePoster enables you to build paper replacement displays that:</span>
               <br />
               <ul
                 style={{
@@ -406,21 +406,19 @@ class Eposters_Displays extends Component {
                 <strong>KEY FEATURES</strong>
               </h2>
               <ul style={{ color: "black", marginBottom: 0 }}>
-                <li>28.5-inch (diagonal)</li>
-                <li>2160 x 3060 resolution</li>
-                <li>Zero power with static image hold</li>
+                <li>Digital solution w/paper-like viewability</li>
+                <li>Zero power with static imagine hold</li>
                 <li>High contrast plus 30% reflectivity</li>
-                <li>
-                  60k color gamut with E Ink's Spectra<sup>TM</sup> 6
-                </li>
+                <li>60k color gamut with E Ink's Spectra™ 6</li>
                 <li>Thin, lightweight, multi-panel capability</li>
                 <li>Enables cloud-based management</li>
-                <li>Enables battery, PoE, or PoWiFi installation</li>
+                <li>Battery, PoE, or PoWiFi installation</li>
+                <li>Mount in virtually any location</li>
               </ul>
               <br />
               <Button
                 size="lg"
-                onClick={(event) => this.callFunct(event, "/Eposters_product")}
+                onClick={(event) => this.callFunct(event, "/eposter-display-modules-technology")}
                 style={{
                   backgroundColor: "rgb(237, 12, 12)",
                   borderColor: "rgb(237, 12, 12)",
@@ -432,7 +430,7 @@ class Eposters_Displays extends Component {
                   maxWidth: 300,
                 }}
               >
-                Find a Product
+                See ePoster Technology
               </Button>
             </div>
           </div>
@@ -585,16 +583,16 @@ class Eposters_Displays extends Component {
           >
             <div className="col-lg-6" style={{ padding: 80 }}>
               <h2 style={{ color: "black", paddingBottom: 30 }}>
-                <strong>SIMPLE. SMART. SIGNAGE.</strong>
+                <strong>A STYLISH SOLUTION.</strong>
               </h2>
               <span style={{ fontSize: 35 }}>
-                Crisp, colorful visuals. Stylish, slim module. Simple operation.
+                Crisp, colorful visuals.
                 <br />
                 <br />
-                Enables market-leading paperless public information displays.
+                Slim, light module. Simple operation.
                 <br />
                 <br />
-                Replace paper signage with Sharp's ePoster display module today.
+                Replace paper posters with Sharp's ePoster display module today.
               </span>
             </div>
             <div className="col-lg-6" style={{ paddingRight: 0 }}>

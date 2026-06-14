@@ -108,7 +108,7 @@ class ePosterTechnology extends Component {
             flexDirection: "column",
             justifyContent: "flex-end",
             alignItems: "center",
-            minHeight: "95vh",
+            minHeight: "100vh",
           }}
         >
           <div
@@ -137,8 +137,8 @@ class ePosterTechnology extends Component {
               <Link to="/eposters-displays" style={{ color: "inherit", textDecoration: "underline" }}>
                 ePoster display module
               </Link>
-              . ePoster combines Sharp's IGZO backplane with E Ink's latest full-color Spectra™ 6 reflective ePaper technology. This powerful combination brings something entirely new to the digital
-              paper-replacement market.
+              . ePoster combines Sharp's IGZO backplane with E Ink's latest full-color Spectra™ 6 reflective ePaper technology. This powerful combination brings unique product opportunities to the
+              digital paper-replacement market.
             </p>
             <Button className="redButton" variant="primary" as={Link} to="/contact" style={{ fontSize: "1.25rem" }}>
               Contact Sharp
@@ -504,7 +504,7 @@ class ePosterTechnology extends Component {
             <div className="etp-split">
               <div style={{ flex: "1 1 600px", minWidth: 280 }}>
                 <div
-                  className="p-4 p-md-2"
+                  className="p-2 p-md-4"
                   style={{
                     backgroundColor: "rgba(255,255,255,0.91)",
                     borderRadius: 4,
