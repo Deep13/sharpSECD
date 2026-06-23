@@ -29,6 +29,8 @@ import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import Loader from "react-loader-spinner";
 import axios from "axios";
 import IntroVideo from "../assets/ePosterVideo.mp4";
+import epostersCarousel from "../assets/new-home/ePosterCarousel.jpg";
+import eposterProduct from "../assets/new-home/epProduct.png";
 AOS.init();
 // import { Button, Form, FormControl, Table } from "react-bootstrap";
 
@@ -102,33 +104,39 @@ class Eposters_Displays extends Component {
         </Helmet>
         <div className="row" style={{ width: "100%", margin: 0 }}>
           <div aria-label="Concept image of Sharp ePoster used for museum exhibit signage" className="poster-section" tabIndex={0} style={{ position: "relative", padding: 80 }}>
-            <img className="poster-sharp-logo" src={sharp_logo} role="presentation" alt="Control Sales Logo" />
-            <div className="text-center-mb" style={{ marginBottom: 40, marginTop: 40 }}>
-              <h3 style={{ fontSize: 60 }}>
-                <strong>SAY GOODBYE</strong>
-              </h3>
-              <h3 style={{ fontSize: 60 }}>
-                <strong>TO PRINTING WASTE.</strong>
-              </h3>
+            <div style={{ display: "flex" }}>
+              <div style={{ flex: 1 }}>
+                <div style={{ width: "100%" }}>
+                  <img className="poster-sharp-logo" src={sharp_logo} role="presentation" alt="Control Sales Logo" />
+                  <div className="text-center-mb" style={{ marginBottom: 40, marginTop: 40 }}>
+                    <h3 style={{ fontSize: 60 }}>
+                      <strong>SAY GOODBYE</strong>
+                    </h3>
+                    <h3 style={{ fontSize: 60 }}>
+                      <strong>TO PRINTING WASTE.</strong>
+                    </h3>
+                  </div>
+                  <h2 className="text-center-mb" style={{ color: "white", maxWidth: 600 }}>
+                    <strong>Our no-hassle ePoster display module enables paper replacement. Uses zero power in static image mode.</strong>
+                  </h2>
+                </div>
+              </div>
+              <div style={{ flex: 1, display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column" }}>
+                <img style={{ maxWidth: 600 }} src={eposterProduct} role="presentation" alt="Stock image graphic with signage display showing how ePoster will look in a mall or retail environment " />
+                <p
+                  style={{
+                    fontWeight: 300,
+                    marginTop: 20,
+                    fontSize: "1rem",
+                    textAlign: "center",
+                    color: "white",
+                    fontStyle: "italic",
+                  }}
+                >
+                  Screen images shown are simulated unless otherwise noted. Actual display will differ.{" "}
+                </p>
+              </div>
             </div>
-            <h2 className="text-center-mb" style={{ color: "white", maxWidth: 600 }}>
-              <strong>Our no-hassle ePoster display module enables paper replacement. Uses zero power in static image mode.</strong>
-            </h2>
-            <p
-              style={{
-                fontWeight: 300,
-                marginTop: 20,
-                fontSize: "1rem",
-                textAlign: "center",
-                position: "absolute",
-                right: 50,
-                bottom: 10,
-                color: "white",
-                fontStyle: "italic",
-              }}
-            >
-              Screen images shown are simulated unless otherwise noted. Actual display will differ.{" "}
-            </p>
           </div>
           <div
             className="row key-section"

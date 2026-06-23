@@ -186,7 +186,9 @@ a.dropdown-item:hover {
   transition: opacity 0.4s;
   opacity: 0.5;
 }
-
+.p-0 {
+  padding: 0px !important;
+}
 .scrollTop:hover {
   opacity: 1;
 }
@@ -657,8 +659,24 @@ circle:hover {
   font-size: 2.4rem;
   line-height: 65px;
 }
+.redNewButton {
+  font-size: 1.25rem !important;
+  height: 50px !important;
+  width: 260px !important;
+  background-color: #e41e26 !important;
+  border-color: #e41e26 !important;
+  border-radius: 0px !important;
+}
+.redNewButton:hover {
+  font-size: 1.25rem !important;
+  height: 50px !important;
+  width: 260px !important;
+  background-color: #a11b20 !important;
+  border-color: #a11b20 !important;
+  border-radius: 0px !important;
+}
 .poster-section {
-  background-image: url("./assets/eposter_displays/ePoster Hero Desktop.jpg");
+  background-image: url("./assets/new-home/ePosterCarousel.jpg");
   padding: 100px 80px;
   width: 100%;
   text-align: left;
@@ -715,7 +733,9 @@ circle:hover {
   line-height: 65px;
   margin: 50px 0px;
 }
-
+.hero-overlay {
+  margin-bottom: 6%;
+}
 .key-section p {
   font-size: 1.8rem;
 }
@@ -1076,7 +1096,7 @@ circle:hover {
 .etp-container {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 80px;
   width: 100%;
 }
 .etp-two-col {
@@ -1095,7 +1115,7 @@ circle:hover {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 40px;
+  /* gap: 40px; */
   align-items: center;
   justify-content: center;
 }
@@ -1145,6 +1165,7 @@ circle:hover {
 @media only screen and (max-width: 960px) {
   .EINKSPECTRA {
     padding: 40px;
+    margin: 80px;
   }
   .etp-table th,
   .etp-table td {
@@ -1153,5 +1174,8 @@ circle:hover {
   }
   .etp-hero-headline {
     font-size: 2rem !important;
+  }
+  .hero-overlay {
+    margin-bottom: 45%;
   }
 }

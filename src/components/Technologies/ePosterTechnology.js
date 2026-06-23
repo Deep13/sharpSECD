@@ -112,16 +112,16 @@ class ePosterTechnology extends Component {
           }}
         >
           <div
+            className="hero-overlay"
             style={{
               width: "100%",
               backgroundColor: "rgba(255,255,255,0.83)",
               padding: "36px 20px",
-              marginBottom: "6%",
               maxWidth: 1000,
             }}
           >
             <div style={{ margin: "0 auto", textAlign: "center" }}>
-              <h1 className="etp-hero-headline" style={{ fontSize: "5rem", fontWeight: "bold", margin: 0 }}>
+              <h1 className="etp-hero-headline" style={{ fontSize: "43pt", fontWeight: "bold", margin: 0 }}>
                 ePOSTER DISPLAY MODULE TECHNOLOGY
               </h1>
             </div>
@@ -129,10 +129,10 @@ class ePosterTechnology extends Component {
         </div>
 
         {/* ===== INTRO ===== */}
-        <div style={{ backgroundColor: "#ffffff" }}>
-          <div className="etp-container" style={{ textAlign: "center", padding: "60px 20px" }}>
-            <h2 style={{ ...sectionHeading, maxWidth: 790, margin: "0 auto 24px" }}>ENABLING DIGITAL SOLUTIONS TO REPLACE POSTER PRINTING</h2>
-            <p style={{ maxWidth: 1200, margin: "0 auto 30px", fontSize: "1.5rem" }}>
+        <div style={{ backgroundColor: "#ffffff", minHeight: "80vh", display: "flex", justifyContent: "center", alignItems: "center" }}>
+          <div className="etp-container" style={{ textAlign: "center" }}>
+            <h2 style={{ ...sectionHeading, maxWidth: 790, margin: "0 auto 24px", fontSize: "33pt" }}>ENABLING DIGITAL SOLUTIONS TO REPLACE POSTER PRINTING</h2>
+            <p style={{ maxWidth: 1200, margin: "0 auto 30px", fontSize: "19pt" }}>
               Sharp is an industry leader in low-power display technology. Our solutions are now augmented with the near-zero-power{" "}
               <Link to="/eposters-displays" style={{ color: "inherit", textDecoration: "underline" }}>
                 ePoster display module
@@ -140,34 +140,13 @@ class ePosterTechnology extends Component {
               . ePoster combines Sharp's IGZO backplane with E Ink's latest full-color Spectra™ 6 reflective ePaper technology. This powerful combination brings unique product opportunities to the
               digital paper-replacement market.
             </p>
-            <Button className="redButton" variant="primary" as={Link} to="/contact" style={{ fontSize: "1.25rem" }}>
+            <Button className="redNewButton" variant="primary" as={Link} to="/contact">
               Contact Sharp
             </Button>
           </div>
         </div>
 
         {/* ===== FEATURES INCLUDE ===== */}
-        {/* <div style={{ backgroundColor: "#ffffff" }}>
-          <div className="etp-container">
-            <div className="etp-split">
-              <div style={{ flex: "1 1 600px", minWidth: 280 }}>
-                <h2 style={sectionHeading}>FEATURES INCLUDE:</h2>
-                <ul style={{ fontSize: "1.15rem", lineHeight: 2, paddingLeft: 20 }}>
-                  <li>Resolution up to 200 PPI</li>
-                  <li>60k color gamut</li>
-                  <li>Reflectivity = 30%</li>
-                  <li>Contrast Ratio = 20:1</li>
-                  <li>Zero-power static image hold</li>
-                  <li>Operating Temp = 0°C to +50°C</li>
-                  <li>Image update time = 21s</li>
-                </ul>
-              </div>
-              <div style={{ flex: "1 1 720px", minWidth: 280, textAlign: "center" }}>
-                <img src={organicGrocery} style={{ width: "100%", maxWidth: 720, height: "auto" }} role="presentation" alt="ePoster display module showing a full-color organic grocery poster" />
-              </div>
-            </div>
-          </div>
-        </div> */}
         <div
           className="row key-section"
           tabIndex={0}
@@ -182,24 +161,33 @@ class ePosterTechnology extends Component {
             alignItems: "stretch",
           }}
         >
-          <div className="col-lg-6" style={{ padding: 80, display: "flex", justifyContent: "flex-end" }}>
-            <div style={{ minWidth: 280, maxWidth: 600 }}>
-              <h2 style={sectionHeading}>FEATURES INCLUDE:</h2>
-              <ul style={{ fontSize: "1.5rem", lineHeight: 2, paddingLeft: 20 }}>
-                <li>Resolution up to 200 PPI</li>
-                <li>60k color gamut</li>
-                <li>Reflectivity = 30%</li>
-                <li>Contrast Ratio = 20:1</li>
-                <li>Zero-power static image hold</li>
-                <li>Operating Temp = 0°C to +50°C</li>
-                <li>Image update time = 21s</li>
-              </ul>
+          <div className="col-lg-6" style={{ padding: 80, display: "flex", justifyContent: "center", alignItems: "center" }}>
+            <div style={{ maxWidth: 600 }}>
+              <h2 style={{ color: "black", paddingBottom: 30, fontSize: "33pt" }}>
+                <strong>FEATURES INCLUDE:</strong>
+              </h2>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                }}
+              >
+                <ul style={{ fontSize: "20pt", lineHeight: 2, paddingLeft: 50, marginTop: 20 }}>
+                  <li>Resolution up to 200 PPI</li>
+                  <li>60k color gamut</li>
+                  <li>Reflectivity = 30%</li>
+                  <li>Contrast Ratio = 20:1</li>
+                  <li>Zero-power static image hold</li>
+                  <li>Operating Temp = 0°C to +50°C</li>
+                  <li>Image update time = 21s</li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div className="col-lg-6 hide-on-mobile" style={{ paddingRight: 0, display: "flex", justifyContent: "flex-start" }}>
+          <div className="col-lg-6" style={{ paddingRight: 0 }}>
             <img
               src={organicGrocery}
-              style={{ height: "100%", objectFit: "contain", maxWidth: 720, width: "100%" }}
+              style={{ width: "100%", height: "100%", objectFit: "cover" }}
               role="presentation"
               alt="Stock image graphic with signage display showing how ePoster will look in a mall or retail environment "
             />
@@ -214,12 +202,12 @@ class ePosterTechnology extends Component {
             backgroundPosition: "center",
           }}
         >
-          <div className="etp-container">
-            <div className="etp-split">
-              <div style={{ flex: "1 1 600px", minWidth: 280, textAlign: "center" }}>
+          <div className="etp-container" style={{ padding: 0 }}>
+            <div className="etp-split row">
+              <div className="col-lg-6" style={{ minWidth: 280, textAlign: "center" }}>
                 <img src={spectraOverlay} style={{ width: "100%", maxWidth: 640, height: "auto" }} role="presentation" alt="E Ink Spectra 6 full-color ePaper sample showing vivid colors" />
               </div>
-              <div style={{ flex: "1 1 600px", minWidth: 280 }}>
+              <div className="col-lg-6" style={{ minWidth: 280 }}>
                 <div
                   className="EINKSPECTRA"
                   style={{
@@ -242,7 +230,7 @@ class ePosterTechnology extends Component {
         </div>
 
         {/* ===== ENHANCED COLOR GAMUT ===== */}
-        <div style={{ backgroundColor: "#ffffff", padding: 30 }}>
+        <div style={{ backgroundColor: "#ffffff", padding: 80 }}>
           <div className="etp-container tech-section" style={{ textAlign: "center", padding: 0 }}>
             <h2 style={{ ...sectionHeading, maxWidth: 930, margin: "100px auto 8px" }}>ENHANCED COLOR GAMUT BY E INK'S ADVANCED COLOR IMAGING ALGORITHM</h2>
             <p
@@ -253,11 +241,11 @@ class ePosterTechnology extends Component {
             >
               Four particle colors, six optical states
             </p>
-            <div className="etp-two-col" style={{ marginBottom: "100px" }}>
-              <div className="etp-col" style={{ textAlign: "center" }}>
+            <div className="etp-two-col row" style={{ marginBottom: "100px" }}>
+              <div className="etp-col col-lg-6" style={{ textAlign: "center" }}>
                 <img src={colorChartLeft} style={{ width: "100%", maxWidth: 580, height: "auto" }} role="presentation" alt="Chart showing the four particle colors used by E Ink Spectra 6" />
               </div>
-              <div className="etp-col" style={{ textAlign: "center" }}>
+              <div className="etp-col col-lg-6" style={{ textAlign: "center" }}>
                 <img src={colorChartRight} style={{ width: "100%", maxWidth: 580, height: "auto" }} role="presentation" alt="Chart showing the six optical states produced by E Ink Spectra 6" />
               </div>
             </div>
@@ -278,28 +266,28 @@ class ePosterTechnology extends Component {
           <div className="tech-section etp-container md:p-10" style={{ padding: 40, backgroundColor: "rgba(255,255,255,0.93)", marginTop: 80, marginBottom: 80 }}>
             <h2 style={sectionHeading}>SHARP'S IGZO BACKPLANE</h2>
             <div
-              className="d-flex flex-column flex-md-row"
+              className="row"
               style={{
                 gap: 40,
                 justifyContent: "center",
                 marginTop: 30,
               }}
             >
-              <div className="w-373 w-lg-auto custom-width">
+              <div className="w-373 w-lg-auto custom-width col-lg-4">
                 <p style={{ fontWeight: "bold", fontSize: "1.8rem" }}>IGZO technology enables:</p>
-                <ul style={{ fontSize: "1.5rem", lineHeight: 1.8 }}>
+                <ul style={{ fontSize: "1.5rem", lineHeight: 1.8, marginTop: 20 }}>
                   <li>Higher PPI resolutions</li>
                   <li>Faster array scanning</li>
                   <li>Very thin borders around the display matrix</li>
                 </ul>
               </div>
-              <div className="w-373 w-lg-auto custom-width">
+              <div className="w-373 w-lg-auto custom-width col-lg-4">
                 <p style={{ fontSize: "1.5rem" }}>
                   Indium-Gallium-Zinc-Oxide (IGZO) is a unique semi-conductor material that provides much improved TFT performance for active-matrix display arrays. It provides much higher electron
                   mobilities compared to traditional a-Si backplanes.
                 </p>
               </div>
-              <div className="w-373 w-lg-auto custom-width">
+              <div className="w-373 w-lg-auto custom-width col-lg-4">
                 <p style={{ fontSize: "1.5rem" }}>
                   Additionally, the IGZO backplane can run at higher voltages. This, along with running on Sharp's G8 fab, enables scalability up to 75"-plus diagonal size for large applications.
                 </p>
@@ -389,15 +377,15 @@ class ePosterTechnology extends Component {
         {/* ===== ISO POSTER SIZING STANDARDS ===== */}
         <div style={{ backgroundColor: "#ffffff" }}>
           <div className="etp-container">
-            <div className="etp-two-col">
-              <div className="etp-col">
+            <div className="etp-split row">
+              <div className="col-lg-6">
                 <h2 style={sectionHeading}>ISO POSTER SIZING STANDARDS</h2>
                 <p style={{ fontSize: "1.5rem" }}>International ISO paper size is commonly used outside the U.S. and refers to standardized poster sizes.</p>
                 <p style={{ fontSize: "1.5rem" }}>
                   ePoster display modules by Sharp are available currently in A1 and A2 poster sizes. An A3-sized module and an outdoor A1-sized Kaleido™ 3 display module are coming in Q2 2026.
                 </p>
               </div>
-              <div className="etp-col" style={{ textAlign: "center" }}>
+              <div className="col-lg-6" style={{ textAlign: "center" }}>
                 <img src={sizeGuide} style={{ width: "100%", maxWidth: 580, height: "auto" }} role="presentation" alt="ISO poster size guide diagram showing nested A0 through A4 paper sizes" />
               </div>
             </div>
@@ -500,14 +488,14 @@ class ePosterTechnology extends Component {
             backgroundPosition: "center",
           }}
         >
-          <div className="etp-container">
-            <div className="etp-split">
-              <div style={{ flex: "1 1 600px", minWidth: 280 }}>
+          <div className="etp-container" style={{ padding: 0 }}>
+            <div className="etp-split row">
+              <div className="col-lg-6">
                 <div
-                  className="p-2 p-md-4"
                   style={{
                     backgroundColor: "rgba(255,255,255,0.91)",
                     borderRadius: 4,
+                    padding: 40,
                   }}
                 >
                   <h2 style={sectionHeading}>WHY ePOSTER?</h2>
@@ -520,7 +508,7 @@ class ePosterTechnology extends Component {
                   </ul>
                 </div>
               </div>
-              <div style={{ flex: "1 1 600px", minWidth: 280, textAlign: "center" }}>
+              <div style={{ minWidth: 280, textAlign: "center" }} className="col-lg-6">
                 <img src={whyOverlay} style={{ width: "100%", maxWidth: 600, height: "auto" }} role="presentation" alt="ePoster module displaying a vertical poster in portrait orientation" />
               </div>
             </div>
@@ -544,14 +532,7 @@ class ePosterTechnology extends Component {
                   ePoster-enabled products can use solar, battery, PoE, or PoWiFi. The solution can be designed to utilize various connectivity options such as 4G, Wi-Fi, or LAN to take advantage of
                   existing cloud-based content management services.
                 </p>
-                <Button
-                  className="redButton"
-                  style={{ borderRadius: "5px" }}
-                  variant="primary"
-                  as={Link}
-                  to="/eposters-displays"
-                  style={{ backgroundColor: "rgb(237, 12, 12)", fontSize: "1.25rem", marginTop: 20 }}
-                >
+                <Button className="redNewButton" style={{ borderRadius: "5px" }} variant="primary" as={Link} to="/eposters-displays" style={{ marginTop: 20 }}>
                   See ePoster Overview
                 </Button>
               </div>
@@ -568,12 +549,11 @@ class ePosterTechnology extends Component {
             textAlign: "left",
             backgroundPosition: "top",
             marginLeft: 0,
-            padding: 0,
             alignItems: "stretch",
-            gap: 40,
+            padding: 0,
           }}
         >
-          <div className="col-lg-6" style={{ paddingRight: 0 }}>
+          <div className="col-lg-6 p-0">
             <img
               src={sayGoodbye}
               style={{ width: "100%", height: "100%", objectFit: "cover" }}
@@ -581,43 +561,45 @@ class ePosterTechnology extends Component {
               alt="Stock image graphic with signage display showing how ePoster will look in a mall or retail environment "
             />
           </div>
-          <div className="col-lg-6" style={{ maxWidth: 600 }}>
-            <h2 style={{ color: "black", paddingBottom: 30 }}>
-              <strong>SAY GOODBYE TO THE EXPENSE OF PRINTING</strong>
-            </h2>
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-              }}
-            >
-              <div style={{ fontSize: 24 }}>
-                E Ink's Spectra™ 6 and Sharp's IGZO backplane combine to provide high-resolution, high color gamut, print-quality image rendering. Low-power display operation enables paper-replacement
-                products that require no line power and can take advantage of various wireless connectivity options for content management.
+          <div className="col-lg-6">
+            <div style={{ padding: 80 }}>
+              <h2 style={{ color: "black", paddingBottom: 30 }}>
+                <strong>SAY GOODBYE TO THE EXPENSE OF PRINTING</strong>
+              </h2>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                }}
+              >
+                <div style={{ fontSize: 24 }}>
+                  E Ink's Spectra™ 6 and Sharp's IGZO backplane combine to provide high-resolution, high color gamut, print-quality image rendering. Low-power display operation enables
+                  paper-replacement products that require no line power and can take advantage of various wireless connectivity options for content management.
+                </div>
               </div>
-            </div>
-            <br />
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                alignItems: "center",
-                gap: 24,
-                marginTop: 24,
-              }}
-            >
-              <a href={technicalNotePDF} target="_blank" rel="noopener noreferrer" download>
-                <img
-                  src={technicalNoteThumb}
-                  style={{
-                    width: 160,
-                    height: "auto",
-                    border: "1px solid #ccc",
-                  }}
-                  alt="Thumbnail of the Sharp ePoster Technical Note PDF"
-                />
-              </a>
-              <p style={{ fontSize: "1.2rem", maxWidth: 250 }}>Download the Sharp ePoster Technical Note PDF.</p>
+              <br />
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                  gap: 24,
+                  marginTop: 24,
+                }}
+              >
+                <a href={technicalNotePDF} target="_blank" rel="noopener noreferrer" download>
+                  <img
+                    src={technicalNoteThumb}
+                    style={{
+                      width: 160,
+                      height: "auto",
+                      border: "1px solid #ccc",
+                    }}
+                    alt="Thumbnail of the Sharp ePoster Technical Note PDF"
+                  />
+                </a>
+                <p style={{ fontSize: "1.2rem", maxWidth: 250 }}>Download the Sharp ePoster Technical Note PDF.</p>
+              </div>
             </div>
           </div>
         </div>
