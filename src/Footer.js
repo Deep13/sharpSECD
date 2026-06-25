@@ -35,12 +35,7 @@ class Footer extends Component {
           }}
         >
           <div style={{ color: "white" }}>
-            <img
-              className="footer-logo"
-              alt="SHARP Logo"
-              src={logo}
-              style={{ width: 200 }}
-            />
+            <img className="footer-logo" alt="SHARP Logo" src={logo} style={{ width: 200 }} />
 
             <div style={{ marginLeft: 10 }}>
               Sharp Electronics Corporation, Device Division
@@ -69,32 +64,14 @@ class Footer extends Component {
           >
             Memory in Pixel LCDs
           </p>
-          <div
-            style={{ marginLeft: 10, display: "flex", flexDirection: "column" }}
-          >
-            <Link
-              to="/MemoryInPixel"
-              style={{ color: "white" }}
-              onClick={(event) => this.callFunct(event, "/MemoryInPixel")}
-            >
+          <div style={{ marginLeft: 10, display: "flex", flexDirection: "column" }}>
+            <Link to="/MemoryInPixel" style={{ color: "white" }} onClick={(event) => this.callFunct(event, "/MemoryInPixel")}>
               Overview
             </Link>
-            <Link
-              to="/memory-in-pixel-lcds-product"
-              style={{ color: "white" }}
-              onClick={(event) =>
-                this.callFunct(event, "/memory-in-pixel-lcds-product")
-              }
-            >
+            <Link to="/memory-in-pixel-lcds-product" style={{ color: "white" }} onClick={(event) => this.callFunct(event, "/memory-in-pixel-lcds-product")}>
               Find a Product
             </Link>
-            <Link
-              to="/memory-in-pixel-lcds-technology"
-              style={{ color: "white" }}
-              onClick={(event) =>
-                this.callFunct(event, "/memory-in-pixel-lcds-technology")
-              }
-            >
+            <Link to="/memory-in-pixel-lcds-technology" style={{ color: "white" }} onClick={(event) => this.callFunct(event, "/memory-in-pixel-lcds-technology")}>
               Technology
             </Link>
           </div>
@@ -108,15 +85,15 @@ class Footer extends Component {
           >
             ePoster Display Modules
           </p>
-          <div
-            style={{ marginLeft: 10, display: "flex", flexDirection: "column" }}
-          >
-            <Link
-              to="/eposters-displays"
-              style={{ color: "white" }}
-              onClick={(event) => this.callFunct(event, "/eposters-displays")}
-            >
+          <div style={{ marginLeft: 10, display: "flex", flexDirection: "column" }}>
+            <Link to="/eposters-displays" style={{ color: "white" }} onClick={(event) => this.callFunct(event, "/eposters-displays")}>
               Overview
+            </Link>
+            <Link to="/Eposters_product" style={{ color: "white" }} onClick={(event) => this.callFunct(event, "/Eposters_product")}>
+              Find a Product
+            </Link>
+            <Link to="/eposter-display-modules-technology" style={{ color: "white" }} onClick={(event) => this.callFunct(event, "/eposter-display-modules-technology")}>
+              Technology
             </Link>
           </div>
           <p
@@ -129,16 +106,8 @@ class Footer extends Component {
           >
             General Purpose LCDs
           </p>
-          <div
-            style={{ marginLeft: 10, display: "flex", flexDirection: "column" }}
-          >
-            <Link
-              to="/industrial-lcds-product"
-              style={{ color: "white" }}
-              onClick={(event) =>
-                this.callFunct(event, "/industrial-lcds-product")
-              }
-            >
+          <div style={{ marginLeft: 10, display: "flex", flexDirection: "column" }}>
+            <Link to="/industrial-lcds-product" style={{ color: "white" }} onClick={(event) => this.callFunct(event, "/industrial-lcds-product")}>
               Find a Product
             </Link>
           </div>
@@ -147,15 +116,16 @@ class Footer extends Component {
           className="col-md-3"
           style={{
             fontSize: "0.8rem",
+            display: "flex",
+            flexDirection: "column",
           }}
         >
           <span style={{ fontSize: "2em", color: "white" }}>About Sharp</span>
           <br />
-          <Link
-            to="/news"
-            style={{ color: "white" }}
-            onClick={(event) => this.callFunct(event, "/news")}
-          >
+          <Link to="/about" style={{ color: "white" }} onClick={(event) => this.callFunct(event, "/about")}>
+            About
+          </Link>
+          <Link to="/news" style={{ color: "white" }} onClick={(event) => this.callFunct(event, "/news")}>
             News
           </Link>
         </div>
@@ -165,31 +135,15 @@ class Footer extends Component {
             fontSize: "0.8rem",
           }}
         >
-          <Link
-            to="/contact"
-            style={{ color: "white", fontSize: "2em" }}
-            onClick={(event) => this.callFunct(event, "/contact")}
-          >
+          <Link to="/contact" style={{ color: "white", fontSize: "2em" }} onClick={(event) => this.callFunct(event, "/contact")}>
             Contact
           </Link>
           <br />
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            variant="link"
-            href="http://www.sharpusa.com/TermsAndConditions.aspx"
-            style={{ color: "white" }}
-          >
+          <a target="_blank" rel="noopener noreferrer" variant="link" href="http://www.sharpusa.com/TermsAndConditions.aspx" style={{ color: "white" }}>
             Terms & Condition
           </a>
           <br />
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            variant="link"
-            href="https://policies.sharpusa.com/Privacy"
-            style={{ color: "white" }}
-          >
+          <a target="_blank" rel="noopener noreferrer" variant="link" href="https://policies.sharpusa.com/Privacy" style={{ color: "white" }}>
             Privacy Policy
           </a>
         </div>

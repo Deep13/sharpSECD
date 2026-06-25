@@ -6,7 +6,6 @@ import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import Form1 from "react-bootstrap/Form";
 import Col from "react-bootstrap/Col";
-import Button from "react-bootstrap/Button";
 import Toast from "react-bootstrap/Toast";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import Loader from "react-loader-spinner";
@@ -29,11 +28,18 @@ AOS.init();
 
 const technicalNotePDF = require("../../assets/Documents/Sharp-ePoster-Technical-Note-June-2026.pdf");
 
-const sectionHeading = {
-  fontSize: "2.5rem",
-  fontWeight: "bold",
-  marginBottom: 24,
-};
+// Shared Tailwind class strings. Typography uses the design-system classes
+// (type-h1 / type-h2 / type-h3 / type-body1) defined in index.css.
+const etpContainer = "max-w-[1280px] w-full mx-auto p-20 tablet:px-7";
+const redNewBtn =
+  "inline-flex items-center justify-center h-[50px] w-[260px] text-[1.25rem] text-white no-underline bg-[#e41e26] hover:bg-[#a11b20] border border-[#e41e26] hover:border-[#a11b20] rounded-none transition-colors";
+
+// Table cell styles (replaces the .etp-table descendant selectors)
+const cellBase = "border border-[#d0d0d0] px-4 py-3.5 text-center align-middle text-[1.5rem] tablet:px-3 tablet:py-2.5 tablet:text-[0.85rem]";
+const headCell = `${cellBase} bg-[#e61e25] text-white font-bold`;
+const cornerCell = `${cellBase} bg-[#6e6e6e] text-white font-bold !text-left`;
+const featureCell = `${cellBase} bg-[#d9d9d9] text-black font-bold !text-left`;
+const bodyCell = `${cellBase} bg-white text-[#222222]`;
 
 class ePosterTechnology extends Component {
   constructor(props) {
@@ -49,6 +55,7 @@ class ePosterTechnology extends Component {
       submit: false,
       showError: false,
     };
+    this.myRef = React.createRef();
   }
   componentDidMount() {
     window.scrollTo({ top: 0, behavior: "auto" });
@@ -89,7 +96,7 @@ class ePosterTechnology extends Component {
   };
   render() {
     return (
-      <div style={{ overflowX: "hidden" }}>
+      <div className="overflow-x-hidden">
         <Helmet>
           <title>ePoster Display Module Technology | Sharp SECD</title>
           <meta
@@ -99,130 +106,77 @@ class ePosterTechnology extends Component {
         </Helmet>
 
         {/* ===== HERO ===== */}
-        <div
-          style={{
-            backgroundImage: `url(${heroBg})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "flex-end",
-            alignItems: "center",
-            minHeight: "100vh",
-          }}
-        >
-          <div
-            className="hero-overlay"
-            style={{
-              width: "100%",
-              backgroundColor: "rgba(255,255,255,0.83)",
-              padding: "36px 20px",
-              maxWidth: 1000,
-            }}
-          >
-            <div style={{ margin: "0 auto", textAlign: "center" }}>
-              <h1 className="etp-hero-headline" style={{ fontSize: "43pt", fontWeight: "bold", margin: 0 }}>
-                ePOSTER DISPLAY MODULE TECHNOLOGY
+        <div className="flex flex-col justify-end items-center min-h-screen bg-cover bg-center" style={{ backgroundImage: `url(${heroBg})` }}>
+          <div className="w-full max-w-[1000px] py-9 px-5 bg-[rgba(255,255,255,0.83)] mb-[28%] md:mb-[6%] ">
+            <div className="mx-auto text-center">
+              <h1 className="type-h1 m-0">
+                ePOSTER <br className="hidden mobile:block" />
+                DISPLAY MODULE TECHNOLOGY
               </h1>
             </div>
           </div>
         </div>
 
         {/* ===== INTRO ===== */}
-        <div style={{ backgroundColor: "#ffffff", minHeight: "80vh", display: "flex", justifyContent: "center", alignItems: "center" }}>
-          <div className="etp-container" style={{ textAlign: "center" }}>
-            <h2 style={{ ...sectionHeading, maxWidth: 790, margin: "0 auto 24px", fontSize: "33pt" }}>ENABLING DIGITAL SOLUTIONS TO REPLACE POSTER PRINTING</h2>
-            <p style={{ maxWidth: 1200, margin: "0 auto 30px", fontSize: "19pt" }}>
+        <div className="bg-white min-h-[80vh] flex justify-center items-center">
+          <div className={`${etpContainer} text-center`}>
+            <h2 className="type-h2 max-w-[790px] mx-auto mb-6">ENABLING DIGITAL SOLUTIONS TO REPLACE POSTER PRINTING</h2>
+            <p className="type-body1 max-w-[1200px] mx-auto mb-[30px]">
               Sharp is an industry leader in low-power display technology. Our solutions are now augmented with the near-zero-power{" "}
-              <Link to="/eposters-displays" style={{ color: "inherit", textDecoration: "underline" }}>
+              <Link to="/eposters-displays" className="text-inherit underline">
                 ePoster display module
               </Link>
               . ePoster combines Sharp's IGZO backplane with E Ink's latest full-color Spectra™ 6 reflective ePaper technology. This powerful combination brings unique product opportunities to the
               digital paper-replacement market.
             </p>
-            <Button className="redNewButton" variant="primary" as={Link} to="/contact">
+            <button onClick={() => this.myRef.current.scrollIntoView()} className={redNewBtn}>
               Contact Sharp
-            </Button>
+            </button>
+            {/* <Link to="/contact" className={redNewBtn}>
+              Contact Sharp
+            </Link> */}
           </div>
         </div>
 
         {/* ===== FEATURES INCLUDE ===== */}
-        <div
-          className="row key-section"
-          tabIndex={0}
-          style={{
-            background: "#fff",
-            width: "100%",
-            textAlign: "left",
-            backgroundPosition: "top",
-            marginLeft: 0,
-            padding: 0,
-            display: "flex",
-            alignItems: "stretch",
-          }}
-        >
-          <div className="col-lg-6" style={{ padding: 80, display: "flex", justifyContent: "center", alignItems: "center" }}>
-            <div style={{ maxWidth: 600 }}>
-              <h2 style={{ color: "black", paddingBottom: 30, fontSize: "33pt" }}>
-                <strong>FEATURES INCLUDE:</strong>
-              </h2>
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                }}
-              >
-                <ul style={{ fontSize: "20pt", lineHeight: 2, paddingLeft: 50, marginTop: 20 }}>
-                  <li>Resolution up to 200 PPI</li>
-                  <li>60k color gamut</li>
-                  <li>Reflectivity = 30%</li>
-                  <li>Contrast Ratio = 20:1</li>
-                  <li>Zero-power static image hold</li>
-                  <li>Operating Temp = 0°C to +50°C</li>
-                  <li>Image update time = 21s</li>
-                </ul>
-              </div>
-            </div>
+        <div className="flex gap-[20px] lg:gap-[40px] items-stretch flex-col-reverse md:flex-row w-full bg-white text-left" tabIndex={0}>
+          <div className="w-full md:w-1/2 flex items-center justify-center flex-col p-20 tablet:px-7">
+            <h2 className="type-h2 text-black ">FEATURES INCLUDE:</h2>
+            <ul className="type-body1 pl-[50px] mt-5 list-disc">
+              <li>Resolution up to 200 PPI</li>
+              <li>60k color gamut</li>
+              <li>Reflectivity = 30%</li>
+              <li>Contrast Ratio = 20:1</li>
+              <li>Zero-power static image hold</li>
+              <li>Operating Temp = 0°C to +50°C</li>
+              <li>Image update time = 21s</li>
+            </ul>
           </div>
-          <div className="col-lg-6" style={{ paddingRight: 0 }}>
+          <div className="w-full md:w-1/2">
             <img
               src={organicGrocery}
-              style={{ width: "100%", height: "100%", objectFit: "cover" }}
+              className="w-full h-full object-cover"
               role="presentation"
-              alt="Stock image graphic with signage display showing how ePoster will look in a mall or retail environment "
+              alt="Stock graphic with signage display showing how ePoster will look in a mall or retail environment "
             />
           </div>
         </div>
 
         {/* ===== E INK SPECTRA 6 ===== */}
-        <div
-          style={{
-            backgroundImage: `url(${spectraBg})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
-          <div className="etp-container" style={{ padding: 0 }}>
-            <div className="etp-split row">
-              <div className="col-lg-6" style={{ minWidth: 280, textAlign: "center" }}>
-                <img src={spectraOverlay} style={{ width: "100%", maxWidth: 640, height: "auto" }} role="presentation" alt="E Ink Spectra 6 full-color ePaper sample showing vivid colors" />
-              </div>
-              <div className="col-lg-6" style={{ minWidth: 280 }}>
-                <div
-                  className="EINKSPECTRA"
-                  style={{
-                    backgroundColor: "rgba(255,255,255,0.93)",
-                    borderRadius: 4,
-                  }}
-                >
-                  <div className="tech-section" style={{ maxWidth: 500 }}>
-                    <h2 style={sectionHeading}>E INK SPECTRA™ 6</h2>
-                    <p style={{ fontSize: "1.5rem" }}>
-                      E Ink's latest color technology moves well past the performance of the previous versions. It can produce vivid, full-color images, that are capable of print-quality rendering.
-                      This is due to E Ink's patented multi-color, micro-cup technology coupled with their advanced color imaging algorithm. It utilizes the six primary colors of Red, Green, Blue,
-                      Yellow, Black, and White.
-                    </p>
-                  </div>
+        <div className="bg-cover bg-center flex justify-center" style={{ backgroundImage: `url(${spectraBg})` }}>
+          <div className="max-w-[1280px] flex gap-[0px] md:gap-[20px] lg:gap-[40px] items-stretch flex-col md:flex-row w-full text-left">
+            <div className="w-full md:w-1/2 flex items-center justify-center p-0 px-4 md:p-20 tablet:px-7">
+              <img src={spectraOverlay} className="w-full max-w-[490px] h-auto" role="presentation" alt="E Ink Spectra 6 full-color ePaper sample showing vivid colors" />
+            </div>
+            <div className="w-full md:w-1/2 flex items-center justify-center md:justify-start p-20 mobile:pt-0 px-4 tablet:px-7">
+              <div className="bg-[rgba(255,255,255,0.93)] rounded-[4px] p-[4rem] tablet:p-10">
+                <div className="max-w-[500px]">
+                  <h2 className="type-h2 mb-6">E INK SPECTRA™ 6</h2>
+                  <p className="type-body1">
+                    E Ink's latest color technology moves well past the performance of the previous versions. It can produce vivid, full-color images, that are capable of print-quality rendering. This
+                    is due to E Ink's patented multi-color, micro-cup technology coupled with their advanced color imaging algorithm. It utilizes the six primary colors of Red, Green, Blue, Yellow,
+                    Black, and White.
+                  </p>
                 </div>
               </div>
             </div>
@@ -230,65 +184,42 @@ class ePosterTechnology extends Component {
         </div>
 
         {/* ===== ENHANCED COLOR GAMUT ===== */}
-        <div style={{ backgroundColor: "#ffffff", padding: 80 }}>
-          <div className="etp-container tech-section" style={{ textAlign: "center", padding: 0 }}>
-            <h2 style={{ ...sectionHeading, maxWidth: 930, margin: "100px auto 8px" }}>ENHANCED COLOR GAMUT BY E INK'S ADVANCED COLOR IMAGING ALGORITHM</h2>
-            <p
-              style={{
-                fontSize: "1.5rem",
-                marginBottom: 30,
-              }}
-            >
-              Four particle colors, six optical states
-            </p>
-            <div className="etp-two-col row" style={{ marginBottom: "100px" }}>
-              <div className="etp-col col-lg-6" style={{ textAlign: "center" }}>
-                <img src={colorChartLeft} style={{ width: "100%", maxWidth: 580, height: "auto" }} role="presentation" alt="Chart showing the four particle colors used by E Ink Spectra 6" />
+        <div className="bg-white flex justify-center py-20 px-10 md:p-[100px]">
+          <div className="text-center max-w-[1280px] flex items-center flex-col justify-center">
+            <h2 className="type-h2 max-w-[930px] mb-2">ENHANCED COLOR GAMUT BY E INK'S ADVANCED COLOR IMAGING ALGORITHM</h2>
+            <p className="type-body1 mb-[30px]">Four particle colors, six optical states</p>
+            <div className="flex gap-10 justify-center items-center flex-col md:flex-row">
+              <div className="text-center">
+                <img src={colorChartLeft} className="w-full  h-auto" role="presentation" alt="Chart showing the four particle colors used by E Ink Spectra 6" />
               </div>
-              <div className="etp-col col-lg-6" style={{ textAlign: "center" }}>
-                <img src={colorChartRight} style={{ width: "100%", maxWidth: 580, height: "auto" }} role="presentation" alt="Chart showing the six optical states produced by E Ink Spectra 6" />
+              <div className="text-center">
+                <img src={colorChartRight} className="w-full  h-auto" role="presentation" alt="Chart showing the six optical states produced by E Ink Spectra 6" />
               </div>
             </div>
           </div>
         </div>
 
         {/* ===== SHARP'S IGZO BACKPLANE ===== */}
-        <div
-          style={{
-            backgroundImage: `url(${igzoBg})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            display: "flex",
-            justifyContent: "center",
-            padding: "30px",
-          }}
-        >
-          <div className="tech-section etp-container md:p-10" style={{ padding: 40, backgroundColor: "rgba(255,255,255,0.93)", marginTop: 80, marginBottom: 80 }}>
-            <h2 style={sectionHeading}>SHARP'S IGZO BACKPLANE</h2>
-            <div
-              className="row"
-              style={{
-                gap: 40,
-                justifyContent: "center",
-                marginTop: 30,
-              }}
-            >
-              <div className="w-373 w-lg-auto custom-width col-lg-4">
-                <p style={{ fontWeight: "bold", fontSize: "1.8rem" }}>IGZO technology enables:</p>
-                <ul style={{ fontSize: "1.5rem", lineHeight: 1.8, marginTop: 20 }}>
+        <div className="bg-cover bg-center flex justify-center p-[40px] md:p-[80px]" style={{ backgroundImage: `url(${igzoBg})` }}>
+          <div className="max-w-[1280px] w-full mx-auto p-10 bg-[rgba(255,255,255,0.93)]">
+            <h2 className="type-h2 mb-6">SHARP'S IGZO BACKPLANE</h2>
+            <div className="flex gap-10 justify-center mt-[30px] flex-col md:flex-row">
+              <div className="w-full md:w-1/3">
+                <p className="type-h3">IGZO technology enables:</p>
+                <ul className="type-body1 list-disc pl-5 md:pl-10">
                   <li>Higher PPI resolutions</li>
                   <li>Faster array scanning</li>
                   <li>Very thin borders around the display matrix</li>
                 </ul>
               </div>
-              <div className="w-373 w-lg-auto custom-width col-lg-4">
-                <p style={{ fontSize: "1.5rem" }}>
+              <div className="w-full md:w-1/3">
+                <p className="type-body1">
                   Indium-Gallium-Zinc-Oxide (IGZO) is a unique semi-conductor material that provides much improved TFT performance for active-matrix display arrays. It provides much higher electron
                   mobilities compared to traditional a-Si backplanes.
                 </p>
               </div>
-              <div className="w-373 w-lg-auto custom-width col-lg-4">
-                <p style={{ fontSize: "1.5rem" }}>
+              <div className="w-full md:w-1/3">
+                <p className="type-body1">
                   Additionally, the IGZO backplane can run at higher voltages. This, along with running on Sharp's G8 fab, enables scalability up to 75"-plus diagonal size for large applications.
                 </p>
               </div>
@@ -297,76 +228,58 @@ class ePosterTechnology extends Component {
         </div>
 
         {/* ===== COMPARISON TABLE ===== */}
-        <div style={{ backgroundColor: "#ffffff", margin: "80px 0px", marginBottom: 40 }}>
-          <div className="etp-container">
-            <h2 style={{ ...sectionHeading, textAlign: "center" }}>COMPARISON OF ePOSTER TO AN a-Si MODULE</h2>
-            <div className="etp-table-wrap">
-              <table className="etp-table">
+        <div className="bg-white">
+          <div className={etpContainer}>
+            <h2 className="type-h2 mb-6 text-center">COMPARISON OF ePOSTER TO AN a-Si MODULE</h2>
+            <div className="w-full overflow-x-auto ">
+              <table className="border-collapse w-full min-w-[700px] mx-auto">
                 <thead>
                   <tr>
-                    <th className="etp-corner" style={{ width: 300 }}>
-                      Features
-                    </th>
-                    <th style={{ width: 450 }}>31" Module</th>
-                    <th style={{ width: 450 }}>Sharp A2 ePoster</th>
+                    <th className={`${cornerCell} w-[300px]`}>Features</th>
+                    <th className={`${headCell} w-[450px]`}>31" Module</th>
+                    <th className={`${headCell} w-[450px]`}>Sharp A2 ePoster</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td className="etp-feature" style={{ border: "1px solid #ffffff" }}>
-                      Backplane + EPD
-                    </td>
-                    <td>a-Si + Spectra™ 6</td>
-                    <td>IGZO + Spectra™ 6</td>
+                    <td className={featureCell}>Backplane + EPD</td>
+                    <td className={bodyCell}>a-Si + Spectra™ 6</td>
+                    <td className={bodyCell}>IGZO + Spectra™ 6</td>
                   </tr>
                   <tr>
-                    <td className="etp-feature" style={{ border: "1px solid #ffffff" }}>
-                      Panel Size
-                    </td>
-                    <td>31.5" Landscape</td>
-                    <td>28.5" Portrait</td>
+                    <td className={featureCell}>Panel Size</td>
+                    <td className={bodyCell}>31.5" Landscape</td>
+                    <td className={bodyCell}>28.5" Portrait</td>
                   </tr>
                   <tr>
-                    <td className="etp-feature" style={{ border: "1px solid #ffffff" }}>
-                      Resolution
-                    </td>
-                    <td>2,560 × 1,440</td>
-                    <td>2,160 × 3,060</td>
+                    <td className={featureCell}>Resolution</td>
+                    <td className={bodyCell}>2,560 × 1,440</td>
+                    <td className={bodyCell}>2,160 × 3,060</td>
                   </tr>
                   <tr>
-                    <td className="etp-feature" style={{ border: "1px solid #ffffff" }}>
-                      PPI
-                    </td>
-                    <td>94 PPI</td>
-                    <td>131 PPI</td>
+                    <td className={featureCell}>PPI</td>
+                    <td className={bodyCell}>94 PPI</td>
+                    <td className={bodyCell}>131 PPI</td>
                   </tr>
                   <tr>
-                    <td className="etp-feature" style={{ border: "1px solid #ffffff" }}>
-                      Border Size
-                    </td>
-                    <td>L/R 3.6mm T 4.8</td>
-                    <td>L/R/T 3.0mm</td>
+                    <td className={featureCell}>Border Size</td>
+                    <td className={bodyCell}>L/R 3.6mm T 4.8</td>
+                    <td className={bodyCell}>L/R/T 3.0mm</td>
                   </tr>
                   <tr>
-                    <td className="etp-feature" style={{ border: "1px solid #ffffff" }}>
-                      Module
-                    </td>
-                    <td>EPD module + PMIC Bd.</td>
-                    <td>EPD module + TCON Bd.</td>
+                    <td className={featureCell}>Module</td>
+                    <td className={bodyCell}>EPD module + PMIC Bd.</td>
+                    <td className={bodyCell}>EPD module + TCON Bd.</td>
                   </tr>
                   <tr>
-                    <td className="etp-feature" style={{ border: "1px solid #ffffff" }}>
-                      Host I/F
-                    </td>
-                    <td>SPI</td>
-                    <td>USB</td>
+                    <td className={featureCell}>Host I/F</td>
+                    <td className={bodyCell}>SPI</td>
+                    <td className={bodyCell}>USB</td>
                   </tr>
                   <tr>
-                    <td className="etp-feature" style={{ border: "1px solid #ffffff" }}>
-                      Image Update
-                    </td>
-                    <td>Flashing Update</td>
-                    <td>Scrolling Update</td>
+                    <td className={featureCell}>Image Update</td>
+                    <td className={bodyCell}>Flashing Update</td>
+                    <td className={bodyCell}>Scrolling Update</td>
                   </tr>
                 </tbody>
               </table>
@@ -375,131 +288,101 @@ class ePosterTechnology extends Component {
         </div>
 
         {/* ===== ISO POSTER SIZING STANDARDS ===== */}
-        <div style={{ backgroundColor: "#ffffff" }}>
-          <div className="etp-container">
-            <div className="etp-split row">
-              <div className="col-lg-6">
-                <h2 style={sectionHeading}>ISO POSTER SIZING STANDARDS</h2>
-                <p style={{ fontSize: "1.5rem" }}>International ISO paper size is commonly used outside the U.S. and refers to standardized poster sizes.</p>
-                <p style={{ fontSize: "1.5rem" }}>
+        <div className="bg-white">
+          <div className={etpContainer}>
+            <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-10">
+              <div className="w-full md:w-1/2">
+                <h2 className="type-h2 mb-6">ISO POSTER SIZING STANDARDS</h2>
+                <p className="type-body1">International ISO paper size is commonly used outside the U.S. and refers to standardized poster sizes.</p>
+                <p className="type-body1">
                   ePoster display modules by Sharp are available currently in A1 and A2 poster sizes. An A3-sized module and an outdoor A1-sized Kaleido™ 3 display module are coming in Q2 2026.
                 </p>
               </div>
-              <div className="col-lg-6" style={{ textAlign: "center" }}>
-                <img src={sizeGuide} style={{ width: "100%", maxWidth: 580, height: "auto" }} role="presentation" alt="ISO poster size guide diagram showing nested A0 through A4 paper sizes" />
+              <div className="w-full md:w-1/2 text-center">
+                <img src={sizeGuide} className="w-full h-auto" role="presentation" alt="ISO poster size guide diagram showing nested A0 through A4 paper sizes" />
               </div>
             </div>
           </div>
         </div>
 
         {/* ===== INDOOR ePOSTER MODULE SPECIFICATIONS ===== */}
-        <div style={{ backgroundColor: "#ffffff" }}>
-          <div className="etp-container">
-            <h2 style={sectionHeading}>INDOOR ePOSTER MODULE SPECIFICATIONS</h2>
-            <div className="etp-table-wrap">
-              <table className="etp-table">
+        <div className="bg-white pb-0 md:pb-[30px]">
+          <div className={etpContainer}>
+            <h2 className="type-h2 mb-6">INDOOR ePOSTER MODULE SPECIFICATIONS</h2>
+            <div className="w-full overflow-x-auto">
+              <table className="border-collapse w-full min-w-[700px] mx-auto">
                 <thead>
                   <tr>
-                    <th className="etp-corner" style={{ width: 300 }}>
-                      Specs
-                    </th>
-                    <th>A1 size - 40.5 inch</th>
-                    <th>A2 size - 28.5 inch</th>
-                    <th>A3 size - 20.2 inch</th>
+                    <th className={`${cornerCell} w-[300px]`}>Specs</th>
+                    <th className={headCell}>A1 size - 40.5 inch</th>
+                    <th className={headCell}>A2 size - 28.5 inch</th>
+                    <th className={headCell}>A3 size - 20.2 inch</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td className="etp-feature" style={{ border: "1px solid #ffffff" }}>
-                      Model No.
-                    </td>
-                    <td>LP405A6NW01</td>
-                    <td>LP285A6NW01</td>
-                    <td>LP202A6BW01</td>
+                    <td className={featureCell}>Model No.</td>
+                    <td className={bodyCell}>LP405A6NW01</td>
+                    <td className={bodyCell}>LP285A6NW01</td>
+                    <td className={bodyCell}>LP202A6BW01</td>
                   </tr>
                   <tr>
-                    <td className="etp-feature" style={{ border: "1px solid #ffffff" }}>
-                      Resolution (pixel)
-                    </td>
-                    <td>3,060 × 4,320</td>
-                    <td>2,160 × 3,060</td>
-                    <td>1,530 × 2,160</td>
+                    <td className={featureCell}>Resolution (pixel)</td>
+                    <td className={bodyCell}>3,060 × 4,320</td>
+                    <td className={bodyCell}>2,160 × 3,060</td>
+                    <td className={bodyCell}>1,530 × 2,160</td>
                   </tr>
                   <tr>
-                    <td className="etp-feature" style={{ border: "1px solid #ffffff" }}>
-                      Pixel Density
-                    </td>
-                    <td>131 ppi</td>
-                    <td>131 ppi</td>
-                    <td>131 ppi</td>
+                    <td className={featureCell}>Pixel Density</td>
+                    <td className={bodyCell}>131 ppi</td>
+                    <td className={bodyCell}>131 ppi</td>
+                    <td className={bodyCell}>131 ppi</td>
                   </tr>
                   <tr>
-                    <td className="etp-feature" style={{ border: "1px solid #ffffff" }}>
-                      Active Area (mm)
-                    </td>
-                    <td>594.56 × 839.38</td>
-                    <td>418.00 × 592.17</td>
-                    <td>297.28 × 419.69</td>
+                    <td className={featureCell}>Active Area (mm)</td>
+                    <td className={bodyCell}>594.56 × 839.38</td>
+                    <td className={bodyCell}>418.00 × 592.17</td>
+                    <td className={bodyCell}>297.28 × 419.69</td>
                   </tr>
                   <tr>
-                    <td className="etp-feature" style={{ border: "1px solid #ffffff" }}>
-                      Panel Border (mm)
-                    </td>
-                    <td>L/R: 3.0 Top: 5.0 Bottom: 9.9</td>
-                    <td>L/R: 3.0 Top: 3.0 Bottom: 6.9</td>
-                    <td>L/R: 3.0 Top: 3.0 Bottom: 7.7</td>
+                    <td className={featureCell}>Panel Border (mm)</td>
+                    <td className={bodyCell}>L/R: 3.0 Top: 5.0 Bottom: 9.9</td>
+                    <td className={bodyCell}>L/R: 3.0 Top: 3.0 Bottom: 6.9</td>
+                    <td className={bodyCell}>L/R: 3.0 Top: 3.0 Bottom: 7.7</td>
                   </tr>
                   <tr>
-                    <td className="etp-feature" style={{ border: "1px solid #ffffff" }}>
-                      Reflectance (@ SCE*)
-                    </td>
-                    <td>34%</td>
-                    <td>34%</td>
-                    <td>34%</td>
+                    <td className={featureCell}>Reflectance (@ SCE*)</td>
+                    <td className={bodyCell}>34%</td>
+                    <td className={bodyCell}>34%</td>
+                    <td className={bodyCell}>34%</td>
                   </tr>
                   <tr>
-                    <td className="etp-feature" style={{ border: "1px solid #ffffff" }}>
-                      Contrast Ratio (@ SCE*)
-                    </td>
-                    <td>22 : 1</td>
-                    <td>22 : 1</td>
-                    <td>22 : 1</td>
+                    <td className={featureCell}>Contrast Ratio (@ SCE*)</td>
+                    <td className={bodyCell}>22 : 1</td>
+                    <td className={bodyCell}>22 : 1</td>
+                    <td className={bodyCell}>22 : 1</td>
                   </tr>
                   <tr>
-                    <td className="etp-feature" style={{ border: "1px solid #ffffff" }}>
-                      Operating Temperature
-                    </td>
-                    <td>0 to 50°C</td>
-                    <td>0 to 50°C</td>
-                    <td>0 to 50°C</td>
+                    <td className={featureCell}>Operating Temperature</td>
+                    <td className={bodyCell}>0 to 50°C</td>
+                    <td className={bodyCell}>0 to 50°C</td>
+                    <td className={bodyCell}>0 to 50°C</td>
                   </tr>
                 </tbody>
               </table>
             </div>
-            <p style={{ fontSize: "0.85rem", marginTop: 12, color: "#555" }}>*SCE = Diffuse reflectance. Measurements with specular reflection removed.</p>
+            <p className="text-[0.85rem] mt-3 text-[#555555]">*SCE = Diffuse reflectance. Measurements with specular reflection removed.</p>
           </div>
         </div>
 
         {/* ===== WHY ePOSTER? ===== */}
-        <div
-          style={{
-            backgroundImage: `url(${whyBg})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
-          <div className="etp-container" style={{ padding: 0 }}>
-            <div className="etp-split row">
-              <div className="col-lg-6">
-                <div
-                  style={{
-                    backgroundColor: "rgba(255,255,255,0.91)",
-                    borderRadius: 4,
-                    padding: 40,
-                  }}
-                >
-                  <h2 style={sectionHeading}>WHY ePOSTER?</h2>
-                  <ul style={{ fontSize: "1.5rem", lineHeight: 1.9, paddingLeft: 20 }}>
+        <div className="bg-cover bg-center" style={{ backgroundImage: `url(${whyBg})` }}>
+          <div className={`${etpContainer} !p-0`}>
+            <div className="flex flex-col-reverse md:flex-row items-center justify-center gap:0 md:gap-10">
+              <div className="w-full md:w-1/2 pl-0 md:pl-10">
+                <div className="bg-[rgba(255,255,255,0.91)] rounded-[4px] p-12 m-[20px] md:m-0 mb-[80px] md:mb-0">
+                  <h2 className="type-h2 mb-6">WHY ePOSTER?</h2>
+                  <ul className="type-body1 pl-5 list-disc">
                     <li>A2 portrait mode is perfect for replacing paper posters.</li>
                     <li>Higher resolution/higher PPI enables print-quality images.</li>
                     <li>Small borders enable small mullions for tiling applications.</li>
@@ -508,156 +391,80 @@ class ePosterTechnology extends Component {
                   </ul>
                 </div>
               </div>
-              <div style={{ minWidth: 280, textAlign: "center" }} className="col-lg-6">
-                <img src={whyOverlay} style={{ width: "100%", maxWidth: 600, height: "auto" }} role="presentation" alt="ePoster module displaying a vertical poster in portrait orientation" />
+              <div className="w-full md:w-1/2 text-center">
+                <img src={whyOverlay} className="w-full h-auto" role="presentation" alt="ePoster module displaying a vertical poster in portrait orientation" />
               </div>
             </div>
           </div>
         </div>
 
         {/* ===== SUPER LOW POWER ===== */}
-        <div style={{ backgroundColor: "#ffffff", margin: "80px 0px" }}>
-          <div className="etp-container">
-            <h2 style={sectionHeading}>SUPER LOW POWER WITH NO BACKLIGHT REQUIRED</h2>
-            <div className="etp-two-col" style={{ alignItems: "flex-start" }}>
-              <div className="etp-col">
-                <p style={{ fontSize: "1.5rem" }}>
+        <div className="bg-white">
+          <div className={etpContainer}>
+            <h2 className="type-h2 mb-6">SUPER LOW POWER WITH NO BACKLIGHT REQUIRED</h2>
+            <div className="flex flex-col gap-10 justify-center items-start">
+              <div className="">
+                <p className="type-body1">
                   Reflective performance negates the need for the high-power backlight required for traditional transmissive LCD displays. Also, the image update power is only 2.5W and then zero power
                   until the next update. This greatly simplifies thermal design considerations and enables installations that don't require line power, negating the time and expense of permits and
                   power installation.
                 </p>
               </div>
-              <div className="etp-col" style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-                <p style={{ fontSize: "1.5rem" }}>
+              <div className="flex flex-col items-center">
+                <p className="type-body1">
                   ePoster-enabled products can use solar, battery, PoE, or PoWiFi. The solution can be designed to utilize various connectivity options such as 4G, Wi-Fi, or LAN to take advantage of
                   existing cloud-based content management services.
                 </p>
-                <Button className="redNewButton" style={{ borderRadius: "5px" }} variant="primary" as={Link} to="/eposters-displays" style={{ marginTop: 20 }}>
+                <Link to="/eposters-displays" className={`${redNewBtn} mt-5`}>
                   See ePoster Overview
-                </Button>
+                </Link>
               </div>
             </div>
           </div>
         </div>
+
         {/* ===== SAY GOODBYE TO THE EXPENSE OF PRINTING ===== */}
-        <div
-          className="row key-section flex flex-column flex-md-row"
-          tabIndex={0}
-          style={{
-            background: "#fff",
-            width: "100%",
-            textAlign: "left",
-            backgroundPosition: "top",
-            marginLeft: 0,
-            alignItems: "stretch",
-            padding: 0,
-          }}
-        >
-          <div className="col-lg-6 p-0">
-            <img
-              src={sayGoodbye}
-              style={{ width: "100%", height: "100%", objectFit: "cover" }}
-              role="presentation"
-              alt="Stock image graphic with signage display showing how ePoster will look in a mall or retail environment "
-            />
+        <div className="flex flex-col md:flex-row w-full bg-white text-left gap-10" tabIndex={0}>
+          <div className="w-full md:w-1/2 p-0">
+            <img src={sayGoodbye} className="w-full h-full object-cover" role="presentation" alt="Stock graphic with signage display showing how ePoster will look in a mall or retail environment " />
           </div>
-          <div className="col-lg-6">
-            <div style={{ padding: 80 }}>
-              <h2 style={{ color: "black", paddingBottom: 30 }}>
-                <strong>SAY GOODBYE TO THE EXPENSE OF PRINTING</strong>
-              </h2>
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                }}
-              >
-                <div style={{ fontSize: 24 }}>
+          <div className="w-full md:w-1/2 mb-[80px] md:pb-0">
+            <div className="p-10">
+              <h2 className="type-h2 text-black pb-[30px]">SAY GOODBYE TO THE EXPENSE OF PRINTING</h2>
+              <div className="flex flex-col">
+                <div className="type-body1">
                   E Ink's Spectra™ 6 and Sharp's IGZO backplane combine to provide high-resolution, high color gamut, print-quality image rendering. Low-power display operation enables
                   paper-replacement products that require no line power and can take advantage of various wireless connectivity options for content management.
                 </div>
               </div>
               <br />
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "row",
-                  alignItems: "center",
-                  gap: 24,
-                  marginTop: 24,
-                }}
-              >
+              <div className="flex flex-row items-center gap-6 mt-6">
                 <a href={technicalNotePDF} target="_blank" rel="noopener noreferrer" download>
-                  <img
-                    src={technicalNoteThumb}
-                    style={{
-                      width: 160,
-                      height: "auto",
-                      border: "1px solid #ccc",
-                    }}
-                    alt="Thumbnail of the Sharp ePoster Technical Note PDF"
-                  />
+                  <img src={technicalNoteThumb} className="w-[160px] h-auto border border-[#cccccc]" alt="Thumbnail of the Sharp ePoster Technical Note PDF" />
                 </a>
-                <p style={{ fontSize: "1.2rem", maxWidth: 250 }}>Download the Sharp ePoster Technical Note PDF.</p>
+                <p className="text-[1.2rem] max-w-[250px]">Download the Sharp ePoster Technical Note PDF.</p>
               </div>
             </div>
           </div>
         </div>
 
         {/* ===== CONTACT FORM ===== */}
-        <div
-          style={{
-            backgroundColor: "rgba(45,47,65,1)",
-            width: "100%",
-            justifyContent: "center",
-            display: "flex",
-          }}
-        >
-          <div
-            className="row"
-            style={{
-              maxWidth: "1140px",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              flexDirection: "column",
-              padding: 20,
-              margin: 0,
-            }}
-          >
+        <div ref={this.myRef} className="bg-[rgba(45,47,65,1)] w-full flex justify-center">
+          <div className="flex flex-col items-center justify-center max-w-[1280px] p-5 m-0">
             <div>
-              <div className="padding-top-50"></div>
+              <div className="pt-[50px]"></div>
               <div>
-                <h1
-                  className="mb-2-5"
-                  style={{
-                    fontSize: "3rem",
-                    textAlign: "center",
-                    color: "white",
-                  }}
-                >
-                  <strong>
-                    IS SHARP'S ePOSTER RIGHT FOR YOUR
-                    <br />
-                    PAPER REPLACEMENT PRODUCT?
-                    <br />
-                    LET'S TALK.
-                  </strong>
+                <h1 className="type-h1 text-center text-white">
+                  IS SHARP'S ePOSTER RIGHT FOR YOUR PAPER REPLACEMENT PRODUCT?
+                  <br />
+                  LET'S TALK.
                 </h1>
-                <p
-                  style={{
-                    color: "white",
-                    textAlign: "center",
-                    padding: "20px 40px",
-                  }}
-                >
-                  Provide your contact info and we'll reach out ASAP.
-                </p>
+                <p className="type-body1 text-white text-center py-1 px-10">Provide your contact info and we'll reach out ASAP.</p>
               </div>
             </div>
-            <div className="contact-resp">
-              <Form1 noValidate className="ePosterDisplaysTechnology" onSubmit={this.onSubmit}>
-                <Form1.Row style={{ paddingBottom: 10 }}>
+            <div className="w-[70%] mobile:w-[98%]">
+              <Form1 noValidate onSubmit={this.onSubmit} className="EposterTechnology">
+                <Form1.Row className="pb-2.5">
                   <Col>
                     <Form1.Control
                       aria-label="Email"
@@ -671,7 +478,7 @@ class ePosterTechnology extends Component {
                     <Form1.Control.Feedback type="invalid">Please provide a valid email id.</Form1.Control.Feedback>
                   </Col>
                 </Form1.Row>
-                <Form1.Row style={{ paddingBottom: 10 }}>
+                <Form1.Row className="pb-2.5">
                   <Col>
                     <Form1.Control
                       aria-required={true}
@@ -684,7 +491,7 @@ class ePosterTechnology extends Component {
                     <Form1.Control.Feedback type="invalid">Name field cannot be empty</Form1.Control.Feedback>
                   </Col>
                 </Form1.Row>
-                <Form1.Row style={{ paddingBottom: 10, display: "flex", gap: 10 }}>
+                <Form1.Row className="pb-2.5 flex gap-2.5">
                   <Col>
                     <Form1.Control
                       aria-label="Country Code"
@@ -709,7 +516,7 @@ class ePosterTechnology extends Component {
                     <Form1.Control.Feedback type="invalid">Phone number field cannot be empty</Form1.Control.Feedback>
                   </Col>
                 </Form1.Row>
-                <Form1.Row style={{ paddingBottom: 10 }}>
+                <Form1.Row className="pb-2.5">
                   <Col>
                     <Form1.Control
                       aria-label="Comment"
@@ -721,26 +528,34 @@ class ePosterTechnology extends Component {
                     />
                   </Col>
                 </Form1.Row>
-                <Button className="redButton" aria-label="Submit Form Button" style={{ marginTop: 10, width: "100%" }} variant="primary" type="submit" disabled={this.state.submit}>
+                <button
+                  type="submit"
+                  aria-label="Submit Form Button"
+                  disabled={this.state.submit}
+                  className="w-full mt-2.5 px-4 py-1.5 text-white bg-[#a91e2c] hover:bg-[#ec0c0c] border border-[#a91e2c] hover:border-[#ec0c0c] rounded transition-colors disabled:opacity-65"
+                >
                   Submit
-                </Button>
+                </button>
                 <Loader type="TailSpin" color="#e26565" height={50} width={50} timeout={0} visible={this.state.showLoader} style={{ margin: "10px" }} />
-                <Toast onClose={() => this.setState({ show: false, submit: false })} show={this.state.show} className="toastSuccess">
+                <Toast onClose={() => this.setState({ show: false, submit: false })} show={this.state.show} className="text-white !bg-[#0fab0f] !shadow-[0px_0px_7px_3px_rgba(0,0,0,0.1)] !mt-5">
                   <Toast.Header>
-                    <strong className="me-auto">Success</strong>
+                    <strong className="mr-auto">Success</strong>
                   </Toast.Header>
                   <Toast.Body>
                     Thank You! <br /> Your query has been successfully submitted.
                   </Toast.Body>
                 </Toast>
-                <Toast onClose={() => this.setState({ showError: false, submit: false })} show={this.state.showError} className="toastError">
+                <Toast
+                  onClose={() => this.setState({ showError: false, submit: false })}
+                  show={this.state.showError}
+                  className="text-white !bg-[#dd3444] !shadow-[0px_0px_7px_3px_rgba(0,0,0,0.1)] !mt-5"
+                >
                   <Toast.Header>
-                    <strong className="me-auto">Error</strong>
+                    <strong className="mr-auto">Error</strong>
                   </Toast.Header>
                   <Toast.Body>We were unable to recieve your query. Please try again.</Toast.Body>
                 </Toast>
-                <div style={{ paddingBottom: 50 }}></div>
-                <div style={{ paddingBottom: 50 }}></div>
+                <div className="pb-[50px]"></div>
               </Form1>
             </div>
           </div>
