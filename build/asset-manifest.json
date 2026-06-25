@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.981d88f3.css",
-    "main.js": "/static/js/main.aa94460e.js",
+    "main.css": "/static/css/main.ac54233c.css",
+    "main.js": "/static/js/main.f67344c1.js",
     "static/media/ePosterVideo.mp4": "/static/media/ePosterVideo.7ce0b93c228d45e5ab00.mp4",
     "static/media/Sharp-ePoster-Technical-Note-June-2026.pdf": "/static/media/Sharp-ePoster-Technical-Note-June-2026.7cc32521764eeac7e5ad.pdf",
     "static/media/Sharp Low-Power Displays White Paper.pdf": "/static/media/Sharp Low-Power Displays White Paper.9f44a5f47165bc03c8f9.pdf",
@@ -13,12 +13,11 @@
     "static/media/ePoster-A2.png": "/static/media/ePoster-A2.52364497bceddc3ec09a.png",
     "static/media/Sharp-Tech-Literature-LS013B7DD02-12-2-19.pdf": "/static/media/Sharp-Tech-Literature-LS013B7DD02-12-2-19.69012f8ccf17c014578d.pdf",
     "static/media/Sharp_thumb.png": "/static/media/Sharp_thumb.23d52cec1a19b3b4b618.png",
-    "static/media/tech-why-eposter-overlay.png": "/static/media/tech-why-eposter-overlay.556a3a0a89e1fd4252fb.png",
     "static/media/LS035Q7DD01_SPEC_LD2023702A_2023.10.25.pdf": "/static/media/LS035Q7DD01_SPEC_LD2023702A_2023.10.25.eb7296fa22698a10944c.pdf",
     "static/media/Sharp-Technology-R-IGZO-2.jpeg": "/static/media/Sharp-Technology-R-IGZO-2.036d868cd94ff87c7810.jpeg",
     "static/media/news-9-aug.png": "/static/media/news-9-aug.db17e5f7672e9824573c.png",
-    "static/media/tech-spectra-overlay.png": "/static/media/tech-spectra-overlay.31d5e6ded68f6c77b329.png",
-    "static/media/tech-features-organic-grocery.png": "/static/media/tech-features-organic-grocery.96e26b8e91ebb405b7dc.png",
+    "static/media/tech-why-eposter-overlay.png": "/static/media/tech-why-eposter-overlay.b95c917c974b6c7f99d9.png",
+    "static/media/tech-features-organic-grocery.png": "/static/media/tech-features-organic-grocery.69930628f2092a57751c.png",
     "static/media/HomepageNoBottomLayers.jpeg": "/static/media/HomepageNoBottomLayers.222a72e1bbab060e6e6c.jpeg",
     "static/media/Sharp-ePoster-A1-40.5-inch-PR-FINAL.pdf": "/static/media/Sharp-ePoster-A1-40.5-inch-PR-FINAL.9ae821aba79621753115.pdf",
     "static/media/Picture2.jpg": "/static/media/Picture2.8f08272a6169ab311540.jpg",
@@ -32,6 +31,7 @@
     "static/media/LS014B7DD01_Spec_LCP-0620031B.pdf": "/static/media/LS014B7DD01_Spec_LCP-0620031B.94e31b14717b926a716b.pdf",
     "static/media/LS027B7DH01 Spec (LD-28305A).pdf": "/static/media/LS027B7DH01 Spec (LD-28305A).958a9480abd91741595d.pdf",
     "static/media/Sharp-LCD-Specification-LS011B7DH03-11-24-17.pdf": "/static/media/Sharp-LCD-Specification-LS011B7DH03-11-24-17.d4ae8915aa17551b8e89.pdf",
+    "static/media/tech-spectra-overlay.png": "/static/media/tech-spectra-overlay.25d12deb1741d14c7126.png",
     "static/media/tech-hero.png": "/static/media/tech-hero.a4446cbc5d2acb706855.png",
     "static/media/handshake.png": "/static/media/handshake.57c964a1280f2ea17893.png",
     "static/media/Sharp-LCD-Specification-LS018B7DH02-2-25-19.pdf": "/static/media/Sharp-LCD-Specification-LS018B7DH02-2-25-19.12748b474d1b01975379.pdf",
@@ -54,6 +54,7 @@
     "static/media/home_header.jpg": "/static/media/home_header.bd7bf906206da06b6bce.jpg",
     "static/media/product_industrial_lcd.jpg": "/static/media/product_industrial_lcd.c7c8c59d710ebae2478c.jpg",
     "static/media/tech-spectra-bg.jpg": "/static/media/tech-spectra-bg.7194901061886087e945.jpg",
+    "static/media/epProduct.png": "/static/media/epProduct.9d913fe1417fab654edb.png",
     "static/media/Sharp-Technology-R-IGZO-1.jpg": "/static/media/Sharp-Technology-R-IGZO-1.b147ab8730cfc94ebdda.jpg",
     "static/media/250221_LD-2025203A_LP0DZC0002.pdf": "/static/media/250221_LD-2025203A_LP0DZC0002.3b0d7a5ff8cb52def88a.pdf",
     "static/media/Sharp-LS022B7DH03.png": "/static/media/Sharp-LS022B7DH03.6d872c162c6e4af25e26.png",
@@ -76,7 +77,6 @@
     "static/media/Sharp-Technology-R-IGZO-3.png": "/static/media/Sharp-Technology-R-IGZO-3.745bd2792765d56b1e08.png",
     "static/media/news-4.pdf": "/static/media/news-4.89f6bc50dc98b373e7e7.pdf",
     "static/media/MP-SPEC-LQ104V1DG81.pdf": "/static/media/MP-SPEC-LQ104V1DG81.e690118f29abf33ab010.pdf",
-    "static/media/ePoster Hero Desktop.jpg": "/static/media/ePoster Hero Desktop.6c714523cd5fb6558f5a.jpg",
     "static/media/Travel.jpg": "/static/media/Travel.a25848b90ad0f63a1f67.jpg",
     "static/media/Low-Power-Displays-Image-2.jpeg": "/static/media/Low-Power-Displays-Image-2.e5e6bf251b53e6cc749d.jpeg",
     "static/media/MP-SPEC-LQ104V1LG81.pdf": "/static/media/MP-SPEC-LQ104V1LG81.4e88eaa1c53924640322.pdf",
@@ -243,11 +243,11 @@
     "static/media/Icon 6.jpeg": "/static/media/Icon 6.a7b3d522750383b853b4.jpeg",
     "static/media/Sharp-LQ150X1LX96-Mechanical-Drawing.gif": "/static/media/Sharp-LQ150X1LX96-Mechanical-Drawing.b0773dc35d79e954f8ab.gif",
     "static/media/Sharp-LQ156T3LW03-Mechanical-Drawing.gif": "/static/media/Sharp-LQ156T3LW03-Mechanical-Drawing.51aac19fb0fc5f178c36.gif",
-    "main.981d88f3.css.map": "/static/css/main.981d88f3.css.map",
-    "main.aa94460e.js.map": "/static/js/main.aa94460e.js.map"
+    "main.ac54233c.css.map": "/static/css/main.ac54233c.css.map",
+    "main.f67344c1.js.map": "/static/js/main.f67344c1.js.map"
   },
   "entrypoints": [
-    "static/css/main.981d88f3.css",
-    "static/js/main.aa94460e.js"
+    "static/css/main.ac54233c.css",
+    "static/js/main.f67344c1.js"
   ]
 }
