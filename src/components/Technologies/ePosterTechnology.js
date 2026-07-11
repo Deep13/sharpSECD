@@ -168,7 +168,7 @@ class ePosterTechnology extends Component {
             <div className="w-full md:w-1/2 flex items-center justify-center p-0 px-4 md:p-20 tablet:px-7">
               <img src={spectraOverlay} className="w-full max-w-[490px] h-auto" role="presentation" alt="E Ink Spectra 6 full-color ePaper sample showing vivid colors" />
             </div>
-            <div className="w-full md:w-1/2 flex items-center justify-center md:justify-start p-20 mobile:pt-0 px-4 tablet:px-7">
+            <div className="w-full md:w-1/2 flex items-center justify-center md:justify-start pt-[0px] md:pt-20 p-20  px-4 tablet:px-7">
               <div className="bg-[rgba(255,255,255,0.93)] rounded-[4px] p-[4rem] tablet:p-10">
                 <div className="max-w-[500px]">
                   <h2 className="type-h2 mb-6">E INK SPECTRA™ 6</h2>
@@ -313,7 +313,7 @@ class ePosterTechnology extends Component {
               <table className="border-collapse w-full min-w-[700px] mx-auto">
                 <thead>
                   <tr>
-                    <th className={`${cornerCell} w-[300px]`}>Specs</th>
+                    <th className={`${cornerCell}`}>Specs</th>
                     <th className={headCell}>A1 size - 40.5 inch</th>
                     <th className={headCell}>A2 size - 28.5 inch</th>
                     <th className={headCell}>A3 size - 20.2 inch</th>

@@ -211,7 +211,7 @@ class Eposters_product extends Component {
             content="Discover Sharp’s available ePoster modules—a zero-power, high-contrast signage display with 60,000 colors, perfect for sustainable paper replacement solutions."
           />
         </Helmet>
-        <div className="row container-row-85 padding-top-50 padding-bottom-30 flex flex-col-reverse mdflex-row" style={{ overflowX: "hidden" }}>
+        <div className="row container-row-85 padding-top-50 padding-bottom-30 flex flex-col-reverse md:flex-row" style={{ overflowX: "hidden" }}>
           <div id="main-content" role="main" tabIndex={0} className="col-md-6" style={{ padding: 0, paddingRight: 40 }}>
             <div tabIndex={-1}>
               <h1>ePoster Display Modules</h1>
