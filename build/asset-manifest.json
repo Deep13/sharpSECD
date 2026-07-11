@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.ac54233c.css",
-    "main.js": "/static/js/main.f67344c1.js",
+    "main.css": "/static/css/main.dc82caa5.css",
+    "main.js": "/static/js/main.b5c2c98c.js",
     "static/media/ePosterVideo.mp4": "/static/media/ePosterVideo.7ce0b93c228d45e5ab00.mp4",
     "static/media/Sharp-ePoster-Technical-Note-June-2026.pdf": "/static/media/Sharp-ePoster-Technical-Note-June-2026.7cc32521764eeac7e5ad.pdf",
     "static/media/Sharp Low-Power Displays White Paper.pdf": "/static/media/Sharp Low-Power Displays White Paper.9f44a5f47165bc03c8f9.pdf",
@@ -243,11 +243,11 @@
     "static/media/Icon 6.jpeg": "/static/media/Icon 6.a7b3d522750383b853b4.jpeg",
     "static/media/Sharp-LQ150X1LX96-Mechanical-Drawing.gif": "/static/media/Sharp-LQ150X1LX96-Mechanical-Drawing.b0773dc35d79e954f8ab.gif",
     "static/media/Sharp-LQ156T3LW03-Mechanical-Drawing.gif": "/static/media/Sharp-LQ156T3LW03-Mechanical-Drawing.51aac19fb0fc5f178c36.gif",
-    "main.ac54233c.css.map": "/static/css/main.ac54233c.css.map",
-    "main.f67344c1.js.map": "/static/js/main.f67344c1.js.map"
+    "main.dc82caa5.css.map": "/static/css/main.dc82caa5.css.map",
+    "main.b5c2c98c.js.map": "/static/js/main.b5c2c98c.js.map"
   },
   "entrypoints": [
-    "static/css/main.ac54233c.css",
-    "static/js/main.f67344c1.js"
+    "static/css/main.dc82caa5.css",
+    "static/js/main.b5c2c98c.js"
   ]
 }
