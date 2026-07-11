@@ -157,6 +157,14 @@ class Headernav extends Component {
                   >
                     Find a Product
                   </NavDropdown.Item>
+                  <NavDropdown.Item
+                    className="drop-color"
+                    onClick={() =>
+                      this.selectNavigate("/eposter-display-modules-technology")
+                    }
+                  >
+                    Technology
+                  </NavDropdown.Item>
                 </NavDropdown.Item>
                 {/* <NavDropdown.Item className="dropdown-toggle" id="more-services">
                   ePoster Display Modules

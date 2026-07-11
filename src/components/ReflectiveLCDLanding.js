@@ -52,9 +52,7 @@ export default class MemoryInPixel extends Component {
       name: this.state.name,
       mobile: this.state.mobileCode + "-" + this.state.mobile,
       email: this.state.email,
-      message: this.state.demo
-        ? "Yes, I’d like to request a demo. " + this.state.message
-        : this.state.message,
+      message: this.state.demo ? "Yes, I’d like to request a demo. " + this.state.message : this.state.message,
       subject: ["Reflective LCD Landing Page"],
     };
     axios
@@ -108,12 +106,7 @@ export default class MemoryInPixel extends Component {
               padding: 20,
             }}
           >
-            <Image
-              role="presentation"
-              alt="SHARP Logo"
-              src={logo}
-              style={{ width: "35%", paddingTop: "100px", maxWidth: 300 }}
-            />
+            <Image role="presentation" alt="SHARP Logo" src={logo} style={{ width: "35%", paddingTop: "100px", maxWidth: 300 }} />
             <div>
               <h1
                 className="m-fs-2"
@@ -164,8 +157,7 @@ export default class MemoryInPixel extends Component {
               <div style={{ width: "100%" }}>
                 <h1 style={{ fontSize: "3rem", textAlign: "center" }}>
                   <strong>
-                    LOW-POWER <i>AND</i> SUNLIGHT-VIEWABLE? <br /> WELCOME TO A
-                    BEAUTIFUL DAY.
+                    LOW-POWER <i>AND</i> SUNLIGHT-VIEWABLE? <br /> WELCOME TO A BEAUTIFUL DAY.
                   </strong>
                 </h1>
                 <div className="padding-top-30"></div>
@@ -180,11 +172,8 @@ export default class MemoryInPixel extends Component {
                     }}
                   >
                     <p style={{ fontSize: 25 }}>
-                      Typically, outdoor sunlight-readable displays require a
-                      high-power backlight to provide 1200+ nits brightness in
-                      order to overcome the sun. In applications that require a
-                      true low-power display traditional transmissive LCDs were
-                      not an option without major performance compromises.
+                      Typically, outdoor sunlight-readable displays require a high-power backlight to provide 1200+ nits brightness in order to overcome the sun. In applications that require a true
+                      low-power display traditional transmissive LCDs were not an option without major performance compromises.
                     </p>
                   </div>
                 </div>
@@ -199,12 +188,8 @@ export default class MemoryInPixel extends Component {
                     }}
                   >
                     <p style={{ fontSize: 25 }}>
-                      Sharp's reflective display technologies provide the right
-                      solution when low-power AND sunlight viewability are
-                      required. The brighter the environment, the better they
-                      look. Both backlight and frontlight options are available
-                      to ensure the display is viewable under <i>all</i>{" "}
-                      conditions -- even when ambient light is limited.
+                      Sharp's reflective display technologies provide the right solution when low-power AND sunlight viewability are required. The brighter the environment, the better they look. Both
+                      backlight and frontlight options are available to ensure the display is viewable under <i>all</i> conditions -- even when ambient light is limited.
                     </p>
                   </div>
                 </div>
@@ -237,12 +222,7 @@ export default class MemoryInPixel extends Component {
                     paddingBottom: 30,
                   }}
                 >
-                  <img
-                    style={{ width: 90 }}
-                    src={icon}
-                    role="presentation"
-                    alt="icon"
-                  />
+                  <img style={{ width: 90 }} src={icon} role="presentation" alt="icon" />
                   <h1
                     style={{
                       fontSize: "1.75rem",
@@ -252,9 +232,7 @@ export default class MemoryInPixel extends Component {
                   >
                     <strong>HIGH READABILITY</strong>
                   </h1>
-                  <p style={{ padding: "1vw", textAlign: "center" }}>
-                    From edge-of-vision to bright sunlight
-                  </p>
+                  <p style={{ padding: "1vw", textAlign: "center" }}>From edge-of-vision to bright sunlight</p>
                 </div>
               </div>
               <div tabIndex={0} className="col-md-3">
@@ -267,12 +245,7 @@ export default class MemoryInPixel extends Component {
                     paddingBottom: 30,
                   }}
                 >
-                  <img
-                    style={{ width: 90 }}
-                    src={icon2}
-                    role="presentation"
-                    alt="icon"
-                  />
+                  <img style={{ width: 90 }} src={icon2} role="presentation" alt="icon" />
                   <h1
                     style={{
                       fontSize: "1.75rem",
@@ -282,9 +255,7 @@ export default class MemoryInPixel extends Component {
                   >
                     <strong>LOW-POWER</strong>
                   </h1>
-                  <p style={{ padding: "1vw", textAlign: "center" }}>
-                    No backlight required in reflective mode
-                  </p>
+                  <p style={{ padding: "1vw", textAlign: "center" }}>No backlight required in reflective mode</p>
                 </div>
               </div>
               <div tabIndex={0} className="col-md-3">
@@ -297,12 +268,7 @@ export default class MemoryInPixel extends Component {
                     paddingBottom: 30,
                   }}
                 >
-                  <img
-                    style={{ width: 90 }}
-                    src={icon3}
-                    role="presentation"
-                    alt="icon"
-                  />
+                  <img style={{ width: 90 }} src={icon3} role="presentation" alt="icon" />
                   <h1
                     style={{
                       fontSize: "1.75rem",
@@ -312,9 +278,7 @@ export default class MemoryInPixel extends Component {
                   >
                     <strong>WIDE TEMPERATURES</strong>
                   </h1>
-                  <p style={{ padding: "1vw", textAlign: "center" }}>
-                    Operates in even the most extreme environments
-                  </p>
+                  <p style={{ padding: "1vw", textAlign: "center" }}>Operates in even the most extreme environments</p>
                 </div>
               </div>
               <div tabIndex={0} className="col-md-3">
@@ -327,12 +291,7 @@ export default class MemoryInPixel extends Component {
                     paddingBottom: 30,
                   }}
                 >
-                  <img
-                    style={{ width: 90 }}
-                    src={icon4}
-                    role="presentation"
-                    alt="icon"
-                  />
+                  <img style={{ width: 90 }} src={icon4} role="presentation" alt="icon" />
                   <h1
                     style={{
                       fontSize: "1.75rem",
@@ -342,9 +301,7 @@ export default class MemoryInPixel extends Component {
                   >
                     <strong>THIN + LIGHTWEIGHT</strong>
                   </h1>
-                  <p style={{ padding: "1vw", textAlign: "center" }}>
-                    Slim profile enables compact product design
-                  </p>
+                  <p style={{ padding: "1vw", textAlign: "center" }}>Slim profile enables compact product design</p>
                 </div>
               </div>
             </div>
@@ -388,11 +345,7 @@ export default class MemoryInPixel extends Component {
                 <div className="padding-top-50"></div>
               </div>
               <div className="row">
-                <div
-                  tabIndex={0}
-                  className="col-md-6"
-                  style={{ marginBottom: 40 }}
-                >
+                <div tabIndex={0} className="col-md-6" style={{ marginBottom: 40 }}>
                   <div
                     tabIndex={-1}
                     style={{
@@ -410,27 +363,16 @@ export default class MemoryInPixel extends Component {
                       }}
                     >
                       <div>
-                        <img
-                          style={{ width: "100%" }}
-                          src={image1}
-                          role="presentation"
-                          alt="icon"
-                        />
+                        <img style={{ width: "100%" }} src={image1} role="presentation" alt="icon" />
                         <h1 style={{ fontSize: "1.75rem", padding: "1vw" }}>
                           <strong>MEMORY IN PIXEL LCDs</strong>
                         </h1>
                         <p style={{ padding: "1vw" }}>
-                          <strong>
-                            Choose from monochrome or 64-color for wearable and
-                            remote applications
-                          </strong>
+                          <strong>Choose from monochrome or 64-color for wearable and remote applications</strong>
                         </p>
                         <p style={{ padding: "1vw" }}>
-                          Our Memory-In-pixel (MIP) technology provides high
-                          performance solutions for wearable and portable
-                          applications. Sizes range from 1.08-inch to 4.4-inch
-                          (diagonal) with static-image operation at power levels
-                          as low as 10's of microamps.
+                          Our Memory-In-pixel (MIP) technology provides high performance solutions for wearable and portable applications. Sizes range from 1.08-inch to 4.4-inch (diagonal) with
+                          static-image operation at power levels as low as 10's of microamps.
                         </p>
                       </div>
                       <div
@@ -440,25 +382,14 @@ export default class MemoryInPixel extends Component {
                           width: "100%",
                         }}
                       >
-                        <Button
-                          className="redButton"
-                          as={Link}
-                          to="/MemoryInPixel"
-                          size="lg"
-                          variant="outline-danger"
-                          style={{ marginBottom: 20 }}
-                        >
+                        <Button className="redButton" as={Link} to="/MemoryInPixel" size="lg" variant="outline-danger" style={{ marginBottom: 20 }}>
                           Learn More
                         </Button>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div
-                  tabIndex={0}
-                  className="col-md-6"
-                  style={{ marginBottom: 40 }}
-                >
+                <div tabIndex={0} className="col-md-6" style={{ marginBottom: 40 }}>
                   <div
                     tabIndex={-1}
                     style={{
@@ -476,28 +407,16 @@ export default class MemoryInPixel extends Component {
                       }}
                     >
                       <div>
-                        <img
-                          style={{ width: "100%" }}
-                          src={image2}
-                          role="presentation"
-                          alt="icon"
-                        />
+                        <img style={{ width: "100%" }} src={image2} role="presentation" alt="icon" />
                         <h1 style={{ fontSize: "1.75rem", padding: "1vw" }}>
                           <strong>R-IGZO LCDs</strong>
                         </h1>
                         <p style={{ padding: "1vw" }}>
-                          <strong>
-                            Full-color and high-resolution for hand-held and
-                            signage applications
-                          </strong>
+                          <strong>Full-color and high-resolution for hand-held and signage applications</strong>
                         </p>
                         <p style={{ padding: "1vw" }}>
-                          Our Reflective IGZO displays combine full-color and
-                          high resolution in a low-power reflective LCD. Current
-                          available sizes are 5.0-inch (diagonal) for hand-held,
-                          portable applications and 32-inch (diagonal) targeted
-                          at outdoor signage applications. Both sizes include
-                          low-power backlighting for low-ambient viewing.
+                          Our Reflective IGZO displays combine full-color and high resolution in a low-power reflective LCD. Current available sizes are 5.0-inch (diagonal) for hand-held, portable
+                          applications and 32-inch (diagonal) targeted at outdoor signage applications. Both sizes include low-power backlighting for low-ambient viewing.
                         </p>
                       </div>
                       <div
@@ -507,14 +426,7 @@ export default class MemoryInPixel extends Component {
                           width: "100%",
                         }}
                       >
-                        <Button
-                          className="redButton"
-                          as={Link}
-                          to="/ReflectiveIGZO"
-                          size="lg"
-                          variant="outline-danger"
-                          style={{ marginBottom: 20 }}
-                        >
+                        <Button className="redButton" as={Link} to="/ReflectiveIGZO" size="lg" variant="outline-danger" style={{ marginBottom: 20 }}>
                           Learn More
                         </Button>
                       </div>
@@ -555,13 +467,11 @@ export default class MemoryInPixel extends Component {
                     color: "white",
                   }}
                 >
-                  <strong>
-                    WANT TO KNOW MORE ABOUT SHARP REFLECTIVE DISPLAYS?
-                  </strong>
+                  <strong>WANT TO KNOW MORE ABOUT SHARP REFLECTIVE DISPLAYS?</strong>
                 </h1>
                 <div style={{ paddingBottom: 50 }}></div>
               </div>
-              <div style={{ width: "70%" }}>
+              <div className="contact-resp">
                 <Form1 noValidate onSubmit={this.onSubmit}>
                   <Form1.Row style={{ paddingBottom: 10 }}>
                     <Col>
@@ -571,14 +481,10 @@ export default class MemoryInPixel extends Component {
                         aria-required={true}
                         required
                         type="email"
-                        onChange={(event) =>
-                          this.setState({ email: event.currentTarget.value })
-                        }
+                        onChange={(event) => this.setState({ email: event.currentTarget.value })}
                         value={this.state.email}
                       />
-                      <Form1.Control.Feedback type="invalid">
-                        Please provide a valid email id.
-                      </Form1.Control.Feedback>
+                      <Form1.Control.Feedback type="invalid">Please provide a valid email id.</Form1.Control.Feedback>
                     </Col>
                   </Form1.Row>
                   <Form1.Row style={{ paddingBottom: 10 }}>
@@ -588,18 +494,14 @@ export default class MemoryInPixel extends Component {
                         aria-label="Name"
                         required
                         placeholder="Name"
-                        onChange={(event) =>
-                          this.setState({ name: event.currentTarget.value })
-                        }
+                        onChange={(event) => this.setState({ name: event.currentTarget.value })}
                         value={this.state.name}
                       />
-                      <Form1.Control.Feedback type="invalid">
-                        Name field cannot be empty
-                      </Form1.Control.Feedback>
+                      <Form1.Control.Feedback type="invalid">Name field cannot be empty</Form1.Control.Feedback>
                     </Col>
                   </Form1.Row>
 
-                  <Form1.Row style={{ paddingBottom: 10 }}>
+                  <Form1.Row style={{ paddingBottom: 10, display: "flex", gap: 10 }}>
                     <Col>
                       <Form1.Control
                         aria-label="Country Code"
@@ -613,9 +515,7 @@ export default class MemoryInPixel extends Component {
                         }
                         value={this.state.mobileCode}
                       />
-                      <Form1.Control.Feedback type="invalid">
-                        Country code field cannot be empty
-                      </Form1.Control.Feedback>
+                      <Form1.Control.Feedback type="invalid">Country code field cannot be empty</Form1.Control.Feedback>
                     </Col>
                     <Col xs={10}>
                       <Form1.Control
@@ -623,15 +523,11 @@ export default class MemoryInPixel extends Component {
                         placeholder="Contact number"
                         aria-required={true}
                         required
-                        onChange={(event) =>
-                          this.setState({ mobile: event.currentTarget.value })
-                        }
+                        onChange={(event) => this.setState({ mobile: event.currentTarget.value })}
                         value={this.state.mobile}
                         maxLength={10}
                       />
-                      <Form1.Control.Feedback type="invalid">
-                        Phone number field cannot be empty
-                      </Form1.Control.Feedback>
+                      <Form1.Control.Feedback type="invalid">Phone number field cannot be empty</Form1.Control.Feedback>
                     </Col>
                   </Form1.Row>
                   <Form1.Row>
@@ -642,9 +538,7 @@ export default class MemoryInPixel extends Component {
                           type="checkbox"
                           label="Yes, I’d like to request a demo"
                           checked={this.state.demo}
-                          onChange={(event) =>
-                            this.setState({ demo: event.currentTarget.checked })
-                          }
+                          onChange={(event) => this.setState({ demo: event.currentTarget.checked })}
                         />
                       </Form1.Group>
                     </Col>
@@ -658,24 +552,13 @@ export default class MemoryInPixel extends Component {
                         as="textarea"
                         rows="3"
                         placeholder="Comments(optional)"
-                        onChange={(event) =>
-                          this.setState({ message: event.currentTarget.value })
-                        }
+                        onChange={(event) => this.setState({ message: event.currentTarget.value })}
                         value={this.state.message}
                       />
-                      <Form1.Control.Feedback type="invalid">
-                        Message field cannot be empty
-                      </Form1.Control.Feedback>
+                      <Form1.Control.Feedback type="invalid">Message field cannot be empty</Form1.Control.Feedback>
                     </Col>
                   </Form1.Row>
-                  <Button
-                    className="redButton"
-                    aria-label="Submit Form Button"
-                    style={{ marginTop: 10, width: "100%" }}
-                    variant="primary"
-                    type="submit"
-                    disabled={this.state.submit}
-                  >
+                  <Button className="redButton" aria-label="Submit Form Button" style={{ marginTop: 10, width: "100%" }} variant="primary" type="submit" disabled={this.state.submit}>
                     Submit
                   </Button>
                   {/* <div style={{ paddingBottom: 50 }}></div> */}
@@ -689,9 +572,7 @@ export default class MemoryInPixel extends Component {
                     style={{ margin: "10px" }}
                   />
                   <Toast
-                    onClose={() =>
-                      this.setState({ show: false, submit: false })
-                    }
+                    onClose={() => this.setState({ show: false, submit: false })}
                     show={this.state.show}
                     className="toastSuccess"
                     // transition="Fade"
@@ -700,14 +581,11 @@ export default class MemoryInPixel extends Component {
                       <strong className="me-auto">Success</strong>
                     </Toast.Header>
                     <Toast.Body>
-                      Thank You! <br /> Your query has been successfully
-                      submitted.
+                      Thank You! <br /> Your query has been successfully submitted.
                     </Toast.Body>
                   </Toast>
                   <Toast
-                    onClose={() =>
-                      this.setState({ showError: false, submit: false })
-                    }
+                    onClose={() => this.setState({ showError: false, submit: false })}
                     show={this.state.showError}
                     className="toastError"
                     // transition="Fade"
@@ -715,9 +593,7 @@ export default class MemoryInPixel extends Component {
                     <Toast.Header>
                       <strong className="me-auto">Error</strong>
                     </Toast.Header>
-                    <Toast.Body>
-                      We were unable to recieve your query. Please try again.
-                    </Toast.Body>
+                    <Toast.Body>We were unable to recieve your query. Please try again.</Toast.Body>
                   </Toast>
                   <div style={{ paddingBottom: 50 }}></div>
                   <div style={{ paddingBottom: 50 }}></div>

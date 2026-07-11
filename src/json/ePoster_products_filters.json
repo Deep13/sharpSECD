@@ -2,7 +2,7 @@
   "content": [
     {
       "title": "DIAGONAL SIZE",
-      "values": ["28.5 inch"]
+      "values": ["28.5 inch", "40.5 inch"]
     },
     {
       "title": "CONTRAST RATIO",
@@ -13,7 +13,7 @@
 
     {
       "title": "OUTLINE DIMENSIONS",
-      "values": ["424.0 x 602.1 x 0.9 mm"]
+      "values": ["424.0 x 602.1 x 0.9 mm", "600.56 x 911.88 x 5.2 mm"]
     },
     {
       "title": "OPERATING TEMP",
@@ -21,10 +21,10 @@
     },
     {
       "title": "PIXEL FORMAT",
-      "values": ["2160 x 3060"]
+      "values": ["2160 x 3060", "3060 x 4320"]
     },
 
-    { "title": "RESPONSE TIME", "values": ["15 seconds"] },
+    { "title": "RESPONSE TIME", "values": ["15 seconds", "18 seconds"] },
     { "title": "STORAGE TEMP", "values": ["-25°C to +60°C"] },
     {
       "title": "REFLECTIVITY",

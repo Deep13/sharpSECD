@@ -46,12 +46,7 @@ const companyData = {
       noindex: true,
       follow: true,
       contactFormClass: "tech-coast-sales-form",
-      contactFormEmails: [
-        "ashley@tc-sales.com",
-        "beth.carrol@sharpusa.com",
-        "karamy@xposureunlimited.com",
-        "yeep@sharpusa.com",
-      ],
+      contactFormEmails: ["ashley@tc-sales.com", "beth.carrol@sharpusa.com", "karamy@xposureunlimited.com", "yeep@sharpusa.com"],
       url: "https://sharpsecd.com/eposters-displays-tech-coast",
     },
   },
@@ -65,11 +60,7 @@ const companyData = {
       noindex: true,
       follow: true,
       contactFormClass: "thom-luke-sales-form",
-      contactFormEmails: [
-        "rick@thomlukesales.com",
-        "CarrollB@sharpsec.com",
-        "karamy@xposureunlimited.com",
-      ],
+      contactFormEmails: ["rick@thomlukesales.com", "CarrollB@sharpsec.com", "karamy@xposureunlimited.com"],
       url: "https://sharpsecd.com/eposters-displays-thom-luke",
     },
   },
@@ -83,11 +74,7 @@ const companyData = {
       noindex: true,
       follow: true,
       contactFormClass: "quantum-sales-form",
-      contactFormEmails: [
-        "lori@quantumsales.ca",
-        "CarrollB@sharpsec.com",
-        "karamy@xposureunlimited.com",
-      ],
+      contactFormEmails: ["lori@quantumsales.ca", "CarrollB@sharpsec.com", "karamy@xposureunlimited.com"],
       url: "https://sharpsecd.com/eposters-displays-quantum",
     },
   },
@@ -101,11 +88,7 @@ const companyData = {
       noindex: true,
       follow: true,
       contactFormClass: "control-sales-form",
-      contactFormEmails: [
-        "lisay@controlsales.com",
-        "CarrollB@sharpsec.com",
-        "karamy@xposureunlimited.com",
-      ],
+      contactFormEmails: ["lisay@controlsales.com", "CarrollB@sharpsec.com", "karamy@xposureunlimited.com"],
       url: "https://sharpsecd.com/eposters-displays-control-sales",
     },
   },
@@ -119,12 +102,7 @@ const companyData = {
       noindex: true,
       follow: true,
       contactFormClass: "odonnell-sales-form",
-      contactFormEmails: [
-        "LBerndt@odonnell.com",
-        "CarrollB@sharpsec.com",
-        "karamy@xposureunlimited.com",
-        "yeep@sharpusa.com",
-      ],
+      contactFormEmails: ["LBerndt@odonnell.com", "CarrollB@sharpsec.com", "karamy@xposureunlimited.com", "yeep@sharpusa.com"],
       url: "https://sharpsecd.com/eposters-displays-odonnell",
     },
   },
@@ -194,39 +172,22 @@ class SpecialLandingPage extends Component {
 
   render() {
     //grab the data of comapny
-    const companyName =
-      this.props.companyName && companyData[this.props.companyName]
-        ? this.props.companyName
-        : "techCoastSales";
+    const companyName = this.props.companyName && companyData[this.props.companyName] ? this.props.companyName : "techCoastSales";
     const selectedCompany = companyData[companyName];
 
     return (
       <div>
         <Helmet>
           <title>Sharp ePosters – Paperless Signage Modules | Sharp SECD</title>
-          <meta
-            name="description"
-            content="Explore Sharp ePosters—zero-power, high-contrast E Ink displays that replace printed signage. Ideal for retail, healthcare, hospitality, and more."
-          />
+          <meta name="description" content="Explore Sharp ePosters—zero-power, high-contrast E Ink displays that replace printed signage. Ideal for retail, healthcare, hospitality, and more." />
 
-          <link
-            rel="canonical"
-            href="https://sharpsecd.com/eposters-displays"
-          ></link>
+          <link rel="canonical" href="https://sharpsecd.com/eposters-displays"></link>
 
           <meta name="robots" content="noindex, follow" />
         </Helmet>
         <div className="row" style={{ width: "100%", margin: 0 }}>
-          <div
-            aria-label="Concept image of Sharp ePoster used for museum exhibit signage"
-            className="poster-section"
-            tabIndex={0}
-            style={{ position: "relative" }}
-          >
-            <div
-              className="text-center-mb"
-              style={{ marginBottom: 40, marginTop: 20 }}
-            >
+          <div aria-label="Concept image of Sharp ePoster used for museum exhibit signage" className="poster-section" tabIndex={0} style={{ position: "relative" }}>
+            <div className="text-center-mb" style={{ marginBottom: 40, marginTop: 20 }}>
               <h3 style={{ fontSize: 60 }}>
                 <strong>SAY GOODBYE</strong>
               </h3>
@@ -234,14 +195,8 @@ class SpecialLandingPage extends Component {
                 <strong>TO PRINTED SIGNAGE.</strong>
               </h3>
             </div>
-            <h2
-              className="text-center-mb"
-              style={{ color: "white", maxWidth: 600 }}
-            >
-              <strong>
-                Meet our no-hassle, paper replacement display module for signage
-                applications. Uses zero-power in static image mode.
-              </strong>
+            <h2 className="text-center-mb" style={{ color: "white", maxWidth: 600 }}>
+              <strong>Meet our no-hassle, paper replacement display module for signage applications. Uses zero-power in static image mode.</strong>
             </h2>
             <p
               style={{
@@ -257,8 +212,7 @@ class SpecialLandingPage extends Component {
                 fontWeight: "bold",
               }}
             >
-              Screen images shown are simulated unless otherwise noted. Actual
-              display will differ.{" "}
+              Screen images shown are simulated unless otherwise noted. Actual display will differ.{" "}
             </p>
           </div>
           <div
@@ -298,10 +252,8 @@ class SpecialLandingPage extends Component {
                 <strong>INTRODUCING ePOSTER</strong>
               </h2>
               <span style={{ fontSize: 35 }}>
-                Printing is expensive, inflexible, and time-consuming. Welcome
-                to the future of low power paper replacement signage. Sharp and
-                E Ink have come together to bring you one of the industry's
-                leading electronic poster display modules.
+                Printing is expensive, inflexible, and time-consuming. Welcome to the future of low power paper replacement signage. Sharp and E Ink have come together to bring you one of the
+                industry's leading electronic poster display modules.
               </span>
               <br />
               <Button
@@ -322,10 +274,7 @@ class SpecialLandingPage extends Component {
               </Button>
             </div>
 
-            <div
-              className="col-lg-6 hide-on-mobile"
-              style={{ paddingRight: 0 }}
-            >
+            <div className="col-lg-6 hide-on-mobile" style={{ paddingRight: 0 }}>
               <img
                 src={ePosterSummerSale}
                 style={{ width: "100%" }}
@@ -360,9 +309,7 @@ class SpecialLandingPage extends Component {
               <h2 style={{ paddingBottom: 30, fontSize: "3rem" }}>
                 <strong>CREATE FLEXIBLE, EFFICIENT ePOSTER SOLUTIONS</strong>
               </h2>
-              <span style={{ fontSize: 35 }}>
-                The Sharp ePoster enables you to build signage products that:
-              </span>
+              <span style={{ fontSize: 35 }}>The Sharp ePoster enables you to build signage products that:</span>
               <br />
               <ul
                 style={{
@@ -404,12 +351,7 @@ class SpecialLandingPage extends Component {
               <strong>APPLICATIONS INCLUDE</strong>
             </h2>
             <div className="col-lg-4 col-md-6" style={{ padding: "20px 20px" }}>
-              <img
-                src={Restaurant}
-                style={{ width: "100%" }}
-                role="presentation"
-                alt="Rendering of Sharp ePoster displaying a restaurant menu"
-              />
+              <img src={Restaurant} style={{ width: "100%" }} role="presentation" alt="Rendering of Sharp ePoster displaying a restaurant menu" />
               <h2
                 style={{
                   paddingTop: 10,
@@ -423,12 +365,7 @@ class SpecialLandingPage extends Component {
               </h2>
             </div>
             <div className="col-lg-4 col-md-6" style={{ padding: "20px 20px" }}>
-              <img
-                src={Education}
-                style={{ width: "100%" }}
-                role="presentation"
-                alt="Example layout showing Sharp ePoster concept in a classroom environment"
-              />
+              <img src={Education} style={{ width: "100%" }} role="presentation" alt="Example layout showing Sharp ePoster concept in a classroom environment" />
               <h2
                 style={{
                   paddingTop: 10,
@@ -442,12 +379,7 @@ class SpecialLandingPage extends Component {
               </h2>
             </div>
             <div className="col-lg-4 col-md-6" style={{ padding: "20px 20px" }}>
-              <img
-                src={Healthcare}
-                style={{ width: "100%" }}
-                role="presentation"
-                alt="Concept rendering of ePoster for medical office check-in or info display"
-              />
+              <img src={Healthcare} style={{ width: "100%" }} role="presentation" alt="Concept rendering of ePoster for medical office check-in or info display" />
               <h2
                 style={{
                   paddingTop: 10,
@@ -460,17 +392,9 @@ class SpecialLandingPage extends Component {
                 <strong>Healthcare</strong>
               </h2>
             </div>
-            <div
-              className="hide-on-mobile"
-              style={{ width: "100%", height: 70 }}
-            ></div>
+            <div className="hide-on-mobile" style={{ width: "100%", height: 70 }}></div>
             <div className="col-lg-4 col-md-6" style={{ padding: "20px 20px" }}>
-              <img
-                src={Rental}
-                style={{ width: "100%" }}
-                role="presentation"
-                alt="Visualization of retail promotion signage using Sharp ePoster"
-              />
+              <img src={Rental} style={{ width: "100%" }} role="presentation" alt="Visualization of retail promotion signage using Sharp ePoster" />
               <h2
                 style={{
                   paddingTop: 10,
@@ -484,12 +408,7 @@ class SpecialLandingPage extends Component {
               </h2>
             </div>
             <div className="col-lg-4 col-md-6" style={{ padding: "20px 20px" }}>
-              <img
-                src={Lobbies}
-                style={{ width: "100%" }}
-                role="presentation"
-                alt="Mock-up depicting ePoster module as advertising in a lobby."
-              />
+              <img src={Lobbies} style={{ width: "100%" }} role="presentation" alt="Mock-up depicting ePoster module as advertising in a lobby." />
               <h2
                 style={{
                   paddingTop: 10,
@@ -503,12 +422,7 @@ class SpecialLandingPage extends Component {
               </h2>
             </div>
             <div className="col-lg-4 col-md-6" style={{ padding: "20px 20px" }}>
-              <img
-                src={Hotel}
-                style={{ width: "100%" }}
-                role="presentation"
-                alt="Illustration of Sharp ePoster used for hotel room or hallway signage"
-              />
+              <img src={Hotel} style={{ width: "100%" }} role="presentation" alt="Illustration of Sharp ePoster used for hotel room or hallway signage" />
               <h2
                 style={{
                   paddingTop: 10,
@@ -543,12 +457,7 @@ class SpecialLandingPage extends Component {
                 alignItems: "center",
               }}
             >
-              <img
-                src={GRAND}
-                style={{ maxHeight: 700 }}
-                role="presentation"
-                alt="Photograph of actual Sharp ePoster holding a static image in zero-power mode"
-              />
+              <img src={GRAND} style={{ maxHeight: 700 }} role="presentation" alt="Photograph of actual Sharp ePoster holding a static image in zero-power mode" />
               <p
                 style={{
                   fontWeight: 300,
@@ -560,10 +469,7 @@ class SpecialLandingPage extends Component {
                 Actual photograph of display in zero-power operation{" "}
               </p>
             </div>
-            <div
-              className="col-lg-6"
-              style={{ padding: "20px 20px", paddingRight: 50 }}
-            >
+            <div className="col-lg-6" style={{ padding: "20px 20px", paddingRight: 50 }}>
               <h2 style={{ color: "black" }}>
                 <strong>KEY FEATURES</strong>
               </h2>
@@ -623,43 +529,19 @@ class SpecialLandingPage extends Component {
               }}
             >
               <div className="col-lg-4" style={{ textAlign: "center" }}>
-                <img
-                  src={Zero}
-                  style={{ width: 200 }}
-                  role="presentation"
-                  alt="Zero power"
-                />
+                <img src={Zero} style={{ width: 200 }} role="presentation" alt="Zero power" />
                 <h3 style={{ fontWeight: "bold" }}>ZERO POWER</h3>
-                <p style={{ fontWeight: 500 }}>
-                  ePoster technology enables zero-power operation while
-                  maintaining a static image hold
-                </p>
+                <p style={{ fontWeight: 500 }}>ePoster technology enables zero-power operation while maintaining a static image hold</p>
               </div>
               <div className="col-lg-4" style={{ textAlign: "center" }}>
-                <img
-                  src={Earth}
-                  style={{ width: 200 }}
-                  role="presentation"
-                  alt="Earth friendly"
-                />
+                <img src={Earth} style={{ width: 200 }} role="presentation" alt="Earth friendly" />
                 <h3 style={{ fontWeight: "bold" }}>EARTH FRIENDLY</h3>
-                <p style={{ fontWeight: 500 }}>
-                  An electronic solution eliminates trips to the printer and
-                  reduces paper waste.{" "}
-                </p>
+                <p style={{ fontWeight: 500 }}>An electronic solution eliminates trips to the printer and reduces paper waste. </p>
               </div>
               <div className="col-lg-4" style={{ textAlign: "center" }}>
-                <img
-                  src={Low}
-                  style={{ width: 200 }}
-                  role="presentation"
-                  alt="Low cost operation"
-                />
+                <img src={Low} style={{ width: 200 }} role="presentation" alt="Low cost operation" />
                 <h3 style={{ fontWeight: "bold" }}>LOW-COST OPERATION</h3>
-                <p style={{ fontWeight: 500 }}>
-                  Low power usage plus eliminating printing expenses equals
-                  low-cost operation.{" "}
-                </p>
+                <p style={{ fontWeight: 500 }}>Low power usage plus eliminating printing expenses equals low-cost operation. </p>
               </div>
             </div>
           </div>
@@ -690,12 +572,7 @@ class SpecialLandingPage extends Component {
               </span>
             </div>
             <div className="col-lg-6" style={{ paddingRight: 0 }}>
-              <img
-                src={Retail}
-                style={{ width: "100%" }}
-                role="presentation"
-                alt="Concept mock-up showing ePoster display in a shopping mall setting"
-              />
+              <img src={Retail} style={{ width: "100%" }} role="presentation" alt="Concept mock-up showing ePoster display in a shopping mall setting" />
             </div>
           </div>
           <div
@@ -769,12 +646,8 @@ class SpecialLandingPage extends Component {
                   </p>
                 </div>
               </div>
-              <div style={{ width: "70%" }}>
-                <Form1
-                  noValidate
-                  className={`ePosterDisplays ${selectedCompany.meta.contactFormClass}`}
-                  onSubmit={this.onSubmit}
-                >
+              <div className="contact-resp">
+                <Form1 noValidate className={`ePosterDisplays ${selectedCompany.meta.contactFormClass}`} onSubmit={this.onSubmit}>
                   <Form1.Row style={{ paddingBottom: 10 }}>
                     <Col>
                       <Form1.Control
@@ -783,14 +656,10 @@ class SpecialLandingPage extends Component {
                         aria-required={true}
                         required
                         type="email"
-                        onChange={(event) =>
-                          this.setState({ email: event.currentTarget.value })
-                        }
+                        onChange={(event) => this.setState({ email: event.currentTarget.value })}
                         value={this.state.email}
                       />
-                      <Form1.Control.Feedback type="invalid">
-                        Please provide a valid email id.
-                      </Form1.Control.Feedback>
+                      <Form1.Control.Feedback type="invalid">Please provide a valid email id.</Form1.Control.Feedback>
                     </Col>
                   </Form1.Row>
                   <Form1.Row style={{ paddingBottom: 10 }}>
@@ -800,18 +669,14 @@ class SpecialLandingPage extends Component {
                         aria-label="Name"
                         required
                         placeholder="First Name"
-                        onChange={(event) =>
-                          this.setState({ name: event.currentTarget.value })
-                        }
+                        onChange={(event) => this.setState({ name: event.currentTarget.value })}
                         value={this.state.name}
                       />
-                      <Form1.Control.Feedback type="invalid">
-                        Name field cannot be empty
-                      </Form1.Control.Feedback>
+                      <Form1.Control.Feedback type="invalid">Name field cannot be empty</Form1.Control.Feedback>
                     </Col>
                   </Form1.Row>
 
-                  <Form1.Row style={{ paddingBottom: 10 }}>
+                  <Form1.Row style={{ paddingBottom: 10, display: "flex", gap: 10 }}>
                     <Col>
                       <Form1.Control
                         aria-label="Country Code"
@@ -825,9 +690,7 @@ class SpecialLandingPage extends Component {
                         }
                         value={this.state.mobileCode}
                       />
-                      <Form1.Control.Feedback type="invalid">
-                        Country code field cannot be empty
-                      </Form1.Control.Feedback>
+                      <Form1.Control.Feedback type="invalid">Country code field cannot be empty</Form1.Control.Feedback>
                     </Col>
                     <Col xs={10}>
                       <Form1.Control
@@ -835,15 +698,11 @@ class SpecialLandingPage extends Component {
                         placeholder="Contact number"
                         aria-required={true}
                         required
-                        onChange={(event) =>
-                          this.setState({ mobile: event.currentTarget.value })
-                        }
+                        onChange={(event) => this.setState({ mobile: event.currentTarget.value })}
                         value={this.state.mobile}
                         maxLength={10}
                       />
-                      <Form1.Control.Feedback type="invalid">
-                        Phone number field cannot be empty
-                      </Form1.Control.Feedback>
+                      <Form1.Control.Feedback type="invalid">Phone number field cannot be empty</Form1.Control.Feedback>
                     </Col>
                   </Form1.Row>
                   <Form1.Row style={{ paddingBottom: 10 }}>
@@ -855,24 +714,13 @@ class SpecialLandingPage extends Component {
                         as="textarea"
                         rows="3"
                         placeholder="Comments(optional)"
-                        onChange={(event) =>
-                          this.setState({ message: event.currentTarget.value })
-                        }
+                        onChange={(event) => this.setState({ message: event.currentTarget.value })}
                         value={this.state.message}
                       />
-                      <Form1.Control.Feedback type="invalid">
-                        Message field cannot be empty
-                      </Form1.Control.Feedback>
+                      <Form1.Control.Feedback type="invalid">Message field cannot be empty</Form1.Control.Feedback>
                     </Col>
                   </Form1.Row>
-                  <Button
-                    className="redButton"
-                    aria-label="Submit Form Button"
-                    style={{ marginTop: 10, width: "100%" }}
-                    variant="primary"
-                    type="submit"
-                    disabled={this.state.submit}
-                  >
+                  <Button className="redButton" aria-label="Submit Form Button" style={{ marginTop: 10, width: "100%" }} variant="primary" type="submit" disabled={this.state.submit}>
                     Submit
                   </Button>
                   {/* <div style={{ paddingBottom: 50 }}></div> */}
@@ -886,9 +734,7 @@ class SpecialLandingPage extends Component {
                     style={{ margin: "10px" }}
                   />
                   <Toast
-                    onClose={() =>
-                      this.setState({ show: false, submit: false })
-                    }
+                    onClose={() => this.setState({ show: false, submit: false })}
                     show={this.state.show}
                     className="toastSuccess"
                     // transition="Fade"
@@ -897,14 +743,11 @@ class SpecialLandingPage extends Component {
                       <strong className="me-auto">Success</strong>
                     </Toast.Header>
                     <Toast.Body>
-                      Thank You! <br /> Your query has been successfully
-                      submitted.
+                      Thank You! <br /> Your query has been successfully submitted.
                     </Toast.Body>
                   </Toast>
                   <Toast
-                    onClose={() =>
-                      this.setState({ showError: false, submit: false })
-                    }
+                    onClose={() => this.setState({ showError: false, submit: false })}
                     show={this.state.showError}
                     className="toastError"
                     // transition="Fade"
@@ -912,9 +755,7 @@ class SpecialLandingPage extends Component {
                     <Toast.Header>
                       <strong className="me-auto">Error</strong>
                     </Toast.Header>
-                    <Toast.Body>
-                      We were unable to recieve your query. Please try again.
-                    </Toast.Body>
+                    <Toast.Body>We were unable to recieve your query. Please try again.</Toast.Body>
                   </Toast>
                   <div style={{ paddingBottom: 50 }}></div>
                   <div style={{ paddingBottom: 50 }}></div>

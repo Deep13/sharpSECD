@@ -161,7 +161,7 @@ export default function QueryForm(props) {
     <div>
       <Form1 noValidate validated={validated} onSubmit={onSubmit}>
         <FormControl variant="outlined" className={classes.formControl}>
-          <InputLabel>Select subject</InputLabel>
+          <InputLabel style={{ transform: "translate(14px, 3px) scale(0.75)" }}>Select subject</InputLabel>
           <Select
             role="group"
             aria-label="Select subject"
@@ -194,49 +194,21 @@ export default function QueryForm(props) {
               <Checkbox checked={subject.indexOf("ePoster Signage Display Modules") > -1} />
               <ListItemText primary={"ePoster Signage Display Modules"} />
             </MenuItem>
-            <MenuItem
-              key={"General Purpose Displays"}
-              value={"General Purpose Displays"}
-            >
-              <Checkbox
-                checked={subject.indexOf("General Purpose Displays") > -1}
-              />
+            <MenuItem key={"General Purpose Displays"} value={"General Purpose Displays"}>
+              <Checkbox checked={subject.indexOf("General Purpose Displays") > -1} />
               <ListItemText primary={"General Purpose Displays"} />
             </MenuItem>
           </Select>
-          {errorText && (
-            <FormHelperText style={{ marginLeft: 0, color: "#a91e2c" }}>
-              You need to select a subject
-            </FormHelperText>
-          )}
+          {errorText && <FormHelperText style={{ marginLeft: 0, color: "#a91e2c" }}>You need to select a subject</FormHelperText>}
         </FormControl>
-        <Form1.Row>
+        <Form1.Row style={{ display: "flex", gap: 10 }}>
           <Col>
-            <Form1.Control
-              aria-required={true}
-              aria-label="Name"
-              required
-              placeholder="Name"
-              onChange={(event) => changeValue("name", event)}
-              value={name}
-            />
-            <Form1.Control.Feedback type="invalid">
-              Name field cannot be empty
-            </Form1.Control.Feedback>
+            <Form1.Control aria-required={true} aria-label="Name" required placeholder="Name" onChange={(event) => changeValue("name", event)} value={name} />
+            <Form1.Control.Feedback type="invalid">Name field cannot be empty</Form1.Control.Feedback>
           </Col>
           <Col xs={7}>
-            <Form1.Control
-              aria-label="Email"
-              placeholder="Email"
-              aria-required={true}
-              required
-              type="email"
-              onChange={(event) => changeValue("email", event)}
-              value={email}
-            />
-            <Form1.Control.Feedback type="invalid">
-              Please provide a valid email id.
-            </Form1.Control.Feedback>
+            <Form1.Control aria-label="Email" placeholder="Email" aria-required={true} required type="email" onChange={(event) => changeValue("email", event)} value={email} />
+            <Form1.Control.Feedback type="invalid">Please provide a valid email id.</Form1.Control.Feedback>
             {/* <Form1.Text className="text-muted">
               We'll never share your email with anyone else.
             </Form1.Text> */}
@@ -244,34 +216,14 @@ export default function QueryForm(props) {
         </Form1.Row>
         <Form1.Row>
           <Col>
-            <Form1.Control
-              aria-label="Message"
-              aria-required={true}
-              required
-              as="textarea"
-              rows="3"
-              placeholder="Message"
-              onChange={(event) => changeValue("message", event)}
-              value={message}
-            />
-            <Form1.Control.Feedback type="invalid">
-              Message field cannot be empty
-            </Form1.Control.Feedback>
+            <Form1.Control aria-label="Message" aria-required={true} required as="textarea" rows="3" placeholder="Message" onChange={(event) => changeValue("message", event)} value={message} />
+            <Form1.Control.Feedback type="invalid">Message field cannot be empty</Form1.Control.Feedback>
           </Col>
         </Form1.Row>
-        <Form1.Row>
+        <Form1.Row style={{ display: "flex", gap: 10 }}>
           <Col>
-            <Form1.Control
-              aria-label="Country Code"
-              placeholder="+1"
-              aria-required={true}
-              required
-              onChange={(event) => changeValue("mobileCode", event)}
-              value={mobileCode}
-            />
-            <Form1.Control.Feedback type="invalid">
-              Country code field cannot be empty
-            </Form1.Control.Feedback>
+            <Form1.Control aria-label="Country Code" placeholder="+1" aria-required={true} required onChange={(event) => changeValue("mobileCode", event)} value={mobileCode} />
+            <Form1.Control.Feedback type="invalid">Country code field cannot be empty</Form1.Control.Feedback>
           </Col>
           <Col xs={10}>
             <Form1.Control
@@ -284,32 +236,14 @@ export default function QueryForm(props) {
               value={mobile}
               maxLength={10}
             />
-            <Form1.Control.Feedback type="invalid">
-              Phone number field cannot be empty
-            </Form1.Control.Feedback>
+            <Form1.Control.Feedback type="invalid">Phone number field cannot be empty</Form1.Control.Feedback>
           </Col>
         </Form1.Row>
-        <div
-          className="row"
-          style={{ justifyContent: "space-between", padding: "0px 15px" }}
-        >
+        <div className="row" style={{ justifyContent: "space-between", padding: "0px 15px" }}>
           <div>
-            <ReCAPTCHA
-              sitekey="6Le5pDsaAAAAAPsR8d8cLNYBOPwLfnBE37KM4-5l"
-              onChange={onChange}
-            />
-            {errorCaptchaText && (
-              <div style={{ marginLeft: 0, color: "#a91e2c" }}>
-                Verify you are a human
-              </div>
-            )}
-            <Button
-              aria-label="Submit Form Button"
-              style={{ marginTop: 10 }}
-              className="contact-button"
-              variant="primary"
-              type="submit"
-            >
+            <ReCAPTCHA sitekey="6Le5pDsaAAAAAPsR8d8cLNYBOPwLfnBE37KM4-5l" onChange={onChange} />
+            {errorCaptchaText && <div style={{ marginLeft: 0, color: "#a91e2c" }}>Verify you are a human</div>}
+            <Button aria-label="Submit Form Button" style={{ marginTop: 10 }} className="contact-button" variant="primary" type="submit">
               Submit your query
             </Button>
           </div>
@@ -329,7 +263,7 @@ export default function QueryForm(props) {
               delay={3000}
               autohide
               className="toastSuccess"
-            // transition="Fade"
+              // transition="Fade"
             >
               <Toast.Body>
                 Thank You! <br /> Your query has been successfully submitted.
@@ -341,7 +275,7 @@ export default function QueryForm(props) {
               delay={3000}
               autohide
               className="toastError"
-            // transition="Fade"
+              // transition="Fade"
             >
               {/* <Toast.Header>
               <strong className="mr-auto">Success</strong>

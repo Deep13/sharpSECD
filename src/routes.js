@@ -35,6 +35,7 @@ import MemoryInPixelLanding from "./components/MemoryInPixelLanding";
 import ReflectiveLCDLanding from "./components/ReflectiveLCDLanding";
 import Eposters from "./components/Eposters";
 import Eposters_Displays from "./components/Eposters_Displays";
+import EposterTechnology from "./components/Technologies/ePosterTechnology";
 import LowPowerODonnel from "./components/LowPowerODonnel";
 import RIGZOTCS from "./components/RIGZOTCS";
 import { Cookies } from "react-cookie-consent";
@@ -104,6 +105,10 @@ function Routes() {
         <Route path="/R-IGZO-Control-Sales" component={ControlSalesRIGZO} />
         <Route path="/eposters" component={Eposters} />
         <Route path="/eposters-displays" component={Eposters_Displays} />
+        <Route
+          path="/eposter-display-modules-technology"
+          component={EposterTechnology}
+        />
         <Route path="/MemoryInPixel-ODonnell" component={ODonnellMIP} />
         <Route path="/MemoryInPixel-Control-Sales" component={ControlSales} />
 
