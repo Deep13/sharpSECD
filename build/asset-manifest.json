@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.dc82caa5.css",
-    "main.js": "/static/js/main.b5c2c98c.js",
+    "main.css": "/static/css/main.4927687e.css",
+    "main.js": "/static/js/main.3212ea54.js",
     "static/media/ePosterVideo.mp4": "/static/media/ePosterVideo.7ce0b93c228d45e5ab00.mp4",
     "static/media/Sharp-ePoster-Technical-Note-June-2026.pdf": "/static/media/Sharp-ePoster-Technical-Note-June-2026.7cc32521764eeac7e5ad.pdf",
     "static/media/Sharp Low-Power Displays White Paper.pdf": "/static/media/Sharp Low-Power Displays White Paper.9f44a5f47165bc03c8f9.pdf",
@@ -236,18 +236,18 @@
     "static/media/Sharp-LQ084S3LG11-Mechanical-Drawing.gif": "/static/media/Sharp-LQ084S3LG11-Mechanical-Drawing.67e649fceade7af5e8ab.gif",
     "static/media/Icon 2.jpeg": "/static/media/Icon 2.192325ba6ddffc1d8b59.jpeg",
     "static/media/Sharp-LQ064X3LW02-Mechanical-Drawing.gif": "/static/media/Sharp-LQ064X3LW02-Mechanical-Drawing.dced3f85c431866b5c38.gif",
-    "static/media/Sharp-LQ150X1LX95-Mechanical-Drawing.gif": "/static/media/Sharp-LQ150X1LX95-Mechanical-Drawing.6e2e2c28b17027e02071.gif",
     "index.html": "/index.html",
+    "static/media/Sharp-LQ150X1LX95-Mechanical-Drawing.gif": "/static/media/Sharp-LQ150X1LX95-Mechanical-Drawing.6e2e2c28b17027e02071.gif",
     "static/media/Sharp-LQ104S1LG75-Mechanical-Drawing.gif": "/static/media/Sharp-LQ104S1LG75-Mechanical-Drawing.892a769970c9a68cf663.gif",
     "static/media/Icon 1.jpeg": "/static/media/Icon 1.aa570236d1472f1e1f12.jpeg",
     "static/media/Icon 6.jpeg": "/static/media/Icon 6.a7b3d522750383b853b4.jpeg",
     "static/media/Sharp-LQ150X1LX96-Mechanical-Drawing.gif": "/static/media/Sharp-LQ150X1LX96-Mechanical-Drawing.b0773dc35d79e954f8ab.gif",
     "static/media/Sharp-LQ156T3LW03-Mechanical-Drawing.gif": "/static/media/Sharp-LQ156T3LW03-Mechanical-Drawing.51aac19fb0fc5f178c36.gif",
-    "main.dc82caa5.css.map": "/static/css/main.dc82caa5.css.map",
-    "main.b5c2c98c.js.map": "/static/js/main.b5c2c98c.js.map"
+    "main.4927687e.css.map": "/static/css/main.4927687e.css.map",
+    "main.3212ea54.js.map": "/static/js/main.3212ea54.js.map"
   },
   "entrypoints": [
-    "static/css/main.dc82caa5.css",
-    "static/js/main.b5c2c98c.js"
+    "static/css/main.4927687e.css",
+    "static/js/main.3212ea54.js"
   ]
 }
