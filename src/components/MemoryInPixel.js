@@ -94,7 +94,7 @@ export default class MemoryInPixel extends Component {
         </Helmet>
 
         <div
-          aria-label="Person checking GPS smartwatch outdoors with mountains in background, illustrating high sunlight readability of Sharp Memory LCDs"
+          aria-label="Mountain landscape illustrating outdoor visibility of Sharp Memory in Pixel LCD technology."
           style={{
             alignItems: "center",
             backgroundImage: `url(${Screen3})`,
@@ -113,7 +113,7 @@ export default class MemoryInPixel extends Component {
               padding: 20,
             }}
           >
-            <Image role="presentation" alt="SHARP Logo" src={logo} style={{ width: "35%", paddingTop: "50px", maxWidth: 300 }} />
+            <Image alt="Sharp logo" src={logo} style={{ width: "35%", paddingTop: "50px", maxWidth: 300 }} />
             <div style={{ paddingTop: 150 }}>
               <h1
                 style={{
@@ -134,7 +134,7 @@ export default class MemoryInPixel extends Component {
                 <strong>High Ambient-Light Performance. Long Battery Life.</strong>
               </p>
             </div>
-            <Image role="presentation" alt="arrow" src={arrow} style={{ maxWidth: "32px", paddingTop: 80 }} />
+            <Image alt="" src={arrow} style={{ maxWidth: "32px", paddingTop: 80 }} />
           </div>
         </div>
         <div
@@ -155,7 +155,7 @@ export default class MemoryInPixel extends Component {
           >
             <div className="col-md-6" style={{ padding: 100 }}>
               <div>
-                <img style={{ width: "100%" }} src={image1} role="presentation" alt="Sharp Memory-in-Pixel LCD demo with Epson controller" />
+                <img style={{ width: "100%" }} src={image1} alt="Sharp Memory in Pixel LCD development board with integrated display module." />
                 <p
                   style={{
                     fontStyle: "italic",
@@ -260,7 +260,7 @@ export default class MemoryInPixel extends Component {
               </div>
               <div className="col-md-6" style={{ padding: 30 }}>
                 <div>
-                  <img style={{ width: "100%" }} src={image2} role="presentation" alt="A display on a bicycle suggesting high outdoor performance in bright light." />
+                  <img style={{ width: "100%" }} src={image2} alt="Bicycle handlebar display powered by a Sharp Memory in Pixel LCD." />
                 </div>
               </div>
               <div tabIndex={0} className="col-md-6">
@@ -381,7 +381,7 @@ export default class MemoryInPixel extends Component {
               </div>
               <div className="col-md-6" style={{ padding: 30 }}>
                 <div>
-                  <img style={{ width: "100%" }} src={image3} role="presentation" alt="Sharp Memory-in-Pixel LCD in reflective mode without backlight" />
+                  <img style={{ width: "100%" }} src={image3} alt="Memory in Pixel LCD remaining clearly visible in bright sunlight." />
                   <p
                     style={{
                       fontStyle: "italic",
@@ -420,7 +420,7 @@ export default class MemoryInPixel extends Component {
             <div className="row">
               <div tabIndex={0} className="col-md-4">
                 <div>
-                  <img style={{ width: 90 }} src={icon} role="presentation" alt="icon" />
+                  <img style={{ width: 90 }} src={icon} alt="" />
                   <h1 style={{ fontSize: "1.75rem", padding: "1vw" }}>
                     <strong>PRODUCT LINE-UP</strong>
                   </h1>
@@ -429,7 +429,7 @@ export default class MemoryInPixel extends Component {
               </div>
               <div tabIndex={0} className="col-md-4">
                 <div>
-                  <img style={{ width: 90 }} src={icon2} role="presentation" alt="icon" />
+                  <img style={{ width: 90 }} src={icon2} alt="" />
                   <h1 style={{ fontSize: "1.75rem", padding: "1vw" }}>
                     <strong>HIGH READABILITY</strong>
                   </h1>
@@ -438,7 +438,7 @@ export default class MemoryInPixel extends Component {
               </div>
               <div tabIndex={0} className="col-md-4">
                 <div>
-                  <img style={{ width: 90 }} src={icon3} role="presentation" alt="icon" />
+                  <img style={{ width: 90 }} src={icon3} alt="" />
                   <h1 style={{ fontSize: "1.75rem", padding: "1vw" }}>
                     <strong>64-COLOR DISPLAYS</strong>
                   </h1>
@@ -451,7 +451,7 @@ export default class MemoryInPixel extends Component {
             <div className="row">
               <div tabIndex={0} className="col-md-4">
                 <div>
-                  <img style={{ width: 90 }} src={icon4} role="presentation" alt="icon" />
+                  <img style={{ width: 90 }} src={icon4} alt="" />
                   <h1 style={{ fontSize: "1.75rem", padding: "1vw" }}>
                     <strong>OPERATING TEMPS</strong>
                   </h1>
@@ -460,7 +460,7 @@ export default class MemoryInPixel extends Component {
               </div>
               <div tabIndex={0} className="col-md-4">
                 <div>
-                  <img style={{ width: 90 }} src={icon5} role="presentation" alt="icon" />
+                  <img style={{ width: 90 }} src={icon5} alt="" />
                   <h1 style={{ fontSize: "1.75rem", padding: "1vw" }}>
                     <strong>WIDE VIEWING ANGLE</strong>
                   </h1>
@@ -469,7 +469,7 @@ export default class MemoryInPixel extends Component {
               </div>
               <div tabIndex={0} className="col-md-4">
                 <div>
-                  <img style={{ width: 90 }} src={icon6} role="presentation" alt="icon" />
+                  <img style={{ width: 90 }} src={icon6} alt="" />
                   <h1 style={{ fontSize: "1.75rem", padding: "1vw" }}>
                     <strong>SIMPLE INTERFACE</strong>
                   </h1>

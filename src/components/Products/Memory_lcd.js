@@ -281,8 +281,7 @@ class Memory_lcd extends Component {
             className="col-md-6"
           >
             <Image
-              role="presentation"
-              alt="Grid of Sharp Memory-in-Pixel LCD modules with product specs"
+              alt="Examples of Sharp Memory in Pixel LCD modules in wearable and embedded applications."
               src={lcdImage}
               fluid
             />

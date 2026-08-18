@@ -42,7 +42,7 @@ const NewBody = () => {
       productImg: eposterProduct, // Transparent PNG
       mobileBgPos: "centered",
       link: "/eposters-displays",
-      alt: "Sharp ePoster display module showing a high-resolution static image for modern furniture advertisement.",
+      alt: "A Sharp ePoster display module shown in operation in a museum lobby.",
     },
     {
       id: 1,
@@ -55,7 +55,7 @@ const NewBody = () => {
       productImg: CarouselColor, // Transparent PNG
       mobileBgPos: "justified-right",
       link: "/MemoryInPixel",
-      alt: "A stock image representing Sharp's Memory in Pixel LCD integrated into a IoT product sitting on a wooden countertop",
+      alt: "Sharp 64-color Memory in Pixel LCD demonstration IoT device displayed on a tabletop.",
     },
   ];
 
@@ -120,7 +120,7 @@ const NewBody = () => {
           <img
             src={backup1}
             className="hero-video"
-            alt="Sharp SECD hero video with mountain landscape and text stating ‘The world leader in low-power, sunlight-viewable displays."
+            alt="Mountain landscape illustrating the outdoor visibility of Sharp low-power, sunlight-viewable display technology."
           />
         )}
         {!video1Error && video1Ended && (
@@ -137,7 +137,7 @@ const NewBody = () => {
         )}
         <div className="hero-content">
           <div className="logo-wrapper">
-            <img src={sharpLogo} alt="Sharp Logo" className="sharp-logo" />
+            <img src={sharpLogo} alt="Sharp logo" className="sharp-logo" />
           </div>
 
           <div className="text-overlay-box">
@@ -193,7 +193,7 @@ const NewBody = () => {
           <img
             src={backup2}
             className="section-video"
-            alt="Abstract dark technology background behind Sharp SECD features: world-class technologies, built to last, and US-based support"
+            alt=""
           />
         )}
         {!video2Error && video2Ended && (
@@ -219,10 +219,8 @@ const NewBody = () => {
 
           <div className="icon-grid">
             <div className="icon-item">
-              <div
-                alt="Globe icon representing Sharp SECD’s world-class display technologies"
-                className="icon-img world-tech"
-              ></div>
+              {/* Decorative support icon — adjacent heading provides the meaning. */}
+              <div aria-hidden="true" className="icon-img world-tech"></div>
               <p>
                 World-Class
                 <br />
@@ -231,18 +229,14 @@ const NewBody = () => {
             </div>
 
             <div className="icon-item">
-              <div
-                alt="Built to Last icon representing Sharp SECD's durable display modules"
-                className="icon-img built-last"
-              ></div>
+              {/* Decorative support icon. */}
+              <div aria-hidden="true" className="icon-img built-last"></div>
               <p>Built to Last</p>
             </div>
 
             <div className="icon-item">
-              <div
-                alt="USA badge icon representing Sharp SECD’s US-based technical support"
-                className="icon-img us-support"
-              ></div>
+              {/* Decorative support icon. */}
+              <div aria-hidden="true" className="icon-img us-support"></div>
               <p>
                 US-Based
                 <br />
@@ -271,7 +265,7 @@ const NewBody = () => {
           <div className="product-card">
             <div
               className="card-image"
-              alt="Close-up of a wearable device using Sharp Memory-in-Pixel LCD technology."
+              aria-label="Person interacting with a smartwatch powered by a Sharp Memory in Pixel LCD module."
               style={{ backgroundImage: `url('${memoryInPixel}')` }}
             >
               <div className="card-overlay">
@@ -296,7 +290,7 @@ const NewBody = () => {
           <div className="product-card">
             <div
               className="card-image"
-              alt="Sharp ePoster display module showing a high-resolution static image for modern furniture advertisement."
+              aria-label="Sharp color ePoster display module installed in a modern retail environment."
               style={{ backgroundImage: `url('${ePosterDisplay}')` }}
             >
               <div className="card-overlay">
@@ -323,7 +317,7 @@ const NewBody = () => {
           <div className="product-card">
             <div
               className="card-image"
-              alt="Sharp ePoster display module showing a high-resolution static image for modern furniture advertisement."
+              aria-label="Person using a touchscreen device with a Sharp General Purpose LCD display."
               style={{ backgroundImage: `url('${generalPurposeLCD}')` }}
             >
               <div className="card-overlay">

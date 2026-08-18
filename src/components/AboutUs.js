@@ -41,7 +41,7 @@ export default function AboutUs() {
         />
       </Helmet>
       <div
-        aria-label="Sharp logo with mountain landscape and vibrant red tundra, illustrating display clarity and color performance"
+        aria-label="Mountain landscape representing Sharp's history of display innovation."
         style={{
           backgroundImage: `url(${Screen3})`,
           backgroundSize: "cover",
@@ -64,8 +64,7 @@ export default function AboutUs() {
           }}
         >
           <Image
-            role="presentation"
-            alt="SHARP Logo"
+            alt="Sharp logo"
             src={logo}
             style={{ width: "90%", paddingTop: "50px", maxWidth: 300 }}
           />
@@ -205,8 +204,7 @@ export default function AboutUs() {
         >
           <div style={{ flex: 1, zIndex: 1 }}>
             <Image
-              role="presentation"
-              alt="Driver interacting with digital dashboard touchscreen in a smart vehicle"
+              alt=""
               src={Auto}
               style={{ width: "100%" }}
             />
@@ -221,8 +219,7 @@ export default function AboutUs() {
           ></div>
           <div style={{ flex: 1, zIndex: 1 }}>
             <Image
-              role="presentation"
-              alt="Illustration of person using a virtual reality headset with digital interface overlay"
+              alt=""
               src={VR}
               style={{ width: "100%" }}
             />
@@ -238,8 +235,7 @@ export default function AboutUs() {
 
           <div style={{ flex: 1, zIndex: 1 }}>
             <Image
-              role="presentation"
-              alt="Medical professional reviewing patient data on a digital tablet with a colleague"
+              alt=""
               src={Healthcare}
               style={{ width: "100%" }}
             />
@@ -255,8 +251,7 @@ export default function AboutUs() {
 
           <div style={{ flex: 1, zIndex: 1 }}>
             <Image
-              role="presentation"
-              alt="Woman checking smartwatch after workout, wearing headphones"
+              alt=""
               src={Exercise}
               style={{ width: "100%" }}
             />
@@ -264,8 +259,7 @@ export default function AboutUs() {
         </div>
         <div className="d-lg-none">
           <Image
-            role="presentation"
-            alt="Tech Icons"
+            alt=""
             src={TechIcons}
             style={{ width: "100%" }}
           />
@@ -356,8 +350,7 @@ export default function AboutUs() {
               <img
                 style={{ width: "80%" }}
                 src={GPS}
-                role="presentation"
-                alt="Hand holding rugged GPS device with outdoor display showing compass and navigation data"
+                alt="Engineer using a handheld electronic device with a Sharp LCD."
               />
             </div>
           </div>
@@ -487,8 +480,7 @@ export default function AboutUs() {
               <img
                 style={{ width: "80%" }}
                 src={Thermostat}
-                role="presentation"
-                alt="Finger adjusting temperature on touchscreen thermostat set to 23°C"
+                alt="Smart thermostat featuring a Sharp display."
               />
             </div>
           </div>
@@ -518,8 +510,7 @@ export default function AboutUs() {
               <img
                 style={{ width: "100%" }}
                 src={Engineering}
-                role="presentation"
-                alt="Two professionals reviewing data on a laptop in a modern office setting"
+                alt="Sharp engineers collaborating with customers on display solutions."
               />
             </div>
           </div>
@@ -626,8 +617,7 @@ export default function AboutUs() {
             style={{ display: "flex", width: "100%", alignItems: "flex-start" }}
           >
             <Image
-              role="presentation"
-              alt="Illustration of Sharp's original LCD calculator, the first consumer product with an LCD screen"
+              alt="Sharp LCD calculator, representing Sharp's first consumer LCD product."
               src={Calculator}
               style={{
                 width: 250,
@@ -708,8 +698,7 @@ export default function AboutUs() {
               </p>
             </div>
             <Image
-              role="presentation"
-              alt="Sharp's 1988 full-color LCD display showing a parrot image on screen, marking a breakthrough in display technology"
+              alt="Early Sharp full-color LCD monitor displaying an underwater image."
               src={Parrot}
               style={{
                 width: 250,
@@ -738,8 +727,7 @@ export default function AboutUs() {
             style={{ display: "flex", width: "100%", alignItems: "flex-start" }}
           >
             <Image
-              role="presentation"
-              alt="1990s Sharp innovations including a wall-mounted LCD TV with a vivid display and an early backfacing camera phone."
+              alt="Early LCD mobile phone and wall-mounted LCD television representing 1990s LCD innovations."
               src={Phone}
               style={{
                 width: 250,
@@ -820,8 +808,7 @@ export default function AboutUs() {
               </p>
             </div>
             <Image
-              role="presentation"
-              alt="In 1997, Sharp introduced the Super Mobile LCD—an ultra-high-quality display for digital cameras and phones, featuring vibrant clarity and 160-degree wide-angle viewing."
+              alt="Handheld digital camera with rear LCD screen demonstrating Sharp mobile LCD technology."
               src={Camera}
               style={{
                 width: 250,
@@ -850,8 +837,7 @@ export default function AboutUs() {
             style={{ display: "flex", width: "100%", alignItems: "flex-start" }}
           >
             <Image
-              role="presentation"
-              alt="In 2004, Sharp advanced thin-film transistor (TFT) technology, setting a new standard for display performance in smartphones, tablets, and televisions throughout the 2000s."
+              alt="Smartphone illustrating the widespread adoption of TFT LCD technology in consumer devices."
               src={iphone}
               style={{
                 width: 250,
@@ -933,8 +919,7 @@ export default function AboutUs() {
               </p>
             </div>
             <Image
-              role="presentation"
-              alt="Collage of a smartwatch, GPS handheld, and digital blood pressure monitor showing applications of Sharp’s low-power Memory in Pixel LCD technology in the 2010s."
+              alt="Examples of wearable and medical devices using Sharp Memory-in-Pixel LCD technology."
               src={MIP}
               style={{
                 width: 250,
@@ -962,8 +947,7 @@ export default function AboutUs() {
             style={{ display: "flex", width: "100%", alignItems: "flex-start" }}
           >
             <Image
-              role="presentation"
-              alt="A mock up with a photogrpah of Sharp’s Free Form Display featuring circular speedometer-style gauges integrated into a non-rectangular dashboard layout."
+              alt="Curved automotive display demonstrating Sharp Free Form Display technology."
               src={Automotive}
               style={{
                 width: 250,
@@ -1020,8 +1004,7 @@ export default function AboutUs() {
             }}
           >
             <Image
-              role="presentation"
-              alt="Digital ePoster display showing a colorful Grand Canyon tourism advertisement with the text “Grand Canyon Adventure.”"
+              alt="Electronic paper poster demonstrating Sharp ePoster display technology."
               src={ePoster}
               style={{
                 width: 250,

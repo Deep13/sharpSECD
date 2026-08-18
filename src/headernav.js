@@ -76,7 +76,7 @@ class Headernav extends Component {
         >
           <Navbar.Brand ref={this.header} href="/">
             <img
-              alt="Sharp SECD - World Leader in Display Technology"
+              alt="Sharp logo"
               src={logo}
               style={{ width: 120 }}
             />

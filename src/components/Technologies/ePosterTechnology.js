@@ -98,15 +98,19 @@ class ePosterTechnology extends Component {
     return (
       <div className="overflow-x-hidden">
         <Helmet>
-          <title>ePoster Display Module Technology | Sharp SECD</title>
+          <title>ePoster Display Technology | Paper Replacement Displays | Sharp</title>
           <meta
             name="description"
-            content="Discover the technology behind Sharp's ePoster display modules—combining Sharp's IGZO backplane with E Ink Spectra 6 full-color reflective ePaper for print-quality, near-zero-power digital paper replacement."
+            content="Discover Sharp's ePoster display technology featuring zero-power static image hold, paper-like readability, and low-power electronic paper modules for OEM applications."
           />
         </Helmet>
 
         {/* ===== HERO ===== */}
-        <div className="flex flex-col justify-end items-center min-h-screen bg-cover bg-center" style={{ backgroundImage: `url(${heroBg})` }}>
+        <div
+          aria-label="Sharp ePoster display module installed in a transportation environment."
+          className="flex flex-col justify-end items-center min-h-screen bg-cover bg-center"
+          style={{ backgroundImage: `url(${heroBg})` }}
+        >
           <div className="w-full max-w-[1000px] py-9 px-5 bg-[rgba(255,255,255,0.83)] mb-[28%] md:mb-[6%] ">
             <div className="mx-auto text-center">
               <h1 className="type-h1 m-0">
@@ -156,8 +160,7 @@ class ePosterTechnology extends Component {
             <img
               src={organicGrocery}
               className="w-full h-full object-cover"
-              role="presentation"
-              alt="Stock graphic with signage display showing how ePoster will look in a mall or retail environment "
+              alt="Grocery store promotion displayed on a Sharp ePoster."
             />
           </div>
         </div>
@@ -166,7 +169,11 @@ class ePosterTechnology extends Component {
         <div className="bg-cover bg-center flex justify-center" style={{ backgroundImage: `url(${spectraBg})` }}>
           <div className="max-w-[1280px] flex gap-[0px] md:gap-[20px] lg:gap-[40px] items-stretch flex-col md:flex-row w-full text-left">
             <div className="w-full md:w-1/2 flex items-center justify-center p-0 px-4 md:p-20 tablet:px-7">
-              <img src={spectraOverlay} className="w-full max-w-[490px] h-auto" role="presentation" alt="E Ink Spectra 6 full-color ePaper sample showing vivid colors" />
+              <img
+                src={spectraOverlay}
+                className="w-full max-w-[490px] h-auto"
+                alt="A colorful promotion for a coffee shop shows the performance of ePoster's E Ink Spectra technology."
+              />
             </div>
             <div className="w-full md:w-1/2 flex items-center justify-center md:justify-start pt-[0px] md:pt-20 p-20  px-4 tablet:px-7">
               <div className="bg-[rgba(255,255,255,0.93)] rounded-[4px] p-[4rem] tablet:p-10">
@@ -190,10 +197,10 @@ class ePosterTechnology extends Component {
             <p className="type-body1 mb-[30px]">Four particle colors, six optical states</p>
             <div className="flex gap-10 justify-center items-center flex-col md:flex-row">
               <div className="text-center">
-                <img src={colorChartLeft} className="w-full  h-auto" role="presentation" alt="Chart showing the four particle colors used by E Ink Spectra 6" />
+                <img src={colorChartLeft} className="w-full  h-auto" alt="Comparison of available color reproduction using E Ink Spectra technology: four particle colors." />
               </div>
               <div className="text-center">
-                <img src={colorChartRight} className="w-full  h-auto" role="presentation" alt="Chart showing the six optical states produced by E Ink Spectra 6" />
+                <img src={colorChartRight} className="w-full  h-auto" alt="Comparison of available color reproduction using E Ink Spectra technology: six optical states." />
               </div>
             </div>
           </div>
@@ -232,7 +239,7 @@ class ePosterTechnology extends Component {
           <div className={etpContainer}>
             <h2 className="type-h2 mb-6 text-center">COMPARISON OF ePOSTER TO AN a-Si MODULE</h2>
             <div className="w-full overflow-x-auto ">
-              <table className="border-collapse w-full min-w-[700px] mx-auto">
+              <table className="border-collapse w-full min-w-[700px] mx-auto" aria-label="A table comparing ePoster's specifications versus traditional display modules.">
                 <thead>
                   <tr>
                     <th className={`${cornerCell} w-[300px]`}>Features</th>
@@ -299,7 +306,7 @@ class ePosterTechnology extends Component {
                 </p>
               </div>
               <div className="w-full md:w-1/2 text-center">
-                <img src={sizeGuide} className="w-full h-auto" role="presentation" alt="ISO poster size guide diagram showing nested A0 through A4 paper sizes" />
+                <img src={sizeGuide} className="w-full h-auto" alt="Dimensional comparison of ISO paper sizes A0 - A4." />
               </div>
             </div>
           </div>
@@ -310,7 +317,7 @@ class ePosterTechnology extends Component {
           <div className={etpContainer}>
             <h2 className="type-h2 mb-6">INDOOR ePOSTER MODULE SPECIFICATIONS</h2>
             <div className="w-full overflow-x-auto">
-              <table className="border-collapse w-full min-w-[700px] mx-auto">
+              <table className="border-collapse w-full min-w-[700px] mx-auto" aria-label="A table comparing indoor ePoster module specifications - A1, A2, and A3 sizes.">
                 <thead>
                   <tr>
                     <th className={`${cornerCell}`}>Specs</th>
@@ -392,7 +399,7 @@ class ePosterTechnology extends Component {
                 </div>
               </div>
               <div className="w-full md:w-1/2 text-center">
-                <img src={whyOverlay} className="w-full h-auto" role="presentation" alt="ePoster module displaying a vertical poster in portrait orientation" />
+                <img src={whyOverlay} className="w-full h-auto" alt="A Sharp ePoster in operation for promotions in a clothing store." />
               </div>
             </div>
           </div>
@@ -426,7 +433,7 @@ class ePosterTechnology extends Component {
         {/* ===== SAY GOODBYE TO THE EXPENSE OF PRINTING ===== */}
         <div className="flex flex-col md:flex-row w-full bg-white text-left gap-10" tabIndex={0}>
           <div className="w-full md:w-1/2 p-0">
-            <img src={sayGoodbye} className="w-full h-full object-cover" role="presentation" alt="Stock graphic with signage display showing how ePoster will look in a mall or retail environment " />
+            <img src={sayGoodbye} className="w-full h-full object-cover" alt="Three ePoster displays in operation on a wall next to an escalator." />
           </div>
           <div className="w-full md:w-1/2 mb-[80px] md:pb-0">
             <div className="p-10">

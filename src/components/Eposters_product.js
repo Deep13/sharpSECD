@@ -205,10 +205,10 @@ class Eposters_product extends Component {
     return (
       <div>
         <Helmet>
-          <title>ePoster Paperless Signage Module Products| Sharp SECD</title>
+          <title>ePoster Paperless Display Module Products| Sharp SECD</title>
           <meta
             name="description"
-            content="Discover Sharp’s available ePoster modules—a zero-power, high-contrast signage display with 60,000 colors, perfect for sustainable paper replacement solutions."
+            content="Discover Sharp’s ePoster module line-up—paper replacement displays with 60k colors and zero-power in static mode."
           />
         </Helmet>
         <div className="row container-row-85 padding-top-50 padding-bottom-30 flex flex-col-reverse md:flex-row" style={{ overflowX: "hidden" }}>
@@ -237,7 +237,7 @@ class Eposters_product extends Component {
             data-aos-anchor-placement="top-center"
             className="col-md-6 pl-0 md:pl-[40px]"
           >
-            <Image role="presentation" alt="Concept image of Sharp ePoster 28.5-inch display module with simulated content" src={lcdImage} fluid />
+            <Image alt="Collection of Sharp ePoster display modules installed in commercial environments." src={lcdImage} fluid />
             <p
               style={{
                 fontStyle: "italic",

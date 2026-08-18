@@ -92,8 +92,7 @@ class MemoryLCD extends Component {
             style={{ justifyContent: "center", display: "flex" }}
           >
             <Image
-              role="presentation"
-              alt="Photograph of a blank Sharp Memory in Pixel landscape mode low power reflective display "
+              alt="Sharp Memory in Pixel LCD module illustrating reflective display technology."
               src={convdisp}
               fluid
             />
@@ -191,8 +190,7 @@ class MemoryLCD extends Component {
             <h2 style={{ paddingBottom: 50 }}>Ultra-low Power Consumption</h2>
             <img
               className="mob-img-full"
-              role="presentation"
-              alt="Power consumption for 1.28” and 2.7” Memory LCDs "
+              alt="Comparison of Memory in Pixel LCD power consumption during static and image refresh operation."
               src={convdisp1}
             />
           </div>
@@ -246,8 +244,7 @@ class MemoryLCD extends Component {
             </h2>
             <img
               className="mob-img-full"
-              role="presentation"
-              alt="Diagram showing an example of data memory in each pixel for the Sharp Memory in Pixel LCD."
+              alt="Diagram showing embedded memory contained within each display pixel."
               src={convdisp2}
             />
           </div>
@@ -373,8 +370,7 @@ class MemoryLCD extends Component {
             <h2 style={{ paddingBottom: 50 }}>Fast Image Refresh Time</h2>
             <img
               className="mob-img-full"
-              role="presentation"
-              alt="Table showing fast image refresh time for the Sharp Memory in Pixel LCD."
+              alt="Comparison of Memory in Pixel LCD refresh time versus conventional LCD technology."
               src={convdisp3}
             />
           </div>
@@ -462,8 +458,7 @@ class MemoryLCD extends Component {
             </h2>
             <img
               className="mob-img-full"
-              role="presentation"
-              alt="A diagram showing the simple 3-Wire Interface of a Sharp Memory in Pixel LCD."
+              alt="Simplified three-wire serial interface used to connect a Sharp Memory in Pixel LCD module."
               src={convdisp4}
             />
           </div>

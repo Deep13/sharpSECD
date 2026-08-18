@@ -99,20 +99,20 @@ class Eposters_Displays extends Component {
     return (
       <div>
         <Helmet>
-          <title>Sharp ePosters – Paperless Signage Modules | Sharp SECD</title>
-          <meta name="description" content="Explore Sharp ePosters—zero-power, high-contrast E Ink displays that replace printed signage. Ideal for retail, healthcare, hospitality, and more." />
+          <title>Sharp ePosters – Paperless Display Modules | Sharp SECD</title>
+          <meta name="description" content="Explore Sharp ePosters—zero-power, 60k color displays that replace printed posters. Ideal for retail, healthcare, hospitality, and more." />
         </Helmet>
         <div className="w-full">
           {/* ===== HERO ===== */}
           <div
-            aria-label="Concept image of Sharp ePoster used for museum exhibit signage"
+            aria-label="Digital retail display demonstrating Sharp ePoster paper replacement technology."
             tabIndex={0}
             className="w-full text-left bg-cover bg-no-repeat bg-[top_center] p-10 pt-[50px] md:pt-[120px]"
             style={{ backgroundImage: `url(${epostersCarousel})` }}
           >
             <div className="flex flex-col-reverse md:flex-row gap-10">
               <div className="flex-1 lg:pl-[90px]">
-                <img className="w-[400px] max-w-full" src={sharp_logo} role="presentation" alt="Control Sales Logo" />
+                <img className="w-[400px] max-w-full" src={sharp_logo} alt="Sharp logo" />
                 <div className="my-10">
                   <h1 className="type-h1 text-white lg:text-[60px]">
                     SAY GOODBYE
@@ -126,8 +126,7 @@ class Eposters_Displays extends Component {
                 <img
                   className="max-w-[550px] w-full"
                   src={eposterProduct}
-                  role="presentation"
-                  alt="Stock graphic with signage display showing how ePoster will look in a mall or retail environment "
+                  alt="Digital retail display demonstrating Sharp ePoster paper replacement technology."
                 />
                 <p className="font-light mt-2 text-[1rem] text-center text-white italic">Screen images shown are simulated unless otherwise noted. Actual display will differ. </p>
               </div>
@@ -156,15 +155,14 @@ class Eposters_Displays extends Component {
               <img
                 src={ePosterSummerSale}
                 className="w-full h-full object-cover"
-                role="presentation"
-                alt="Stock graphic with signage display showing how ePoster will look in a mall or retail environment "
+                alt="Sharp ePoster displaying seasonal retail advertising."
               />
             </div>
           </div>
 
           {/* ===== CREATE FLEXIBLE SOLUTIONS ===== */}
           <div
-            aria-label="Visual mock-up showing potential elevator signage using Sharp ePoster"
+            aria-label="Travelers viewing digital advertising displayed on Sharp ePoster modules."
             tabIndex={0}
             className="flex w-full text-left bg-cover bg-[position:top]"
             style={{ backgroundImage: `url(${ePosterElevatorDarker})` }}
@@ -189,29 +187,29 @@ class Eposters_Displays extends Component {
               <h2 className="type-h2 w-full text-white">APPLICATIONS INCLUDE</h2>
               <div className="flex flex-col md:flex-row w-full gap-10">
                 <div className="w-full md:w-1/2 lg:w-1/3 ">
-                  <img src={Restaurant} className="w-full" role="presentation" alt="Rendering of Sharp ePoster displaying a restaurant menu" />
+                  <img src={Restaurant} className="w-full" alt="Restaurant digital menu applications using Sharp ePoster modules." />
                   <h3 className="type-h3 w-full text-white text-center pt-2.5">Restaurants &amp; Cinema</h3>
                 </div>
                 <div className="w-full md:w-1/2 lg:w-1/3 ">
-                  <img src={Education} className="w-full" role="presentation" alt="Example layout showing Sharp ePoster concept in a classroom environment" />
+                  <img src={Education} className="w-full" alt="Classroom information displayed on a Sharp ePoster." />
                   <h3 className="type-h3 w-full text-white text-center pt-2.5">Education</h3>
                 </div>
                 <div className="w-full md:w-1/2 lg:w-1/3 ">
-                  <img src={Healthcare} className="w-full" role="presentation" alt="Concept rendering of ePoster for medical office check-in or info display" />
+                  <img src={Healthcare} className="w-full" alt="Healthcare communication displayed on Sharp ePoster signage." />
                   <h3 className="type-h3 w-full text-white text-center pt-2.5">Healthcare</h3>
                 </div>
               </div>
               <div className="flex flex-col md:flex-row w-full gap-10">
                 <div className="w-full md:w-1/2 lg:w-1/3 ">
-                  <img src={Rental} className="w-full" role="presentation" alt="Visualization of retail promotion signage using Sharp ePoster" />
+                  <img src={Rental} className="w-full" alt="Retail promotional signage displayed on Sharp ePoster technology." />
                   <h3 className="type-h3 w-full text-white text-center pt-2.5">Retail</h3>
                 </div>
                 <div className="w-full md:w-1/2 lg:w-1/3 ">
-                  <img src={Lobbies} className="w-full" role="presentation" alt="Mock-up depicting ePoster module as advertising in a lobby." />
+                  <img src={Lobbies} className="w-full" alt="Digital information display in a commercial lobby." />
                   <h3 className="type-h3 w-full text-white text-center pt-2.5">Lobbies</h3>
                 </div>
                 <div className="w-full md:w-1/2 lg:w-1/3 ">
-                  <img src={Hotel} className="w-full" role="presentation" alt="Illustration of Sharp ePoster used for hotel room or hallway signage" />
+                  <img src={Hotel} className="w-full" alt="Hotel information displayed on Sharp ePoster signage." />
                   <h3 className="type-h3 w-full text-white text-center pt-2.5">Hotel &amp; Hospitality</h3>
                 </div>
               </div>
@@ -221,7 +219,7 @@ class Eposters_Displays extends Component {
           {/* ===== KEY FEATURES ===== */}
           <div className="flex flex-col md:flex-row items-stretch w-full bg-white text-left p-10 md:p-20 gap-10" tabIndex={0}>
             <div className="w-full md:w-1/2 flex flex-col justify-start items-center ">
-              <img src={GRAND} className="w-full max-w-[490px]" role="presentation" alt="Photograph of actual Sharp ePoster holding a static image in zero-power mode" />
+              <img src={GRAND} className="w-full max-w-[490px]" alt="A Sharp ePoster showing an image that highlights the product's 60k color gamut." />
               <p className="font-light mt-5 text-[1rem] text-center">Actual photograph of display in zero-power operation </p>
             </div>
             <div className="w-full md:w-1/2">
@@ -248,21 +246,21 @@ class Eposters_Displays extends Component {
             <h2 className="type-h2 w-full max-w-[1280px] text-white text-left pb-[30px]">INDOOR SOLUTIONS IN THREE SIZES</h2>
             <div className="flex flex-col md:flex-row justify-center gap-10 w-full max-w-[1280px]">
               <div className="w-full md:w-1/3">
-                <img src={A1ePoster} className="w-full block" role="presentation" alt="Sharp A1 ePoster display module shown in an indoor signage setting" />
+                <img src={A1ePoster} className="w-full block" alt="Comparison of available Sharp ePoster display module sizes: A1." />
                 <div className="bg-white px-[15px] py-5 text-center">
                   <h3 className="type-h3 mb-[5px]">A1 ePoster</h3>
                   <p className="type-body1 m-0">23.4 x 33.1 inches</p>
                 </div>
               </div>
               <div className="w-full md:w-1/3">
-                <img src={A2ePoster} className="w-full block" role="presentation" alt="Sharp A2 ePoster display module shown in an indoor signage setting" />
+                <img src={A2ePoster} className="w-full block" alt="Comparison of available Sharp ePoster display module sizes: A2." />
                 <div className="bg-white px-[15px] py-5 text-center">
                   <h3 className="type-h3 mb-[5px]">A2 ePoster</h3>
                   <p className="type-body1 m-0">16.5 x 23.4 inches</p>
                 </div>
               </div>
               <div className="w-full md:w-1/3">
-                <img src={A3ePoster} className="w-full block" role="presentation" alt="Sharp A3 ePoster display module shown in an indoor signage setting" />
+                <img src={A3ePoster} className="w-full block" alt="Comparison of available Sharp ePoster display module sizes: A3." />
                 <div className="bg-white px-[15px] py-5 text-center">
                   <h3 className="type-h3 mb-[5px]">A3 ePoster</h3>
                   <p className="type-body1 m-0">11.7 x 16.5 inches</p>
@@ -279,17 +277,17 @@ class Eposters_Displays extends Component {
             <h2 className="type-h2">LOW POWER REQUIREMENT = LOW COST OF OWNERSHIP</h2>
             <div className="flex flex-wrap w-full text-left mt-[30px] pb-5" tabIndex={0}>
               <div className="w-full md:w-1/3 text-center px-2 lg:px-5">
-                <img src={Zero} className="w-[200px] mx-auto" role="presentation" alt="Zero power" />
+                <img src={Zero} className="w-[200px] mx-auto" alt="" />
                 <h3 className="type-h3">ZERO POWER</h3>
                 <p className="type-body1 font-medium">ePoster technology enables zero-power operation while maintaining a static image hold</p>
               </div>
               <div className="w-full md:w-1/3 text-center px-2 lg:px-5">
-                <img src={Earth} className="w-[200px] mx-auto" role="presentation" alt="Earth friendly" />
+                <img src={Earth} className="w-[200px] mx-auto" alt="" />
                 <h3 className="type-h3">EARTH FRIENDLY</h3>
                 <p className="type-body1 font-medium">An electronic solution eliminates trips to the printer and reduces paper waste. </p>
               </div>
               <div className="w-full md:w-1/3 text-center px-2 lg:px-5">
-                <img src={Low} className="w-[200px] mx-auto" role="presentation" alt="Low cost operation" />
+                <img src={Low} className="w-[200px] mx-auto" alt="" />
                 <h3 className="type-h3">LOW-COST OPERATION</h3>
                 <p className="type-body1 font-medium">Low power usage plus eliminating printing expenses equals low-cost operation. </p>
               </div>
@@ -311,7 +309,7 @@ class Eposters_Displays extends Component {
               </span>
             </div>
             <div className="w-full md:w-1/2">
-              <img src={Retail} className="w-full h-full object-cover" role="presentation" alt="Concept mock-up showing ePoster display in a shopping mall setting" />
+              <img src={Retail} className="w-full h-full object-cover" alt="An image of a Sharp ePoster in a retail application inside a clothing store." />
             </div>
           </div>
 

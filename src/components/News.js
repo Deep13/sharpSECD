@@ -55,7 +55,7 @@ class MemoryLCD extends Component {
             className="col-md-6"
             style={{ justifyContent: "center", display: "flex" }}
           >
-            <Image role="presentation" alt="The outline of a Sharp display with a picture of flowers suggesting brightness and contrast" src={convdisp} fluid />
+            <Image alt="Mountain meadow landscape used as the Sharp SECD News page banner." src={convdisp} fluid />
           </div>
         </div>
         <div className="padding-top-50 padding-bottom-30" style={{ backgroundColor: "#e4e4e4" }}>
@@ -74,8 +74,7 @@ class MemoryLCD extends Component {
             </div>
             <div className="col-md-6" style={{ justifyContent: "center", display: "flex" }}>
               <Image
-                role="presentation"
-                alt="Sharp 40.5-inch A1 ePoster display module showing a full-color advertisement, an ultra-low-power replacement for printed ISO A1 poster signage."
+                alt="Sharp 40.5-inch ePoster display module displaying conference center content."
                 src={news5}
                 style={{ maxHeight: 400 }}
                 fluid
@@ -106,8 +105,7 @@ class MemoryLCD extends Component {
             </div>
             <div className="col-md-6" style={{ justifyContent: "center", display: "flex" }}>
               <Image
-                role="presentation"
-                alt="Sharp's new 3.5-inch Memory in Pixel LCD displaying a vivid sunset with palm trees, showcasing high contrast and 64-color capability in reflective mode."
+                alt="Sharp Memory in Pixel LCD module displaying a tropical image."
                 src={news4}
                 style={{ maxHeight: 400 }}
                 fluid
@@ -138,8 +136,7 @@ class MemoryLCD extends Component {
             </div>
             <div className="col-md-6" style={{ justifyContent: "center", display: "flex" }}>
               <Image
-                role="presentation"
-                alt="Sharp ePoster digital display showing a Summer Sale advertisement in a bright retail environment, highlighting paperless signage."
+                alt="Sharp ePoster digital signage module displaying seasonal retail advertising."
                 src={news1}
                 style={{ maxHeight: 400 }}
                 fluid
@@ -170,8 +167,7 @@ class MemoryLCD extends Component {
             </div>
             <div className="col-md-6" style={{ justifyContent: "center", display: "flex" }}>
               <Image
-                role="presentation"
-                alt="Sharp 2.16-inch monochrome Memory in Pixel display showing a high-contrast image of a lion, connected to a red evaluation board."
+                alt="Sharp monochrome Memory in Pixel LCD plus compact development board."
                 src={news3}
                 style={{ maxHeight: 400 }}
                 fluid
@@ -202,8 +198,7 @@ class MemoryLCD extends Component {
             </div>
             <div className="col-md-6" style={{ justifyContent: "center", display: "flex" }}>
               <Image
-                role="presentation"
-                alt="Sharp 2.13-inch 64-color Memory in Pixel display module showing wearable speed and distance interface, mounted on a green evaluation board."
+                alt="Sharp 64-color Memory in Pixel LCD plus compact development board for wearable devices."
                 src={convdisp1}
                 style={{ maxHeight: 400 }}
                 fluid

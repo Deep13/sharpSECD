@@ -296,8 +296,7 @@ class Products extends Component {
             className="col-md-6"
           >
             <Image
-              role="presentation"
-              alt="Sharp general-purpose LCD models with size and resolution specs"
+              alt="General Purpose Sharp LCD displaying a high-resolution landscape photograph."
               src={lcdImage}
               fluid
             />
