@@ -35,7 +35,7 @@ export const products = [
       "Advertising, ATMs, Automotive , Climate Control, Factory Automation, Gaming/Lottery, Handheld Devices, Health/Fitness/Sports, Home Automation, In-flight Entertainment, Industrial Controls, Kiosks, MedicalDevices, Multimedia, Navigation/Transportation, POS Terminals, Test and Measurement, Wearable Technology, White Goods",
     "DIAGONAL SIZE": "1.19 inch Round",
     desc: "This 64-color Memory-in-Pixel LCD module is ideal for wrist-top or handheld applications or virtually any design that requires extremely low power consumption. It delivers smooth graphics in a popular shape, along with the flexibility to support rich custom content.",
-    PN: "LS012B7DD06A",
+    PN: "LS012B7DD06S",
     "LIFE CYCLE": "Production",
     "CONTRAST RATIO": "25:1",
     REFLECTIVITY: "8.4%",
@@ -56,8 +56,8 @@ export const products = [
     ],
     DOCUMENTS: [
       {
-        name: "Sharp-LCD-Specification-LS012B7DD06A-12-2-19",
-        link: require("../assets/Documents/Sharp-LCD-Specification-LS012B7DD06A-12-2-19.pdf"),
+        name: "LS012B7DD06S Spec (LD-2025350A)",
+        link: require("../assets/Documents/LS012B7DD06S_SPEC_LD2025350A_20250324.pdf"),
       },
     ],
   },
@@ -160,7 +160,7 @@ export const products = [
       "Advertising, ATMs, Automotive , Climate Control, Factory Automation, Gaming/Lottery, Handheld Devices, Health/Fitness/Sports, Home Automation, In-flight Entertainment, Industrial Controls, Kiosks, MedicalDevices, Multimedia, Navigation/Transportation, POS Terminals, Test and Measurement, Wearable Technology, White Goods",
     "DIAGONAL SIZE": "1.39 inch Round",
     desc: "This round 1.39-inch (diagonal) Memory-in-Pixel LCD renders 64 colors with an 18% NTSC ratio. This combines with a 25:1 contrast ratio to deliver high-quality images–static or moving–in a variety of lighting environments. The module’s reflective mode and ultra-low-power requirements make it perfect for wrist-top applications that require a battery.",
-    PN: "LS014B7DD01",
+    PN: "LS014B7DD01S",
     "LIFE CYCLE": "Pre-production",
     "CONTRAST RATIO": "25:1",
     REFLECTIVITY: "8.70%",
@@ -181,8 +181,8 @@ export const products = [
     ],
     DOCUMENTS: [
       {
-        name: "LS014B7DD01 Spec.",
-        link: require("../assets/Documents/LS014B7DD01_Spec_LCP-0620031B.pdf"),
+        name: "LS014B7DD01S Spec (LD-2025352B)",
+        link: require("../assets/Documents/LS014B7DD01S_SPEC_LD2025352B_20260701.pdf"),
       },
     ],
   },
