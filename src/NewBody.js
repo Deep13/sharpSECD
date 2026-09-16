@@ -265,6 +265,7 @@ const NewBody = () => {
           <div className="product-card">
             <div
               className="card-image"
+              role="img"
               aria-label="Person interacting with a smartwatch powered by a Sharp Memory in Pixel LCD module."
               style={{ backgroundImage: `url('${memoryInPixel}')` }}
             >
@@ -290,6 +291,7 @@ const NewBody = () => {
           <div className="product-card">
             <div
               className="card-image"
+              role="img"
               aria-label="Sharp color ePoster display module installed in a modern retail environment."
               style={{ backgroundImage: `url('${ePosterDisplay}')` }}
             >
@@ -317,6 +319,7 @@ const NewBody = () => {
           <div className="product-card">
             <div
               className="card-image"
+              role="img"
               aria-label="Person using a touchscreen device with a Sharp General Purpose LCD display."
               style={{ backgroundImage: `url('${generalPurposeLCD}')` }}
             >

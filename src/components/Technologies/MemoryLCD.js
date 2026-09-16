@@ -307,8 +307,7 @@ class MemoryLCD extends Component {
             <h2 style={{ paddingBottom: 50 }}>Data Memory in Each Pixel</h2>
             <img
             className="mob-img-full"
-              role="presentation"
-              alt="Sharp Technology MIP Data Memory"
+              alt="Diagram showing embedded memory contained within each display pixel."
               style={{ width: "100%" }}
               src={convdisp2}
             />
@@ -328,8 +327,7 @@ class MemoryLCD extends Component {
             <h2 style={{ paddingBottom: 50 }}>Fast Image Refresh Time </h2>
             <img
             className="mob-img-full"
-              role="presentation"
-              alt="Sharp Technology MIP Refresh"
+              alt="Comparison of Memory in Pixel LCD refresh time versus conventional LCD technology."
               style={{ width: "100%" }}
               src={convdisp3}
             />
@@ -434,8 +432,7 @@ class MemoryLCD extends Component {
             <h2 style={{ paddingBottom: 50 }}>Simple 3-Wire Interface</h2>
             <img
             className="mob-img-full"
-              role="presentation"
-              alt="Sharp Technology MIP Simple Interface"
+              alt="Simplified three-wire serial interface used to connect a Sharp Memory in Pixel LCD module."
               style={{ maxWidth: "100%", maxHeight: 500 }}
               src={convdisp4}
             />

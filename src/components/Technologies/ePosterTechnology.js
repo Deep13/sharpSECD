@@ -107,6 +107,7 @@ class ePosterTechnology extends Component {
 
         {/* ===== HERO ===== */}
         <div
+          role="img"
           aria-label="Sharp ePoster display module installed in a transportation environment."
           className="flex flex-col justify-end items-center min-h-screen bg-cover bg-center"
           style={{ backgroundImage: `url(${heroBg})` }}

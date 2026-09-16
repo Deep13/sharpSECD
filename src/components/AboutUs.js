@@ -41,6 +41,7 @@ export default function AboutUs() {
         />
       </Helmet>
       <div
+        role="img"
         aria-label="Mountain landscape representing Sharp's history of display innovation."
         style={{
           backgroundImage: `url(${Screen3})`,

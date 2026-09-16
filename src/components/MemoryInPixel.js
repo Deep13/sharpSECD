@@ -94,6 +94,7 @@ export default class MemoryInPixel extends Component {
         </Helmet>
 
         <div
+          role="img"
           aria-label="Mountain landscape illustrating outdoor visibility of Sharp Memory in Pixel LCD technology."
           style={{
             alignItems: "center",

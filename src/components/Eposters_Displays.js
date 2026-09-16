@@ -105,6 +105,7 @@ class Eposters_Displays extends Component {
         <div className="w-full">
           {/* ===== HERO ===== */}
           <div
+            role="img"
             aria-label="Digital retail display demonstrating Sharp ePoster paper replacement technology."
             tabIndex={0}
             className="w-full text-left bg-cover bg-no-repeat bg-[top_center] p-10 pt-[50px] md:pt-[120px]"
@@ -162,6 +163,7 @@ class Eposters_Displays extends Component {
 
           {/* ===== CREATE FLEXIBLE SOLUTIONS ===== */}
           <div
+            role="img"
             aria-label="Travelers viewing digital advertising displayed on Sharp ePoster modules."
             tabIndex={0}
             className="flex w-full text-left bg-cover bg-[position:top]"
