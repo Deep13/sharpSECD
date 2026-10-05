@@ -7,9 +7,8 @@ import backup1 from "./assets/new-home/backup1.jpg";
 import backup2 from "./assets/new-home/backup2.jpg";
 
 import sharpLogo from "./assets/SHARP_Logo_red.png";
-import memoryInPixel from "./assets/new-home/MIP.jpg";
-import ePosterDisplay from "./assets/new-home/ePoster.jpg";
-import generalPurposeLCD from "./assets/new-home/LCDs.jpg";
+import memoryInPixel from "./assets/new-home/MIPProductShot.jpg";
+import ePosterDisplay from "./assets/new-home/ePosterProductShot.jpg";
 
 import eposterProduct from "./assets/new-home/ePosterProduct.png";
 import Carousel64 from "./assets/new-home/64Carousel.jpg";
@@ -255,91 +254,72 @@ const NewBody = () => {
       </section>
 
       {/* 4. PRODUCT CARDS SECTION */}
-      <section className="product-cards">
+      <section
+        className="product-cards"
+        style={{ backgroundImage: `url('${backup1}')` }}
+      >
         <h2 className="product-headline">
           WITH SHARP, HIGH POWER REQUIREMENTS ARE A THING OF THE PAST.
         </h2>
 
         <div className="card-container">
-          {/* Card 1 */}
+          {/* Card 1 — ePoster Display Modules */}
           <div className="product-card">
             <div
               className="card-image"
               role="img"
-              aria-label="Person interacting with a smartwatch powered by a Sharp Memory in Pixel LCD module."
-              style={{ backgroundImage: `url('${memoryInPixel}')` }}
-            >
-              <div className="card-overlay">
-                <h3 className="card-subheader">MEMORY IN PIXEL LCDs</h3>
-                <div className="card-text-content">
-                  <p>Monochrome or 64 Colors</p>
-                  <p>1.08" to 4.4" Wearable</p>
-                  <p>Hand-held</p>
-                  <p>Operation power as low as 10's of microamps.</p>
-                  <button
-                    onClick={() => navigateTo("/MemoryInPixel")}
-                    className="red-btn card-cta"
-                  >
-                    View Products
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Card 2 */}
-          <div className="product-card">
-            <div
-              className="card-image"
-              role="img"
-              aria-label="Sharp color ePoster display module installed in a modern retail environment."
+              aria-label="Sharp ePoster display modules showing fast-food menu boards in a restaurant."
               style={{ backgroundImage: `url('${ePosterDisplay}')` }}
             >
+              <h3 className="card-subheader">ePOSTER DISPLAY MODULES</h3>
               <div className="card-overlay">
-                <h3 className="card-subheader">ePOSTER DISPLAY MODULES</h3>
                 <div className="card-text-content">
-                  <p>2160 x 3840 resolution</p>
+                  <p className="card-lead">
+                    Looks like paper. Refresh artwork without printing.
+                  </p>
+                  <p>2160 x 3060 Resolution</p>
                   <p>Zero power in static image mode</p>
                   <p>60k Color Gamut</p>
                   <p>E Ink Spectra 6</p>
-                  <p>High contrast</p>
-                  <p>Thin, Lightweight</p>
-                  <button
-                    onClick={() => navigateTo("/eposters-displays")}
-                    className="red-btn card-cta"
-                  >
-                    View Product
-                  </button>
+                  <p>High Contrast</p>
+                  <p>Thin, lightweight</p>
                 </div>
+                <button
+                  onClick={() => navigateTo("/eposters-displays")}
+                  className="red-btn card-cta"
+                >
+                  View Products
+                </button>
               </div>
             </div>
           </div>
 
-          {/* Card 3 */}
+          {/* Card 2 — Memory in Pixel LCDs */}
           <div className="product-card">
             <div
               className="card-image"
               role="img"
-              aria-label="Person using a touchscreen device with a Sharp General Purpose LCD display."
-              style={{ backgroundImage: `url('${generalPurposeLCD}')` }}
+              aria-label="Bicycle handlebar display powered by a Sharp Memory in Pixel LCD."
+              style={{ backgroundImage: `url('${memoryInPixel}')` }}
             >
+              <h3 className="card-subheader">MEMORY IN PIXEL LCDs</h3>
               <div className="card-overlay">
-                <h3 className="card-subheader">GENERAL PURPOSE LCDs</h3>
                 <div className="card-text-content">
-                  <p>Industrial Applications</p>
-                  <p>High Brightness</p>
-                  <p>High Contrast</p>
-                  <p>Up to 16.7M colors</p>
-                  <p>Wide viewing angles</p>
-                  <p>Wide temp. ranges</p>
-                  <p>Value-add solutions</p>
-                  <button
-                    onClick={() => navigateTo("/general-purpose-lcds")}
-                    className="red-btn card-cta"
-                  >
-                    View Products
-                  </button>
+                  <p className="card-lead">
+                    For Small-Screen Applications that require a battery.
+                  </p>
+                  <p>Monochrome or 64 Colors</p>
+                  <p>1.08" to 4.4"</p>
+                  <p>Wearable</p>
+                  <p>Handheld</p>
+                  <p>Operation power as low as 10s of microamps</p>
                 </div>
+                <button
+                  onClick={() => navigateTo("/MemoryInPixel")}
+                  className="red-btn card-cta"
+                >
+                  View Products
+                </button>
               </div>
             </div>
           </div>
