@@ -194,10 +194,6 @@ export default function QueryForm(props) {
               <Checkbox checked={subject.indexOf("ePoster Signage Display Modules") > -1} />
               <ListItemText primary={"ePoster Signage Display Modules"} />
             </MenuItem>
-            <MenuItem key={"General Purpose Displays"} value={"General Purpose Displays"}>
-              <Checkbox checked={subject.indexOf("General Purpose Displays") > -1} />
-              <ListItemText primary={"General Purpose Displays"} />
-            </MenuItem>
           </Select>
           {errorText && <FormHelperText style={{ marginLeft: 0, color: "#a91e2c" }}>You need to select a subject</FormHelperText>}
         </FormControl>

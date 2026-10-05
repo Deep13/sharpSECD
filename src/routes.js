@@ -7,7 +7,6 @@ import {
   Redirect,
 } from "react-router-dom";
 import App from "./App";
-import Products from "./components/Products/products";
 // import Productdetail from "./components/Products/productdetail";
 import Contact from "./components/Contact";
 import MemoryLCD from "./components/Technologies/MemoryLCD";
@@ -67,9 +66,12 @@ function Routes() {
         <Route path="/" exact component={App} />
         <Route
           path="/industrial-lcds-product"
-          render={() => <Redirect to="/general-purpose-lcds" />}
+          render={() => <Redirect to="/" />}
         />
-        <Route path="/general-purpose-lcds" component={Products} />
+        <Route
+          path="/general-purpose-lcds"
+          render={() => <Redirect to="/" />}
+        />
         <Route
           path="/memory-in-pixel-lcds-product"
           component={MemoryLCDProduct}

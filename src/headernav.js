@@ -172,20 +172,6 @@ class Headernav extends Component {
                     <li><a className="dropdown-item" as={Link} to="/" onClick={() => this.selectNavigate("/eposters-displays")}>Overview</a></li>
                   </ul>
                 </NavDropdown.Item> */}
-                <NavDropdown.Item
-                  className="no-drop-color"
-                  style={{ fontWeight: "bold" }}
-                >
-                  General Purpose LCDs
-                  <NavDropdown.Item
-                    className="drop-color"
-                    onClick={() =>
-                      this.selectNavigate("/industrial-lcds-product")
-                    }
-                  >
-                    Find a Product
-                  </NavDropdown.Item>
-                </NavDropdown.Item>
                 {/* <NavDropdown.Item className="dropdown-toggle" id="more-services">
                   General Purpose LCDs
                   <ul className="dropdown-menu second-level drop-three">

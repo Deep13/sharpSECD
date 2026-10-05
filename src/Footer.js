@@ -96,21 +96,6 @@ class Footer extends Component {
               Technology
             </Link>
           </div>
-          <p
-            style={{
-              color: "white",
-              fontWeight: "bold",
-              fontSize: "0.8rem",
-              marginBottom: 0,
-            }}
-          >
-            General Purpose LCDs
-          </p>
-          <div style={{ marginLeft: 10, display: "flex", flexDirection: "column" }}>
-            <Link to="/industrial-lcds-product" style={{ color: "white" }} onClick={(event) => this.callFunct(event, "/industrial-lcds-product")}>
-              Find a Product
-            </Link>
-          </div>
         </div>
         <div
           className="col-md-3"
