@@ -52,7 +52,7 @@ export const products = [
     "Image Hold Power (Typ.)": "11 uW",
     "1Hz Update Power (Typ.)": "33 uW",
     img: [
-      require("../assets/Memory in Pixel Drawings/Sharp-LS012B7DD06A-Mechanical-Drawing.png"),
+      require("../assets/Memory in Pixel Drawings/Sharp-LS012B7DD06S-Mechanical-Drawing.png"),
     ],
     DOCUMENTS: [
       {

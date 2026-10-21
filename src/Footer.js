@@ -81,6 +81,7 @@ class Footer extends Component {
               fontWeight: "bold",
               fontSize: "0.8rem",
               marginBottom: 0,
+              marginTop: 12,
             }}
           >
             ePoster Display Modules

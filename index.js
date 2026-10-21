@@ -10,7 +10,7 @@ const emailIds = {
   "8K Display": "SECDinfo@sharpsec.com",
   "Custom Camera Module": "changa@sharpsec.com",
   "Memory-in-pixel Landing":
-    "carrollb@sharpsec.com,karamy@xposureunlimited.com",
+    "SECDInfo@sharpsec.com",
   "5-inch R-IGZO Landing": "carrollb@sharpsec.com,karamy@xposureunlimited.com",
   "Low Power Display": "carrollb@sharpsec.com,karamy@xposureunlimited.com",
   "O'Donnell":
