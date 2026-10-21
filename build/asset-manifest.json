@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.55cca170.css",
-    "main.js": "/static/js/main.be0f15e7.js",
+    "main.js": "/static/js/main.53065a71.js",
     "static/media/ePosterVideo.mp4": "/static/media/ePosterVideo.7ce0b93c228d45e5ab00.mp4",
     "static/media/Sharp-ePoster-Technical-Note-June-2026.pdf": "/static/media/Sharp-ePoster-Technical-Note-June-2026.7cc32521764eeac7e5ad.pdf",
     "static/media/Sharp Low-Power Displays White Paper.pdf": "/static/media/Sharp Low-Power Displays White Paper.9f44a5f47165bc03c8f9.pdf",
@@ -65,7 +65,6 @@
     "static/media/MIR_3557_Trans_966x644.png": "/static/media/MIR_3557_Trans_966x644.a6bd29690c0ead5f1f3f.png",
     "static/media/Sharp-ePoster-28.5-inch--PR-FINAL.pdf": "/static/media/Sharp-ePoster-28.5-inch--PR-FINAL.08386771fe66087f78a7.pdf",
     "static/media/R-IGZO LCD.png": "/static/media/R-IGZO LCD.ba6a99ecd1bbd2355cef.png",
-    "static/media/Sharp-LS012B7DD06A-Mechanical-Drawing.png": "/static/media/Sharp-LS012B7DD06A-Mechanical-Drawing.8229a99c00dd17d1ccc6.png",
     "static/media/news-1.pdf": "/static/media/news-1.f77e6bd5dcd727acdf35.pdf",
     "static/media/Sharp-LCD-Specification-LS013B7DH03-10-7-17.pdf": "/static/media/Sharp-LCD-Specification-LS013B7DH03-10-7-17.4f50a856b8b0653b1826.pdf",
     "static/media/Sharp-Technology-IGZO-High-Resolution-2.png": "/static/media/Sharp-Technology-IGZO-High-Resolution-2.fa336bfb3bb481eb5119.png",
@@ -85,6 +84,7 @@
     "static/media/About-Exercise.png": "/static/media/About-Exercise.7635d20b0ab9b9cc3500.png",
     "static/media/Low-Power-Displays-Main-Image--F.jpg": "/static/media/Low-Power-Displays-Main-Image--F.354071da31d66cfc96ec.jpg",
     "static/media/Escalator.jpg": "/static/media/Escalator.890693d8d512045c6d6d.jpg",
+    "static/media/Sharp-LS012B7DD06S-Mechanical-Drawing.png": "/static/media/Sharp-LS012B7DD06S-Mechanical-Drawing.d975e7833f7f90679834.png",
     "static/media/mobile.jpeg": "/static/media/mobile.005edf918b6c4b526924.jpeg",
     "static/media/Sunflower_Image.jpeg": "/static/media/Sunflower_Image.66f60224d667b2348eac.jpeg",
     "static/media/SHARP_red.jpg": "/static/media/SHARP_red.8f5c3cb183d2954bb944.jpg",
@@ -213,10 +213,10 @@
     "static/media/Icon 1.jpeg": "/static/media/Icon 1.aa570236d1472f1e1f12.jpeg",
     "static/media/Icon 6.jpeg": "/static/media/Icon 6.a7b3d522750383b853b4.jpeg",
     "main.55cca170.css.map": "/static/css/main.55cca170.css.map",
-    "main.be0f15e7.js.map": "/static/js/main.be0f15e7.js.map"
+    "main.53065a71.js.map": "/static/js/main.53065a71.js.map"
   },
   "entrypoints": [
     "static/css/main.55cca170.css",
-    "static/js/main.be0f15e7.js"
+    "static/js/main.53065a71.js"
   ]
 }
