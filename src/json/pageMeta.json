@@ -1,0 +1,52 @@
+{
+  "/": {
+    "title": "Low-Power LCD Displays & ePoster Modules | Sharp SECD",
+    "description": "Sharp SECD delivers world-class low-power, sunlight-viewable LCDs and ePoster display modules. Explore reflective, Memory in Pixel, and general-purpose displays.",
+    "canonical": "https://sharpsecd.com/"
+  },
+  "/MemoryInPixel": {
+    "title": "Ultra-Low Power Memory-in-Pixel LCDs | Sharp SECD",
+    "description": "Discover Sharp's ultra-low power Memory-in-Pixel LCDs with high ambient-light performance and 64-color options—ideal for wearables, meters & more.",
+    "canonical": "https://sharpsecd.com/MemoryInPixel"
+  },
+  "/memory-in-pixel-lcds-product": {
+    "title": "Memory-in-Pixel LCD Product Lineup | Sharp SECD",
+    "description": "Explore available sizes of MIP displays for battery-powered applications. 64-color or monochrome.",
+    "canonical": "https://sharpsecd.com/memory-in-pixel-lcds-product"
+  },
+  "/memory-in-pixel-lcds-technology": {
+    "title": "Memory-in-Pixel LCD Technology Overview | Sharp SECD",
+    "description": "Understand how Sharp’s Memory-in-Pixel LCDs use embedded pixel memory to enable ultra-low power, high-resolution, sunlight-readable display designs.",
+    "canonical": "https://sharpsecd.com/memory-in-pixel-lcds-technology"
+  },
+  "/eposters-displays": {
+    "title": "Sharp ePosters – Paperless Display Modules | Sharp SECD",
+    "description": "Explore Sharp ePosters—zero-power, 60k color displays that replace printed posters. Ideal for retail, healthcare, hospitality, and more.",
+    "canonical": "https://sharpsecd.com/eposters-displays"
+  },
+  "/Eposters_product": {
+    "title": "ePoster Paperless Display Module Products| Sharp SECD",
+    "description": "Discover Sharp’s ePoster module line-up—paper replacement displays with 60k colors and zero-power in static mode. ",
+    "canonical": "https://sharpsecd.com/Eposters_product"
+  },
+  "/eposter-display-modules-technology": {
+    "title": "ePoster Display Technology | Paper Replacement Displays | Sharp",
+    "description": "Discover Sharp's ePoster display technology featuring zero-power static image hold, paper-like readability, and low-power electronic paper modules for OEM applications.",
+    "canonical": "https://sharpsecd.com/eposter-display-modules-technology"
+  },
+  "/about": {
+    "title": "About Sharp SECD – 50+ Years of Display Innovation",
+    "description": "Sharp SECD has been a leader in display technology for over 50 years. Learn how our low-power, high-performance LCDs help developers bring products to market fast.",
+    "canonical": "https://sharpsecd.com/about"
+  },
+  "/news": {
+    "title": "Sharp SECD News – Latest Display Technology Announcements",
+    "description": "Stay updated with the latest Sharp SECD product news, including ultra-low-power Memory in Pixel LCDs and sustainable ePoster display innovations.",
+    "canonical": "https://sharpsecd.com/news"
+  },
+  "/contact": {
+    "title": "Contact Sharp SECD – Speak with a Display Technology Expert",
+    "description": "Reach out to Sharp SECD for product inquiries, technical support, or to find your local sales representative. We’re here to help with your display needs.",
+    "canonical": "https://sharpsecd.com/contact"
+  }
+}
