@@ -188,6 +188,7 @@ class MemoryLCD extends Component {
             }}
           >
             <h2 style={{ paddingBottom: 50 }}>Ultra-low Power Consumption</h2>
+            {/* eslint-disable-next-line jsx-a11y/img-redundant-alt -- "image refresh" is the product term for the operation; copy is client-approved */}
             <img
               className="mob-img-full"
               alt="Comparison of Memory in Pixel LCD power consumption during static and image refresh operation."

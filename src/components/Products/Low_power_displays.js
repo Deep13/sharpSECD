@@ -87,11 +87,6 @@ export default class LowPowerDisplay extends Component {
         });
       });
   };
-  callFunct = (event, link) => {
-    event.preventDefault();
-    window.location.href = link;
-    // alert(text);
-  };
   componentDidMount() {
     window.scrollTo({ top: 0, behavior: "auto" });
   }
@@ -504,7 +499,7 @@ export default class LowPowerDisplay extends Component {
                         size="lg"
                         variant="outline-danger"
                         as={Link}
-                        to="/MemoryInPixel"
+                        to="/Memory-In-Pixel-Displays"
                         style={{ marginTop: 20, marginBottom: 50 }}
                       >
                         Learn More

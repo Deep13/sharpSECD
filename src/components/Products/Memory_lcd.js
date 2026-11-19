@@ -138,7 +138,7 @@ class Memory_lcd extends Component {
         flagCounter++;
       }
     }
-    if (flagCounter == value.length) {
+    if (flagCounter === value.length) {
       return true;
     } else {
       return false;
@@ -242,7 +242,7 @@ class Memory_lcd extends Component {
               </p>
               <p>
                 View{" "}
-                <Link to="/MemoryInPixel" style={{ color: "#e61d24" }}>
+                <Link to="/Memory-In-Pixel-Displays" style={{ color: "#e61d24" }}>
                   {" "}
                   Memory in Pixel LCD product details.{" "}
                 </Link>
@@ -351,8 +351,8 @@ class Memory_lcd extends Component {
                                   data-option={content}
                                   onChange={this.selectFilter}
                                   defaultChecked={
-                                    content == "Production" ||
-                                    content == "Pre-production"
+                                    content === "Production" ||
+                                    content === "Pre-production"
                                       ? true
                                       : false
                                   }

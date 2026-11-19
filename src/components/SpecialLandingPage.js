@@ -2,14 +2,12 @@ import React, { Component } from "react";
 import Restaurant from "../assets/eposter_displays/ePosterRestaurant.jpg";
 import Hotel from "../assets/eposter_displays/ePosterHotel.jpg";
 import Healthcare from "../assets/eposter_displays/ePosterHealthcare.jpg";
-import Cinema from "../assets/eposter_displays/ePosterCinema.jpg";
 import GRAND from "../assets/eposter_displays/grand_1.jpg";
 import Earth from "../assets/eposter_displays/Earth.png";
 import Low from "../assets/eposter_displays/Low.png";
 import Lobbies from "../assets/eposter_displays/ePosterLobbies.jpg";
 import Rental from "../assets/eposter_displays/ePosterRental.jpg";
 import Education from "../assets/eposter_displays/Edutation_ePoster.jpg";
-import sharp_logo from "../assets/SHARP_Logo_red.png";
 import ePosterSummerSale from "../assets/eposter_displays/ePosterMallSquare.jpg";
 import Retail from "../assets/eposter_displays/Retail.jpg";
 import ePosterElevatorDarker from "../assets/eposter_displays/ePosterElevatorDarker.jpg";
@@ -200,7 +198,6 @@ class SpecialLandingPage extends Component {
             </h2>
             <p
               style={{
-                fontWeight: 300,
                 marginTop: 20,
                 fontSize: "1rem",
                 textAlign: "center",
@@ -279,7 +276,7 @@ class SpecialLandingPage extends Component {
                 src={ePosterSummerSale}
                 style={{ width: "100%" }}
                 role="presentation"
-                alt="Stock image graphic with signage display showing how ePoster will look in a mall or retail environment "
+                alt="Sharp ePoster signage display as it would look in a mall or retail environment"
               />
             </div>
           </div>
@@ -331,7 +328,6 @@ class SpecialLandingPage extends Component {
             className="row application-section"
             tabIndex={0}
             style={{
-              padding: 0,
               background: "#2d2f40",
               width: "100%",
               textAlign: "left",
@@ -457,7 +453,8 @@ class SpecialLandingPage extends Component {
                 alignItems: "center",
               }}
             >
-              <img src={GRAND} style={{ maxHeight: 700 }} role="presentation" alt="Photograph of actual Sharp ePoster holding a static image in zero-power mode" />
+              {/* eslint-disable-next-line jsx-a11y/img-redundant-alt -- "static image" is the product term for the display mode */}
+              <img src={GRAND} style={{ maxHeight: 700 }} role="presentation" alt="Actual Sharp ePoster holding a static image in zero-power mode" />
               <p
                 style={{
                   fontWeight: 300,

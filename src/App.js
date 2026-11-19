@@ -1,8 +1,6 @@
 import React, { Component } from "react";
-import Body from "./body";
 import { ParallaxProvider } from "react-scroll-parallax";
 import "./scrollbar.css";
-import Screen3 from "./assets/home_header.jpg";
 import { Helmet } from "react-helmet";
 import NewBody from "./NewBody";
 

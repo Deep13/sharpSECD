@@ -9,7 +9,6 @@ import FullHeightDivWithImageRight from "./components/FullHeightDivImageRight";
 import HomeContent from "./json/HomeContent";
 import picture1 from "./assets/Picture1.jpg";
 import picture2 from "./assets/Picture2.jpg";
-import picture3 from "./assets/Picture3.jpg";
 import picture4 from "./assets/Picture4.jpg";
 import logo from "./logo.png";
 import { Link } from "react-router-dom";

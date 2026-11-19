@@ -53,7 +53,7 @@ const NewBody = () => {
       bg: Carousel64,
       productImg: CarouselColor, // Transparent PNG
       mobileBgPos: "justified-right",
-      link: "/MemoryInPixel",
+      link: "/Memory-In-Pixel-Displays",
       alt: "Sharp 64-color Memory in Pixel LCD demonstration IoT device displayed on a tabletop.",
     },
   ];
@@ -150,7 +150,7 @@ const NewBody = () => {
       {/* 2. WELCOME SECTION */}
       <section className="welcome-container">
         <div className="welcome-card">
-          <h2 className="welcome-title">WELCOME TO A BRAND NEW DAY.</h2>
+          <h1 className="welcome-title">WELCOME TO A BRAND NEW DAY.</h1>
 
           <p className="welcome-intro">
             Sharp's world-class reflective display modules are the right
@@ -315,7 +315,7 @@ const NewBody = () => {
                   <p>Operation power as low as 10s of microamps</p>
                 </div>
                 <button
-                  onClick={() => navigateTo("/MemoryInPixel")}
+                  onClick={() => navigateTo("/Memory-In-Pixel-Displays")}
                   className="red-btn card-cta"
                 >
                   View Products

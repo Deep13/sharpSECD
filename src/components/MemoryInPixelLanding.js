@@ -26,7 +26,7 @@ import { Link } from "react-router-dom";
 
 export default class MemoryInPixelLanding extends Component {
   componentDidMount() {
-    window.location.href = "/MemoryInPixel";
+    window.location.href = "/Memory-In-Pixel-Displays";
   }
   constructor(props) {
     super(props);

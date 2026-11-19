@@ -65,7 +65,7 @@ class Footer extends Component {
             Memory in Pixel LCDs
           </p>
           <div style={{ marginLeft: 10, display: "flex", flexDirection: "column" }}>
-            <Link to="/MemoryInPixel" style={{ color: "white" }} onClick={(event) => this.callFunct(event, "/MemoryInPixel")}>
+            <Link to="/Memory-In-Pixel-Displays" style={{ color: "white" }} onClick={(event) => this.callFunct(event, "/Memory-In-Pixel-Displays")}>
               Overview
             </Link>
             <Link to="/memory-in-pixel-lcds-product" style={{ color: "white" }} onClick={(event) => this.callFunct(event, "/memory-in-pixel-lcds-product")}>

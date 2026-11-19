@@ -111,7 +111,7 @@ class Headernav extends Component {
                   Memory in Pixel LCDs
                   <NavDropdown.Item
                     className="drop-color"
-                    onClick={() => this.selectNavigate("/MemoryInPixel")}
+                    onClick={() => this.selectNavigate("/Memory-In-Pixel-Displays")}
                   >
                     Overview
                   </NavDropdown.Item>
@@ -135,7 +135,7 @@ class Headernav extends Component {
                 {/* <NavDropdown.Item className="dropdown-toggle" id="more-services" >
                   Memory in Pixel LCDs
                   <ul className="dropdown-menu second-level">
-                    <li><a className="dropdown-item" as={Link} to="/" onClick={() => this.selectNavigate("/MemoryInPixel")}>Overview</a></li>
+                    <li><a className="dropdown-item" as={Link} to="/" onClick={() => this.selectNavigate("/Memory-In-Pixel-Displays")}>Overview</a></li>
                     <li><a className="dropdown-item" as={Link} to="/" onClick={() => this.selectNavigate("/memory-in-pixel-lcds-product")}>Find a Product</a></li>
                     <li><a className="dropdown-item" as={Link} to="/" onClick={() => this.selectNavigate("/memory-in-pixel-lcds-technology")}>Technology</a></li>
                   </ul>

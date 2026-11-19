@@ -2,7 +2,6 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import Screen3 from "../assets/About-banner.jpg";
 import logo from "../assets/SHARP_Logo_red.png";
-import image1 from "../assets/Sharp-Memory-In-Pixel_700x1082.jpg";
 import { Image } from "react-bootstrap";
 import Auto from "../assets/About-Auto.png";
 import VR from "../assets/About-VR.png";
@@ -106,7 +105,7 @@ export default function AboutUs() {
                   }}
                   className="banner-text"
                 >
-                  PUSHING THE BOUNDARIES OF DISPLAY INNNOVATION
+                  PUSHING THE BOUNDARIES OF DISPLAY INNOVATION
                 </h1>
               </div>
             </div>

@@ -54,7 +54,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "postbuild": "node -e \"require('fs').copyFileSync('src/json/pageMeta.json','build/page-meta.json')\""
+    "postbuild": "node scripts/copy-json.js && node scripts/prerender.js",
+    "prerender": "node scripts/prerender.js"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -78,6 +79,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-register": "^6.26.0",
     "postcss": "^8.5.15",
+    "puppeteer-core": "^25.18.1",
     "tailwindcss": "^3.4.19"
   },
   "allowScripts": {

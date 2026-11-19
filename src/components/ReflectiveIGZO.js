@@ -86,11 +86,6 @@ export default class ReflectiveIGZO extends Component {
         });
       });
   };
-  callFunct = (event, link) => {
-    event.preventDefault();
-    window.location.href = link;
-    // alert(text);
-  };
   componentDidMount() {
     window.scrollTo({ top: 0, behavior: "auto" });
   }

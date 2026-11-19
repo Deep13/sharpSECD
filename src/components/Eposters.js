@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import redback from "../assets/eposters/SHARP_red.jpg";
 import cycle from "../assets/eposters/desktop_overlay.jpg";
-import Mountain_Biker from "../assets/eposters/Mountain_Biker.jpg";
 import mountain_mobile from "../assets/eposters/mountain_mobile.jpg";
 import Escalator from "../assets/eposters/Escalator.jpg";
 import Travel from "../assets/eposters/Travel.jpg";
@@ -132,7 +131,7 @@ class Eposters extends Component {
               <li>And more </li>
             </ul>
           </div>
-          <div className="row" tabIndex={0} style={{ padding: 0, background: "#c6c7d4", width: "100%", textAlign: "left", backgroundPosition: "top", padding: "80px 50px", marginLeft: 0 }}>
+          <div className="row" tabIndex={0} style={{ background: "#c6c7d4", width: "100%", textAlign: "left", backgroundPosition: "top", padding: "80px 50px", marginLeft: 0 }}>
             <div className="col-lg-4" style={{ padding: "20px 20px" }}>
               <img src={Escalator} style={{ height: "100%", width: "100%" }} role="presentation" alt="Control Sales Logo" />
             </div>

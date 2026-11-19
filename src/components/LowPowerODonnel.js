@@ -22,10 +22,6 @@ import Col from "react-bootstrap/Col";
 import image2 from "../assets/Memory in Pixel LCD.png";
 import image4 from "../assets/R-IGZO LCD.png";
 import image5 from "../assets/Sharp 5 R-IGZO Low-Power Performance.png";
-import image6 from "../assets/Sharp 31.5 R-IGZO Low-Power Performance.png";
-import image7 from "../assets/Low-Power Performance.png";
-import image8 from "../assets/Sharp_thumb.png";
-import doc from "../assets/Documents/Sharp Low-Power Displays White Paper.pdf";
 import { Link } from "react-router-dom";
 
 export default class LowPowerODonnel extends Component {
@@ -90,11 +86,6 @@ export default class LowPowerODonnel extends Component {
         });
       });
   };
-  callFunct = (event, link) => {
-    event.preventDefault();
-    window.location.href = link;
-    // alert(text);
-  };
   componentDidMount() {
     window.scrollTo({ top: 0, behavior: "auto" });
   }
@@ -145,7 +136,7 @@ export default class LowPowerODonnel extends Component {
               >
                 {`YOUR SOURCE FOR GAME CHANGING`}
               </h1>
-              <h1
+              <h2
                 style={{
                   color: "white",
                   fontSize: "3.5rem",
@@ -154,7 +145,7 @@ export default class LowPowerODonnel extends Component {
                 }}
               >
                 {`LOW POWER DISPLAYS`}
-              </h1>
+              </h2>
             </div>
           </div>
         </div>
@@ -208,7 +199,7 @@ export default class LowPowerODonnel extends Component {
               <div>
                 {/* <div className="padding-top-50 d-none d-md-block"></div> */}
                 <div className="padding-top-50"></div>
-                <h1
+                <h2
                   style={{
                     fontSize: "2.5rem",
                     textAlign: "center",
@@ -221,7 +212,7 @@ export default class LowPowerODonnel extends Component {
                     PUT THE MUSCLE OF SHARP LOW-POWER DISPLAYS TO WORK IN YOUR
                     NEXT DESIGN
                   </strong>
-                </h1>
+                </h2>
                 <div className="padding-top-50"></div>
               </div>
               <p
@@ -241,7 +232,7 @@ export default class LowPowerODonnel extends Component {
                 <span>
                   <Link
                     style={{ color: "black", textDecoration: "underline" }}
-                    to="/MemoryInPixel"
+                    to="/Memory-In-Pixel-Displays"
                   >
                     {" "}
                     Memory-In-Pixel (MIP) LCDs{" "}
@@ -314,7 +305,7 @@ export default class LowPowerODonnel extends Component {
                     role="presentation"
                     alt="icon"
                   />
-                  <h1
+                  <h2
                     style={{
                       fontSize: "1.3rem",
                       padding: "1vw",
@@ -322,7 +313,7 @@ export default class LowPowerODonnel extends Component {
                     }}
                   >
                     <strong>OUTDOOR READABILITY</strong>
-                  </h1>
+                  </h2>
                   <p style={{ padding: "1vw", textAlign: "center" }}>
                     From edge-of-vision to bright sunlight
                   </p>
@@ -345,7 +336,7 @@ export default class LowPowerODonnel extends Component {
                     role="presentation"
                     alt="icon"
                   />
-                  <h1
+                  <h2
                     style={{
                       fontSize: "1.3rem",
                       padding: "1vw",
@@ -353,7 +344,7 @@ export default class LowPowerODonnel extends Component {
                     }}
                   >
                     <strong>LOW POWER</strong>
-                  </h1>
+                  </h2>
                   <p style={{ padding: "1vw", textAlign: "center" }}>
                     No backlight required in reflective mode.
                   </p>
@@ -376,7 +367,7 @@ export default class LowPowerODonnel extends Component {
                     role="presentation"
                     alt="icon"
                   />
-                  <h1
+                  <h2
                     style={{
                       fontSize: "1.3rem",
                       padding: "1vw",
@@ -384,7 +375,7 @@ export default class LowPowerODonnel extends Component {
                     }}
                   >
                     <strong>WIDE TEMPERATURES</strong>
-                  </h1>
+                  </h2>
                   <p style={{ padding: "1vw", textAlign: "center" }}>
                     Operates in even the most extreme environments
                   </p>
@@ -408,7 +399,7 @@ export default class LowPowerODonnel extends Component {
                     role="presentation"
                     alt="icon"
                   />
-                  <h1
+                  <h2
                     style={{
                       fontSize: "1.3rem",
                       padding: "1vw",
@@ -416,7 +407,7 @@ export default class LowPowerODonnel extends Component {
                     }}
                   >
                     <strong>THIN + LIGHTWEIGHT</strong>
-                  </h1>
+                  </h2>
                   <p style={{ padding: "1vw", textAlign: "center" }}>
                     Slim profile enables compact product design
                   </p>
@@ -452,9 +443,9 @@ export default class LowPowerODonnel extends Component {
               }}
             >
               <div style={{ width: "100%" }}>
-                <h1 style={{ fontSize: "3rem" }}>
+                <h2 style={{ fontSize: "3rem" }}>
                   <strong>R-IGZO LCDs</strong>
-                </h1>
+                </h2>
                 <div className="row" style={{ margin: 0, width: "100%" }}>
                   <div
                     className="col-sm-12 col-md-3"
@@ -709,9 +700,9 @@ export default class LowPowerODonnel extends Component {
               }}
             >
               <div style={{ width: "100%" }}>
-                <h1 style={{ fontSize: "3rem" }}>
+                <h2 style={{ fontSize: "3rem" }}>
                   <strong>MEMORY IN PIXEL LCDs</strong>
-                </h1>
+                </h2>
                 <div className="row" style={{ margin: 0, width: "100%" }}>
                   <div
                     className="col-sm-12 col-md-3"
@@ -804,7 +795,7 @@ export default class LowPowerODonnel extends Component {
                   }}
                 ></div>
               </div>
-              <h1
+              <h2
                 style={{
                   fontSize: "1.3rem",
                   paddingTop: "50px",
@@ -816,7 +807,7 @@ export default class LowPowerODonnel extends Component {
                   Memory in Pixel Displays: High Resolution for Detailed
                   Graphics
                 </strong>
-              </h1>
+              </h2>
               <div
                 tabIndex={-1}
                 className="row "
@@ -897,12 +888,12 @@ export default class LowPowerODonnel extends Component {
                         alignItems: "center",
                       }}
                     >
-                      <h1
+                      <h2
                         style={{ fontSize: "2rem", textAlign: "center" }}
                         className="mb-font-2"
                       >
                         <strong>STRONGER TOGETHER.</strong>
-                      </h1>
+                      </h2>
                       <p>
                         Bringing the top products to market requires having the
                         best team.
@@ -969,7 +960,7 @@ export default class LowPowerODonnel extends Component {
             <div>
               <div className="padding-top-50 d-none d-md-block"></div>
               <div className="padding-top-50"></div>
-              <h1
+              <h2
                 style={{
                   fontSize: "3rem",
                   textAlign: "center",
@@ -979,7 +970,7 @@ export default class LowPowerODonnel extends Component {
                 <strong>
                   WANT TO KNOW MORE ABOUT SHARP LOW-POWER DISPLAYS?
                 </strong>
-              </h1>
+              </h2>
             </div>
             <div style={{ width: "70%", marginTop: "5rem" }}>
               <Form1

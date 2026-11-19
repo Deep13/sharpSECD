@@ -93,6 +93,8 @@ export default function QueryForm(props) {
           setmobileCode("");
         }
         break;
+      default:
+        break;
     }
   };
   const mobileChange = (value) => {

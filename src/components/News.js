@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import convdisp from "../assets/Sharp-Press-Landing-Page-Hero-2.jpg";
 import convdisp1 from "../assets/news2.png";
-import news2 from "../assets/news-9-aug.png";
 import news3 from "../assets/news3.png";
 import news1 from "../assets/Sharp-ePoster-28.5-inch--Display.jpg";
 import news4 from "../assets/Sharp-MIP-3-5-inch-LS035Q7DD01.png";

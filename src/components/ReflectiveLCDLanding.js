@@ -382,7 +382,7 @@ export default class MemoryInPixel extends Component {
                           width: "100%",
                         }}
                       >
-                        <Button className="redButton" as={Link} to="/MemoryInPixel" size="lg" variant="outline-danger" style={{ marginBottom: 20 }}>
+                        <Button className="redButton" as={Link} to="/Memory-In-Pixel-Displays" size="lg" variant="outline-danger" style={{ marginBottom: 20 }}>
                           Learn More
                         </Button>
                       </div>

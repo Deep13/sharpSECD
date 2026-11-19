@@ -87,11 +87,6 @@ export default class RIGZOTCS extends Component {
         });
       });
   };
-  callFunct = (event, link) => {
-    event.preventDefault();
-    window.location.href = link;
-    // alert(text);
-  };
   componentDidMount() {
     window.scrollTo({ top: 0, behavior: "auto" });
   }
@@ -146,9 +141,9 @@ export default class RIGZOTCS extends Component {
                     <h1 className="mb-2-5" style={{ fontSize: "3.5rem" }}>
                       <strong>R-IGZO</strong>
                     </h1>
-                    <h1 className="mb-2-5" style={{ fontSize: "3rem" }}>
+                    <h2 className="mb-2-5" style={{ fontSize: "3rem" }}>
                       <strong>A New Standard for Low-Power Displays</strong>
-                    </h1>
+                    </h2>
                     <p style={{ margin: 0, fontSize: "2rem", paddingBottom: 15 }}>
                       Full Color <br />
                       High Resolution <br />
@@ -233,9 +228,9 @@ export default class RIGZOTCS extends Component {
               }}
             >
               <div style={{ width: "100%" }}>
-                <h1 className="mb-2-5" style={{ fontSize: "3rem" }}>
+                <h2 className="mb-2-5" style={{ fontSize: "3rem" }}>
                   <strong>EXCEPTIONALLY HIGH RESOLUTION</strong>
-                </h1>
+                </h2>
                 <div className="row" style={{ margin: 0, width: "100%" }}>
                   <div
                     className="col-sm-12 col-md-3"
@@ -297,9 +292,9 @@ export default class RIGZOTCS extends Component {
               <div style={{ width: "100%" }}>
                 {/* <div className="padding-top-50 d-none d-md-block"></div> */}
                 <div className="padding-top-50"></div>
-                <h1 className="mb-2-5" style={{ fontSize: "3rem" }}>
+                <h2 className="mb-2-5" style={{ fontSize: "3rem" }}>
                   <strong>ULTRA-LOW POWER CONSUMPTION</strong>
-                </h1>
+                </h2>
                 <div className="row" style={{ margin: 0, width: "100%" }}>
                   <div
                     className="col-sm-12 col-md-3"
@@ -358,9 +353,9 @@ export default class RIGZOTCS extends Component {
               <div style={{ width: "100%" }}>
                 {/* <div className="padding-top-50 d-none d-md-block"></div> */}
                 <div className="padding-top-50"></div>
-                <h1 className="mb-2-5" style={{ fontSize: "3rem" }}>
+                <h2 className="mb-2-5" style={{ fontSize: "3rem" }}>
                   <strong>THIN AND LIGHTWEIGHT</strong>
-                </h1>
+                </h2>
                 <div className="row" style={{ margin: 0, width: "100%" }}>
                   <div
                     className="col-sm-12 col-md-3"
@@ -426,9 +421,9 @@ export default class RIGZOTCS extends Component {
             >
               <div style={{ width: "100%" }}>
                 <div className="padding-top-50"></div>
-                <h1 className="mb-2-5" style={{ fontSize: "3rem", textAlign: "center" }}>
+                <h2 className="mb-2-5" style={{ fontSize: "3rem", textAlign: "center" }}>
                   <strong>Perfect for Handheld Industrial Applications</strong>
-                </h1>
+                </h2>
               </div>
               <div className="padding-top-50"></div>
               <div className="padding-top-50"></div>
@@ -464,9 +459,9 @@ export default class RIGZOTCS extends Component {
           >
             <div>
               <div className="padding-top-50"></div>
-              <h1 className="mb-2-5" style={{ fontSize: "3rem", textAlign: "center" }}>
+              <h2 className="mb-2-5" style={{ fontSize: "3rem", textAlign: "center" }}>
                 <strong>BEST-IN-CLASS R-IGZO FROM SHARP</strong>
-              </h1>
+              </h2>
             </div>
             <div className="padding-top-50"></div>
             <div className="padding-top-50"></div>
@@ -475,27 +470,27 @@ export default class RIGZOTCS extends Component {
               <div tabIndex={0} className="col-md-4">
                 <div>
                   <img style={{ width: 90 }} src={icon} role="presentation" alt="icon" />
-                  <h1 style={{ fontSize: "1.75rem", padding: "1vw" }}>
+                  <h2 style={{ fontSize: "1.75rem", padding: "1vw" }}>
                     <strong>ULTRA-LOW POWER CONSUMPTION</strong>
-                  </h1>
+                  </h2>
                   <p style={{ padding: "1vw" }}>No backlight required in reflective mode.</p>
                 </div>
               </div>
               <div tabIndex={0} className="col-md-4">
                 <div>
                   <img style={{ width: 90 }} src={icon2} role="presentation" alt="icon" />
-                  <h1 style={{ fontSize: "1.75rem", padding: "1vw" }}>
+                  <h2 style={{ fontSize: "1.75rem", padding: "1vw" }}>
                     <strong>HIGH OUTDOOR READABILITY</strong>
-                  </h1>
+                  </h2>
                   <p style={{ padding: "1vw" }}>High Outdoor Readability w/Full-color Moving Images @60Hz. Reflective electrode structure + high contrast.</p>
                 </div>
               </div>
               <div tabIndex={0} className="col-md-4">
                 <div>
                   <img style={{ width: 90 }} src={icon3} role="presentation" alt="icon" />
-                  <h1 style={{ fontSize: "1.75rem", padding: "1vw" }}>
+                  <h2 style={{ fontSize: "1.75rem", padding: "1vw" }}>
                     <strong>THIN AND LIGHTWEIGHT</strong>
-                  </h1>
+                  </h2>
                   <p style={{ padding: "1vw" }}>Slim, low-power backlight enables compact product designs.</p>
                 </div>
               </div>
@@ -506,27 +501,27 @@ export default class RIGZOTCS extends Component {
               <div tabIndex={0} className="col-md-4">
                 <div>
                   <img style={{ width: 90 }} src={icon4} role="presentation" alt="icon" />
-                  <h1 style={{ fontSize: "1.75rem", padding: "1vw" }}>
+                  <h2 style={{ fontSize: "1.75rem", padding: "1vw" }}>
                     <strong>WIDE OPERATING TEMPS</strong>
-                  </h1>
+                  </h2>
                   <p style={{ padding: "1vw" }}>Supporting operating temperatures from -20°C to +70°C... and storage temps from -30°C to +80°C.</p>
                 </div>
               </div>
               <div tabIndex={0} className="col-md-4">
                 <div>
                   <img style={{ width: 90 }} src={icon5} role="presentation" alt="icon" />
-                  <h1 style={{ fontSize: "1.75rem", padding: "1vw" }}>
+                  <h2 style={{ fontSize: "1.75rem", padding: "1vw" }}>
                     <strong>20-50x FASTER THAN a-SI</strong>
-                  </h1>
+                  </h2>
                   <p style={{ padding: "1vw" }}>IGZO's electron mobility is far higher than Amorphous Silicon (a-Si) displays.</p>
                 </div>
               </div>
               <div tabIndex={0} className="col-md-4">
                 <div>
                   <img style={{ width: 90 }} src={icon6} role="presentation" alt="icon" />
-                  <h1 style={{ fontSize: "1.75rem", padding: "1vw" }}>
+                  <h2 style={{ fontSize: "1.75rem", padding: "1vw" }}>
                     <strong>HIGH RESOLUTION</strong>
-                  </h1>
+                  </h2>
                   <p style={{ padding: "1vw" }}>IGZO enables higher resolution at the same or lower power than a-SI solutions.</p>
                 </div>
               </div>
@@ -574,9 +569,9 @@ export default class RIGZOTCS extends Component {
                         alignItems: "center",
                       }}
                     >
-                      <h1 style={{ fontSize: "2rem", textAlign: "center" }} className="mb-font-2">
+                      <h2 style={{ fontSize: "2rem", textAlign: "center" }} className="mb-font-2">
                         <strong>STRONGER TOGETHER.</strong>
-                      </h1>
+                      </h2>
                       <p>Bringing the top products to market requires having the best team.</p>
                       <div style={{ textAlign: "center" }}>
                         <img style={{ width: "80%", marginTop: 30 }} src={controlsaleslogo} role="presentation" alt="Control Sales Logo" />
@@ -621,7 +616,7 @@ export default class RIGZOTCS extends Component {
               <div>
                 <div className="padding-top-50 d-none d-md-block"></div>
                 <div className="padding-top-50"></div>
-                <h1
+                <h2
                   className="mb-2-5"
                   style={{
                     fontSize: "3rem",
@@ -630,7 +625,7 @@ export default class RIGZOTCS extends Component {
                   }}
                 >
                   <strong>LET'S TALK ABOUT R-IGZO FOR YOUR NEXT PRODUCT DESIGN </strong>
-                </h1>
+                </h2>
                 <p
                   style={{
                     color: "white",

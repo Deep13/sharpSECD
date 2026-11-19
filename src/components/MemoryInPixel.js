@@ -5,8 +5,6 @@ import Screen3 from "../assets/smepdark.jpeg";
 import logo from "../assets/sharp_logo.png";
 import image1 from "../assets/Sharp-Memory-In-Pixel_700x1082.jpg";
 import arrow from "../assets/arrow.png";
-import bg1 from "../assets/bg1.jpeg";
-import bg2 from "../assets/bg2.jpeg";
 import image2 from "../assets/Bike_966x644.jpg";
 import image3 from "../assets/MIR_3557_Trans_966x644.png";
 import icon from "../assets/Icon 1.jpeg";
@@ -177,9 +175,9 @@ export default class MemoryInPixel extends Component {
                     alignItems: "flex-start",
                   }}
                 >
-                  <h1 style={{ fontSize: "3rem" }}>
+                  <h2 style={{ fontSize: "3rem" }}>
                     <strong>INTRODUCING SHARP MEMORY IN PIXEL LCDs</strong>
-                  </h1>
+                  </h2>
                   <div className="row" style={{ margin: 0, width: "100%" }}>
                     <div
                       className="col-sm-12 col-md-3"
@@ -241,9 +239,9 @@ export default class MemoryInPixel extends Component {
               }}
             >
               <div>
-                <h1 style={{ fontSize: "3rem" }}>
+                <h2 style={{ fontSize: "3rem" }}>
                   <strong>THE PERFECT SOLUTION FOR SMALL-SCREEN APPLICATIONS THAT REQUIRE A BATTERY.</strong>
-                </h1>
+                </h2>
                 <div className="row" style={{ margin: 0, width: "100%" }}>
                   <div
                     className="col-sm-12 col-md-3"
@@ -322,9 +320,9 @@ export default class MemoryInPixel extends Component {
                 <div className="padding-top-50 d-none d-md-block"></div>
                 <div className="padding-top-50 d-none d-md-block"></div> */}
                 <div className="padding-top-50"></div>
-                <h1 style={{ fontSize: "3rem" }}>
+                <h2 style={{ fontSize: "3rem" }}>
                   <strong>PERFORMANCE IN HIGH AMBIENT LIGHT</strong>
-                </h1>
+                </h2>
                 <div className="row" style={{ margin: 0, width: "100%" }}>
                   <div
                     className="col-sm-12 col-md-3"
@@ -411,9 +409,9 @@ export default class MemoryInPixel extends Component {
             <div>
               <div className="padding-top-50 d-none d-md-block"></div>
               <div className="padding-top-50"></div>
-              <h1 style={{ fontSize: "3rem", textAlign: "center" }}>
+              <h2 style={{ fontSize: "3rem", textAlign: "center" }}>
                 <strong>Memory in Pixel LCD Features</strong>
-              </h1>
+              </h2>
             </div>
             <div className="padding-top-50"></div>
             <div className="padding-top-50"></div>
@@ -422,27 +420,27 @@ export default class MemoryInPixel extends Component {
               <div tabIndex={0} className="col-md-4">
                 <div>
                   <img style={{ width: 90 }} src={icon} alt="" />
-                  <h1 style={{ fontSize: "1.75rem", padding: "1vw" }}>
+                  <h2 style={{ fontSize: "1.75rem", padding: "1vw" }}>
                     <strong>PRODUCT LINE-UP</strong>
-                  </h1>
+                  </h2>
                   <p style={{ padding: "1vw" }}>Offered in diagonal sizes ranging from 1.08 to 4.40 inches.</p>
                 </div>
               </div>
               <div tabIndex={0} className="col-md-4">
                 <div>
                   <img style={{ width: 90 }} src={icon2} alt="" />
-                  <h1 style={{ fontSize: "1.75rem", padding: "1vw" }}>
+                  <h2 style={{ fontSize: "1.75rem", padding: "1vw" }}>
                     <strong>HIGH READABILITY</strong>
-                  </h1>
+                  </h2>
                   <p style={{ padding: "1vw" }}>Viewable in any light, from edge-of-vision to bright sunlight.</p>
                 </div>
               </div>
               <div tabIndex={0} className="col-md-4">
                 <div>
                   <img style={{ width: 90 }} src={icon3} alt="" />
-                  <h1 style={{ fontSize: "1.75rem", padding: "1vw" }}>
+                  <h2 style={{ fontSize: "1.75rem", padding: "1vw" }}>
                     <strong>64-COLOR DISPLAYS</strong>
-                  </h1>
+                  </h2>
                   <p style={{ padding: "1vw" }}>Choose from 64-color or Monochrome.</p>
                 </div>
               </div>
@@ -453,27 +451,27 @@ export default class MemoryInPixel extends Component {
               <div tabIndex={0} className="col-md-4">
                 <div>
                   <img style={{ width: 90 }} src={icon4} alt="" />
-                  <h1 style={{ fontSize: "1.75rem", padding: "1vw" }}>
+                  <h2 style={{ fontSize: "1.75rem", padding: "1vw" }}>
                     <strong>OPERATING TEMPS</strong>
-                  </h1>
+                  </h2>
                   <p style={{ padding: "1vw" }}>Wide operating temperatures for the most extreme environments.</p>
                 </div>
               </div>
               <div tabIndex={0} className="col-md-4">
                 <div>
                   <img style={{ width: 90 }} src={icon5} alt="" />
-                  <h1 style={{ fontSize: "1.75rem", padding: "1vw" }}>
+                  <h2 style={{ fontSize: "1.75rem", padding: "1vw" }}>
                     <strong>WIDE VIEWING ANGLE</strong>
-                  </h1>
+                  </h2>
                   <p style={{ padding: "1vw" }}>Wide, symmetrical viewing angles, typically 120° ×120°.</p>
                 </div>
               </div>
               <div tabIndex={0} className="col-md-4">
                 <div>
                   <img style={{ width: 90 }} src={icon6} alt="" />
-                  <h1 style={{ fontSize: "1.75rem", padding: "1vw" }}>
+                  <h2 style={{ fontSize: "1.75rem", padding: "1vw" }}>
                     <strong>SIMPLE INTERFACE</strong>
-                  </h1>
+                  </h2>
                   <p style={{ padding: "1vw" }}>Design made easy with a 3-wire SPI serial interface (SI, SCS, SCK).</p>
                 </div>
               </div>
@@ -521,7 +519,7 @@ export default class MemoryInPixel extends Component {
             <div className="col-md-6">
               <div className="padding-top-50 d-none d-md-block"></div>
               <div className="padding-top-50"></div>
-              <h1
+              <h2
                 style={{
                   fontSize: "3rem",
                   textAlign: "left",
@@ -529,7 +527,7 @@ export default class MemoryInPixel extends Component {
                 }}
               >
                 <strong>Let’s Talk.</strong>
-              </h1>
+              </h2>
               <p
                 style={{
                   color: "white",

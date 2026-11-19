@@ -8,12 +8,6 @@
     },
     {
       "type": "Page",
-      "link": "/reflective-igzo-displays-product",
-      "header": "Reflective IGZO",
-      "content": "Reflective IGZO Displays Sharp’s latest IGZO-based innovation brings unbeatable solutions for sunlight viewability in handheld technology, smart and battery-operated signage, and other applications. Reflective IGZO is the new gold standard in ultra-low power, sunlight-readable, full-color displays. Learn more about IGZO technology here . 1 Ultra-low Power Consumption IGZO driving low refresh rates + no backlight in reflective mode 2 High Outdoor Readability w/Full-color Moving Images @60Hz Reflective electrode structure + high contrast 3 Thin and lightweight Eliminates backlight for ease of design Our current R-IGZO line-up includes: 5-inch module for handheld and small-screen products 31.5-inch module for monitor and signage applications"
-    },
-    {
-      "type": "Page",
       "link": "/custom-camera-modules-product",
       "header": "Custom Camera Modules",
       "content": "Custom Camera Modules The world’s eyes are on Sharp’s custom camera solutions. As a leading global producer of camera modules, we partner with the world’s top brands to continually raise the bar on imaging technology across the hottest consumer product categories. Consider us as your expert go-to provider for these high-volume applications: 1 Smartphones 2 Wearable Devices/HMD 3 PC/Tablets 4 Other cutting-edge consumer electronics Sharp-Product-Custom-Camera-Modules SHARP Logo The Sharp Advantage Our engineering team offers fresh approaches to solve your unique design challenges...helping you develop your industry’s most groundbreaking products. Our compact, space-saving modules further ease your design process. Other advantages: 1 Advanced focus technology (OIS, multi-lens, folded lens) 2 Market-leading package sizes (low z-height, mdall x/y size) 3 High-yield, high-precision manufacturing processes with large-scale capacity 4 Global support capability 5 Solutions developed for the world’s most innovative product manufacturers"
@@ -119,18 +113,6 @@
       "link": "/memory-in-pixel-lcds-product",
       "header": "LS044Q7DH01",
       "content": "LS044Q7DH01 This Transflective monochrome panel features QVGA resolution and is ideal for applications such as Industrial Controls, as well as most other battery-operated devices that require an LCD with Landscape orientation. Its dot matrix display delivers smooth graphics and the flexibility to showcase rich custom content."
-    },
-    {
-      "type": "Product",
-      "link": "/reflective-igzo-displays-product",
-      "header": "31.5-inch module",
-      "content": "LS315M7JX01 This 31.5-inch (diagonal) reflective display brings all the power of Sharp IGZO to your designs. It’s perfect for outdoor viewability in products such as battery-powered signage, and other high ambient light applications that require low power operation. The display offers ultra-low power consumption for both still and motion images, and a low-power refresh rate without flicker. It features full color with a 28% NTSC ratio, and its wide viewing angles combine with high contrast for vivid images. It also delivers industrial strength operating temperature ranges."
-    },
-    {
-      "type": "Product",
-      "link": "/reflective-igzo-displays-product",
-      "header": "5-inch module",
-      "content": "This 5.0-inch (diagonal) Reflective IGZO portrait-mode display is ideal for battery-powered, handheld products that require full-color and high-resolution performance in bright outdoor environments. The panel, built on Sharp’s industry-leading IGZO technology, offers ultra-low power consumption for both still and motion images, and allows for slim product profiles with reduced thermal management requirements. The MIPI interface display also delivers industrial strength operating temperature ranges."
     },
     {
       "type": "Product",

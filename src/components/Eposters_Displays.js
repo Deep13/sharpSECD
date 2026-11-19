@@ -221,6 +221,7 @@ class Eposters_Displays extends Component {
           {/* ===== KEY FEATURES ===== */}
           <div className="flex flex-col md:flex-row items-stretch w-full bg-white text-left p-10 md:p-20 gap-10" tabIndex={0}>
             <div className="w-full md:w-1/2 flex flex-col justify-start items-center ">
+              {/* eslint-disable-next-line jsx-a11y/img-redundant-alt -- the "image" is the picture on the display, not the img tag; copy is client-approved */}
               <img src={GRAND} className="w-full max-w-[490px]" alt="A Sharp ePoster showing an image that highlights the product's 60k color gamut." />
               <p className="font-light mt-5 text-[1rem] text-center">Actual photograph of display in zero-power operation </p>
             </div>
@@ -311,6 +312,7 @@ class Eposters_Displays extends Component {
               </span>
             </div>
             <div className="w-full md:w-1/2">
+              {/* eslint-disable-next-line jsx-a11y/img-redundant-alt -- client-approved alt text from the Alt Text Inventory */}
               <img src={Retail} className="w-full h-full object-cover" alt="An image of a Sharp ePoster in a retail application inside a clothing store." />
             </div>
           </div>
@@ -321,7 +323,7 @@ class Eposters_Displays extends Component {
               <div>
                 <div className="pt-[50px]"></div>
                 <div>
-                  <h1 className="type-h1 text-center text-white">IS SHARP'S ePOSTER RIGHT FOR YOUR PAPER REPLACEMENT PRODUCT?</h1>
+                  <h2 className="type-h1 text-center text-white">IS SHARP'S ePOSTER RIGHT FOR YOUR PAPER REPLACEMENT PRODUCT?</h2>
                   <p className="type-body1 text-white text-center py-1 px-10">Provide your contact info and we'll reach out ASAP.</p>
                 </div>
               </div>

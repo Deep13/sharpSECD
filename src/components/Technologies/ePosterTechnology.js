@@ -462,11 +462,11 @@ class ePosterTechnology extends Component {
             <div>
               <div className="pt-[50px]"></div>
               <div>
-                <h1 className="type-h1 text-center text-white">
+                <h2 className="type-h1 text-center text-white">
                   IS SHARP'S ePOSTER RIGHT FOR YOUR PAPER REPLACEMENT PRODUCT?
                   <br />
                   LET'S TALK.
-                </h1>
+                </h2>
                 <p className="type-body1 text-white text-center py-1 px-10">Provide your contact info and we'll reach out ASAP.</p>
               </div>
             </div>

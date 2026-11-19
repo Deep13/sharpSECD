@@ -137,7 +137,7 @@ class Eposters_product extends Component {
         flagCounter++;
       }
     }
-    if (flagCounter == value.length) {
+    if (flagCounter === value.length) {
       return true;
     } else {
       return false;
@@ -302,7 +302,7 @@ class Eposters_product extends Component {
                                   data-category={item.title}
                                   data-option={content}
                                   onChange={this.selectFilter}
-                                  defaultChecked={content == "Production" || content == "Pre-production" ? true : false}
+                                  defaultChecked={content === "Production" || content === "Pre-production" ? true : false}
                                 />
                               );
                             })}
