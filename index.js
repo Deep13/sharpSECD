@@ -60,43 +60,59 @@ const _index_file = path.join(_app_folder, "index.html");
 const _meta_file = path.join(_app_folder, "page-meta.json");
 
 /* Client-side routes that really exist (see src/routes.js). Anything else is
- * a genuine 404. Keep this list in step when routes are added or removed. */
-const knownRoutes = [
+ * a genuine 404. The live list ships in build/routes.json (generated from
+ * src/json/routes.json), so adding a route only needs a new build deploy. The
+ * array below is the fallback if that file is missing. */
+let knownRoutes = [
   "/",
   "/about",
   "/contact",
   "/news",
-  "/memoryinpixel",
+  "/memory-in-pixel-displays",
   "/memory-in-pixel-lcds-product",
   "/memory-in-pixel-lcds-technology",
-  "/memoryinpixellanding",
   "/memoryinpixel-tcs",
   "/memoryinpixel-intellimark",
   "/memoryinpixel-odonnell",
   "/memoryinpixel-control-sales",
-  "/eposters",
   "/eposters-displays",
   "/eposters_product",
   "/eposter-display-modules-technology",
-  "/eposters-displays-tech-coast",
-  "/eposters-displays-quantum",
-  "/eposters-displays-control-sales",
-  "/eposters-displays-thom-luke",
-  "/eposters-displays-odonnell",
-  "/reflective-igzo-displays-product",
-  "/reflectivelcdlanding",
-  "/r-igzo-linkedin",
-  "/r-igzo-google",
   "/r-igzo-tcs",
   "/r-igzo-control-sales",
   "/low-power-odonnell",
 ];
+try {
+  const fromBuild = JSON.parse(
+    fs.readFileSync(path.join(_app_folder, "routes.json"), "utf8")
+  );
+  if (Array.isArray(fromBuild) && fromBuild.length) knownRoutes = fromBuild;
+} catch (err) {
+  console.log("Using built-in route list (" + err.message + ")");
+}
+knownRoutes = knownRoutes.map(normalisePath);
+
 const knownPrefixes = ["/search-result/"];
 
-/* Retired URLs: permanent redirect so search engines drop them. */
+/* Retired URLs: permanent redirect so search engines drop them.
+ * Targets are final destinations, never another redirect, so there are no
+ * redirect chains. */
 const redirects = {
   "/general-purpose-lcds": "/",
   "/industrial-lcds-product": "/",
+  "/r-igzo-google": "/",
+  "/r-igzo-linkedin": "/",
+  "/reflectivelcdlanding": "/",
+  "/reflective-igzo-displays-product": "/",
+  "/eposters": "/eposters-displays",
+  "/eposters-displays-control-sales": "/eposters-displays",
+  "/eposters-displays-odonnell": "/eposters-displays",
+  "/eposters-displays-quantum": "/eposters-displays",
+  "/eposters-displays-tech-coast": "/eposters-displays",
+  "/eposters-displays-thom-luke": "/eposters-displays",
+  /* Renamed for clarity; the old paths 301 to the new one. */
+  "/memoryinpixel": "/Memory-In-Pixel-Displays",
+  "/memoryinpixellanding": "/Memory-In-Pixel-Displays",
 };
 
 let pageMeta = {};
@@ -160,9 +176,56 @@ function renderPage(pathname) {
   return tags ? html.replace("</head>", tags + "</head>") : html;
 }
 
+/* ---------------------------------------------------------------------------
+ * Prerendered snapshots, written by scripts/prerender.js at build time.
+ *
+ * This is a client-rendered app, so the shell above ships an empty
+ * <div id="root"></div>: a crawler that does not run JavaScript sees no
+ * headings and no body copy, which is why audits report "no H1" and
+ * "word count 0". Serving the snapshot gives it the fully rendered page
+ * instead; the browser still boots the normal React app on top of it.
+ *
+ * A missing snapshot falls through to renderPage() below, so a failed
+ * prerender degrades to the previous behaviour rather than breaking the site.
+ * ------------------------------------------------------------------------- */
+const _prerender_folder = path.resolve(path.join(_app_folder, "prerender"));
+const _snapshots = new Map();
+
+function prerenderedHtml(pathname) {
+  const normalised = normalisePath(pathname);
+  const relative =
+    normalised === "/" ? "index.html" : normalised.slice(1) + "/index.html";
+  const file = path.resolve(path.join(_prerender_folder, relative));
+
+  /* Never let a crafted path escape the snapshot folder. */
+  if (!file.startsWith(_prerender_folder + path.sep)) return null;
+
+  let stat;
+  try {
+    stat = fs.statSync(file);
+  } catch (err) {
+    return null;
+  }
+  const cached = _snapshots.get(file);
+  if (cached && cached.mtimeMs === stat.mtimeMs) return cached.html;
+
+  const html = fs.readFileSync(file, "utf8");
+  _snapshots.set(file, { mtimeMs: stat.mtimeMs, html: html });
+  return html;
+}
+
 app.use(function (req, res, next) {
   const target = redirects[normalisePath(req.path)];
   if (target) return res.redirect(301, target);
+  next();
+});
+
+/* The snapshot folder is an implementation detail. Serving it directly would
+ * expose a second, crawlable copy of every page at /prerender/<route>/. */
+app.use(function (req, res, next) {
+  if (/^\/prerender(\/|$)/i.test(req.path)) {
+    return res.status(404).type("txt").send("Not found");
+  }
   next();
 });
 app.get("/api", (req, res) => {
@@ -227,10 +290,13 @@ app.all("*", function (req, res) {
   }
 
   try {
+    /* Prefer the prerendered snapshot; fall back to the metadata-injected
+     * shell when there is not one for this route. */
+    const snapshot = isKnown ? prerenderedHtml(req.path) : null;
     res
       .status(isKnown ? 200 : 404)
       .type("html")
-      .send(renderPage(req.path));
+      .send(snapshot || renderPage(req.path));
   } catch (err) {
     console.log("Falling back to plain index.html: " + err.message);
     res.status(isKnown ? 200 : 404).sendFile("/", { root: _app_folder });

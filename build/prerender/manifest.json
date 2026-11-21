@@ -1,0 +1,124 @@
+{
+  "generated": "2026-11-21T09:30:01.889Z",
+  "pages": [
+    {
+      "route": "/",
+      "words": 268,
+      "h1": 1,
+      "firstH1": "WELCOME TO A BRAND NEW DAY.",
+      "kb": 23
+    },
+    {
+      "route": "/about",
+      "words": 529,
+      "h1": 1,
+      "firstH1": "PUSHING THE BOUNDARIES OF DISPLAY INNOVATION",
+      "kb": 39
+    },
+    {
+      "route": "/contact",
+      "words": 125,
+      "h1": 1,
+      "firstH1": "Contact Us",
+      "kb": 122
+    },
+    {
+      "route": "/news",
+      "words": 361,
+      "h1": 1,
+      "firstH1": "Sharp SECD News",
+      "kb": 28
+    },
+    {
+      "route": "/Memory-In-Pixel-Displays",
+      "words": 357,
+      "h1": 1,
+      "firstH1": "Memory in Pixel LCDs",
+      "kb": 34
+    },
+    {
+      "route": "/memory-in-pixel-lcds-product",
+      "words": 559,
+      "h1": 1,
+      "firstH1": "Memory in Pixel LCDs",
+      "kb": 56
+    },
+    {
+      "route": "/memory-in-pixel-lcds-technology",
+      "words": 323,
+      "h1": 1,
+      "firstH1": "Memory-in-Pixel LCD Technology",
+      "kb": 29
+    },
+    {
+      "route": "/MemoryInPixel-TCS",
+      "words": 334,
+      "h1": 1,
+      "firstH1": "Memory in Pixel LCDs",
+      "kb": 32
+    },
+    {
+      "route": "/MemoryInPixel-IntelliMark",
+      "words": 332,
+      "h1": 1,
+      "firstH1": "Memory in Pixel LCDs",
+      "kb": 32
+    },
+    {
+      "route": "/MemoryInPixel-ODonnell",
+      "words": 333,
+      "h1": 1,
+      "firstH1": "Memory in Pixel LCDs",
+      "kb": 42
+    },
+    {
+      "route": "/MemoryInPixel-Control-Sales",
+      "words": 330,
+      "h1": 1,
+      "firstH1": "Memory in Pixel LCDs",
+      "kb": 32
+    },
+    {
+      "route": "/eposters-displays",
+      "words": 335,
+      "h1": 1,
+      "firstH1": "SAY GOODBYETO PRINTING WASTE.",
+      "kb": 34
+    },
+    {
+      "route": "/Eposters_product",
+      "words": 238,
+      "h1": 1,
+      "firstH1": "ePoster Display Modules",
+      "kb": 36
+    },
+    {
+      "route": "/eposter-display-modules-technology",
+      "words": 755,
+      "h1": 1,
+      "firstH1": "ePOSTER DISPLAY MODULE TECHNOLOGY",
+      "kb": 46
+    },
+    {
+      "route": "/R-IGZO-TCS",
+      "words": 362,
+      "h1": 1,
+      "firstH1": "R-IGZO",
+      "kb": 36
+    },
+    {
+      "route": "/R-IGZO-Control-Sales",
+      "words": 363,
+      "h1": 1,
+      "firstH1": "R-IGZO",
+      "kb": 36
+    },
+    {
+      "route": "/Low-Power-ODonnell",
+      "words": 600,
+      "h1": 1,
+      "firstH1": "YOUR SOURCE FOR GAME CHANGING",
+      "kb": 48
+    }
+  ]
+}
